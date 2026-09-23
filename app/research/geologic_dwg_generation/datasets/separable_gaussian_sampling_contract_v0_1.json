@@ -1,0 +1,25 @@
+{
+  "contractId": "SEPARABLE-GAUSSIAN-SAMPLING-0.1",
+  "status": "ExperimentalProjectMathematicalDerivation",
+  "scope": "Domain:RegularCartesianGridSeparableGaussianCovariance",
+  "equations": [
+    {
+      "equationId": "SGS-COV-1",
+      "expression": "K((x,y),(x',y')) = variance * exp(-((x-x')/rangeX)^2) * exp(-((y-y')/rangeY)^2) = variance * Ky tensor Kx",
+      "variables": {"x,y,x',y'": "grid coordinates [length]", "rangeX,rangeY": "positive correlation ranges [same length]", "variance": "non-negative field variance [thickness^2 before nonlinear transform]"},
+      "dimensionalConstraint": "exponential arguments are dimensionless",
+      "evidenceClass": "Project algebraic factorization of the already implemented Gaussian covariance; not geological parameter evidence"
+    },
+    {
+      "equationId": "SGS-SAMPLE-1",
+      "expression": "Y = sqrt(variance) * Qy*sqrt(Ly) * Z * sqrt(Lx)*Qx^T",
+      "variables": {"Kx=Qx Lx Qx^T": "x-axis covariance eigendecomposition", "Ky=Qy Ly Qy^T": "y-axis covariance eigendecomposition", "Z": "ny by nx iid standard-normal matrix", "Y": "ny by nx latent Gaussian field"},
+      "invariant": "Cov(vec_row(Y)) = variance * (Ky tensor Kx)",
+      "evidenceClass": "Project linear-algebra derivation; verified by covariance reconstruction tests"
+    }
+  ],
+  "preconditions": ["regular Cartesian grid", "stationary axis-aligned Gaussian covariance", "separable ranges", "independent layer policy"],
+  "exclusions": ["irregular points", "rotated anisotropy", "nonseparable covariance", "nonstationarity", "conditioning observations", "cross-layer covariance"],
+  "uncertainty": "Numerical equivalence is testable; geological parameters remain evidence-controlled and uncalibrated.",
+  "validationFamilies": ["positive", "negative", "boundary", "conflicting", "missing-data", "out-of-scope"]
+}

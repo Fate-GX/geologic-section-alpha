@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "RegionalPriorProfile-1.0",
+  "profileId": "ChibaCentralReclaimedLowland-LiteraturePrior-1.0",
+  "displayTitle": "千葉県中央部・合成地質断面図",
+  "scope": "Region:ChibaCentral_LowlandAndReclaimedSurface",
+  "basisType": "LiteratureAndMappedSurfaceWithSyntheticGeometry",
+  "mappedSurfaceCondition": "H_or: reclaimed, filled or polder land",
+  "substrateFacies": [
+    ["CHIBA-SHIMOSA-SAND", "下総層群相当 砂質層（地域推定）", 16.0, "#d9c27a"],
+    ["CHIBA-SHIMOSA-MUD", "下総層群相当 泥質層（地域推定）", 14.0, "#98aaa3"],
+    ["CHIBA-SHIMOSA-SAND-GRAVEL", "下総層群相当 砂礫質層（地域推定）", 20.0, "#b69068"],
+    ["CHIBA-KAZUSA-MUD", "上総層群相当 泥質層（地域推定）", 35.0, "#7f8f91"],
+    ["CHIBA-DEEP-SUBSTRATE", "深部堆積岩類（表示基底・地域推定）", 70.0, "#716b68"]
+  ],
+  "fillFacies": [
+    {"unitId":"CHIBA-BASAL-GRAVEL", "label":"沖積層基底礫質層（地域条件付き推定）", "meanWeight":0.55, "color":"#907152"},
+    {"unitId":"CHIBA-LOWER-FLUVIAL", "label":"下部沖積層 砂泥互層（地域推定）", "meanWeight":1.15, "color":"#c6a468"},
+    {"unitId":"CHIBA-ESTUARINE-MUD", "label":"海進期泥質堆積物（地域推定）", "meanWeight":1.45, "color":"#829d99"},
+    {"unitId":"CHIBA-UPPER-SAND-SILT", "label":"上部沖積層 砂・シルト（地域推定）", "meanWeight":1.0, "color":"#d3bd83"},
+    {"unitId":"CHIBA-ARTIFICIAL-FILL", "label":"盛土・埋立層（地表区分対応・厚さ仮定）", "meanWeight":0.2, "color":"#b69a78"}
+  ],
+  "surfaceCap": {"unitId":"CHIBA-ARTIFICIAL-FILL", "thicknessM":2.0},
+  "basalTaper": true,
+  "eventAuthorization": {
+    "status": "NoRouteSpecificSubsurfaceEvidence",
+    "requestedLocalizedEventTypes": [],
+    "routeApplicableSubsurfaceSourceIds": [],
+    "decision": "DoNotGenerateIncisedValleyFaultFoldIntrusionOrLens",
+    "reason": "Mapped reclaimed surface and regional literature do not locate a subsurface event on this exact route"
+  },
+  "backgroundArchitecture": {
+    "basisType": "SyntheticAssumptionWithinRegionalStratigraphicPrior",
+    "purpose": "Represent ordinary lateral thickness heterogeneity without inventing a localized geological event",
+    "defaultCorrelationRangeM": 180.0,
+    "defaultLogStd": 0.2,
+    "layerControls": {
+      "CHIBA-SHIMOSA-SAND": {"rangeM": 95.0, "logStd": 0.30},
+      "CHIBA-SHIMOSA-MUD": {"rangeM": 165.0, "logStd": 0.22},
+      "CHIBA-SHIMOSA-SAND-GRAVEL": {"rangeM": 125.0, "logStd": 0.27},
+      "CHIBA-KAZUSA-MUD": {"rangeM": 240.0, "logStd": 0.16},
+      "CHIBA-DEEP-SUBSTRATE": {"rangeM": 330.0, "logStd": 0.10}
+    },
+    "constraints": [
+      "Every thickness remains positive",
+      "Contacts remain shared and non-crossing",
+      "No localized event is implied",
+      "Parameters remain synthetic until route evidence is bound"
+    ]
+  },
+  "sourceIds": ["GSJ-URBANGEO-20260331", "GSJ-ALLUVIUM-GRID-539", "GSJ-SEAMLESS-V2-API"],
+  "limitations": [
+    "No route-specific borehole is bound",
+    "Artificial-fill thickness is a SyntheticAssumption",
+    "Exact Shimosa/Kazusa contacts are not observed on this 500 m route",
+    "Not for engineering or excavation design"
+  ],
+  "realRegionAuthorized": false
+}

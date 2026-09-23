@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleId": "UNIVERSAL-COMPACTION-DIAGENESIS-001",
+  "ruleVersion": "1.2.0",
+  "basisContracts": [
+    {
+      "basisId": "DERIVATION-1D-CONSTANT-AREA-SOLID-VOLUME",
+      "basisType": "MathematicalIdentity",
+      "derivation": "For a one-dimensional column of unchanged reference area A, solid volume is Vs=A*H*(1-phi). If no solid is added or removed, cancellation of A gives H1*(1-phi1)=H2*(1-phi2).",
+      "preconditions": ["unchanged reference area", "no solid addition or removal", "compatible porosity definitions"],
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::solid_thickness", "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::transform_thickness"],
+      "testRefs": ["tools/geologic_pattern_generator/test_universal_compaction_diagenesis.py::test_solid_volume_is_preserved"]
+    },
+    {
+      "basisId": "DEFINITION-POROSITY-FRACTION",
+      "basisType": "MathematicalIdentity",
+      "derivation": "Porosity is void volume divided by total bulk volume; the executable model excludes the singular all-void state and therefore requires 0 <= phi < 1.",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::_porosity"],
+      "testRefs": ["subprojects/geologic_3d_engine/tests/test_stage4_compaction.py"]
+    },
+    {
+      "basisId": "VALIDATION-PLAN-POSITIVE-THICKNESS",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::solid_thickness"],
+      "testRefs": ["subprojects/geologic_3d_engine/tests/test_stage4_compaction.py"]
+    },
+    {
+      "basisId": "VALIDATION-PLAN-SHARED-CONTACTS",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::validate_compacted_stack"],
+      "testRefs": ["subprojects/geologic_3d_engine/tests/test_stage4_compaction.py"]
+    },
+    {
+      "basisId": "SUBPROJECT-CHARTER-CONFORMABLE-CONTACTS",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/SUBPROJECT_CHARTER.md#reuse-of-current-code",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::compact_stack"],
+      "testRefs": ["subprojects/geologic_3d_engine/tests/test_stage4_compaction.py"]
+    },
+    {
+      "basisId": "PROJECT-RESEARCH-TO-CODE-RULE",
+      "basisType": "EvidenceGovernancePolicy",
+      "definitionRef": "subprojects/geologic_3d_engine/LEARNING_SCOPE.md#research-to-code-rule",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::classify_diagenetic_evidence"],
+      "testRefs": ["tools/geologic_pattern_generator/test_universal_compaction_diagenesis.py"]
+    },
+    {
+      "basisId": "PROJECT-LITHOLOGY-PROPERTY-CONDITIONAL-POLICY",
+      "basisType": "EvidenceGovernancePolicy",
+      "definitionRef": "AGENTS.md#evidence-driven-geologic-dwg-development-workflow",
+      "implementationRefs": ["subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::classify_diagenetic_evidence"],
+      "testRefs": ["tools/geologic_pattern_generator/test_universal_compaction_diagenesis.py"]
+    }
+  ]
+}

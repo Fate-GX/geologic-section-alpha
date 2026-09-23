@@ -1,0 +1,19 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.7.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "inherits": "0.6.0-candidate",
+  "timeScaleCompatibilityContract": {
+    "accepted": "All constraints have exactly the same non-empty timeScaleAuthority and timeScaleVersion",
+    "conversion": "Rejected until a separately versioned authoritative boundary-reevaluation contract is implemented",
+    "prohibition": "No silent mixing, label replacement or numeric identity assumption across scale versions"
+  },
+  "endpointComparisonContract": {
+    "required": ["unit", "absoluteToleranceMa", "relativeTolerance", "numericErrorBoundMa", "evidenceResolutionMa", "comparisonPurpose", "justification"],
+    "effectiveNumericTolerance": "min(numericErrorBoundMa, absoluteToleranceMa + relativeTolerance*max(1,abs(lower),abs(upper)))",
+    "nearCoincidence": "if 0 < lower-upper <= effectiveNumericTolerance, classify CoincidentWithinNumericPrecision and snap only in the derived result",
+    "contradiction": "if lower-upper > effectiveNumericTolerance, reject as ContradictoryConstraintSet",
+    "evidenceResolutionRule": "recorded for provenance but never added to numeric tolerance; geological uncertainty must enter through explicit uncertainty envelopes"
+  },
+  "implementationCapability": "NotImplemented"
+}

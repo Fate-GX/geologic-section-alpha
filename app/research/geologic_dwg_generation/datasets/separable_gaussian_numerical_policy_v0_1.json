@@ -1,0 +1,16 @@
+{
+  "policyId": "SEPARABLE-GAUSSIAN-EIGEN-TOLERANCE-0.1",
+  "status": "ExperimentalProjectNumericalPolicy",
+  "scope": "Domain:RegularCartesianGridSeparableGaussianCovariance",
+  "declaredAuditTolerance": "absoluteEigenTolerance + relativeEigenTolerance * max(1, maximumAbsoluteEigenvalue)",
+  "machineRoundoffTolerance": "IEEE754_binary64_epsilon * axisDimension * 64",
+  "effectiveClipTolerance": "min(declaredAuditTolerance, machineRoundoffTolerance)",
+  "decision": [
+    "Reject when an axis minimum eigenvalue is below negative effectiveClipTolerance.",
+    "Map only negative eigenvalues within effectiveClipTolerance to zero before square root.",
+    "Never use geological evidence resolution as a numerical eigenvalue tolerance.",
+    "Record both axis audit values and effective clip tolerances in generated output."
+  ],
+  "evidenceClass": "Project numerical-analysis policy; not geological evidence",
+  "reopenCondition": "Change in numeric dtype, eigensolver, covariance kernel, backend or accepted error model"
+}

@@ -1,0 +1,20 @@
+{
+  "ruleId": "GEO3D-CONTACT-STRUCTURAL-OBSERVATION-BINDING",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["route-bound projected structural observations", "hash-bound mapped-contact intersections and orientation template"],
+  "requiredEvidence": ["explicit feature ID or explicit unit-pair association", "finite dip/direction/uncertainty/support", "source provenance"],
+  "decisionLogic": [
+    "never bind an observation to a contact from spatial proximity alone",
+    "require the projected observation to be within a declared along-route separation",
+    "classify zero, one, or multiple eligible observations separately",
+    "allow deliberate transfer only for one unique explicit candidate"
+  ],
+  "outputs": ["hash-bound binding proposals", "optional EvidenceCandidate orientation template"],
+  "uncertainty": "the observation-supplied angular uncertainty and lateral support are preserved",
+  "exclusions": ["no nearest-neighbor geological identity inference", "no automatic ambiguity resolution", "no real-region authorization"],
+  "sourceIds": [],
+  "validationMethod": "positive explicit binding, proximity-only rejection, multiple-candidate ambiguity, route mismatch and file-backend tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "contact-network identity vocabularies, correlated structural domains, or authenticated review are introduced"
+}

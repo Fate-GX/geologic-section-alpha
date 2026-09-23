@@ -1,0 +1,19 @@
+{
+  "ruleId": "REGIONAL-BOREHOLE-CONTEXT-DISPLAY-1",
+  "version": "1.0",
+  "scope": "Global",
+  "preconditions": [
+    "BoreholeRouteRoleClassification-1.0 assigns RegionalContextOnly",
+    "contextMayBeDisplayed is true",
+    "sectionGeometryAuthorized is false",
+    "source identity and coordinate match the normalized record"
+  ],
+  "decisionLogic": "Show the source location and a detached relative-depth log. Do not place interval elevations at a section station and do not create contacts.",
+  "outputs": ["plan location symbol", "relative-depth column", "explicit authorization boundary"],
+  "uncertainty": "All source evidence and datum/accuracy states remain unchanged.",
+  "exclusions": ["section contacts", "lateral correlation", "absolute-elevation constraint", "subsurface interpolation"],
+  "sourceIds": ["Project evidence-separation policy"],
+  "validationMethod": "positive render plus direct-role and coordinate-mismatch rejection tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A regional-context display is proposed as section geometry or a new borehole role is added."
+}

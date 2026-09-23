@@ -1,0 +1,18 @@
+{
+  "sourceId": "MLIT-BORING-R8-DTD-EXAMPLE",
+  "authority": "Ministry of Land, Infrastructure, Transport and Tourism, Japan",
+  "title": "Geological and soil investigation deliverable DTD and XML examples R8.2",
+  "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring_R8.2.zip",
+  "landingPage": "https://www.cals-ed.go.jp/cri_dtdxml/",
+  "accessedAt": "2026-09-04",
+  "artifact": "boring_R8.2.zip",
+  "byteLength": 409169,
+  "sha256": "ced4cdaadbe61f9a960a614e40e7595884c9beb3cd6f5f9132f6645ab72d5c0f",
+  "verifiedContents": {
+    "boreholeExample": "ボーリング交換用データ/BED0001.XML",
+    "dtd": "ボーリング交換用データ/BED0500.DTD",
+    "dtdVersion": "5.00",
+    "xmlEncoding": "Shift_JIS"
+  },
+  "adoptionBoundary": "Authoritative format example; example values are not real geological observations"
+}

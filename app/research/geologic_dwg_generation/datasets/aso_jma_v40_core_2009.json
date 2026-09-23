@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "PublicBoreholeEvidence-1.0",
+  "evidenceBoundary": "ObservedCoreLog_RegionalEvidence_NotCurrentRouteConstraint",
+  "boreholes": [
+    {
+      "boreholeId": "JMA-V40",
+      "longitude": 131.07330555555555,
+      "latitude": 32.88044444444444,
+      "collarElevationM": 1142.6,
+      "totalDepthM": 100.0,
+      "horizontalCrs": "EPSG:4326",
+      "horizontalCrsStatus": "Verified",
+      "verticalDatum": "TokyoBayMeanSeaLevel_InferredFromOfficialJapaneseElevationTerm",
+      "verticalDatumStatus": "AuthorityInferred",
+      "sourceId": "JMA-ASO-V40-CORE-2009",
+      "sourceUrl": "https://www.jma.go.jp/jma/kishou/shingikai/ccpve/CORE/core_08.pdf",
+      "exchangeFormatVersion": "JMA-CORE-REPORT-08-P331-333",
+      "sourceCoordinateText": "北緯32度52分49.6秒、東経131度04分23.9秒",
+      "sourceElevationText": "標高1142.6m",
+      "intervals": [
+        {"topDepthM": 0.0, "bottomDepthM": 4.46, "sourceLabel": "再堆積物を含む降下火山灰累層", "normalizedLithology": "pyroclastic-fall deposit with reworked material", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 4.46, "bottomDepthM": 9.0, "sourceLabel": "黒色の降下スコリア層（杵島岳スコリア）", "normalizedLithology": "scoria-fall deposit", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 9.0, "bottomDepthM": 23.72, "sourceLabel": "玄武岩質安山岩溶岩（溶岩1）", "normalizedLithology": "basaltic-andesite lava", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 23.72, "bottomDepthM": 31.0, "sourceLabel": "火山灰層・黒ボク土層・二次堆積物", "normalizedLithology": "mixed volcanic ash, paleosol and reworked deposit", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 31.0, "bottomDepthM": 76.11, "sourceLabel": "玄武岩質安山岩溶岩（溶岩2）", "normalizedLithology": "basaltic-andesite lava", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 76.11, "bottomDepthM": 86.47, "sourceLabel": "凝灰岩〜火山礫凝灰岩（主にラハール堆積物）", "normalizedLithology": "lahar deposit", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 86.47, "bottomDepthM": 91.64, "sourceLabel": "玄武岩質安山岩あるいは安山岩溶岩（溶岩3）", "normalizedLithology": "basaltic-andesite to andesite lava", "termStatus": "Unverified", "evidenceStatus": "Observed"},
+        {"topDepthM": 91.64, "bottomDepthM": 100.0, "sourceLabel": "降下火山灰層・火山礫凝灰岩・やや成層した火山灰層", "normalizedLithology": "mixed pyroclastic-fall and lahar deposit", "termStatus": "Unverified", "evidenceStatus": "Observed"}
+      ]
+    }
+  ]
+}

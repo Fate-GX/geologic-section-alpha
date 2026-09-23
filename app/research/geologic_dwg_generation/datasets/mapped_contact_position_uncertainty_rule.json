@@ -1,0 +1,11 @@
+{
+  "ruleId": "GEO3D-MAPPED-CONTACT-POSITION-UNCERTAINTY-1",
+  "version": "1.0.0",
+  "scope": "Domain:MappedGeologicContacts",
+  "decisionLogic": "A numeric ground-distance uncertainty zone is permitted only when declared by the source or measured against a higher-accuracy reference. Map scale alone remains numerically indeterminate.",
+  "methods": ["SourceDeclaredGroundZone", "HigherAccuracyComparison", "MapScaleOnly", "ProjectDisplayAssumption"],
+  "exclusions": ["No conversion from scale denominator to an invented metre tolerance", "No subsurface continuation", "Project display assumptions are not evidence"],
+  "validationMethod": "Positive, negative, boundary, missing-data and out-of-scope unit tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A source-declared ground zone or higher-accuracy comparison becomes available"
+}

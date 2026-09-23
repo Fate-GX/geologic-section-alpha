@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "AdvancedV2PostGenerationVisualAdjudication-1.0",
+  "decision": "Pending",
+  "reviewedDwgSha256": "",
+  "plotOutputReviewed": false,
+  "reviewer": "",
+  "reviewedAt": "",
+  "defects": [],
+  "layouts": {
+    "GEO_JP": {
+      "modelGeometryVisible": false,
+      "geometryWithinViewport": false,
+      "noBlankGeology": false,
+      "noMojibake": false,
+      "textWithinSheet": false,
+      "requiredTicksVisible": false,
+      "modelLowerLimitFilled": false,
+      "contactLinesInForeground": false
+    },
+    "GEO_EN": {
+      "modelGeometryVisible": false,
+      "geometryWithinViewport": false,
+      "noBlankGeology": false,
+      "noMojibake": false,
+      "textWithinSheet": false,
+      "requiredTicksVisible": false,
+      "modelLowerLimitFilled": false,
+      "contactLinesInForeground": false
+    },
+    "GEO_TOPOLOGY_QA": {
+      "modelGeometryVisible": false,
+      "geometryWithinViewport": false,
+      "noBlankGeology": false,
+      "noMojibake": false,
+      "textWithinSheet": false,
+      "requiredTicksVisible": false,
+      "modelLowerLimitFilled": false,
+      "contactLinesInForeground": false,
+      "hatchesHidden": false
+    },
+    "GEO_MONOCHROME_QA": {
+      "modelGeometryVisible": false,
+      "geometryWithinViewport": false,
+      "noBlankGeology": false,
+      "noMojibake": false,
+      "textWithinSheet": false,
+      "requiredTicksVisible": false,
+      "modelLowerLimitFilled": false,
+      "contactLinesInForeground": false,
+      "monochromeEffective": false
+    }
+  }
+}

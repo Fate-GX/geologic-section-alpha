@@ -1,0 +1,22 @@
+{
+  "ruleId": "GEO-SECTION-OBSERVED-BOREHOLE-COLUMN-DISPLAY-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "A source-linked contiguous observed depth log",
+    "A measured route with an explicitly calculated borehole station",
+    "Absolute collar-elevation authority is evaluated separately"
+  ],
+  "decisionLogic": "Render only a narrow depth-log column at its station; all surrounding subsurface remains Unknown",
+  "outputs": ["ObservedDepthLog", "UnknownSubsurface", "NoLateralInterpolation"],
+  "uncertainty": "An unverified collar elevation is labelled as reported and cannot authorize a section contact",
+  "exclusions": [
+    "No contact correlation away from the hole",
+    "No lithology polygons",
+    "No inference from terrain or aerial imagery"
+  ],
+  "sourceIds": ["JMA-ASO-V40-CORE-2009"],
+  "validationMethod": "Positive rendering plus out-of-route and authorization-promotion rejection tests",
+  "adoptionStatus": "AdoptedDiagnosticEvidenceDisplay",
+  "reopenCondition": "Multiple correlation controls or independently authorized structural geometry becomes available"
+}

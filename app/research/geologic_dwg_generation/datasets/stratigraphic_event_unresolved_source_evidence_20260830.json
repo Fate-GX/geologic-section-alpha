@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "STRATIGRAPHIC-EVENT-UNRESOLVED-SOURCE-EVIDENCE-20260830",
+  "status": "IndependentReviewRequired",
+  "accessDate": "2026-08-30",
+  "scope": [
+    "eventSemantics.Pinchout",
+    "eventSemantics.Nondeposition"
+  ],
+  "confirmedPreviouslyAndNotReopened": [
+    "NACSN-CODE-2021",
+    "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY"
+  ],
+  "evidenceRecords": [
+    {
+      "evidenceId": "USGS-TEI395-P29-WINGATE-ZERO-THICKNESS",
+      "claimPath": "eventSemantics.Pinchout",
+      "sourceId": "USGS-TEI395-PINCHOUT",
+      "canonicalUrl": "https://pubs.usgs.gov/tei/395/report.pdf",
+      "authority": "U.S. Geological Survey",
+      "locator": "PDF printed page 29, section 'Wingate sandstone'",
+      "retrievalMethod": "Official USGS PDF search-index extract; direct PDF download returned HTTP 403 in the reviewing web client",
+      "observedTextSummary": "The Wingate Sandstone is reported to range to zero thickness in Colorado where it locally pinches out against the Uncompahgre Plateau.",
+      "supportDimension": "RegionalZeroThicknessGeometry",
+      "candidateSupport": "DirectEmpirical",
+      "universality": "RegionalExample_NotUniversalDefinition",
+      "independentVerificationRequired": true,
+      "downloadedArtifactIncluded": false,
+      "artifactOmissionReason": "The official PDF denied direct retrieval in the current client; no third-party copy is substituted."
+    },
+    {
+      "evidenceId": "USGS-THESAURUS-226-UNCONFORMITY",
+      "claimPath": "eventSemantics.Nondeposition",
+      "sourceId": "USGS-THESAURUS-UNCONFORMITY",
+      "canonicalUrl": "https://apps.usgs.gov/thesaurus/term-simple.php?code=226&thcode=61",
+      "authority": "U.S. Geological Survey",
+      "locator": "Term page 'unconformity', definition",
+      "retrievalMethod": "Direct official HTML retrieval",
+      "observedTextSummary": "The term is defined as an erosion or nondeposition surface between strata that represents a significant gap in the geologic record.",
+      "supportDimension": "NondepositionAsOneCauseOfRecordGap",
+      "candidateSupport": "Partial",
+      "universality": "TerminologyRecord_ForUnconformity_NotDefinitionOfAllNondeposition",
+      "independentVerificationRequired": true,
+      "downloadedArtifactIncluded": false,
+      "artifactOmissionReason": "The canonical live USGS term page is the review target; the package does not freeze a mutable HTML copy as semantic authority."
+    }
+  ],
+  "decisionBoundaries": [
+    "The TEI-395 passage is empirical regional geometry evidence and must not be promoted to a universal definition of pinchout.",
+    "The USGS thesaurus record defines unconformity and only partially supports the nondeposition claim.",
+    "Nondeposition remains distinct from erosion, missing record, and nonpenetration.",
+    "No rule source binding is changed until independent review confirms the exact official passages."
+  ],
+  "stoppingCondition": "Review only the two evidence records above; stop after each official locator and support boundary is independently classified."
+}

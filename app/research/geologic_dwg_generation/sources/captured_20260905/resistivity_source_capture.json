@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "CapturedPrimarySources-1.0",
+  "accessDate": "2026-09-05",
+  "sources": [
+    {
+      "sourceId": "KYOTO-DPRI-ASO-KUSASENRI-VES",
+      "authority": "Disaster Prevention Research Institute, Kyoto University",
+      "title": "Research-achievement summary for Development of a stacking resistivity sounding instrument and the application near Nakadake crater, Aso Volcano",
+      "canonicalUrl": "https://www.dpri.kyoto-u.ac.jp/nenpo/no25/25a0/a25a0p10.pdf",
+      "localFile": "kyoto_dpri_aso_kusasenri_ves_1981.pdf",
+      "sha256": "01b544cc17ef069a182c5e716fce0b838ddda37a57ce7dd54e6a140acd6e08d2",
+      "byteCount": 5472468,
+      "pdfPageCount": 111,
+      "locator": "PDF page 13, entry 82023",
+      "artifactBoundary": "PublishedResearchSummary_NotOriginalEightPageArticleOrRawVESDataset"
+    },
+    {
+      "sourceId": "USGS-OFR-95-825-DC-RESISTIVITY",
+      "authority": "U.S. Geological Survey",
+      "title": "Results of Geophysical Investigations Near the Norman, Oklahoma, Municipal Landfill, 1995",
+      "canonicalUrl": "https://pubs.usgs.gov/of/1995/0825/report.pdf",
+      "localFile": "usgs_ofr_95_825_dc_resistivity.pdf",
+      "sha256": "9f58a29be365f3acc65b3ffbf0d9584bc4ee61295daf39bac6a97d36f64b0e81",
+      "byteCount": 35406677,
+      "pdfPageCount": 125,
+      "locator": "PDF page 20, equation 1 and Figure 14"
+    }
+  ]
+}

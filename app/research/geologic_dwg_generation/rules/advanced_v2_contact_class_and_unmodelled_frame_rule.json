@@ -1,0 +1,49 @@
+{
+  "ruleId": "ADV2-CONTACT-CLASS-AND-UNMODELLED-FRAME-001",
+  "version": "1.0.0",
+  "scope": "Domain",
+  "preconditions": [
+    "Advanced V2 conservative regional prior",
+    "No localized fault, erosion, intrusion or lens event is authorized",
+    "Ordered finite section stations and positive layer thicknesses"
+  ],
+  "requiredEvidence": [
+    "SyntheticAssumption declaration",
+    "Section span and drafting tick spacing",
+    "Exact shared layer-boundary arrays"
+  ],
+  "decisionLogic": {
+    "contactGeometry": "Generate only positive layer thickness fields and reuse each bottom array exactly as the next top array.",
+    "contactClassRanges": {
+      "WeatheringFront": {"longRangeFraction": 0.18, "shortRangeFraction": 0.04},
+      "ConformableDepositional": {"longRangeFraction": 0.28, "shortRangeFraction": 0.075},
+      "ModelCutoff": null
+    },
+    "frameClosure": "Preserve the generated deepest geological boundary and fill only the interval to the enclosing drafting tick with one explicitly Unmodelled polygon."
+  },
+  "outputs": [
+    "bottomContactClass",
+    "bottomContactRange",
+    "VariableSyntheticModelBoundary",
+    "ADV2-UNMODELLED-BELOW polygon"
+  ],
+  "uncertainty": "All range fractions are uncalibrated display priors and establish no local geological truth.",
+  "exclusions": [
+    "Localized geological events",
+    "Observed contact roughness",
+    "Treating the Unmodelled band as lithology or basement"
+  ],
+  "sourceIds": [
+    "GPML-CH4",
+    "PROJECT-VALIDATION-PLAN"
+  ],
+  "validationMethod": [
+    "positive-thickness and exact-boundary equality tests",
+    "dimensionless curvature and turning-point audit",
+    "contract polygon partition and classification test",
+    "native DWG hatch-pattern and reopen validation",
+    "four-layout visual adjudication"
+  ],
+  "adoptionStatus": "Experimental",
+  "reopenCondition": "Measured contact statistics, a localized event path, another covariance family, or promotion beyond Experimental output."
+}

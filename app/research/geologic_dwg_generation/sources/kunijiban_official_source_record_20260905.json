@@ -1,0 +1,26 @@
+{
+  "sourceId": "KUNIJIBAN-OFFICIAL-VIEWER",
+  "authority": "Public Works Research Institute and Ministry of Land, Infrastructure, Transport and Tourism",
+  "title": "KuniJiban national geotechnical information search site",
+  "canonicalUrl": "https://www.kunijiban.pwri.go.jp/jp/",
+  "serviceUrl": "https://www.kunijiban.pwri.go.jp/viewer/",
+  "termsUrl": "https://www.kunijiban.pwri.go.jp/jp/agree.html",
+  "overviewUrl": "https://www.mlit.go.jp/common/000030459.pdf",
+  "accessedAt": "2026-09-05",
+  "provides": ["world-geodetic latitude/longitude search", "collar elevation", "soil/rock classification", "observation notes", "XML download"],
+  "capturedRecord": {
+    "providerRecordId": 531032,
+    "providerApprovalLabel": "notapproved",
+    "retrievalUrl": "https://www.kunijiban.pwri.go.jp/viewer/refer/?data=boring&type=xml&id=531032",
+    "exchangeFormat": "BED0300 DTD 3.00",
+    "xmlEncoding": "Shift_JIS",
+    "byteLength": 132142,
+    "sha256": "607e4caa083fc34ed11b450024b43ed11e13d4458777cd30c8b2443b8c2caff8",
+    "localArtifact": "sources/captured_20260905/kunijiban_531032_bed0300.xml",
+    "normalizedCandidate": "sources/captured_20260905/kunijiban_531032_candidate.json",
+    "selectionPurpose": "Format and evidence-intake validation only; the record is 1082.22 m from the current route and is not a route constraint."
+  },
+  "providerCaveat": "The official site states that currently published records have not yet been inspected by the Geotechnical Information Center.",
+  "adoptionStatus": "AdoptedAsCandidateDiscoverySource",
+  "adoptionBoundary": "Marker approval labels and downloaded records are not independent verification of coordinate, elevation, lithology or correlation."
+}

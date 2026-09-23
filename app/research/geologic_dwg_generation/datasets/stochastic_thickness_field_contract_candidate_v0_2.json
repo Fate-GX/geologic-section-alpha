@@ -1,0 +1,39 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.2.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "scope": "Global:ThicknessFieldArchitecture",
+  "method": "IndependentTransformedLatentGaussianByLayer",
+  "transformEquation": {
+    "equationId": "ALLARD-POWER-POSITIVE-PART",
+    "expression": "Z_j(s)=mu_j*(W_j(s)-tau_j)^beta_j when W_j(s)>tau_j; otherwise 0",
+    "dimensions": {
+      "W_j": "dimensionless",
+      "tau_j": "dimensionless",
+      "beta_j": "dimensionless and > 0",
+      "mu_j": "positive and expressed in request lengthUnit",
+      "Z_j": "request lengthUnit"
+    },
+    "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+    "locator": "Section 3.1, Equation (1), power-transform specialization"
+  },
+  "crossLayerPolicy": "Independent",
+  "psdAuditContract": {
+    "algorithm": "SymmetrizeCheckThenSymmetricEigenvalueDecomposition",
+    "symmetryCheck": "maxAbs(C-transpose(C)) <= symmetryTolerance",
+    "acceptanceCheck": "minimumEigenvalue >= -(absoluteTolerance + relativeTolerance*max(1,maxAbsEigenvalue))",
+    "requiredRecordedOutputs": ["matrixDimension", "symmetryResidual", "minimumEigenvalue", "maximumAbsoluteEigenvalue", "conditionEstimate", "absoluteTolerance", "relativeTolerance", "toleranceJustification"],
+    "failurePolicy": "Reject; no silent eigenvalue clipping or nearest-PSD repair",
+    "tolerancePolicy": "Request-specific and justified from numerical precision, matrix scale and intended use; no universal default"
+  },
+  "scopeCompatibility": {
+    "rule": "Every parameterEvidence scope must equal the requestedScope or be a documented narrower dataset scope within that same regionalProfileId; Region evidence cannot authorize a Global request",
+    "requiredEvidenceFields": ["evidenceId", "scope", "regionalProfileId", "parameterNames"]
+  },
+  "outputContract": {
+    "artifact": "materialized non-negative deterministic thickness arrays",
+    "requiredProvenance": ["seed", "contractVersion", "requestedScope", "regionalProfileId", "parameterEvidence", "gridReference", "algorithmVersion", "psdAuditResults", "payloadSha256"],
+    "consumer": "StackBuildSpec strict deterministic thickness-field contract"
+  },
+  "implementationCapability": "NotImplemented"
+}

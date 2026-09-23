@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "profileId": "ASO_VOLCANIC_EVENT_PROFILE_V1",
+  "scope": "Region",
+  "region": "Aso Volcano",
+  "transect": "32.881N_131.035E_131.058E",
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985", "ASO-JMA-V40-CORE-2013", "GSJ-OFR748-ASO-2024"],
+  "units": [
+    {
+      "sourceCode": "a",
+      "processProfileId": "VOLC-FALLOUT-TEPHRA-01",
+      "materialClass": "VolcanicAsh",
+      "qualifiers": ["fallout", "unconsolidated_or_variable_induration"],
+      "geometryAuthorization": "MappedSurfaceAndRegionalAnalogue",
+      "propertyUse": "Erosion susceptibility is conditional on induration, moisture and vegetation; do not assign a fixed value."
+    },
+    {
+      "sourceCode": "Kp",
+      "processProfileId": "VOLC-PUMICE-CONE-01",
+      "materialClass": "Pumice",
+      "qualifiers": ["dacitic", "partly_strongly_welded", "constructional_cone"],
+      "geometryAuthorization": "MappedSurfaceAndMapUnitDescription",
+      "propertyUse": "Welded and unwelded domains may differ in resistance, but their boundary requires evidence."
+    },
+    {
+      "sourceCode": "Kd",
+      "processProfileId": "VOLC-LAVA-FLOW-01",
+      "materialClass": "Dacite",
+      "qualifiers": ["lava", "central_cone"],
+      "geometryAuthorization": "MappedSurfaceAndMapUnitDescription",
+      "propertyUse": "Flow geometry may be lobate and paleotopography-controlled; jointing and weathering remain unmeasured."
+    },
+    {
+      "sourceCode": "Ys",
+      "processProfileId": "VOLC-LAVA-FLOW-01",
+      "materialClass": "BasaltToAndesite",
+      "qualifiers": ["lava", "composition_range_preserved"],
+      "geometryAuthorization": "MappedSurfaceAndMapUnitDescription",
+      "propertyUse": "Do not collapse the composition range or infer one fixed strength."
+    },
+    {
+      "sourceCode": "w",
+      "processProfileId": null,
+      "materialClass": null,
+      "qualifiers": ["source_legend_undefined"],
+      "geometryAuthorization": "Blocked",
+      "propertyUse": "No material or geometry behavior may be inferred until the source definition is resolved."
+    }
+  ],
+  "analogueOnlyProcesses": [
+    {
+      "processProfileId": "VOLC-LAHAR-01",
+      "sourceIds": ["ASO-JMA-V40-CORE-2013"],
+      "restriction": "May be sampled only in an explicitly synthetic observation set; not assigned to a current mapped unit without evidence."
+    },
+    {
+      "processProfileId": "VOLC-PALEOSOL-01",
+      "sourceIds": ["ASO-JMA-V40-CORE-2013"],
+      "restriction": "May be sampled only in an explicitly synthetic observation set; not assigned to a current mapped unit without evidence."
+    }
+  ]
+}

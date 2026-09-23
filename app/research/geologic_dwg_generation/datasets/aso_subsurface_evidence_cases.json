@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "regionalProfile": "Aso_32.881N_131.035E_131.058E",
+  "cases": [
+    {
+      "case_id": "ASO_GSJ_1985_MAP_EXPLANATION",
+      "source_ids": ["GSJ-ASO-VOLCANO-MAP-1985"],
+      "evidence_kind": "GeologicMapExplanation",
+      "location_known": true,
+      "exact_transect_correspondence": true,
+      "uncertainty_known": false,
+      "expected": {
+        "stratigraphic_order_constraint": true,
+        "physical_property_constraint": false,
+        "direct_lithologic_boundary_authorized": false,
+        "numeric_thickness_authorized": false,
+        "interpretation_only": true
+      }
+    },
+    {
+      "case_id": "ASO_KUSASENRI_VERTICAL_ELECTRICAL_SOUNDING",
+      "source_ids": ["KYOTO-DPRI-ASO-KUSASENRI-VES"],
+      "evidence_kind": "ElectricalResistivity",
+      "location_known": true,
+      "exact_transect_correspondence": false,
+      "uncertainty_known": true,
+      "expected": {
+        "stratigraphic_order_constraint": false,
+        "physical_property_constraint": true,
+        "direct_lithologic_boundary_authorized": false,
+        "numeric_thickness_authorized": false,
+        "interpretation_only": true
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_EXACT_BOREHOLE_TWO_CONTACTS",
+      "source_ids": [],
+      "evidence_kind": "BoreholeContact",
+      "location_known": true,
+      "exact_transect_correspondence": true,
+      "uncertainty_known": true,
+      "top_contact_observed": true,
+      "base_contact_observed": true,
+      "measurement_direction_known": true,
+      "expected": {
+        "stratigraphic_order_constraint": true,
+        "physical_property_constraint": false,
+        "direct_lithologic_boundary_authorized": true,
+        "numeric_thickness_authorized": true,
+        "interpretation_only": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_BOREHOLE_NONPENETRATION",
+      "source_ids": [],
+      "evidence_kind": "BoreholeContact",
+      "location_known": true,
+      "exact_transect_correspondence": true,
+      "uncertainty_known": true,
+      "top_contact_observed": true,
+      "base_contact_observed": false,
+      "measurement_direction_known": true,
+      "expected": {
+        "direct_lithologic_boundary_authorized": true,
+        "numeric_thickness_authorized": false,
+        "interpretation_only": true
+      }
+    }
+  ]
+}

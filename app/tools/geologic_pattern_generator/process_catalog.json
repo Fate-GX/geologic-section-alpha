@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "coordinateConvention": "section x in metres; elevations in metres; extents normalized to 0..1",
+  "processes": [
+    {
+      "processId": "fallout_tephra",
+      "domain": "Volcanic",
+      "geometryFamily": "source_attenuating_drape",
+      "extent": "section-wide unless erosion removes it",
+      "parameters": {"minimum": [0.1, 50.0], "amplitude": [0.0, 500.0], "source": [0.0, 1.0], "upwind_width": [0.01, 2.0], "downwind_width": [0.01, 2.0]},
+      "relations": ["conformable_on_paleosurface", "may_be_eroded", "does_not_cross_older_contacts"],
+      "requiredEvidence": ["volcanic_setting", "tephra_evidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013", "ASO-TEPHROSTRATIGRAPHY-2009"]
+    },
+    {
+      "processId": "lava_flow",
+      "domain": "Volcanic",
+      "geometryFamily": "finite_asymmetric_lobe",
+      "extent": "start..end with zero-thickness tapered termini",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 1000.0], "left_power": [0.2, 5.0], "right_power": [0.2, 5.0]},
+      "relations": ["fills_paleorelief", "finite_lobe", "may_stack_as_multiple_flows"],
+      "requiredEvidence": ["volcanic_setting", "lava_evidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013", "GSJ-ASO-VOLCANO-MAP-1985"]
+    },
+    {
+      "processId": "pumice_or_scoria_cone",
+      "domain": "Volcanic",
+      "geometryFamily": "finite_asymmetric_lobe",
+      "extent": "constructional body start..end; maximum near vent",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 1500.0], "left_power": [0.2, 5.0], "right_power": [0.2, 5.0]},
+      "relations": ["constructional_body", "finite_extent", "facies_may_change_away_from_vent"],
+      "requiredEvidence": ["volcanic_setting", "cone_or_vent_evidence"],
+      "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985"]
+    },
+    {
+      "processId": "lahar_or_debris_flow",
+      "domain": "Volcaniclastic",
+      "geometryFamily": "channel_lens",
+      "extent": "paleovalley-confined start..end",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 500.0], "peak": [0.0, 1.0], "left_width": [0.01, 1.0], "right_width": [0.01, 1.0]},
+      "relations": ["fills_paleovalley", "finite_lens", "may_erode_substrate"],
+      "requiredEvidence": ["volcanic_setting", "lahar_or_debris_flow_evidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013"]
+    },
+    {
+      "processId": "fluvial_channel_fill",
+      "domain": "Sedimentary",
+      "geometryFamily": "channel_lens",
+      "extent": "channel-belt start..end; may migrate between events",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 300.0], "peak": [0.0, 1.0], "left_width": [0.01, 1.0], "right_width": [0.01, 1.0]},
+      "relations": ["erosional_base", "finite_channel_fill", "lateral_facies_change"],
+      "requiredEvidence": ["fluvial_environment", "channel_evidence"],
+      "sourceIds": ["GSJ-HINUMA-1975", "GSJ-S6-KUJUKURI-2019"]
+    },
+    {
+      "processId": "alluvial_fan",
+      "domain": "Sedimentary",
+      "geometryFamily": "source_directed_wedge",
+      "extent": "apex to distal limit",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 1000.0], "source": [0.0, 1.0], "decay": [0.1, 10.0]},
+      "relations": ["thickens_toward_apex", "interfingers_distally", "may_incision_stack"],
+      "requiredEvidence": ["fan_environment", "apex_direction_evidence"],
+      "sourceIds": ["USGS-HA730L-REGIONAL"]
+    },
+    {
+      "processId": "marine_or_lacustrine_drape",
+      "domain": "Sedimentary",
+      "geometryFamily": "accommodation_drape",
+      "extent": "basin accommodation area",
+      "parameters": {"minimum": [0.1, 500.0], "amplitude": [0.0, 1000.0], "center": [0.0, 1.0], "width": [0.01, 2.0]},
+      "relations": ["drapes_relief", "onlaps_margin", "compaction_may_vary"],
+      "requiredEvidence": ["basin_environment", "marine_or_lacustrine_evidence"],
+      "sourceIds": ["GSJ-HINUMA-1975", "GSJ-S6-KUJUKURI-2019"]
+    },
+    {
+      "processId": "basal_gravel_in_buried_valley",
+      "domain": "Sedimentary",
+      "geometryFamily": "channel_lens",
+      "extent": "near thalweg and buried terraces; commonly discontinuous",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 200.0], "peak": [0.0, 1.0], "left_width": [0.01, 1.0], "right_width": [0.01, 1.0]},
+      "relations": ["immediately_above_erosional_surface", "discontinuous", "younger_fill_onlaps"],
+      "requiredEvidence": ["buried_valley_evidence", "basal_gravel_evidence"],
+      "sourceIds": ["GSJ-HINUMA-1975", "GSJ-S6-KUJUKURI-2019"]
+    },
+    {
+      "processId": "carbonate_platform_or_reef",
+      "domain": "Sedimentary",
+      "geometryFamily": "finite_asymmetric_lobe",
+      "extent": "environment- and accommodation-limited body",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 2000.0], "left_power": [0.2, 5.0], "right_power": [0.2, 5.0]},
+      "relations": ["facies_transition", "possible_dissolution_surface", "not_terrain_deterministic"],
+      "requiredEvidence": ["carbonate_environment", "carbonate_facies_evidence"],
+      "sourceIds": ["USGS-HA730G-VR", "USGS-EDWARDS-TRINITY"]
+    },
+    {
+      "processId": "colluvium_or_slope_deposit",
+      "domain": "Surficial",
+      "geometryFamily": "source_directed_wedge",
+      "extent": "slope foot or hollow; finite and terrain-conditioned",
+      "parameters": {"start": [0.0, 0.99], "end": [0.01, 1.0], "maximum": [0.1, 200.0], "source": [0.0, 1.0], "decay": [0.1, 10.0]},
+      "relations": ["unconformable_on_bedrock", "conceals_contact", "finite_wedge"],
+      "requiredEvidence": ["slope_deposit_evidence", "source_slope_direction"],
+      "sourceIds": ["USGS-SIM3528-S4"]
+    },
+    {
+      "processId": "dike_sill_or_intrusion",
+      "domain": "Igneous",
+      "geometryFamily": "crosscutting_topology_required",
+      "extent": "explicit intrusion polygon and cross-cutting relations",
+      "parameters": {},
+      "relations": ["crosscuts_host_or_concordant_if_sill", "contact_aureole_optional_with_evidence"],
+      "requiredEvidence": ["intrusion_evidence", "orientation_and_crosscutting_evidence"],
+      "sourceIds": ["GA-GEOMODELLER-PRINCIPLES"],
+      "stackEngineSupported": false
+    },
+    {
+      "processId": "folded_or_faulted_bedrock",
+      "domain": "Structural",
+      "geometryFamily": "structural_model_required",
+      "extent": "defined by blocks, attitudes, folds and faults",
+      "parameters": {},
+      "relations": ["restorable_order", "fault_displacement_consistent", "no_unexplained_crossing"],
+      "requiredEvidence": ["structural_attitudes", "fault_or_fold_controls"],
+      "sourceIds": ["GA-GEOMODELLER-PRINCIPLES", "USGS-DMT-CROSSSECTION-2014"],
+      "stackEngineSupported": false
+    }
+  ]
+}

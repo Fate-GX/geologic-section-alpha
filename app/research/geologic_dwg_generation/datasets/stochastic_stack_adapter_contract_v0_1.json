@@ -1,0 +1,14 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-TO-CONFORMABLE-STACK-0.1",
+  "status": "Experimental",
+  "scope": "Domain:ConformablePositiveThicknessStack",
+  "equations": [
+    {"id": "STACK-CONTACT-1", "expression": "bottom_i(x,y)=top_i(x,y)-thickness_i(x,y); top_(i+1) is the same stored object as bottom_i", "units": "all terms [length]"},
+    {"id": "STACK-VOLUME-1", "expression": "geometricVolume_i=sum_xy(thickness_i)*cellSizeX*cellSizeY", "units": "[length^3]"},
+    {"id": "STACK-ACTIVE-1", "expression": "active_i(x,y) iff thickness_i(x,y)>zeroThicknessTolerance", "units": "comparison in [length]"}
+  ],
+  "preconditions": ["authenticated and hash-valid stochastic result", "matching nx/ny/spacing", "exact configured unit order", "non-negative finite thickness", "experimental synthetic status"],
+  "invariants": ["exact shared contacts", "no negative thickness", "zero thickness is explicit inactive state", "no voxel overlap", "no envelope void", "source payload hash preserved"],
+  "exclusions": ["faults", "erosion", "intrusions", "independent contacts", "geological calibration", "DWG output"],
+  "evidenceClass": "Project geometry/topology contract; stochastic parameters remain separately evidence-controlled"
+}

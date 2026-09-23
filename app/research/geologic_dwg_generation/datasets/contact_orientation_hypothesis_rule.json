@@ -1,0 +1,23 @@
+{
+  "ruleId": "CONTACT-ORIENTATION-HYPOTHESIS-1",
+  "version": "1.0",
+  "scope": "Global",
+  "preconditions": ["hash-verified mapped contact/route intersection", "terrain elevation at the anchor", "explicit orientation basis and support distance"],
+  "equation": "alpha=atan(tan(delta)*cos(theta_dip-theta_section)); dz/ds=-tan(alpha)",
+  "variables": {
+    "alpha": "signed apparent dip in the vertical section",
+    "delta": "true dip, degrees in [0,90)",
+    "theta_dip": "dip-direction azimuth clockwise from north",
+    "theta_section": "section-segment azimuth clockwise from north",
+    "s": "route station in metres",
+    "z": "elevation in metres, positive upward"
+  },
+  "decisionLogic": "An unfilled contact produces no candidate. A filled SyntheticAssumption or EvidenceCandidate produces a finite support-bounded diagnostic line only. This rule never grants real-region authorization.",
+  "outputs": ["apparent dip", "signed elevation slope", "support-bounded candidate endpoints"],
+  "uncertainty": "One conservative symmetric angular bound is applied independently to true dip and dip direction. Exact slope extrema include interval endpoints and any cosine extrema inside the direction interval; the resulting elevation envelope is retained at both support endpoints and the anchor.",
+  "exclusions": ["automatic dip inference from terrain", "unbounded planar continuation", "real-region authorization", "near-vertical single-valued traces"],
+  "sourceIds": ["USGS-CROSSSECTION-TEMPLATE", "HYAM-GEOLOGIC-MAPPING-FREE-2004"],
+  "validationMethod": "analytic alignment case, sign check, exact angular-envelope extrema, hash tamper rejection, premature authorization rejection and pairwise order audit",
+  "adoptionStatus": "AdoptedDiagnosticCandidateOnly",
+  "reopenCondition": "Implement artifact-bound independent review, correlated angle uncertainties or topology-aware multi-contact assembly."
+}

@@ -1,0 +1,41 @@
+{
+  "ruleId": "ARBITRARY-ROUTE-BASIC-SECTION-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "PlanEvidenceBundle-1.0 with finite ordered terrain profile",
+    "GSJ Seamless V2 mapped surface geology samples",
+    "Explicit random seed"
+  ],
+  "decisionLogic": {
+    "terrain": "Use source-linked GSI DEM profile without lithology feedback",
+    "mappedSurface": "Render GSJ point legend only as a segmented line on the terrain; never extend mapped intervals vertically into subsurface polygons",
+    "shallowGeometry": "Generate six positive correlated synthetic-facies thickness fields independently of terrain and mapped-surface identity",
+    "composition": "Anchor an initial shared-contact stack below terrain, then pass it through the common stratigraphic event primitives for erosion and erosion-fill; extend basement to the frame bottom",
+    "nonParallelism": "Reject output when the event engine is absent or produces no truncation/pinch-out active-mask transition",
+    "preOutputGate": "Before file creation audit model separation, event connection, thickness/contact invariants, mapped-surface non-projection, and finite lithology-boundary arrays",
+    "terrainIndependenceDiagnostic": "Use a fixed-terrain multi-seed ensemble because ordinary Pearson p-values from a single pair of autocorrelated profiles are not a valid independence test",
+    "legend": "Exclude globally inactive event bodies from the visible lithology legend",
+    "lithologyBoundaryLines": "When enabled, draw each primary contact only over intervals where its overlying body remains active; terminate older contacts at the unconformity",
+    "genericLens": "Prohibited in the standard arbitrary-route output without scoped evidence for depositional setting, length, thickness and endpoint taper",
+    "colorMetadataMismatch": "Preserve original hex, use source RGB for display, record warning"
+  },
+  "outputs": [
+    "ArbitraryRouteBasicSection-1.0 model.json",
+    "basic_lithology_section.png",
+    "source PlanEvidenceBundle"
+  ],
+  "uncertainty": "Mapped surface transitions are sampling-bracketed; generated thickness is uncalibrated",
+  "exclusions": [
+    "Terrain alone does not determine subsurface lithology",
+    "Mapped surface identity does not prove generated vertical persistence",
+    "No vertical mapped-unit walls or unfilled area below the synthetic basement are permitted",
+    "Synthetic erosion/fill geometry is a demonstration hypothesis, not regional evidence",
+    "No real-region authorization without borehole and structural evidence review",
+    "No design use or native DWG release"
+  ],
+  "sourceIds": ["GSI-ELEVATION-TILE", "GSJ-SEAMLESS-V2-API"],
+  "validationMethod": "Synthetic fixtures plus an independent Shimane route live-data run",
+  "adoptionStatus": "ExperimentalMVP",
+  "reopenCondition": "Add borehole constraints, structural observations, calibrated thickness, or a new public-data provider"
+}

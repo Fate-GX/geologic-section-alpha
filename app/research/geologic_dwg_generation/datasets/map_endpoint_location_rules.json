@@ -1,0 +1,29 @@
+{
+  "ruleId": "GUI-MAP-ENDPOINT-LOCATION-001",
+  "version": "1.0",
+  "scope": "Global",
+  "adoptionStatus": "Adopted",
+  "lastChecked": "2026-09-21",
+  "preconditions": ["Two ordered map coordinates define A and B", "Names and geometry remain separate"],
+  "requiredEvidence": ["Unrounded selected endpoint coordinates", "Address response or explicit failure", "DEM profile for optional terrain descriptors"],
+  "decisionLogic": [
+    "Preserve A/B order and exact endpoints in acquisition, model, export contract and drawing",
+    "Display all available administrative levels; never replace them by a nearby representative point",
+    "When detailed place name is absent, append a supported local landform descriptor from the existing terrain classifier",
+    "Use only EvidenceSupported or ShapeSupported results; mark DEM-derived labels as inferred descriptors, not official place names",
+    "Preserve partial administrative information on lookup failure; never infer mountainous terrain from address absence",
+    "Keep map downloads outside the UI event loop; at most four in-flight requests and 128 cached tiles"
+  ],
+  "outputs": ["Source-bound routeLocation records", "Exact endpoint annotation text in Model Space", "A/B labels on section ends"],
+  "uncertainty": "Map click and reverse-geocoded names are not survey positions. Service availability and municipality coverage are not guaranteed.",
+  "exclusions": ["Unobserved address completion", "Nearest-city substitution", "Terrain as subsurface evidence", "Japan administrative adapter outside Japan"],
+  "sourceIds": ["GSI-REVERSE-GEOCODER", "GSI-MUNICIPALITY-TABLE", "TerrainMorphologyHypothesis-1.0"],
+  "sources": [
+    {"id":"GSI-REVERSE-GEOCODER", "authority":"Geospatial Information Authority of Japan", "title":"GSI Maps reverse-geocoding service", "url":"https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress", "locator":"results.muniCd / results.lv01Nm", "accessDate":"2026-09-21", "adoptionReason":"Live official response verified; coordinates retained", "stabilityContract":"Unverified; fail-soft address lookup only"},
+    {"id":"GSI-MUNICIPALITY-TABLE", "authority":"Geospatial Information Authority of Japan", "title":"GSI Maps municipality code table", "url":"https://maps.gsi.go.jp/js/muni.js", "locator":"GSI.MUNI_ARRAY", "accessDate":"2026-09-21", "adoptionReason":"Decode official municipality codes into prefecture and municipality; table hash retained"}
+  ],
+  "implementationChoices": {"geometry":"Existing EARTH_RADIUS_M=6378137 spherical route convention, not survey geodesy", "terrainContext":"Within 500 m of each endpoint; minimum three profile samples", "cacheLifetimeSeconds":86400},
+  "validationMethod": "Exact endpoint equality; missing/coincident/out-of-scope rejection; partial and conflicting address fixtures; failed/slow network; native text persistence; print inspection",
+  "tests": "subprojects/geologic_3d_engine/advanced_v2/tests/test_map_route.py; validation/map_two_point_20260921/verify_gui.py",
+  "reopenCondition": "Changed official response format, administrative table, route convention, landform classifier, GUI loader or native annotation layout"
+}

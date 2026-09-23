@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "FrozenBasicV1Boundary-1.0",
+  "frozenAt": "2026-09-08T00:00:00+09:00",
+  "policy": "Advanced v2 may import basic files but must not modify them. Tree digests cover all maintained Python and JSON under the package and tests.",
+  "trees": {
+    "geologic_3d_engine": {
+      "fileCount": 206,
+      "sha256": "1f7cc1066664a4ab1e0e3bce3da1955c6c60561b760c115df2fc9fc91e305cec"
+    },
+    "tests": {
+      "fileCount": 152,
+      "sha256": "f91fbf4b6139b841c4b61467ed221ae1096096e5b0ee1867fe4a402661309d0e"
+    }
+  },
+  "files": {
+    "geologic_3d_engine/modeling/provider_contract.py": "eaaecbbd61f19b2d1f390f75863c7a40cd8c893795c6e03026a8aa3fe9f71f05",
+    "geologic_3d_engine/modeling/lithology_section_model.py": "952622ec26f842c84ce13d80f929155ee6f3e511e6978c52d3302fbe8d5794e7",
+    "geologic_3d_engine/modeling/basic_provider.py": "794c2a2af4699496265d52b20cb3a4fd6d0ed54ba5b9e89bd5cadc61f8372add",
+    "geologic_3d_engine/modeling/terrain_surface_model.py": "38a01d3bfa47e25904d17215acb514ca4ab59a6e8f41aefa74c4263b449dc183",
+    "geologic_3d_engine/modeling/terrain_lithology_composer.py": "474012d26ad921e24050c29311c36067249f062fbad6d9d878b2b2aefec5371f",
+    "../../research/geologic_dwg_generation/datasets/arbitrary_route_basic_section_rule.json": "69f2ee752a20e29ae4dce8d45b6a78f712c97ffb2f6868af1c82baf17dc6ab0c"
+  },
+  "publicPackagingNote": "Build-intermediate test JSON excluded. Runtime tree hash unchanged; original maintained baseline not modified."
+}

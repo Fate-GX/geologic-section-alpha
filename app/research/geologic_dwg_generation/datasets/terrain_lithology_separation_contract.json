@@ -1,0 +1,9 @@
+{
+  "contractId":"GEO3D-TERRAIN-LITHOLOGY-SEPARATION-1","version":"1.0.0",
+  "stableArtifacts":["TerrainSurfaceModel-1.0","LithologySectionModel-1.0","TerrainLithologyComposition-1.0"],
+  "basicProvider":"BasicCorrelatedRelativeDepth-1.0",
+  "moduleBoundaries":{"terrain":"DEM/current surface only","lithology":"unit order and positive thickness without terrain elevations","composition":"absolute placement and terrain clipping only","advancedProviders":"replaceable implementations behind LithologySectionModel-1.0"},
+  "invariants":["Lithology generator cannot accept terrain","Terrain cannot contain lithology","Input artifacts are hash-bound","Shared contacts are preserved","Advanced providers cannot change GUI or terrain contracts"],
+  "limitations":["Basic relative-depth layers broadly follow terrain","Not an observation-constrained subsurface model","Absolute implicit-field provider adapter remains future work"],
+  "adoptionStatus":"ExperimentalMVP"
+}

@@ -1,0 +1,381 @@
+{
+  "ruleId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001",
+  "version": "1.2.0",
+  "scope": "Global",
+  "status": "AdoptedArchitecture_EvidenceRequired",
+  "preconditions": [
+    "event chronology is explicit",
+    "continuous deformation and discontinuities are classified separately",
+    "structural observations use compatible coordinates and orientation conventions"
+  ],
+  "logic": [
+    "Apply one compatible continuous map to all pre-existing contacts affected by a fold or strain event",
+    "Require positive sampled Jacobian determinant for continuous maps",
+    "Represent a fault as a piecewise displacement operator d*f1 with explicit surface, direction, magnitude and extent evidence",
+    "Apply structural events in geological time order",
+    "Do not generate folds from a generic sine wave or faults from decorative crossings"
+  ],
+  "hardGates": [
+    "no local inversion or collapse in continuous domains",
+    "consistent displacement of every affected contact",
+    "fault discontinuity is not smoothed",
+    "missing kinematics blocks geometry generation"
+  ],
+  "sourceIds": [
+    "LOOPSTRUCTURAL-GMD-2021",
+    "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+    "STRUCTURAL-RESTORATION-1997"
+  ],
+  "validationMethod": "rigid-motion, positive-Jacobian, collapse, finite-extent, consistent-offset and missing-evidence tests",
+  "reopenCondition": "A mechanics-based fold/fault constitutive model is selected with adequate boundary-condition evidence",
+  "schemaVersion": "1.2.0",
+  "claimBindings": [
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-LOGIC-1",
+      "claimPath": "logic.0",
+      "statement": "Apply one compatible continuous map to all pre-existing contacts affected by a fold or strain event",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-LOGIC-2",
+      "claimPath": "logic.1",
+      "statement": "Require positive sampled Jacobian determinant for continuous maps",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-LOGIC-3",
+      "claimPath": "logic.2",
+      "statement": "Represent a fault as a piecewise displacement operator d*f1 with explicit surface, direction, magnitude and extent evidence",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-LOGIC-4",
+      "claimPath": "logic.3",
+      "statement": "Apply structural events in geological time order",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-LOGIC-5",
+      "claimPath": "logic.4",
+      "statement": "Do not generate folds from a generic sine wave or faults from decorative crossings",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-HARDGATES-1",
+      "claimPath": "hardGates.0",
+      "statement": "no local inversion or collapse in continuous domains",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-HARDGATES-2",
+      "claimPath": "hardGates.1",
+      "statement": "consistent displacement of every affected contact",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-HARDGATES-3",
+      "claimPath": "hardGates.2",
+      "statement": "fault discontinuity is not smoothed",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRUCTURAL-KINEMATICS-001-CLAIM-HARDGATES-4",
+      "claimPath": "hardGates.3",
+      "statement": "missing kinematics blocks geometry generation",
+      "sourceIds": [
+        "LOOPSTRUCTURAL-GMD-2021",
+        "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+        "STRUCTURAL-RESTORATION-1997"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "LOOPSTRUCTURAL-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "LOOPSTRUCTURAL-FAULTS-GMD-2021",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "STRUCTURAL-RESTORATION-1997",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Outside the declared scope"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    }
+  ],
+  "creationProvenance": {
+    "origin": "Migrated from the adopted universal architecture rule corpus",
+    "promotionBasis": "Architecture-level reuse only; coefficients and regional parameters remain excluded",
+    "status": "PendingSemanticReview"
+  }
+}

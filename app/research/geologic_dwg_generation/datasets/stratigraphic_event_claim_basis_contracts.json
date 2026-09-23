@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001",
+  "ruleVersion": "1.5.0",
+  "basisContracts": [
+    {
+      "basisId": "PUBLISHED-EVENT-CONCEPT-DEPOSITION",
+      "basisType": "PublishedConceptualEvidence",
+      "definition": "Deposition adds younger material in a declared stratigraphic sequence; the precise supporting passages remain pending independent review.",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES",
+        "JSGI-LOGICAL-TREE-2008"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::build_deposit_on_surface"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_erosion_fill_pipeline_passes"
+      ]
+    },
+    {
+      "basisId": "PUBLISHED-EVENT-CONCEPT-EROSION",
+      "basisType": "PublishedConceptualEvidence",
+      "definition": "Erosion truncates pre-existing material before a younger depositional event; the precise supporting passages remain pending independent review.",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES",
+        "JSGI-LOGICAL-TREE-2008"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::apply_erosion"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_erosion_fill_pipeline_passes"
+      ]
+    },
+    {
+      "basisId": "PUBLISHED-EVENT-CONCEPT-PINCHOUT",
+      "basisType": "PublishedConceptualEvidence",
+      "definition": "Pinchout is a lateral termination concept supported terminologically by NACSN; TEI-395 supplies a regional example where unit thickness reaches zero at local pinchout.",
+      "sourceIds": [
+        "NACSN-CODE-2021",
+        "USGS-TEI395-PINCHOUT"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "scopeBoundary": "TEI-395 is regional empirical evidence and does not establish a universal numerical algorithm.",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::classify_interval_evidence"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_conflicting_event_evidence_remains_unresolved"
+      ]
+    },
+    {
+      "basisId": "PUBLISHED-EVENT-CONCEPT-ONLAP",
+      "basisType": "PublishedConceptualEvidence",
+      "definition": "Onlap is represented by a younger depositional body terminating against an older event surface; the precise supporting passages remain pending independent review.",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES"
+      ],
+      "evidenceStatus": "Verified",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::build_deposit_on_surface"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_onlap_preserves_existing_bodies_and_records_pinchout"
+      ]
+    },
+    {
+      "basisId": "PUBLISHED-EVENT-CONCEPT-NONDEPOSITION",
+      "basisType": "PublishedConceptualEvidence",
+      "definition": "Nondeposition represents elapsed geological time without requiring geometric removal; ICS is primary conceptual evidence and USGS Thesaurus is auxiliary terminology support.",
+      "sourceIds": [
+        "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+        "USGS-THESAURUS-UNCONFORMITY"
+      ],
+      "evidenceStatus": "Verified",
+      "scopeBoundary": "Do not equate nondeposition with erosion, missing record, nonpenetration, or every unconformity.",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::classify_interval_evidence"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_nondeposition_requires_positive_elapsed_time_evidence"
+      ]
+    },
+    {
+      "basisId": "EVENT-DATA-QUALITY-STATES",
+      "basisType": "DataQualitySemantics",
+      "definitionRef": "research/geologic_dwg_generation/rules/lithologic_log_to_section_inference_rules.md",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::classify_interval_evidence"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_nonpenetration_is_an_evidence_limit_not_a_geological_event",
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_missing_record_is_a_data_quality_state"
+      ]
+    },
+    {
+      "basisId": "EVENT-EVIDENCE-GOVERNANCE-POLICY",
+      "basisType": "EvidenceGovernancePolicy",
+      "definitionRef": "research/geologic_dwg_generation/rules/knowledge_gap_resolution_matrix.md#evidence-constraints",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::classify_interval_evidence"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_absence_without_positive_evidence_remains_ambiguous",
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_conflicting_event_evidence_remains_unresolved"
+      ]
+    },
+    {
+      "basisId": "EVENT-EROSION-EVIDENCE-CONSTRAINT",
+      "basisType": "ImplementationConstraint",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::classify_interval_evidence"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_erosion_requires_at_least_one_declared_positive_indicator"
+      ]
+    },
+    {
+      "basisId": "EVENT-EROSION-TRUNCATION-CONSTRAINT",
+      "basisType": "ImplementationConstraint",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py::apply_erosion"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_erosion_fill_pipeline_passes",
+        "subprojects/geologic_3d_engine/tests/test_stage3_events.py::test_erosion_surface_above_old_top_uses_retained_top_for_fill"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetId": "OBS-GSJ-S6-KUJUKURI-BURIED-VALLEY-2019",
+  "scope": "DatasetSpecific:BosoEasternCoast_LateGlacialBuriedValley",
+  "authority": "Geological Survey of Japan, AIST",
+  "sourceIds": ["GSJ-S6-KUJUKURI-BURIED-VALLEY-2019"],
+  "coordinateEvidence": "Published text values and mapped/interpreted sections; no pixel-digitized coordinates",
+  "observations": [
+    {
+      "observationId": "COASTAL-CENTRAL-SMALL-VALLEY",
+      "kind": "BuriedValleyCrossSection",
+      "locationEvidence": "Near Kuriyama River mouth, around CMP 1800",
+      "upperWidth_m": {"value": 200, "qualifier": "approximately"},
+      "depth_m": {"value": 10, "qualifier": "approximately"},
+      "deepestElevation_m": {"value": -45, "qualifier": "approximately"},
+      "derivedAspectRatio_width_depth": 20.0,
+      "sourcePage": 3
+    },
+    {
+      "observationId": "CENTRAL-PLAIN-VALLEY-WIDTH",
+      "kind": "BuriedValleyPlanWidth",
+      "upperWidth_m": {"maximumExclusive": 3000, "qualifier": "published as less than 3 km"},
+      "sourcePage": 1
+    },
+    {
+      "observationId": "COASTAL-VALLEY-FLOOR-ELEVATION",
+      "kind": "ValleyFloorElevationRange",
+      "elevationRange_m": [-55, -40],
+      "sourcePage": 1
+    },
+    {
+      "observationId": "KATAKAI-MAJOR-BURIED-VALLEY",
+      "kind": "BuriedValleyPlanform",
+      "upperWidth_m": {"qualifier": "several kilometres; not converted to an exact number"},
+      "minimumLength_m": {"value": 40000, "qualifier": "greater than"},
+      "minimumRelief_m": {"value": 30, "qualifier": "greater than"},
+      "sourcePage": 3
+    },
+    {
+      "observationId": "OFFSHORE-BURIED-FLAT",
+      "kind": "BuriedFlatPlanform",
+      "width_m": {"value": 5000, "qualifier": "approximately"},
+      "minimumLength_m": {"value": 20000, "qualifier": "greater than"},
+      "elevation_m": {"value": -30, "qualifier": "approximately"},
+      "sourcePage": 3
+    },
+    {
+      "observationId": "SOUTHEAST-THREE-VALLEYS",
+      "kind": "BuriedValleyDepthRange",
+      "valleyCount": 3,
+      "depthRange_m": [10, 20],
+      "sourcePage": 3
+    },
+    {
+      "observationId": "PLAIN-BASEMENT-FLAT-ELEVATION",
+      "kind": "AlluviumBaseElevationRange",
+      "southernElevation_m": -10,
+      "centralNorthernElevation_m": -25,
+      "sourcePage": 1
+    }
+  ],
+  "adoption": {
+    "status": "DatasetSpecificValidationCase_NotTrainingRule",
+    "authorized": ["regression test for the universal calibration framework", "out-of-scope rejection test", "source-preservation test"],
+    "prohibited": ["global or regional generation prior", "training a generic buried-valley distribution", "exact reconstruction from approximate text", "transfer to unrelated geology"]
+  }
+}

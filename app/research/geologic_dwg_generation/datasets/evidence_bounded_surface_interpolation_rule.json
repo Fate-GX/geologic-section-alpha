@@ -1,0 +1,30 @@
+{
+  "ruleId": "EVIDENCE-BOUNDED-SURFACE-INTERPOLATION-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "At least three independently supported observed controls for the same contact",
+    "Every control has authorized absolute elevation",
+    "The XY affine design matrix [1,x,y] has rank 3",
+    "Every control role is DirectSubsurfaceContact; repeated samples of a mapped surface trace do not count as independent subsurface support",
+    "Maximum condition number and maximum control residual are explicit project numerical parameters"
+  ],
+  "decisionLogic": [
+    "Fit the shared RBF surface only after the evidence audit passes.",
+    "Evaluate only inside or on the closed convex hull of authorized controls.",
+    "Return UNKNOWN outside the hull; never silently extrapolate."
+  ],
+  "mathematicalChecks": {
+    "nonCollinearity": "rank([1,x,y]) = 3",
+    "independence": "at least three distinct independentSupportId values",
+    "domain": "convex hull of authorized XY controls",
+    "numericalStability": "conditionNumber <= declared maximum and max(abs(predicted-observed Z)) <= declared residual tolerance"
+  },
+  "basisType": "ProjectSafetyPolicy_UsingStandardLinearAlgebraAndComputationalGeometry",
+  "outputs": ["interpolated contact elevation", "inside-evidence-hull mask"],
+  "exclusions": ["Overturned contacts", "Fault-separated domains", "Extrapolation", "Single-borehole surfaces"],
+  "sourceIds": ["GEMPY-GMD-2019", "LOOPSTRUCTURAL-GMD-2021"],
+  "validationMethod": "Inside, boundary, outside, insufficient, collinear, mixed-contact and unauthorized controls",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A source-backed extrapolation or non-graph/overturned surface model is introduced"
+}

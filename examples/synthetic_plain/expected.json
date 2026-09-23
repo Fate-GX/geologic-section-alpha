@@ -1,0 +1,23 @@
+{
+  "syntheticInput": true,
+  "realSiteEvidence": false,
+  "seed": 880100,
+  "inputSha256": "383533096c54040f0bd06591f97199bf2a1d93e2d708f88477381e74eae08faa",
+  "geometrySha256": "f4e01ee527f4e9430f133d7abd2a896f6435ade830920f886a9055c823dbd467",
+  "nativeRequested": true,
+  "pipelinePassed": true,
+  "nativeSuccess": true,
+  "scope": "Software reproduction only; not geological certification",
+  "nativeSignature": "AC1032",
+  "nativeReopen": "Passed",
+  "humanDwgVisualReview": "Pending",
+  "agentPngVisualReview": "Readable labels and legend; no obvious text collision in preview. Simple parallel-band example; not complex 3D.",
+  "artifactHashes": {
+    "examples/synthetic_plain/input.json": "383533096c54040f0bd06591f97199bf2a1d93e2d708f88477381e74eae08faa",
+    "examples/synthetic_plain/model.json": "152dc6af53d9178d7e113311f687b8331357cfb87dc8cf7852ad190c329f61b0",
+    "examples/synthetic_plain/native_dwg_contract_envelope.json": "5fcedd16c83f4294abd3b0c5be47180fc90717c6ba60fa89652274c729da886c",
+    "examples/synthetic_plain/section_preview.png": "d6d9f04d08a7c168d3af0efe79888a1b81c7e06344111b43722899064aa25e64",
+    "dwg/synthetic_plain.dwg": "3c48d1dab262fa7ba62de73b9415d23cd8b3c58aa52c7c5efd521701c85a22f5",
+    "dwg/synthetic_plain_reopen_validation.txt": "c27d431dbccd2d3bca61e5fc1d298d51ffc89c09f2815bd44ba0b8ca401edd41"
+  }
+}

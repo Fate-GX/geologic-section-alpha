@@ -1,0 +1,18 @@
+{
+  "ruleId": "GEO3D-BOREHOLE-ROUTE-ROLE-1",
+  "version": "1.0.0",
+  "scope": "Global:EvidenceRoleClassification",
+  "preconditions": ["JGD2011 borehole coordinates", "user-selected route", "declared constraint and context offsets"],
+  "decisionLogic": [
+    "DirectSectionConstraintCandidate only inside constraint offset and after horizontal, vertical, collar and interval evidence gates pass",
+    "RegionalContextOnly inside context offset when direct constraints fail",
+    "OutsideDeclaredContextRange beyond context offset"
+  ],
+  "outputs": ["role", "stationM", "projectionDistanceM", "qualityBlockers"],
+  "uncertainty": "Distance thresholds are project display/interpretation settings, not universal geological ranges",
+  "exclusions": ["Regional context never supplies projected contacts", "No automatic correlation", "No automatic route modification"],
+  "sourceIds": ["PROJECT-BOREHOLE-TO-SECTION-RULES"],
+  "validationMethod": "positive, negative, boundary, missing-quality, CRS and invalid-threshold tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A source-specific correlation-distance model or probabilistic lateral-support model is adopted"
+}

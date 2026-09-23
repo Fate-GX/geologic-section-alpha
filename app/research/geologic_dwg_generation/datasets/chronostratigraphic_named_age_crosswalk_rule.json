@@ -1,0 +1,20 @@
+{
+  "ruleId": "GEO3D-CHRONOSTRATIGRAPHIC-NAMED-AGE-CROSSWALK",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["hash-valid source unit catalog", "reviewed exact source-language label pair", "identified target time-scale authority and version"],
+  "requiredEvidence": ["target boundary ages", "canonical primary-source URL", "mapping status distinguishing exact equivalence from conservative envelope"],
+  "decisionLogic": [
+    "apply a mapping only to an exact Japanese/English source-label pair",
+    "preserve target authority and version with every numerical interval",
+    "use a conservative envelope when source wording is not an exact formal-unit synonym",
+    "leave unmatched labels unresolved rather than guessing"
+  ],
+  "outputs": ["closed Ma-before-present interval with mapping status and target units"],
+  "uncertainty": "a conservative envelope is an applicability bound, not a depositional-age probability distribution",
+  "exclusions": ["no cross-version conversion", "no precision beyond the source chart", "no inference that a unit occupies the entire envelope", "no subsurface authorization"],
+  "sourceIds": ["ICS-CHART-2026-06"],
+  "validationMethod": "exact-label positive test, unmatched-label fail-closed test, tampering rejection and actual Aso catalog application",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "GSJ publishes a more precise unit age or the controlling ICS chart changes"
+}

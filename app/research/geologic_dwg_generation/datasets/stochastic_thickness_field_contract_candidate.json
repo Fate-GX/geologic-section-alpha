@@ -1,0 +1,57 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.1.0-candidate",
+  "status": "DesignCandidate_NotImplemented",
+  "scope": "Global:ThicknessFieldArchitecture",
+  "method": "IndependentTransformedLatentGaussianByLayer",
+  "equations": [
+    {
+      "equationId": "ALLARD-THICKNESS-TRANSFORM",
+      "expression": "Z_j(s)=phi_j(W_j(s)-tau_j) if W_j(s)>tau_j; otherwise Z_j(s)=0",
+      "variables": {
+        "Z_j": "non-negative thickness of layer j at location s; output length unit",
+        "W_j": "dimensionless latent Gaussian field for layer j",
+        "tau_j": "dimensionless truncation threshold",
+        "phi_j": "declared monotone transform from latent excess to thickness"
+      },
+      "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+      "locator": "Section 3.1, Equation (1)"
+    },
+    {
+      "equationId": "ALLARD-SEQUENTIAL-SURFACE",
+      "expression": "T_j(s)=T_(j-1)(s)+Z_j(s)",
+      "variables": {
+        "T_j": "depth/elevation surface for accumulated sequence; same length unit as Z_j"
+      },
+      "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+      "locator": "Section 3.1, depth-surface accumulation equation"
+    }
+  ],
+  "requiredInput": {
+    "randomSeed": "integer",
+    "lengthUnit": "explicit non-empty string",
+    "gridReference": "versioned deterministic grid identifier",
+    "regionalProfileId": "versioned evidence profile identifier",
+    "layers": "non-empty ordered array"
+  },
+  "layerContract": {
+    "required": ["unitId", "threshold", "transform", "withinLayerCovariance", "parameterEvidenceIds"],
+    "crossLayerPolicy": "Independent",
+    "withinLayerCovariance": {
+      "required": ["model", "variance", "ranges", "orientationConvention"],
+      "constraints": ["variance >= 0", "all ranges > 0", "generated covariance matrix must pass a declared PSD tolerance"]
+    }
+  },
+  "prohibitions": [
+    "cross-layer correlation may not be attributed to Allard",
+    "regional covariance coefficients may not be promoted to global defaults",
+    "missing seed or parameter evidence may not be silently defaulted",
+    "unknown keys may not be silently ignored",
+    "candidate output may not bypass the deterministic thickness-field contract"
+  ],
+  "outputContract": {
+    "artifact": "materialized non-negative deterministic thickness arrays",
+    "requiredProvenance": ["seed", "contractVersion", "regionalProfileId", "parameterEvidenceIds", "gridReference", "algorithmVersion", "payloadSha256"],
+    "consumer": "StackBuildSpec strict deterministic thickness-field contract"
+  }
+}

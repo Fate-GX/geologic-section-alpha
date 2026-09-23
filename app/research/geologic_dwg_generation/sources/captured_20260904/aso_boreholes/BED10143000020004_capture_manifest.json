@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "PublicBoreholeCaptureManifest-1.0",
+  "capturedAt": "2026-09-04",
+  "distributionAuthority": "Geo-Station / National Research Institute for Earth Science and Disaster Resilience",
+  "dataset": "基盤観測網KiK-net",
+  "datasetId": "BOREHOLE_KIK-NET",
+  "boreholeId": "BED10143000020004",
+  "boreholeName": "KMMH04",
+  "address": "熊本県阿蘇市狩尾671-3",
+  "canonicalDownloadUrl": "https://www.geo-stn.bosai.go.jp/api/dlBoring.php?type=xml&file=BOREHOLE_KIK-NET%2CBED10143000020004",
+  "sourceArtifact": "BED10143000020004.xml",
+  "sourceArtifactSha256": "94a86453092a2f57185032949b72696fd7660bbb2f5888eab4eaf3aae19d5351",
+  "sourceByteLength": 12799,
+  "exchangeFormatVersion": "BED0210-DTD-2.10",
+  "sourceDmsCoordinate": {
+    "longitude": [131, 1, 19.992],
+    "latitude": [32, 56, 53.016],
+    "decimalWithoutDatumTransformation": [131.02222, 32.94806],
+    "formatGeodeticSystemCode": "0"
+  },
+  "distributionMapCoordinate": [131.0198553081333, 32.951437393841175],
+  "coordinateWarning": "The XML DMS and Geo-Station map coordinate are not interchangeable. The legacy datum transformation has not been reproduced locally.",
+  "collarElevationM": 475.0,
+  "totalDepthM": 130.2,
+  "intervalCount": 8,
+  "evidenceStatus": "Unverified",
+  "routeProjectionScreening": {
+    "routeArtifact": "outputs/gsi_plan_section_cycle1_20260904/plan_evidence_bundle.json",
+    "coordinateUsed": "distributionMapCoordinate",
+    "stationM": 1250.2241703392392,
+    "projectionDistanceM": 7519.8763471384145,
+    "decision": "RejectedForCurrentSectionCorrelation_RegionalEvidenceOnly"
+  }
+}

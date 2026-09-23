@@ -1,0 +1,366 @@
+{
+  "ruleId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001",
+  "version": "1.5.0",
+  "scope": "Global:EventOntology",
+  "status": "AdoptedArchitecture_CoefficientFree",
+  "preconditions": [
+    "Surfaces use one declared vertical datum and coordinate reference",
+    "Event chronology is explicit",
+    "Older units exist before an erosion operation"
+  ],
+  "eventSemantics": {
+    "Deposition": "Adds younger material with non-negative thickness",
+    "Erosion": "Truncates pre-existing material before younger deposition",
+    "Nondeposition": "Represents elapsed time without requiring geometric removal",
+    "Pinchout": "Represents thickness converging to zero within a depositional body",
+    "Onlap": "A younger body terminates against an older event surface",
+    "Nonpenetration": "An evidence-limit state, not a geological event",
+    "MissingRecord": "A data-quality state, not a geological event"
+  },
+  "decisionLogic": [
+    "Absence alone remains Ambiguous",
+    "Erosion requires positive truncation, erosional-surface, basal-lag, weathering-surface, or equivalent evidence",
+    "Conflicting erosion, pinchout, and nondeposition evidence remains unresolved",
+    "Older contacts cannot continue above a validated erosion surface"
+  ],
+  "outputs": [
+    "typed event sequence",
+    "truncated unit geometry",
+    "evidence classification",
+    "validation report"
+  ],
+  "exclusions": [
+    "No universal event frequency or magnitude is inferred",
+    "No region-specific erosion depth is embedded",
+    "No absent borehole interval is automatically labelled erosion"
+  ],
+  "sourceIds": [
+    "GA-GEOMODELLER-PRINCIPLES",
+    "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+    "JSGI-LOGICAL-TREE-2008",
+    "NACSN-CODE-2021",
+    "USGS-TEI395-PINCHOUT",
+    "USGS-THESAURUS-UNCONFORMITY"
+  ],
+  "validationMethod": "positive, negative, boundary, conflicting-evidence and missing-data unit tests",
+  "reopenCondition": "Event schema changes or an additional globally distinct event relation is required",
+  "schemaVersion": "1.3.0",
+  "claimBindings": [
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-DEPOSITION",
+      "claimPath": "eventSemantics.Deposition",
+      "statement": "Adds younger material with non-negative thickness",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES",
+        "JSGI-LOGICAL-TREE-2008"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+          "locator": "PDF printed page 2, section 3, stratigraphic-pile bullet",
+          "locatorStatus": "ExactPassage"
+        },
+        {
+          "sourceId": "JSGI-LOGICAL-TREE-2008",
+          "locator": "Article abstract: sequence of sedimentation and erosion based on its recursive definition",
+          "locatorStatus": "ExactPassage"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "PUBLISHED-EVENT-CONCEPT-DEPOSITION"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-EROSION",
+      "claimPath": "eventSemantics.Erosion",
+      "statement": "Truncates pre-existing material before younger deposition",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES",
+        "JSGI-LOGICAL-TREE-2008"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+          "locator": "PDF printed page 3, Paterson Formation discussion: erosional surface dissects older units",
+          "locatorStatus": "ExactPassage"
+        },
+        {
+          "sourceId": "JSGI-LOGICAL-TREE-2008",
+          "locator": "Article abstract: sequence of sedimentation and erosion based on its recursive definition",
+          "locatorStatus": "ExactPassage"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "PUBLISHED-EVENT-CONCEPT-EROSION"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-NONDEPOSITION",
+      "claimPath": "eventSemantics.Nondeposition",
+      "statement": "Represents elapsed time without requiring geometric removal",
+      "sourceIds": [
+        "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+        "USGS-THESAURUS-UNCONFORMITY"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+          "locator": "International Stratigraphic Guide Chapter 6, B.2.c Diastem: interruption in deposition with little or no erosion",
+          "locatorStatus": "ExactPassage",
+          "supportRole": "TimeGapWithoutRequiredErosion",
+          "supportClass": "DirectConceptual"
+        },
+        {
+          "sourceId": "USGS-THESAURUS-UNCONFORMITY",
+          "locator": "USGS Thesaurus code=226, thcode=61: unconformity definition includes erosion or nondeposition and a significant record gap",
+          "locatorStatus": "ExactPassage",
+          "supportRole": "AuxiliaryRecordGapTerminology",
+          "supportClass": "Partial"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "ICS direct conceptual evidence and the auxiliary USGS Thesaurus definition were independently verified through 2026-08-30. Nondeposition remains distinct from erosion, missing record and nonpenetration.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "PUBLISHED-EVENT-CONCEPT-NONDEPOSITION"
+      ],
+      "evidenceScopeNote": "USGS Thesaurus defines unconformity rather than all nondeposition; ICS is the primary conceptual authority."
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-PINCHOUT",
+      "claimPath": "eventSemantics.Pinchout",
+      "statement": "Represents thickness converging to zero within a depositional body",
+      "sourceIds": [
+        "NACSN-CODE-2021",
+        "USGS-TEI395-PINCHOUT"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "NACSN-CODE-2021",
+          "locator": "Article 25(b), Lens and tongue: a wedging member wedges ('pinches') out within another formation",
+          "locatorStatus": "ExactPassage",
+          "supportRole": "TerminologyAndLateralTermination",
+          "supportClass": "Partial"
+        },
+        {
+          "sourceId": "USGS-TEI395-PINCHOUT",
+          "locator": "PDF page 29, Wingate sandstone: zero thickness in Colorado where it pinches out locally against the Uncompahgre Plateau",
+          "locatorStatus": "ExactPassage",
+          "supportRole": "RegionalZeroThicknessGeometry",
+          "supportClass": "DirectEmpirical",
+          "evidenceScope": "Region:ColoradoPlateau"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "verificationNote": "NACSN terminology and TEI-395 page-29 regional zero-thickness evidence independently verified through 2026-08-30. The regional example is not a universal definition or numerical-algorithm validation.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "PUBLISHED-EVENT-CONCEPT-PINCHOUT"
+      ],
+      "evidenceScopeNote": "The event type is global; TEI-395 contributes only a Colorado Plateau empirical example."
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-ONLAP",
+      "claimPath": "eventSemantics.Onlap",
+      "statement": "A younger body terminates against an older event surface",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+          "locator": "PDF printed page 3, Paterson Formation discussion: younger unit onlaps an erosional surface",
+          "locatorStatus": "ExactPassage"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "PUBLISHED-EVENT-CONCEPT-ONLAP"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-NONPENETRATION",
+      "claimPath": "eventSemantics.Nonpenetration",
+      "statement": "An evidence-limit state, not a geological event",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "DataQualitySemantics",
+      "basisRefs": [
+        "EVENT-DATA-QUALITY-STATES"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-EVENTSEMANTICS-MISSINGRECORD",
+      "claimPath": "eventSemantics.MissingRecord",
+      "statement": "A data-quality state, not a geological event",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "DataQualitySemantics",
+      "basisRefs": [
+        "EVENT-DATA-QUALITY-STATES"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-DECISIONLOGIC-1",
+      "claimPath": "decisionLogic.0",
+      "statement": "Absence alone remains Ambiguous",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "EvidenceGovernancePolicy",
+      "basisRefs": [
+        "EVENT-EVIDENCE-GOVERNANCE-POLICY"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-DECISIONLOGIC-2",
+      "claimPath": "decisionLogic.1",
+      "statement": "Erosion requires positive truncation, erosional-surface, basal-lag, weathering-surface, or equivalent evidence",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "ImplementationConstraint",
+      "basisRefs": [
+        "EVENT-EROSION-EVIDENCE-CONSTRAINT"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-DECISIONLOGIC-3",
+      "claimPath": "decisionLogic.2",
+      "statement": "Conflicting erosion, pinchout, and nondeposition evidence remains unresolved",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "EvidenceGovernancePolicy",
+      "basisRefs": [
+        "EVENT-EVIDENCE-GOVERNANCE-POLICY"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-STRATIGRAPHIC-EVENT-001-CLAIM-DECISIONLOGIC-4",
+      "claimPath": "decisionLogic.3",
+      "statement": "Older contacts cannot continue above a validated erosion surface",
+      "sourceIds": [
+        "GA-GEOMODELLER-PRINCIPLES"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global:EventOntology",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "No universal event frequency or magnitude is inferred",
+        "No region-specific erosion depth is embedded",
+        "No absent borehole interval is automatically labelled erosion"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Updated after independent primary-source review dated 2026-08-29; support strength is claim-specific.",
+      "basisType": "ImplementationConstraint",
+      "basisRefs": [
+        "EVENT-EROSION-TRUNCATION-CONSTRAINT"
+      ]
+    }
+  ],
+  "creationProvenance": {
+    "origin": "Migrated from the adopted universal architecture rule corpus",
+    "promotionBasis": "Reusable event/topology architecture only; global geological universality is not claimed",
+    "status": "PendingSemanticReview"
+  }
+}

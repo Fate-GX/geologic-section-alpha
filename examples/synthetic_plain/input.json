@@ -1,0 +1,1115 @@
+{
+  "schemaVersion": "PublicSyntheticExample-1",
+  "endpointsLonLat": [
+    [
+      138.0,
+      36.0
+    ],
+    [
+      138.00555189377596,
+      35.99999987208957
+    ]
+  ],
+  "coordinateMeaning": "Demonstration coordinates only; geology and terrain are synthetic, not observations at this location",
+  "seed": 880100,
+  "plan": {
+    "schemaVersion": "PlanEvidenceBundle-1.0",
+    "routeLonLat": [
+      [
+        138.0,
+        36.0
+      ],
+      [
+        138.00555189377596,
+        35.99999987208957
+      ]
+    ],
+    "terrainProfile": [
+      {
+        "stationM": 0.0,
+        "longitude": 138.0,
+        "latitude": 36.0,
+        "elevationM": 8.0
+      },
+      {
+        "stationM": 10.0,
+        "longitude": 138.00011103787563,
+        "latitude": 35.99999999994884,
+        "elevationM": 8.057866631747507
+      },
+      {
+        "stationM": 20.0,
+        "longitude": 138.00022207575128,
+        "latitude": 35.99999999979535,
+        "elevationM": 8.1150414605077
+      },
+      {
+        "stationM": 30.0,
+        "longitude": 138.0003331136269,
+        "latitude": 35.99999999953952,
+        "elevationM": 8.170843593439637
+      },
+      {
+        "stationM": 40.0,
+        "longitude": 138.00044415150256,
+        "latitude": 35.99999999918138,
+        "elevationM": 8.224613785935599
+      },
+      {
+        "stationM": 50.0,
+        "longitude": 138.0005551893782,
+        "latitude": 35.999999998720895,
+        "elevationM": 8.275724838302366
+      },
+      {
+        "stationM": 60.0,
+        "longitude": 138.00066622725382,
+        "latitude": 35.99999999815809,
+        "elevationM": 8.32359148707504
+      },
+      {
+        "stationM": 70.0,
+        "longitude": 138.00077726512944,
+        "latitude": 35.99999999749296,
+        "elevationM": 8.367679634971527
+      },
+      {
+        "stationM": 80.0,
+        "longitude": 138.00088830300507,
+        "latitude": 35.99999999672549,
+        "elevationM": 8.407514773925705
+      },
+      {
+        "stationM": 90.0,
+        "longitude": 138.0009993408807,
+        "latitude": 35.9999999958557,
+        "elevationM": 8.442689468363106
+      },
+      {
+        "stationM": 100.0,
+        "longitude": 138.00111037875632,
+        "latitude": 35.99999999488358,
+        "elevationM": 8.472869780703304
+      },
+      {
+        "stationM": 110.0,
+        "longitude": 138.00122141663195,
+        "latitude": 35.99999999380914,
+        "elevationM": 8.49780053775504
+      },
+      {
+        "stationM": 120.0,
+        "longitude": 138.00133245450758,
+        "latitude": 35.99999999263236,
+        "elevationM": 8.517309354949894
+      },
+      {
+        "stationM": 130.0,
+        "longitude": 138.0014434923832,
+        "latitude": 35.999999991353256,
+        "elevationM": 8.531309354949896
+      },
+      {
+        "stationM": 140.0,
+        "longitude": 138.00155453025883,
+        "latitude": 35.999999989971826,
+        "elevationM": 8.53980053775504
+      },
+      {
+        "stationM": 150.0,
+        "longitude": 138.00166556813443,
+        "latitude": 35.999999988488064,
+        "elevationM": 8.542869780703304
+      },
+      {
+        "stationM": 160.0,
+        "longitude": 138.00177660601003,
+        "latitude": 35.999999986901976,
+        "elevationM": 8.540689468363107
+      },
+      {
+        "stationM": 170.0,
+        "longitude": 138.00188764388562,
+        "latitude": 35.999999985213556,
+        "elevationM": 8.533514773925704
+      },
+      {
+        "stationM": 180.0,
+        "longitude": 138.00199868176125,
+        "latitude": 35.99999998342281,
+        "elevationM": 8.521679634971527
+      },
+      {
+        "stationM": 190.0,
+        "longitude": 138.00210971963682,
+        "latitude": 35.99999998152973,
+        "elevationM": 8.50559148707504
+      },
+      {
+        "stationM": 200.0,
+        "longitude": 138.0022207575124,
+        "latitude": 35.99999997953434,
+        "elevationM": 8.485724838302366
+      },
+      {
+        "stationM": 210.0,
+        "longitude": 138.00233179538796,
+        "latitude": 35.999999977436595,
+        "elevationM": 8.4626137859356
+      },
+      {
+        "stationM": 220.0,
+        "longitude": 138.00244283326356,
+        "latitude": 35.99999997523654,
+        "elevationM": 8.436843593439637
+      },
+      {
+        "stationM": 230.0,
+        "longitude": 138.00255387113913,
+        "latitude": 35.999999972934155,
+        "elevationM": 8.409041460507698
+      },
+      {
+        "stationM": 240.0,
+        "longitude": 138.00266490901467,
+        "latitude": 35.99999997052944,
+        "elevationM": 8.379866631747507
+      },
+      {
+        "stationM": 250.0,
+        "longitude": 138.00277594689024,
+        "latitude": 35.9999999680224,
+        "elevationM": 8.35
+      },
+      {
+        "stationM": 260.0,
+        "longitude": 138.00288698476578,
+        "latitude": 35.99999996541302,
+        "elevationM": 8.320133368252494
+      },
+      {
+        "stationM": 270.0,
+        "longitude": 138.00299802264132,
+        "latitude": 35.99999996270132,
+        "elevationM": 8.290958539492301
+      },
+      {
+        "stationM": 280.0,
+        "longitude": 138.00310906051683,
+        "latitude": 35.99999995988729,
+        "elevationM": 8.263156406560363
+      },
+      {
+        "stationM": 290.0,
+        "longitude": 138.00322009839238,
+        "latitude": 35.999999956970925,
+        "elevationM": 8.2373862140644
+      },
+      {
+        "stationM": 300.0,
+        "longitude": 138.0033311362679,
+        "latitude": 35.99999995395225,
+        "elevationM": 8.214275161697634
+      },
+      {
+        "stationM": 310.0,
+        "longitude": 138.0034421741434,
+        "latitude": 35.99999995083123,
+        "elevationM": 8.194408512924959
+      },
+      {
+        "stationM": 320.0,
+        "longitude": 138.0035532120189,
+        "latitude": 35.99999994760788,
+        "elevationM": 8.178320365028474
+      },
+      {
+        "stationM": 330.0,
+        "longitude": 138.00366424989437,
+        "latitude": 35.99999994428221,
+        "elevationM": 8.166485226074295
+      },
+      {
+        "stationM": 340.0,
+        "longitude": 138.00377528776986,
+        "latitude": 35.99999994085422,
+        "elevationM": 8.159310531636892
+      },
+      {
+        "stationM": 350.0,
+        "longitude": 138.00388632564534,
+        "latitude": 35.999999937323885,
+        "elevationM": 8.157130219296697
+      },
+      {
+        "stationM": 360.0,
+        "longitude": 138.00399736352077,
+        "latitude": 35.999999933691235,
+        "elevationM": 8.16019946224496
+      },
+      {
+        "stationM": 370.0,
+        "longitude": 138.00410840139622,
+        "latitude": 35.99999992995624,
+        "elevationM": 8.168690645050106
+      },
+      {
+        "stationM": 380.0,
+        "longitude": 138.00421943927168,
+        "latitude": 35.999999926118925,
+        "elevationM": 8.182690645050105
+      },
+      {
+        "stationM": 390.0,
+        "longitude": 138.0043304771471,
+        "latitude": 35.99999992217929,
+        "elevationM": 8.202199462244959
+      },
+      {
+        "stationM": 400.0,
+        "longitude": 138.0044415150225,
+        "latitude": 35.99999991813732,
+        "elevationM": 8.227130219296697
+      },
+      {
+        "stationM": 410.0,
+        "longitude": 138.0045525528979,
+        "latitude": 35.999999913993015,
+        "elevationM": 8.257310531636893
+      },
+      {
+        "stationM": 420.0,
+        "longitude": 138.0046635907733,
+        "latitude": 35.9999999097464,
+        "elevationM": 8.292485226074295
+      },
+      {
+        "stationM": 430.0,
+        "longitude": 138.00477462864868,
+        "latitude": 35.999999905397445,
+        "elevationM": 8.332320365028474
+      },
+      {
+        "stationM": 440.0,
+        "longitude": 138.00488566652405,
+        "latitude": 35.99999990094615,
+        "elevationM": 8.376408512924959
+      },
+      {
+        "stationM": 450.0,
+        "longitude": 138.00499670439942,
+        "latitude": 35.999999896392545,
+        "elevationM": 8.424275161697635
+      },
+      {
+        "stationM": 460.0,
+        "longitude": 138.00510774227476,
+        "latitude": 35.9999998917366,
+        "elevationM": 8.4753862140644
+      },
+      {
+        "stationM": 470.0,
+        "longitude": 138.00521878015007,
+        "latitude": 35.99999988697834,
+        "elevationM": 8.529156406560363
+      },
+      {
+        "stationM": 480.0,
+        "longitude": 138.0053298180254,
+        "latitude": 35.99999988211774,
+        "elevationM": 8.584958539492302
+      },
+      {
+        "stationM": 490.0,
+        "longitude": 138.0054408559007,
+        "latitude": 35.99999987715481,
+        "elevationM": 8.642133368252493
+      },
+      {
+        "stationM": 500.0,
+        "longitude": 138.00555189377596,
+        "latitude": 35.99999987208957,
+        "elevationM": 8.7
+      }
+    ],
+    "layers": [
+      {
+        "evidence_kind": "DEM",
+        "source_id": "SYNTHETIC-TERRAIN-MATRIX",
+        "canonical_url": "local://synthetic-test",
+        "content_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ],
+    "surfaceGeology": {
+      "sourceId": "SYNTHETIC-DOMAIN-MATRIX",
+      "sourceEdition": "SyntheticTestOnly",
+      "samples": [
+        {
+          "stationM": 0.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 10.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 20.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 30.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 40.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 50.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 60.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 70.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 80.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 90.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 100.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 110.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 120.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 130.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 140.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 150.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 160.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 170.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 180.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 190.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 200.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 210.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 220.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 230.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 240.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 250.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 260.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 270.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 280.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 290.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 300.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 310.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 320.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 330.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 340.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 350.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 360.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 370.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 380.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 390.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 400.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 410.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 420.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 430.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 440.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 450.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 460.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 470.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 480.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 490.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        },
+        {
+          "stationM": 500.0,
+          "legend": {
+            "symbol": "SYN-PLAIN",
+            "title": "terrace deposits",
+            "formationAge_ja": "合成試験",
+            "formationAge_en": "Synthetic test",
+            "lithology_ja": "terrace deposits",
+            "lithology_en": "terrace deposits",
+            "value": "999999",
+            "r": 153,
+            "g": 153,
+            "b": 153
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "recordId": "GEOLOGIC-MAP-GEOMETRY-LEARNING-GAPS-20260904",
+  "version": "1.0.0",
+  "status": "NeedsImplementation",
+  "source": {
+    "sourceId": "HYAM-GEOLOGIC-MAPPING-FREE-2004",
+    "title": "地質図学の基礎演習無償版",
+    "artifactSha256": "8f71fc725983b7e14f7128ed2522567283c362a43ccdebe9824f72ee1f99dc28",
+    "sourceRole": "EducationalTraceCandidate_NotAuthoritativeEquationAdoption"
+  },
+  "scope": "Domain:GeologicMapGeometry",
+  "gaps": [
+    {
+      "gapId": "GMG-APPARENT-DIP",
+      "expression": "tan(alpha)=tan(delta)*sin(theta)",
+      "variables": {"alpha": "signed apparent dip", "delta": "true dip", "theta": "horizontal angle from strike to section direction"},
+      "units": "angles; one declared angular unit throughout",
+      "requiredImplementation": "Convention-safe plane/vertical-section intersection and signed apparent-dip calculation",
+      "status": "Open"
+    },
+    {
+      "gapId": "GMG-THREE-POINT-PLANE",
+      "expression": "normal=(p2-p1) cross (p3-p1)",
+      "variables": {"p1": "first XYZ observation", "p2": "second XYZ observation", "p3": "third XYZ observation"},
+      "units": "all positions in one declared length/CRS contract",
+      "requiredImplementation": "Plane fit, degeneracy rejection, strike/dip derivation and residual audit",
+      "status": "Open"
+    },
+    {
+      "gapId": "GMG-TRUE-THICKNESS",
+      "expression": "true thickness is normal distance between bounding geological surfaces",
+      "variables": {"thickness": "non-negative length normal to bedding"},
+      "units": "length",
+      "requiredImplementation": "Separate true, vertical, map-apparent and section-apparent thickness types",
+      "status": "Open"
+    },
+    {
+      "gapId": "GMG-MAPPED-CONTACT-CONSTRAINT",
+      "expression": "geologicalSurface(x,y,zTerrain(x,y))=contactLevel",
+      "variables": {"zTerrain": "DEM elevation", "contactLevel": "surface/contact identity"},
+      "units": "CRS and elevation datum must be explicit",
+      "requiredImplementation": "Bind mapped contact traces and terrain elevations to implicit geological surfaces",
+      "status": "Open"
+    },
+    {
+      "gapId": "GMG-FOLD-OBSERVATION-FIT",
+      "expression": "No production equation adopted",
+      "variables": {},
+      "units": "NotApplicable",
+      "requiredImplementation": "Observation-constrained limb/hinge alternatives with normal-thickness and event-order gates",
+      "status": "NeedsAuthoritativeCorroboration"
+    }
+  ],
+  "exclusions": [
+    "No real-region authorization",
+    "No claim that a unique subsurface truth can be recovered",
+    "No copying of source diagrams or prose",
+    "No production adoption of manual fold-construction methods without corroboration"
+  ],
+  "validationMethod": "Positive, negative, boundary, conflicting-evidence, missing-data and out-of-scope tests before adoption",
+  "reopenCondition": "Reopen when implementing map-derived plane geometry or after a current authoritative structural-geology source is bound"
+}

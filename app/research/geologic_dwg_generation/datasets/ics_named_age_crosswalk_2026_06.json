@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "ChronostratigraphicNamedAgeCrosswalk-1.0",
+  "targetTimeScaleAuthority": "International Commission on Stratigraphy",
+  "targetTimeScaleVersion": "2026/06",
+  "canonicalSourceUrl": "https://stratigraphy.org/chart/",
+  "accessedDate": "2026-09-05",
+  "mappings": [
+    {
+      "sourceLabel": "更新世最後期−完新世",
+      "sourceLabelEnglish": "Latest Pleistocene to Holocene",
+      "youngerMa": 0.0,
+      "olderMa": 0.129,
+      "mappingStatus": "ConservativeEnvelope_NotExactUnitEquivalence",
+      "targetUnits": [
+        "Upper Pleistocene",
+        "Holocene"
+      ],
+      "interpretationNote": "GSJ's 'Latest Pleistocene' is not asserted to be an exact ICS formal-unit synonym. The complete Upper Pleistocene through Holocene interval is used as a conservative envelope.",
+      "boundaryEvidence": [
+        {
+          "boundary": "base Holocene",
+          "ageMa": 0.0117
+        },
+        {
+          "boundary": "base Upper Pleistocene",
+          "ageMa": 0.129
+        },
+        {
+          "boundary": "present",
+          "ageMa": 0.0
+        }
+      ],
+      "sourceIds": [
+        "ICS-CHART-2026-06"
+      ]
+    }
+  ],
+  "exclusions": [
+    "not a depositional-age estimate",
+    "not evidence that every mapped polygon spans the whole envelope",
+    "not a subsurface geometry authorization"
+  ],
+  "recordSha256": "e9c16159939941a18ad3e7e84f6955699abe74014adea32d24590de43bdcbdb8"
+}

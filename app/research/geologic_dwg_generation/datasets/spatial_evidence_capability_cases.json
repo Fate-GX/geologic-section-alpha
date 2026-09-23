@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Prevent plan polygons and classified rasters from being promoted to unsupported 3D geometry.",
+  "cases": [
+    {
+      "case_id": "MLIT_A54_LARGE_EMBANKMENT_2023",
+      "scope": "DatasetSpecific",
+      "source_ids": ["MLIT-A54-LARGE-EMBANKMENT-2023"],
+      "crs": "JGD2011 geographic coordinates",
+      "approximate_extent": true,
+      "evidence": {
+        "coordinate_bearing": true,
+        "polygon_geometry": true,
+        "class_attribute": true,
+        "thickness_or_delta_attribute": false,
+        "current_surface_elevation": false,
+        "exact_vertical_delta": false
+      },
+      "expected_authorized": {
+        "plan_classification": true,
+        "exact_plan_boundary": false,
+        "thickness_constraint": false,
+        "exact_old_surface": false
+      }
+    },
+    {
+      "case_id": "SENDAI_E5_3_PDF_WITHOUT_ACCEPTED_GEOREFERENCE",
+      "scope": "DatasetSpecific",
+      "source_ids": ["SENDAI-E5-3-CUT-FILL"],
+      "crs": null,
+      "approximate_extent": true,
+      "evidence": {
+        "coordinate_bearing": false,
+        "polygon_geometry": true,
+        "class_attribute": true,
+        "thickness_or_delta_attribute": true,
+        "current_surface_elevation": false,
+        "exact_vertical_delta": false
+      },
+      "expected_authorized": {
+        "plan_classification": false,
+        "exact_plan_boundary": false,
+        "thickness_constraint": false,
+        "exact_old_surface": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_FULL_3D_EVIDENCE_CONTRACT",
+      "scope": "SyntheticTestOnly",
+      "source_ids": [],
+      "crs": "projected test CRS",
+      "approximate_extent": false,
+      "evidence": {
+        "coordinate_bearing": true,
+        "polygon_geometry": true,
+        "class_attribute": true,
+        "thickness_or_delta_attribute": true,
+        "current_surface_elevation": true,
+        "exact_vertical_delta": true
+      },
+      "expected_authorized": {
+        "plan_classification": true,
+        "exact_plan_boundary": true,
+        "thickness_constraint": true,
+        "exact_old_surface": true
+      }
+    }
+  ]
+}

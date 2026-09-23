@@ -1,0 +1,29 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.4.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "inherits": "0.3.0-candidate",
+  "typedTemporalContract": {
+    "ObservationValidityInterval": {
+      "semantics": "Calendar interval during which the observation, survey or published dataset is authorized for use",
+      "fields": ["type", "startDate", "endDate"],
+      "format": "ISO 8601 calendar date YYYY-MM-DD",
+      "ordering": "startDate <= endDate",
+      "boundaries": "inclusive"
+    },
+    "GeologicAgeInterval": {
+      "semantics": "Age applicability of the geological unit, event or parameter, measured before present",
+      "fields": ["type", "olderMa", "youngerMa", "unit", "timeScaleAuthority", "timeScaleVersion"],
+      "unit": "Ma",
+      "ordering": "olderMa >= youngerMa >= 0",
+      "boundaries": "inclusive",
+      "scaleRequirement": "request and evidence authority/version must match exactly unless a separately validated conversion exists"
+    },
+    "ModelApplicabilityRecord": {
+      "semantics": "Explicit decision binding both temporal checks to evidence and a model request",
+      "required": ["observationEvidenceIds", "geologicAgeEvidenceIds", "decision", "decisionRuleVersion"],
+      "prohibition": "May not replace either source interval or infer one temporal type from the other"
+    }
+  },
+  "implementationCapability": "NotImplemented"
+}

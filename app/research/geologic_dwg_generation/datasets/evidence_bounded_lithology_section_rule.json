@@ -1,0 +1,20 @@
+{
+  "ruleId": "EVIDENCE-BOUNDED-LITHOLOGY-SECTION-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Ordered terrain samples", "Unique basal-contact projections in bottom-up order", "One declared unit per basal contact", "Every unit explicitly names its basal contact and its next-contact or Terrain top boundary"],
+  "decisionLogic": [
+    "A unit sample exists only where both its basal and top boundaries are supported; terrain is the top of the uppermost unit.",
+    "Missing either boundary produces UNKNOWN.",
+    "Reject contact-order violations and contacts above terrain; never clip or reorder them.",
+    "Extend the uppermost unit to terrain only when its declaration explicitly names Terrain as the top boundary."
+  ],
+  "outputs": ["evidence-bounded unit intervals", "explicit unknown samples", "topology audit state"],
+  "uncertainty": "Ordering tolerance is an explicit project numerical parameter and is not geological evidence resolution",
+  "exclusions": ["No interpolation over missing boundaries", "No silent contact clipping", "No automatic stratigraphic reordering"],
+  "sourceIds": [],
+  "basisType": "TopologyAndEvidenceCoverageContract",
+  "validationMethod": "Partial coverage, crossing, above-terrain, duplicate-contact and station-misalignment tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Fault-separated domains, erosional truncation, pinch-out or probabilistic contact order is introduced"
+}

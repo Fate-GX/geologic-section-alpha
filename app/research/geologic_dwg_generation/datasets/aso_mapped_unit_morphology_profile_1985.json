@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "MappedUnitMorphologyProfile-1.0",
+  "profileId": "ASO-MAPPED-UNIT-MORPHOLOGY-1985-V1",
+  "scope": "DatasetSpecific:GSJ-Aso-Volcano-Map-1985",
+  "sourceArtifact": {
+    "path": "research/geologic_dwg_generation/sources/captured_20260905/gsj_aso/GSJ_MAP_VOLC_04_1985_D.pdf",
+    "sha256": "9398a64cd5c3c4cfc20640806637a94b0dc758323aacf8759443f2b56594e21a"
+  },
+  "records": [
+    {
+      "sourceSymbol": "Ksc",
+      "morphologyClass": "ScoriaConeAndLavaFlowApron",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "locator": "Explanatory PDF printed page 4: Kishimadake, Ojodake, Komezuka and Jano-o paragraph",
+      "evidenceStatus": "DirectSourceText",
+      "qualitativeFlowDirections": ["North", "Northwest"],
+      "numericFlowAzimuthAuthorized": false,
+      "numericSubsurfaceGeometryAuthorized": false,
+      "sourceMeaning": "Basalt volcano group comprising summit-area scoria cones and lava flows that descended north and northwest."
+    },
+    {
+      "sourceSymbol": "Kd",
+      "morphologyClass": "VentProximalLavaEdifice",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "locator": "Official vector geo_A polygon 109 legend hierarchy: Kusasenrigahama Volcano central crater cone / lava flow / augite-hypersthene dacite",
+      "evidenceStatus": "DirectSourceLegend",
+      "numericFlowAzimuthAuthorized": false,
+      "numericSubsurfaceGeometryAuthorized": false,
+      "sourceMeaning": "A local central-crater-cone lava unit, not a region-wide stratigraphic sheet."
+    },
+    {
+      "sourceSymbol": "Kp",
+      "morphologyClass": "PumiceCone",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "locator": "Official vector geo_A polygon 118 legend hierarchy and explanatory PDF printed page 4: Kusasenrigahama main pumice cone",
+      "evidenceStatus": "DirectSourceLegendAndText",
+      "numericFlowAzimuthAuthorized": false,
+      "numericSubsurfaceGeometryAuthorized": false,
+      "sourceMeaning": "A local main pumice-cone unit with partly welded pumice, not a region-wide sheet."
+    },
+    {
+      "sourceSymbol": "a",
+      "morphologyClass": "SurficialFallDepositDrape",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "locator": "Explanatory PDF printed page 5: foot-of-volcano and flatland deposits paragraph",
+      "evidenceStatus": "DirectSourceText",
+      "numericFlowAzimuthAuthorized": false,
+      "numericSubsurfaceGeometryAuthorized": false,
+      "sourceMeaning": "Air-fall volcanic ash covers most units except steep slopes and thickens over older units and eastward; no constant thickness is authorized."
+    }
+  ],
+  "realRegionSubsurfaceGeometryAuthorized": false
+}

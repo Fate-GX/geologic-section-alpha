@@ -1,0 +1,16 @@
+{
+  "ruleId": "ASO4-POSTDEPOSITION-THICKNESS-1",
+  "version": "1.0",
+  "scope": "Region:AsoCalderaEast_Aso4IgnimbritePlateau",
+  "equation": "T_postAso4(x,y) = z_terrain(x,y) - z_topAso4(x,y)",
+  "variables": {
+    "T_postAso4": {"meaning": "thickness of deposits accumulated after Aso-4", "unit": "m"},
+    "z_terrain": {"meaning": "current terrain elevation", "unit": "m", "verticalDatumRequirement": "same as z_topAso4"},
+    "z_topAso4": {"meaning": "elevation of the top of the Aso-4 pyroclastic-flow deposit", "unit": "m", "verticalDatumRequirement": "same as z_terrain"}
+  },
+  "preconditions": ["Location lies inside the published thick-airfall study domain", "Both elevation surfaces share a verified vertical datum"],
+  "exclusions": ["Current central-cone route", "RGB illustration sampling", "Individual lithology contact inference inside the aggregate thickness"],
+  "sourceIds": ["GSJ-OFR748-ASO-2024"],
+  "implementationStatus": "EquationRecorded_InputNumericSurfaceUnavailable",
+  "adoptionStatus": "AdoptedScopedEquation_NotExecutableFromPublishedRGB"
+}

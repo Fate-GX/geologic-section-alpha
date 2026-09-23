@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "STRATIGRAPHIC-EVENT-REPLACEMENT-SOURCE-REVIEW-20260829",
+  "status": "IndependentReviewRequired",
+  "accessDate": "2026-08-29",
+  "targetClaims": [
+    "eventSemantics.Pinchout",
+    "eventSemantics.Nondeposition"
+  ],
+  "sources": [
+    {
+      "sourceId": "NACSN-CODE-2021",
+      "authority": "North American Commission on Stratigraphic Nomenclature",
+      "title": "North American Stratigraphic Code, 2021 edition",
+      "canonicalUrl": "https://ngmdb.usgs.gov/Geolex/resources/docs/NACSN_Code_2021.pdf",
+      "doi": "10.29041/strat.18.3.01",
+      "sourceRole": "CurrentStratigraphicCode"
+    },
+    {
+      "sourceId": "USGS-TEI395-PINCHOUT",
+      "authority": "U.S. Geological Survey",
+      "title": "Preliminary geologic map and stratigraphic sections of the Colorado Plateau region",
+      "canonicalUrl": "https://pubs.usgs.gov/tei/395/report.pdf",
+      "sourceRole": "PrimaryEmpiricalZeroThicknessExample"
+    },
+    {
+      "sourceId": "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+      "authority": "International Commission on Stratigraphy / IUGS",
+      "title": "International Stratigraphic Guide, Chapter 6: Unconformity-bounded Units",
+      "canonicalUrl": "https://stratigraphy.org/guide/uncon",
+      "sourceRole": "InternationalTerminologyGuide"
+    },
+    {
+      "sourceId": "USGS-THESAURUS-UNCONFORMITY",
+      "authority": "U.S. Geological Survey",
+      "title": "USGS thesaurus term: unconformity",
+      "canonicalUrl": "https://apps.usgs.gov/thesaurus/term-simple.php?code=226&thcode=61",
+      "sourceRole": "GovernmentTerminologyRecord"
+    }
+  ],
+  "claimSourcePairs": [
+    {
+      "claimPath": "eventSemantics.Pinchout",
+      "sourceId": "NACSN-CODE-2021",
+      "candidateSupport": "Partial",
+      "supportDimension": "TerminologyAndLateralTermination",
+      "locator": "Article 25(b), Lens and tongue",
+      "reason": "The code defines a wedging member that pinches out within another formation, supporting lateral narrowing and termination but not explicitly stating zero thickness."
+    },
+    {
+      "claimPath": "eventSemantics.Pinchout",
+      "sourceId": "USGS-TEI395-PINCHOUT",
+      "candidateSupport": "DirectEmpirical",
+      "supportDimension": "ZeroThicknessGeometry",
+      "locator": "Wingate Sandstone discussion: thickness ranges to zero where the unit pinches out locally",
+      "reason": "The mapped stratigraphic example directly associates local pinch-out with zero unit thickness, while remaining a regional example rather than a universal terminology standard."
+    },
+    {
+      "claimPath": "eventSemantics.Nondeposition",
+      "sourceId": "ICS-INTERNATIONAL-STRATIGRAPHIC-GUIDE-UNCONFORMITY",
+      "candidateSupport": "DirectConceptual",
+      "supportDimension": "TimeGapWithoutRequiredErosion",
+      "locator": "Chapter 6, B.2 Unconformity and B.2.c Diastem",
+      "reason": "The guide identifies non-sedimentation as representing a hiatus and defines a short interruption in deposition with little or no erosion."
+    },
+    {
+      "claimPath": "eventSemantics.Nondeposition",
+      "sourceId": "USGS-THESAURUS-UNCONFORMITY",
+      "candidateSupport": "Partial",
+      "supportDimension": "NondepositionAndGeologicRecordGap",
+      "locator": "Term definition for unconformity",
+      "reason": "The record links nondeposition to a significant gap in the geologic record, but defines unconformity rather than nondeposition itself."
+    }
+  ],
+  "stoppingCondition": "Stop after two authoritative candidates per target claim have been independently reviewed; do not broaden the search in this task.",
+  "limitations": [
+    "Candidate classifications are not adoption decisions.",
+    "A regional empirical example cannot alone establish a universal definition.",
+    "A terminology code can support concept meaning without validating the project's numerical implementation.",
+    "Nondeposition must remain distinct from erosion and from missing observational records."
+  ]
+}

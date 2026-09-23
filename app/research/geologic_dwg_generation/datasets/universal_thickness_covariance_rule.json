@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.2.0",
+  "ruleId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS",
+  "version": "1.4.0",
+  "scope": "Global:ThicknessFieldArchitecture",
+  "preconditions": [
+    "regional stratigraphic sequence is supplied separately",
+    "thickness observations are converted to true stratigraphic thickness where required",
+    "depositional environment/process group is explicit",
+    "correlation lengths are normalized by an environment-relevant scale before cross-region comparison"
+  ],
+  "logic": [
+    "Generate transformed latent Gaussian thickness fields rather than independent contacts.",
+    "Represent absence/pinch-out with an explicit active mask or truncation process.",
+    "Couple layers with a symmetric positive-semidefinite cross-layer correlation matrix.",
+    "Stack non-negative thickness fields sequentially so adjacent units share exactly one contact."
+  ],
+  "outputs": [
+    "non-negative thickness fields",
+    "shared contact surfaces",
+    "cross-layer covariance evidence",
+    "spatial correlation length",
+    "pinch-out state"
+  ],
+  "hardGates": [
+    "positive-semidefinite covariance",
+    "non-negative thickness",
+    "shared contacts",
+    "no unexplained overlap or gap",
+    "no independent boundary noise"
+  ],
+  "uncertainty": "Covariance form is universal machinery; coefficients and ranges remain environment/process conditioned.",
+  "exclusions": [
+    "using one region's covariance as a global prior",
+    "pooling tectonic deformation with depositional thickness variation",
+    "forcing zero thickness through negative values",
+    "assuming stationary covariance across unconformities or facies-regime changes"
+  ],
+  "sourceIds": [
+    "ALLARD-LATENT-STRATIGRAPHY-2021"
+  ],
+  "validationMethod": "leave-one-region-out on normalized thickness statistics and covariance summaries",
+  "adoptionStatus": "SequentialStackImplemented_StochasticGeneratorNotImplemented_SourceBindingsPendingFullText",
+  "reopenCondition": "A multi-region normalized thickness corpus is assembled",
+  "claimBindings": [
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-LOGIC-1",
+      "claimPath": "logic.0",
+      "statement": "Generate transformed latent Gaussian thickness fields rather than independent contacts.",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+          "locator": "Section 3.1, Equation (1)",
+          "locatorStatus": "DirectEquation"
+        }
+      ],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "Full-text equation/section independently reviewed; precise repository evidence record retained without embedding the copyrighted article.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "ALLARD-TRANSFORMED-LATENT-GAUSSIAN"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-LOGIC-2",
+      "claimPath": "logic.1",
+      "statement": "Represent absence/pinch-out with an explicit active mask or truncation process.",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+          "locator": "Introduction and Section 3.1, Equation (1), otherwise branch",
+          "locatorStatus": "DirectEquationAndText"
+        }
+      ],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "Full-text equation/section independently reviewed; precise repository evidence record retained without embedding the copyrighted article.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "ALLARD-TRUNCATION-ZERO-THICKNESS"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-LOGIC-3",
+      "claimPath": "logic.2",
+      "statement": "Couple layers with a symmetric positive-semidefinite cross-layer correlation matrix.",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "COVARIANCE-MATRIX-PSD"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-LOGIC-4",
+      "claimPath": "logic.3",
+      "statement": "Stack non-negative thickness fields sequentially so adjacent units share exactly one contact.",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+          "locator": "Section 3.1, depth-surface accumulation equation T_j(s)=T_(j-1)(s)+Z_j(s)",
+          "locatorStatus": "DirectEquation"
+        }
+      ],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "Full-text equation/section independently reviewed; precise repository evidence record retained without embedding the copyrighted article.",
+      "basisType": "PublishedConceptualEvidence",
+      "basisRefs": [
+        "ALLARD-SEQUENTIAL-STACKING",
+        "CONFORMABLE-SEQUENTIAL-STACK"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-HARDGATES-1",
+      "claimPath": "hardGates.0",
+      "statement": "positive-semidefinite covariance",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "COVARIANCE-MATRIX-PSD"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-HARDGATES-2",
+      "claimPath": "hardGates.1",
+      "statement": "non-negative thickness",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "POSITIVE-THICKNESS-INVARIANT"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-HARDGATES-3",
+      "claimPath": "hardGates.2",
+      "statement": "shared contacts",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "SHARED-CONTACT-INVARIANT"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-HARDGATES-4",
+      "claimPath": "hardGates.3",
+      "statement": "no unexplained overlap or gap",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "PARTITION-NO-OVERLAP-GAP"
+      ]
+    },
+    {
+      "claimId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS-CLAIM-HARDGATES-5",
+      "claimPath": "hardGates.4",
+      "statement": "no independent boundary noise",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global:ThicknessFieldArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "using one region's covariance as a global prior",
+        "pooling tectonic deformation with depositional thickness variation",
+        "forcing zero thickness through negative values",
+        "assuming stationary covariance across unconformities or facies-regime changes"
+      ],
+      "evidenceStatus": "Verified",
+      "verificationNote": "External source binding removed; governed by the referenced mathematical/project basis contract.",
+      "basisType": "ProjectArchitecturePolicy",
+      "basisRefs": [
+        "NO-INDEPENDENT-BOUNDARY-NOISE"
+      ]
+    }
+  ],
+  "creationProvenance": {
+    "origin": "Migrated from the adopted universal architecture rule corpus",
+    "promotionBasis": "Architecture-level reuse only; coefficients and regional parameters remain excluded",
+    "status": "DirectAllardEvidenceBound_ImplementationGapsRemain"
+  },
+  "implementationStatus": {
+    "sequentialNonNegativeStackConsumer": "Implemented",
+    "latentGaussianThicknessGenerator": "NotImplemented",
+    "crossLayerCovarianceMatrix": "NotImplemented",
+    "positiveSemidefiniteValidation": "NotImplemented"
+  },
+  "contextualSourcesRemovedFromClaimBindings": {
+    "USGS-INL-GEOSTAT-2006": "Regional exploratory geostatistics; not universal architecture evidence",
+    "ZHANG-EXPERIMENTAL-STRATIGRAPHY-2005": "Precise primary-source support remains unverified"
+  }
+}

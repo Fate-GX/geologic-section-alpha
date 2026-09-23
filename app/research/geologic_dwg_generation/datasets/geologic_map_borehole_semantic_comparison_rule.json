@@ -1,0 +1,20 @@
+{
+  "ruleId": "GEO-MAP-BOREHOLE-SEMANTICS-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "decisionLogic": [
+    "Treat a geological-map polygon as mapped geology beneath topsoil at map scale.",
+    "Treat a borehole as an observed vertical sequence at one point.",
+    "Require an independently reviewed vocabulary binding before selecting any borehole interval.",
+    "Never infer thickness, contact geometry, or lateral continuation from semantic compatibility."
+  ],
+  "exclusions": [
+    "No substring-based lithology matching",
+    "No assumption that the zero-depth borehole interval must equal the mapped unit",
+    "No subsurface geometry authorization"
+  ],
+  "sourceIds": ["GSJ-GEOLOGIC-MAP-DEFINITION"],
+  "validationMethod": "Positive, missing-binding, pending-review, and wrong-source tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A map product with a different representation-depth definition is introduced"
+}

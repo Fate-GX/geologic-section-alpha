@@ -1,0 +1,30 @@
+{
+  "validationId": "STOCHASTIC-THICKNESS-STATISTICS-0.1",
+  "status": "ExperimentalProjectStatisticalValidation",
+  "scope": "Domain:RegularCartesianGridSeparableGaussianCovariance",
+  "sampleCount": 12000,
+  "fixedValidationSeed": 20260831,
+  "equations": [
+    "E[X(s)] = 0",
+    "Cov(X) = variance * (Ky tensor Kx)",
+    "P(T=0) = Phi(threshold / sqrt(variance))",
+    "T = mu * max(X-threshold,0)^beta",
+    "E[T] is evaluated by threshold-split adaptive Simpson integration; 100-node Gauss-Hermite is retained only as a rejected biased comparator"
+  ],
+  "decisionBounds": {
+    "mean": "six standard errors",
+    "covariance": "six asymptotic Gaussian covariance standard errors per element",
+    "zeroProbability": "six binomial standard errors",
+    "transformedMean": "six standard errors using adaptive-integration-derived second moment"
+  },
+  "variables": {
+    "X": "latent zero-mean Gaussian field; thickness precursor",
+    "T": "non-negative thickness field [length]",
+    "variance": "latent variance [dimensionless in this validation fixture]",
+    "threshold": "latent Gaussian threshold [same latent units as X]",
+    "mu": "positive thickness scale [length]",
+    "beta": "positive dimensionless exponent"
+  },
+  "evidenceClass": "Project statistical verification; not geological calibration evidence",
+  "exclusions": ["parameter calibration", "observation conditioning", "cross-layer dependence", "nonstationarity", "geological acceptance"]
+}

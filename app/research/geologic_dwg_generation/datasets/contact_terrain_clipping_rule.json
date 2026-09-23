@@ -1,0 +1,19 @@
+{
+  "ruleId": "CONTACT-TERRAIN-CLIPPING-1",
+  "version": "1.0",
+  "scope": "Global",
+  "preconditions": ["evaluated finite-support contact hypothesis", "strictly ordered complete terrain profile covering the support"],
+  "equations": {
+    "terrain": "piecewise linear interpolation between adjacent DEM profile samples",
+    "contact": "z_c(s)=z_anchor+m(s-s_anchor)",
+    "intersection": "solve z_c(s)-z_t(s)=0 independently inside each terrain segment"
+  },
+  "decisionLogic": "Split at every exact affine intersection and retain only portions with contact elevation at or below terrain. Classify uncertainty samples as definitely below, possibly below or definitely above.",
+  "outputs": ["zero or more nominal subsurface polylines", "samplewise uncertainty relation to terrain", "discard declaration"],
+  "uncertainty": "A numerical elevation tolerance snaps machine-scale residuals at terrain nodes; it is not geological uncertainty.",
+  "exclusions": ["extrapolation outside DEM coverage", "visual-only masking", "real-region authorization", "unit polygon creation"],
+  "sourceIds": ["USGS-CROSSSECTION-TEMPLATE", "Project piecewise-linear geometry contract"],
+  "validationMethod": "analytic planar crossing, relief case, incomplete terrain rejection and full regression",
+  "adoptionStatus": "AdoptedDiagnosticGeometry",
+  "reopenCondition": "Curved contacts, DEM uncertainty propagation, discontinuities/faults or authorized multi-contact assembly are introduced."
+}

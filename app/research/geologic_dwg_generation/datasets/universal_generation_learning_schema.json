@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleScope": "GlobalOrDomain",
+  "principle": "Learn process-conditioned dimensionless relations across independent regions; use local datasets only for validation and exclusion tests.",
+  "learningAxes": [
+    "depositional or erosional process",
+    "environment class",
+    "event sequence",
+    "material-property class",
+    "boundary and forcing conditions",
+    "dimensionless geometry and time-scale groups"
+  ],
+  "preferredTargets": [
+    "width/depth ratio distribution",
+    "length/width ratio distribution",
+    "thickness coefficient of variation",
+    "normalized spatial correlation length",
+    "pinch-out rate per normalized section length",
+    "conditional lithology transition probability",
+    "erosion/deposition balance",
+    "preservation probability conditioned on accommodation and sediment supply"
+  ],
+  "minimumTrainingDesign": {
+    "independentRegions": 3,
+    "independentAuthorities": 2,
+    "requiredEnvironmentLabel": true,
+    "requiredProcessLabel": true,
+    "requiredHoldoutRegion": true,
+    "requiredNegativeAndOutOfScopeCases": true
+  },
+  "promotionRules": [
+    "A DatasetSpecific record cannot set a generation prior.",
+    "Country or locality alone cannot select lithology order or geometry.",
+    "Dimensional coefficients retain units and process scope.",
+    "A relationship failing holdout-region validation remains a hypothesis.",
+    "Regional deviations are profiles layered over the universal engine, never hard-coded into it."
+  ],
+  "localDatasetRole": ["validation fixture", "scope-bound counterexample", "regional profile evidence after universal-rule selection"]
+}

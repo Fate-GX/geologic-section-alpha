@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleId": "UGL-STRATIFIED-VALLEY-FILL",
+  "version": "1.0.0",
+  "scope": "Environment:IncisedValleyFill",
+  "preconditions": [
+    "an erosion surface and its event order are explicit",
+    "the depositional environment is classified as fluvial, estuarine, marine-influenced, glacial, or unresolved",
+    "subunit thicknesses share one section coordinate system and length unit",
+    "every non-synthetic parameter is bound to evidence whose spatial and temporal scope contains the model request"
+  ],
+  "eventLogic": [
+    "Construct the valley erosion surface independently of the later fill contacts.",
+    "Place the first fill subunit on the erosion surface.",
+    "Place each later subunit on the exact active top of its predecessor; later deposition must not re-erode earlier fill unless a separate erosion event is declared.",
+    "Clip all fill subunits to the valley accommodation space and permit marginal pinch-out to zero thickness.",
+    "Do not require basal gravel everywhere: observed Japanese valleys include cases where it is absent.",
+    "Choose allowed facies and transitions from the classified environment; do not use one global fixed sequence."
+  ],
+  "mathematicalContracts": {
+    "stacking": "B_1(x)=E(x); B_i(x)=T_{i-1}(x) for i>1; T_i(x)=min(B_i(x)+H_i(x), A(x)); H_i(x)>=0",
+    "exclusivePartition": "For every in-domain point, active fill interiors are pairwise disjoint and their union equals the declared filled portion of [E(x),A(x)].",
+    "transitionProbability": "t_jk(h)=P{F(x+h)=k | F(x)=j}; estimate separately for each direction and compatible environment/process group.",
+    "gaussianSuperposition": "If independent zero-mean Gaussian components G_q are used as a synthetic surface primitive, S=sum_q w_q G_q has covariance C_S=sum_q w_q^2 C_q. This identity does not supply geological ranges, weights, asymmetry, or valley morphology."
+  },
+  "requiredEvidence": [
+    "erosion-surface or valley-base evidence, or SyntheticAssumption status",
+    "depositional-environment classification",
+    "facies vocabulary and source normalization",
+    "direction-specific transition evidence when a transition matrix is used",
+    "thickness/range/weight evidence or explicit SyntheticAssumption status"
+  ],
+  "outputs": [
+    "ordered fill subunits",
+    "active masks and pinch-out locations",
+    "contact types and event IDs",
+    "gap/overlap audit",
+    "transition audit",
+    "synthetic disclosure"
+  ],
+  "exclusions": [
+    "universal basal-gravel requirement",
+    "universal upward-fining sequence",
+    "using vertical borehole transitions as measured lateral transitions",
+    "pooling incompatible depositional environments",
+    "reusing the original erosion surface as the bottom of every fill subunit",
+    "creating asymmetry by an undocumented one-sided multiplier",
+    "claiming that a sum of Gaussian fields is itself evidence of a real valley morphology",
+    "authorizing a real region from terrain or surface geology alone"
+  ],
+  "sourceIds": [
+    "GSJ-NAKAGAWA-INCISED-VALLEY-2011",
+    "GSJ-TOKYO-INCISED-VALLEY-2020",
+    "DALRYMPLE-INCISED-VALLEY-FACIES-2006",
+    "ZARILLO-OVERFILLED-UNDERFILLED-2006",
+    "CARLE-FOGG-TPROGS-1998",
+    "WEISSMANN-TPROGS-1999",
+    "USGS-NASSAU-TPROGS-2024"
+  ],
+  "uncertainty": "Facies order, continuity, proportions, transition matrices, surface ranges and asymmetry remain environment- and dataset-conditioned. Synthetic values remain SyntheticAssumption.",
+  "validationMethod": [
+    "positive: multi-subunit fill stacks without gap or overlap",
+    "boundary: one or more subunits pinch out at a valley margin",
+    "negative: a later subunit using the erosion surface again is rejected as overlap",
+    "missing-data: absent environment classification prevents a literature-derived sequence",
+    "conflicting-evidence: mutually incompatible environment profiles are not pooled",
+    "out-of-scope: coastal transgressive succession is rejected for an unclassified mountain valley",
+    "directionality: vertical and lateral transition evidence cannot be silently interchanged"
+  ],
+  "adoptionStatus": "ArchitectureAdopted_ParametersOpen",
+  "reopenCondition": "Implementing a real regional profile, a calibrated asymmetric erosion-surface model, or a transition simulator"
+}

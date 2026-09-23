@@ -1,0 +1,15 @@
+{
+  "ruleId": "OSS-3D-GENERATOR-RECONSTRUCTION-001",
+  "version": "0.1.0",
+  "scope": "DatasetSpecific:SyntheticBenchmark",
+  "status": "Experimental_NotRegionalValidation",
+  "sourceIds": ["ARCHPY-OFFICIAL", "ARCHPY-FRONTIERS-2022"],
+  "implementationReference": "subprojects/geologic_3d_engine/run_archpy_reconstruction.py",
+  "equations": [
+    {"id": "UNIT-SURFACE-GRF", "expression": "Z_j(x,y)=m_j(x,y)+G_j(x,y)", "variables": {"Z_j": "unit top elevation, m", "m_j": "explicit synthetic elevation prior, m", "G_j": "zero-mean covariance field, m"}, "constraints": "Apply ArchPy onlap/erosion ordering before discretizing paired surface domains", "authority": "ArchPy Pile.compute_surf implementation; prior values are project synthetic assumptions"},
+    {"id": "TPG-THREE-FACIES", "expression": "a=Phi^-1(p1); b=Phi^-1(p2/(p2+p3)); F=1 if G1<a, else 2 if G2<b, else 3", "variables": {"G1,G2": "independent dimensionless Gaussian fields", "p1,p2,p3": "synthetic category probabilities, sum=1", "Phi": "standard normal CDF", "F": "categorical ID"}, "constraints": "Positive probabilities; stationary Gaussian fields per synthetic unit; mask to owning unit; actual vendor boundary behavior retained", "authority": "ArchPy run_tpgs/Truncation3D; specific flag is project choice"}
+  ],
+  "uncertainty": "Unconditioned realizations; parameters uncalibrated; no assertion of actual regional facies probabilities",
+  "exclusions": ["Aso or other observed geology", "channel connectivity implied by covariance alone", "visual smoothness as validity", "native DWG acceptance"],
+  "reopenCondition": "Reference reproduction, conditioning or spatial convergence fails; geological environment is changed"
+}

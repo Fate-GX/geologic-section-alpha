@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.2.0",
+  "ruleId": "UGL-CONDITIONAL-LITHOLOGY-TRANSITION",
+  "version": "1.3.0",
+  "scope": "Domain:SedimentaryFaciesArchitecture",
+  "preconditions": [
+    "common normalized facies vocabulary",
+    "environment and process labels",
+    "vertical and lateral directions recorded separately",
+    "interval-boundary and regular-grid sampling modes not mixed"
+  ],
+  "logic": "Fit transition matrices independently by environment/process and validate by holding out entire regions.",
+  "requiredEvidence": [
+    "at least three independent regions per environment/process group",
+    "at least two independent authorities",
+    "source borehole/outcrop identity",
+    "sampling direction and resolution",
+    "holdout-region transition support"
+  ],
+  "outputs": [
+    "conditional transition matrix",
+    "cross-region log loss",
+    "unsupported transition list"
+  ],
+  "uncertainty": "Dirichlet smoothing prevents zero estimates but never authorizes unseen facies or environments.",
+  "exclusions": [
+    "one-region learning",
+    "pooling different depositional environments",
+    "using transition probabilities as deterministic stratigraphic order",
+    "inferring lateral continuity from vertical logs alone"
+  ],
+  "sourceIds": [
+    "CARLE-FOGG-TPROGS-1998",
+    "WEISSMANN-TPROGS-1999",
+    "USGS-MODESTO-TPROGS-2008"
+  ],
+  "validationMethod": "leave-one-region-out",
+  "adoptionStatus": "FrameworkAdopted_DataCorpusOpen",
+  "reopenCondition": "A multi-region normalized observed corpus is assembled",
+  "claimBindings": [
+    {
+      "claimId": "UGL-CONDITIONAL-LITHOLOGY-TRANSITION-CLAIM-LOGIC",
+      "claimPath": "logic",
+      "statement": "Fit transition matrices independently by environment/process and validate by holding out entire regions.",
+      "sourceIds": [
+        "CARLE-FOGG-TPROGS-1998",
+        "WEISSMANN-TPROGS-1999",
+        "USGS-MODESTO-TPROGS-2008"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "CARLE-FOGG-TPROGS-1998",
+          "locator": "Carle, Fogg and Gaetan (1998), Conditional Simulation of Hydrofacies, abstract: transition-probability/Markov approach represents spatial cross-correlation, juxtapositional tendencies, proportions, anisotropy and three-dimensional Markov chains",
+          "locatorStatus": "PrimaryAbstractVerified"
+        },
+        {
+          "sourceId": "WEISSMANN-TPROGS-1999",
+          "locator": "Weissmann, Carle and Fogg (1999), abstract: lateral mean lengths and transition probabilities from soil maps are combined with a separate vertical transition chain from well data; the resulting 3D model represents cross-correlation and asymmetry including fining-upward tendencies",
+          "locatorStatus": "PrimaryAbstractVerified"
+        },
+        {
+          "sourceId": "USGS-MODESTO-TPROGS-2008",
+          "locator": "USGS SIR 2008-5035, T-PROGS methods section; retained as a public workflow example only. Precise page-level locator remains pending because this source was not reopened in cycle 101",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Domain:SedimentaryFaciesArchitecture",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "one-region learning",
+        "pooling different depositional environments",
+        "using transition probabilities as deterministic stratigraphic order",
+        "inferring lateral continuity from vertical logs alone"
+      ],
+      "evidenceStatus": "PartiallyVerified",
+      "verificationNote": "Cycle 101 verified the two primary article abstracts and an independent USGS application. This supports the direction/environment separation and cross-correlation concepts, but not a universal transition matrix or any numeric probability.",
+      "basisType": "LiteratureMethodWithUnverifiedParameters",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    }
+  ]
+}

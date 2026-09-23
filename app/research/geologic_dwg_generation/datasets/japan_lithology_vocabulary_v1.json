@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "JapanLithologyVocabulary-1.0",
+  "scope": "GlobalJapanCandidateVocabulary_NotARegionalSequence",
+  "sourceIds": ["GSJ-SEAMLESS-V2-LEGEND", "GSJ-ZFK-LEGEND"],
+  "selectionRule": "FilterByRegionalEvidenceAgeEnvironmentAndEventHistory",
+  "prohibition": "Never place every vocabulary member in one section and never select by country alone",
+  "broadLithologies": [
+    "人工改変土", "有機質堆積物", "粘土", "シルト", "砂", "礫",
+    "礫岩", "角礫岩", "砂岩", "シルト岩", "泥岩", "頁岩",
+    "石灰岩", "苦灰岩", "チャート", "凝灰岩", "火砕岩",
+    "玄武岩", "安山岩", "デイサイト", "流紋岩", "花崗岩",
+    "閃緑岩", "斑れい岩", "蛇紋岩", "メランジュ",
+    "粘板岩", "千枚岩", "結晶片岩", "片麻岩", "ホルンフェルス", "大理石"
+  ],
+  "detailPolicy": "Use GSJ level-4 and map-sheet units where available; these broad terms are fallback grouping labels only"
+}

@@ -1,0 +1,19 @@
+{
+  "ruleId": "EVIDENCE-BOUNDED-SECTION-RENDER-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Validated EvidenceBoundedLithologySection-1.0", "Explicit display label and fill colour for every unit"],
+  "decisionLogic": [
+    "Fill the viewport with a neutral UNKNOWN background.",
+    "Render one polygon per contiguous run having at least two samples bounded above and below by evidence.",
+    "Do not connect coloured polygons across an unknown sample gap.",
+    "Show an isolated supported sample as a marker, not an area polygon."
+  ],
+  "outputs": ["PNG diagnostic section", "per-unit run and polygon audit", "image SHA-256"],
+  "exclusions": ["No curve smoothing", "No unknown-gap bridging", "No implicit lithology colour or label", "No real-region authorization"],
+  "sourceIds": [],
+  "basisType": "DiagnosticRenderingPolicy",
+  "validationMethod": "Two-run unknown-gap image, missing-style and display-bound tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Vector/DWG rendering, uncertainty bands, fault domains or publication layouts are added"
+}

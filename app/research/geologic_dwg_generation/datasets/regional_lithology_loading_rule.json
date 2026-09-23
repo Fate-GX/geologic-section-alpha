@@ -1,0 +1,24 @@
+{
+  "ruleId": "UGL-SOURCE-BOUND-REGIONAL-LITHOLOGY-INPUT",
+  "version": "1.0",
+  "scope": "Global",
+  "adoptionStatus": "Adopted",
+  "preconditions": ["A route and original mapped-lithology source records", "A versioned vocabulary with sources"],
+  "requiredEvidence": ["Original lithology label", "Source identity and edition when available", "Sample location when available; missing fields retained as unverified"],
+  "decisionLogic": [
+    "Match all vocabulary members in lithology fields; no geographic-name matching",
+    "Persist and reload the route input before selection",
+    "Verify canonical SHA-256 binding and reconstruct candidates and associations from original records",
+    "Apply compatible multi-member labels to existing rock-package roles; do not infer internal contacts from map-unit member lists",
+    "Retain other candidates with explicit unresolved-placement reasons"
+  ],
+  "outputs": ["RegionalLithologyInput-1.0", "RegionalLithologySelectionAccounting-1.0"],
+  "uncertainty": "Mapped surface categories constrain rock candidates, not unique underground geometry or thickness",
+  "exclusions": ["Nationwide exhaustive occurrence claim", "Region-name hardcoding", "Depth selects rock identity", "Composite lithology list interpreted as observed vertical sequence"],
+  "sourceIds": ["GSJ-SEAMLESS-V2-API", "GSJ-SEAMLESS-V2-LEGEND", "CGI-GEOSCIML-LITHOLOGY"],
+  "canonicalCitations": ["https://gbank.gsj.jp/seamless/v2/api/1.3.1/", "https://resource.geosciml.org/classifier/cgi/lithology"],
+  "sourceStatus": "Reuse of adopted vocabulary and mapped-surface evidence semantics; data binding is a project implementation choice",
+  "implementationReference": "subprojects/geologic_3d_engine/advanced_v2/regional_lithology_data.py",
+  "validationMethod": "Roundtrip, multi-member/minority, stale-source/route/vocabulary, tampering, absent/malformed data, incompatible domains, synthetic-source separation, production-path tests",
+  "reopenCondition": "New vocabulary or source format; newly supported geological architecture; source-specific internal contact evidence"
+}

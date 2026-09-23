@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>AdvancedV2GeoDwg</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\tools\AuthoritativeGeoDwg\ContractIntegrity.cs" Link="ContractIntegrity.cs" />
+    <Compile Include="..\..\..\..\tools\AuthoritativeGeoDwg\GeologicStandardsGate.cs" Link="GeologicStandardsGate.cs" />
+    <Reference Include="AcCoreMgd"><HintPath>C:\Program Files\Autodesk\AutoCAD 2027\accoremgd.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AcDbMgd"><HintPath>C:\Program Files\Autodesk\AutoCAD 2027\acdbmgd.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AcMgd"><HintPath>C:\Program Files\Autodesk\AutoCAD 2027\acmgd.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

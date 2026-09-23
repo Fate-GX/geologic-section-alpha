@@ -1,0 +1,21 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.3.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "scope": "Global:ThicknessFieldArchitecture",
+  "inherits": "0.2.0-candidate",
+  "datasetContainmentContract": {
+    "spatialAxisOrder": "[minX,minY,maxX,maxY] in the explicitly declared CRS",
+    "spatialRule": "target bbox must be contained by evidence applicability bbox; CRS identifiers must match exactly before comparison",
+    "temporalRule": "target inclusive year interval must be contained by evidence inclusive applicability interval",
+    "regionalRule": "dataset parentRegionScope and regionalProfileId must match the request",
+    "parameterRule": "every consumed parameter must be listed in parameterNames",
+    "provenanceRule": "datasetId and at least one sourceId are mandatory",
+    "failurePolicy": "Reject unresolved, partially overlapping, differently projected or temporally incompatible evidence; do not infer containment from DatasetSpecific labels"
+  },
+  "datasetEvidenceRequiredFields": [
+    "evidenceId", "scope", "datasetId", "parentRegionScope", "regionalProfileId",
+    "sourceIds", "parameterNames", "applicabilitySpatialExtent", "applicabilityTemporalExtent"
+  ],
+  "implementationCapability": "NotImplemented"
+}

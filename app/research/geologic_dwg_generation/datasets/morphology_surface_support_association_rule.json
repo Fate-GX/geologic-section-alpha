@@ -1,0 +1,12 @@
+{
+  "ruleId":"GEO3D-MORPHOLOGY-SURFACE-SUPPORT-ASSOCIATION-1",
+  "version":"1.0.0",
+  "scope":"Domain:MappedVolcanicSurfaceMorphology",
+  "preconditions":["Same route","Complete mapped-surface support coverage","Typed closed morphology interval"],
+  "decisionLogic":"Compute exact one-dimensional interval overlaps. A morphology-specific equation is eligible only when every overlap has the required morphology class; spatial overlap never establishes named-feature identity.",
+  "outputs":["per-unit overlap length and fraction","equation eligibility","classification state"],
+  "exclusions":["No named-volcano identity from overlap","No cross-volcano equation transfer","No subsurface authorization"],
+  "validationMethod":"Positive, negative, boundary, missing-domain and out-of-route tests",
+  "adoptionStatus":"Adopted",
+  "reopenCondition":"A source explicitly binds the mapped morphology feature to a named unit or a multi-class equation is proposed"
+}

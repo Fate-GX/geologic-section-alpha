@@ -1,0 +1,14 @@
+{
+  "ruleId": "JAPAN-ALTITUDE-VERTICAL-DATUM-1",
+  "version": "1.0.0",
+  "scope": "Region:JapanMainIslands_NonExceptionalHeightDatum",
+  "preconditions": ["Primary source explicitly labels the value 標高", "Site is not under an exceptional remote-island height origin", "Source artifact and interpretation record are hash-bound"],
+  "decisionLogic": "Resolve the datum identity to TokyoBayMeanSeaLevel_JapanHeightDatum under the Survey Act definition. Keep measurement method, survey epoch and individual-value accuracy separate and unverified unless independently documented.",
+  "outputs": ["resolvedVerticalDatum", "verticalDatumStatus", "collarElevationAccuracyStatus"],
+  "uncertainty": "Datum identity does not establish how accurately the individual elevation was measured.",
+  "exclusions": ["Values labelled 海抜 without authoritative equivalence", "Exceptional remote-island datums", "Ellipsoidal heights", "Automatic exact-elevation authorization"],
+  "sourceIds": ["GSI-JAPAN-HEIGHT-DATUM", "JMA-ASO-V40-CORE-2009"],
+  "validationMethod": "Hash/source/term/applicability checks and accuracy-separation tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "JMA measurement provenance is found, the national height system changes, or an exceptional-island site is processed"
+}

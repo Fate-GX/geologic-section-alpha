@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "OfficialSourceCapture-1.0",
+  "capturedAt": "2026-09-05",
+  "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+  "authority": "産業技術総合研究所 地質調査総合センター",
+  "title": "火山地質図4 阿蘇火山地質図（解説面）",
+  "publicationYear": 1985,
+  "canonicalUrl": "https://www.gsj.jp/data/VOLC/PDF/GSJ_MAP_VOLC_04_1985_D.pdf",
+  "artifact": "GSJ_MAP_VOLC_04_1985_D.pdf",
+  "artifactSha256": "9398a64cd5c3c4cfc20640806637a94b0dc758323aacf8759443f2b56594e21a",
+  "pageCount": 9,
+  "reviewedLocator": "PDF page 4, Figure 2 and caption",
+  "adoptedClaim": "草千里ヶ浜火山の降下軽石が烏帽子岳火山北斜面を不整合に覆う定性的関係",
+  "adoptionScope": "TopologyAndRelativeOrderOnly_NoNumericGeometry",
+  "rejectedUses": [
+    "Digitizing the unscaled sketch as contact coordinates",
+    "Inferring numeric thickness or dip",
+    "Treating the viewpoint sketch as an exact arbitrary-route section"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "ruleId": "TERRAIN-MORPHOLOGY-HYPOTHESIS-001",
+  "version": "1.0",
+  "scope": "Global",
+  "status": "Adopted",
+  "preconditions": [
+    "Ordered finite terrain-profile samples",
+    "Typed landform evidence when artificial or coastal origin is asserted"
+  ],
+  "requiredEvidence": ["DEM profile; optional GSI landform classification polygons"],
+  "decisionLogic": "Rank scale-relative DEM shape metrics and route-majority typed landform evidence; artificial evidence takes precedence only at its sampled station.",
+  "outputs": ["ranked terrain morphology hypotheses", "dimensionless profile metrics", "confidence class"],
+  "uncertainty": "Route- and scale-dependent morphological hypothesis; not a geological-cause classifier",
+  "exclusions": [
+    "Must not choose a geological domain",
+    "Must not authorize a fault, fan, buried valley, terrace, landslide, reclamation thickness or other subsurface event",
+    "Must not infer artificial or coastal origin from a flat DEM alone"
+  ],
+  "sourceIds": [
+    "GSI-LANDFORM-VECTOR-2026",
+    "GSI-DEM-1M-5M-10M",
+    "USGS-SURFICIAL-B2123",
+    "USGS-SIM3524",
+    "USGS-SANFERNANDO-97163"
+  ],
+  "implementationReference": "subprojects/geologic_3d_engine/advanced_v2/terrain_morphology.py",
+  "validationMethod": "Positive, negative, boundary, mixed-evidence and out-of-scope unit tests plus six synthetic terrain profiles",
+  "reopenCondition": "GSI code table or tile schema changes; a 2D terrain-window classifier replaces route-only evidence; calibrated thresholds become available"
+}

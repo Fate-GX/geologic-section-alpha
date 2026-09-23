@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "IndependentPlanEvidenceCapture-1.0",
+  "capturedAt": "2026-09-12",
+  "subject": "Tawarayama Bridge independent plan-location evidence",
+  "sources": [
+    {
+      "sourceId": "QSR-TAWARAYAMA-RESTORATION-2019",
+      "authority": "MLIT Kyushu Regional Development Bureau",
+      "title": "熊本地震により被災した俵山大橋の復旧について",
+      "url": "https://www.qsr.mlit.go.jp/useful/n-shiryo/kikaku/kenkyu/r1/04/4_09(21).pdf",
+      "localArtifact": "mlit_tawarayama_bridge_restoration_2019.pdf",
+      "sha256": "ab7a5a4b817527141c54eac2cf66cab1d2a1cd9e852cd99ba90b2c2ad7151f70",
+      "relevantFigures": ["Figure 3", "Figure 7", "Figure 10"],
+      "use": "bridge arrangement and statement that boring data informed loosened-ground interpretation"
+    },
+    {
+      "sourceId": "PWRI-CAESAR-CLINICAL-2018",
+      "authority": "Public Works Research Institute CAESAR",
+      "title": "CAESARの臨床研究事例",
+      "url": "https://www.pwri.go.jp/caesar/profile/pdf/rinsyou2018.pdf",
+      "localArtifact": "pwri_caesar_clinical_2018.pdf",
+      "sha256": "796284d5fe0505ee9298217fa77f61db022b6dcb83b6e3c573ac2adbdb340f54",
+      "relevantPages": [13],
+      "use": "independent bridge general drawing and surveyed plane-coordinate evidence"
+    },
+    {
+      "sourceId": "GSI-SURVEYCALC-XY2BL",
+      "authority": "Geospatial Information Authority of Japan",
+      "title": "測量計算プログラム API使用法 - 緯度、経度への換算",
+      "url": "https://vldb.gsi.go.jp/sokuchi/surveycalc/api_help.html",
+      "use": "JGD plane rectangular coordinate zone 2 to latitude/longitude conversion"
+    }
+  ]
+}

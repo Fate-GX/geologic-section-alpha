@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "profileId": "ASO_VOLCANO_MAP_1985_TERMINOLOGY_V1",
+  "scope": "DatasetSpecific",
+  "sourceAuthority": "Geological Survey of Japan",
+  "sourceYear": 1985,
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985", "CGI-GEOSCIML-LITHOLOGY"],
+  "terms": [
+    {
+      "SourceCode": "a",
+      "SourceLabel": "降下火山灰",
+      "SourceLithology": "火山灰",
+      "NormalizedUnitLabelJa": "降下火山灰堆積物",
+      "NormalizedUnitLabelEn": "air-fall volcanic-ash deposit",
+      "NormalizedLithologies": ["volcanic ash"],
+      "VocabularyUris": [],
+      "VocabularyVersion": "CGI vocabulary checked 2026-08-26",
+      "TermStatus": "DerivedDisplayLabel",
+      "NormalizationNote": "Local map-unit description retained; no overly broad rock URI assigned."
+    },
+    {
+      "SourceCode": "Ksc",
+      "SourceLabel": "杵島岳火山（スコリア丘）",
+      "SourceLithology": "スコリア／普通輝石かんらん石玄武岩",
+      "NormalizedUnitLabelJa": "杵島岳火山スコリア丘（普通輝石かんらん石玄武岩質スコリア）",
+      "NormalizedUnitLabelEn": "Kishimadake Volcano scoria cone (augite-olivine basaltic scoria)",
+      "NormalizedLithologies": [
+        "scoria",
+        "basalt"
+      ],
+      "VocabularyUris": [
+        "http://resource.geosciml.org/classifier/cgi/lithology/basalt"
+      ],
+      "VocabularyVersion": "CGI Simple Lithology; GSJ source term retained for scoria",
+      "TermStatus": "LocalRelativeUnit",
+      "NormalizationNote": "The local scoria-cone unit, pyroclastic material term, and source augite-olivine basalt composition are preserved separately. No unverified controlled-vocabulary URI is asserted for scoria."
+    },
+    {
+      "SourceCode": "Kd",
+      "SourceLabel": "草千里ヶ浜火山・中央火口丘",
+      "SourceLithology": "溶岩流／普通輝石紫蘇輝石デイサイト",
+      "NormalizedUnitLabelJa": "草千里ヶ浜火山中央火口丘（デイサイト溶岩）",
+      "NormalizedUnitLabelEn": "Kusasenrigahama central cone (dacite lava)",
+      "NormalizedLithologies": ["dacite"],
+      "VocabularyUris": ["http://resource.geosciml.org/classifier/cgi/lithology/dacite"],
+      "VocabularyVersion": "CGI Simple Lithology",
+      "TermStatus": "LocalRelativeUnit",
+      "NormalizationNote": "Map-unit proper name and source pyroxene wording remain separately preserved."
+    },
+    {
+      "SourceCode": "Kp",
+      "SourceLabel": "草千里ヶ浜火山・主軽石丘",
+      "SourceLithology": "軽石、一部は強く溶結／普通輝石紫蘇輝石デイサイト",
+      "NormalizedUnitLabelJa": "草千里ヶ浜火山主軽石丘（部分溶結軽石、デイサイト質）",
+      "NormalizedUnitLabelEn": "Kusasenrigahama main pumice cone (partly welded, dacitic)",
+      "NormalizedLithologies": ["pumice", "dacite"],
+      "VocabularyUris": ["http://resource.geosciml.org/classifier/cgi/lithology/pumice", "http://resource.geosciml.org/classifier/cgi/lithology/dacite"],
+      "VocabularyVersion": "CGI Simple Lithology",
+      "TermStatus": "LocalRelativeUnit",
+      "NormalizationNote": "Welding and composition are qualifiers; the local unit is not replaced by a generic lithology."
+    },
+    {
+      "SourceCode": "Ys",
+      "SourceLabel": "吉岡溶岩",
+      "SourceLithology": "普通輝石かんらん石玄武岩、安山岩類",
+      "NormalizedUnitLabelJa": "吉岡溶岩（玄武岩～安山岩質）",
+      "NormalizedUnitLabelEn": "Yoshioka lava (basaltic to andesitic)",
+      "NormalizedLithologies": ["basalt", "andesite"],
+      "VocabularyUris": ["http://resource.geosciml.org/classifier/cgi/lithology/basalt", "http://resource.geosciml.org/classifier/cgi/lithology/andesite"],
+      "VocabularyVersion": "CGI Simple Lithology",
+      "TermStatus": "LocalRelativeUnit",
+      "NormalizationNote": "Composition range is preserved; it must not be collapsed to one rock name."
+    },
+    {
+      "SourceCode": "w",
+      "SourceLabel": null,
+      "SourceLithology": null,
+      "NormalizedUnitLabelJa": null,
+      "NormalizedUnitLabelEn": null,
+      "NormalizedLithologies": [],
+      "VocabularyUris": [],
+      "VocabularyVersion": null,
+      "TermStatus": "Unverified",
+      "NormalizationNote": "All source legend attributes are null. Preserve code w and request authoritative definition; do not infer water or lithology."
+    }
+  ]
+}

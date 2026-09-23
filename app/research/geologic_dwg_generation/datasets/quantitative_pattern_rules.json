@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedOn": "2026-08-26",
+  "policy": "No equation may affect geometry unless units, scope, provenance and calibration requirements are explicit.",
+  "rules": [
+    {
+      "ruleId": "QPR-TEPHRA-EXP-HALF-DISTANCE", "version": "1.0.0", "scope": "Domain:TephraFall",
+      "preconditions": ["single exponential thinning segment", "distance measured in the adopted dispersal direction"],
+      "requiredEvidence": ["source/vent reference", "source thickness or calibrated segment intercept", "thickness half-distance"],
+      "logic": "T(r)=Tb+(T0-Tb)*2^(-r/bt)", "units": {"T": "m", "r": "m", "bt": "m"},
+      "outputs": ["candidate deposit thickness"], "confidence": "Empirical; segment-specific",
+      "exclusions": ["unsegmented multi-slope deposit", "post-depositional erosion ignored", "not a wind/advection simulator"],
+      "sourceIds": ["PYLE-TEPHRA-1989"], "validation": "half-distance identity and monotonicity tests",
+      "status": "Adopted", "reopenCondition": "multi-segment isopach observations or a transport model are required"
+    },
+    {
+      "ruleId": "QPR-LAVA-LENGTH-VOLUME-RELATIVE", "version": "1.0.0", "scope": "Domain:BasalticLava;Regime:VolumeLimited",
+      "preconditions": ["basaltic lava", "volume-limited regime", "compatible calibrated reference flow"],
+      "requiredEvidence": ["erupted volume", "reference volume", "reference length", "regime classification"],
+      "logic": "L=Lref*(V/Vref)^0.67", "units": {"L": "m", "V": "m3"},
+      "outputs": ["relative candidate flow length"], "confidence": "Published exponent; local absolute coefficient intentionally not assumed",
+      "exclusions": ["non-basaltic flow", "unknown regime", "uncalibrated absolute prediction"],
+      "sourceIds": ["MARUISHI-LAVA-SCALING-2025"], "validation": "dimensionless ratio and reference identity tests",
+      "status": "Adopted", "reopenCondition": "full regional calibration data become available"
+    },
+    {
+      "ruleId": "QPR-LAVA-LENGTH-EFFUSION-RELATIVE", "version": "1.0.0", "scope": "Domain:BasalticLava;Regime:CoolingLimited",
+      "preconditions": ["basaltic lava", "cooling-limited regime", "compatible calibrated reference flow"],
+      "requiredEvidence": ["effusion rate", "reference rate", "reference length", "regime classification"],
+      "logic": "L=Lref*(Q/Qref)^0.60", "units": {"L": "m", "Q": "m3/s"},
+      "outputs": ["relative candidate flow length"], "confidence": "Published exponent; local absolute coefficient intentionally not assumed",
+      "exclusions": ["non-basaltic flow", "unknown regime", "uncalibrated absolute prediction"],
+      "sourceIds": ["MARUISHI-LAVA-SCALING-2025"], "validation": "dimensionless ratio and reference identity tests",
+      "status": "Adopted", "reopenCondition": "full regional calibration data become available"
+    },
+    {
+      "ruleId": "QPR-CHANNEL-MEANDER-RADIUS-WIDTH", "version": "1.0.0", "scope": "Domain:AlluvialRiverMeander",
+      "preconditions": ["bankfull channel width and bend radius measured consistently"],
+      "requiredEvidence": ["bankfull width", "radius of curvature"],
+      "logic": "R/W modal range 2 to 3", "units": {"R/W": "dimensionless"},
+      "outputs": ["soft morphology diagnostic"], "confidence": "Modal empirical range; not a universal bound",
+      "exclusions": ["straight channel", "engineered alignment", "submarine channel without separate calibration"],
+      "sourceIds": ["WILLIAMS-MEANDER-1986"], "validation": "outside-modal values remain non-rejected",
+      "status": "Adopted", "reopenCondition": "environment-specific channel model is selected"
+    },
+    {
+      "ruleId": "QPR-CHANNEL-HYDRAULIC-GEOMETRY", "version": "0.1.0", "scope": "Environment:AlluvialChannel",
+      "requiredEvidence": ["regional coefficients", "discharge/slope/grain size", "unit convention"],
+      "logic": "source-calibrated power law only", "outputs": ["width/depth candidate"],
+      "sourceIds": ["TRAMPUSH-CHANNEL-2014"], "status": "NeedsCalibration",
+      "reopenCondition": "a compatible coefficient table and its units are adopted"
+    },
+    {
+      "ruleId": "QPR-JP-ALLUVIAL-FAN-CONDITIONAL-CONTROLS", "version": "1.0.0", "scope": "Region:HumidJapan",
+      "requiredEvidence": ["formation stage", "drainage area", "relief ratio", "geology", "climate", "tectonic/environmental setting"],
+      "logic": "Use variables as conditional priors; do not infer fan geometry from one variable",
+      "outputs": ["parameter-prior adjustments"], "sourceIds": ["SAITO-JP-ALLUVIAL-FAN-1985"],
+      "status": "Adopted", "reopenCondition": "coefficient tables and units are digitized and validated"
+    },
+    {
+      "ruleId": "QPR-ALLUVIAL-FAN-VOLUME-AREA-PUBLISHED", "version": "0.1.0", "scope": "DatasetSpecific",
+      "requiredEvidence": ["original table/equation", "area unit", "volume unit", "regional applicability"],
+      "logic": "Blocked from execution", "outputs": [], "sourceIds": ["FAN-VOLUME-AREA-2010"],
+      "status": "NeedsUnitVerification", "reopenCondition": "original equation units are verified"
+    }
+  ]
+}

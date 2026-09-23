@@ -1,0 +1,34 @@
+{
+  "sourceId": "GSJ-OPENFILE-748-ASO-ISOPACH",
+  "authority": "Geological Survey of Japan, AIST",
+  "title": "Geological Information for Slope Hazard Risk Assessment - No.2: Geological information of Kyushu area",
+  "canonicalPageUrl": "https://www.gsj.jp/publications/pub/openfile/openfile0748.html",
+  "accessedAt": "2026-09-05",
+  "artifacts": [
+    {
+      "path": "gsj_openfile_report_748.pdf",
+      "canonicalUrl": "https://www.gsj.jp/data/openfile/no0748/gsj_openfile_report_748.pdf",
+      "sha256": "0058462e7a25e6cf27e3886b3319c97d2e35194bb48e8b14849bcf4f689abd73"
+    },
+    {
+      "path": "isopach.tif",
+      "canonicalUrl": "https://www.gsj.jp/data/openfile/no0748/isopach.tif",
+      "sha256": "324e8e6c894d2104de4dbccf10f5846b5a85d98a96e9a6e67a6bdd42e088ca71",
+      "byteLength": 74869608,
+      "rasterStructure": "4810x3352, RGB Byte, no CRS, no GeoTransform, no numeric thickness band"
+    },
+    {
+      "path": "isopach_preview.png",
+      "derivation": "gdal_translate -outsize 1200 0 from the captured TIFF",
+      "sha256": "60d007d4fefb5595f822d096c5ced0d7660b8c4a31839ab53be091a1ceb41d86"
+    }
+  ],
+  "sourceStatement": "The map is a terrain-surface minus interpreted Aso-4 ignimbrite top elevation difference, supported by published maps, KuniJiban cores and field survey.",
+  "adoptionBoundary": "RegionalQualitativeThicknessPatternOnly_NotNumericRaster",
+  "exclusions": [
+    "Do not treat RGB values as thickness in metres",
+    "Do not georeference the image by visual fitting without a declared transform",
+    "Do not apply outside the eastern Aso-4 ignimbrite plateau",
+    "Do not apply to the current central-volcano route, which is outside the mapped area"
+  ]
+}

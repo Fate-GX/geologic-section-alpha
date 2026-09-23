@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0.0",
+  "policy": "Migrate a legacy generator only when selected for reuse or publication.",
+  "generators": [
+    {"id": "BASIC_TEST", "status": "LegacyUnverified", "selectedForReuse": false, "expectedAction": "Deferred"},
+    {"id": "V09", "status": "LegacyUnverified", "selectedForReuse": false, "expectedAction": "Deferred"},
+    {"id": "V11", "status": "LegacyUnverified", "selectedForReuse": false, "expectedAction": "Deferred"},
+    {"id": "V15", "status": "LegacyUnverified", "selectedForReuse": false, "expectedAction": "Deferred"},
+    {"id": "V16", "status": "LegacyUnverified", "selectedForReuse": false, "expectedAction": "Deferred"},
+    {"id": "SYNTHETIC_SELECTED_LEGACY", "status": "LegacyUnverified", "selectedForReuse": true, "expectedAction": "MigrationRequired"},
+    {"id": "SYNTHETIC_CURRENT", "status": "CurrentNormalized", "selectedForReuse": true, "expectedAction": "NoMigrationRequired"}
+  ]
+}

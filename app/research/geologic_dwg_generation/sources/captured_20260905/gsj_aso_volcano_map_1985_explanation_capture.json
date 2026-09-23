@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "CapturedPrimarySource-1.0",
+  "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+  "authority": "Geological Survey of Japan, AIST",
+  "title": "Geological Map of Aso Volcano, explanatory text",
+  "publicationYear": 1985,
+  "canonicalUrl": "https://www.gsj.jp/data/VOLC/PDF/GSJ_MAP_VOLC_04_1985_D.pdf",
+  "accessDate": "2026-09-05",
+  "localFile": "gsj_aso_volcano_map_1985_explanation.pdf",
+  "sha256": "9398a64cd5c3c4cfc20640806637a94b0dc758323aacf8759443f2b56594e21a",
+  "byteCount": 5195562,
+  "pageCount": 9,
+  "verifiedPassage": {
+    "pdfPage": 6,
+    "printedPage": 6,
+    "meaning": "Five boreholes immediately below the caldera wall reached Cretaceous granite or sedimentary basement at 150 to 500 metres."
+  },
+  "vectorComparison": {
+    "sourceArtifact": "pnt.shp",
+    "mappedBasementReachPointCount": 4,
+    "narrativeBoreholeCount": 5,
+    "countAgreement": false,
+    "individualAttribute2Meaning": "Unverified"
+  },
+  "adoptionBoundary": "RegionalBasementReachContextOnly_NoIndividualDepth_NoCurrentRouteConstraint"
+}

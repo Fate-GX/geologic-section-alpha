@@ -1,0 +1,32 @@
+{
+  "ruleId": "UGL-GEOLOGICAL-PRIORITY-GATE",
+  "version": "1.0.0",
+  "scope": "Global",
+  "status": "Adopted",
+  "decisionOrder": [
+    "UniversalHardInvariants",
+    "RegionalProfileAndApplicability",
+    "RouteApplicableEventEvidence",
+    "EvidenceBoundStochasticSampling",
+    "Rendering"
+  ],
+  "hardInvariants": [
+    "NoUnexplainedMaterialOverlapOrVoid",
+    "PositiveThicknessOrExplicitPinchout",
+    "YoungerEventsCannotBeTruncatedByOlderEvents",
+    "TerrainDoesNotDetermineSubsurfaceGeometry",
+    "MappedSurfaceUnitDoesNotAuthorizeVerticalProjection",
+    "LocalizedMajorEventRequiresRouteApplicableEvidence"
+  ],
+  "localizedEventClasses": ["IncisedValley", "Fault", "Fold", "Intrusion", "Lens"],
+  "fallback": "ConservativeRegionalPrior_NoLocalizedEvents",
+  "exclusions": [
+    "A named region alone never authorizes an event",
+    "A mapped surface class alone never authorizes subsurface geometry",
+    "Visual realism never overrides missing evidence"
+  ],
+  "implementationReference": "geologic_3d_engine.validation.geological_prior_gate::evaluate_geological_priors",
+  "validationMethod": "ordering, missing-contract, named-region, unsupported-event and evidence-bound positive tests",
+  "uncertainty": "The conservative regional prior remains a synthetic hypothesis and is not route-specific ground truth",
+  "reopenCondition": "A hard invariant proves non-universal or a new localized event class is introduced"
+}

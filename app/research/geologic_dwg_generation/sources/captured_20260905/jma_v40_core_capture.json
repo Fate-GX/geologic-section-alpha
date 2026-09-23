@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "CapturedPrimaryEvidence-1.0",
+  "capturedAt": "2026-09-05",
+  "artifacts": [
+    {
+      "sourceId": "JMA-ASO-V40-CORE-2009",
+      "path": "jma_core_08_aso_v40.pdf",
+      "sha256": "d4455a60078154a6f289f9f0ccea698f4dbe20ddf1ed5e62e9742f472adbb85d",
+      "pageCount": 69,
+      "locator": "PDF pages 9-11; printed pages 331-333",
+      "verifiedContent": "Coordinates, collar elevation, 100 m depth, drilling period, eight logged units and location figure"
+    },
+    {
+      "sourceId": "ASO-JMA-V40-CORE-2013",
+      "path": "miyabuchi_hoshizumi_2013_jma_v40.pdf",
+      "sha256": "755bd26494a9205b74059182ceaafc7a2f759d545e871686d27363ddc18d340a",
+      "pageCount": 8,
+      "locator": "pages 543-545, abstract, section 2 and Figure 1",
+      "verifiedContent": "Nine-unit peer-reviewed stratigraphy and explicit WGS84 coordinate declaration"
+    }
+  ],
+  "limitations": [
+    "Neither inspected source explicitly identifies the vertical elevation datum.",
+    "The borehole is about 1.78 km from the current route and is not a contact-elevation constraint for that route.",
+    "Normalized lithology terms remain Unverified pending a dedicated vocabulary audit."
+  ]
+}

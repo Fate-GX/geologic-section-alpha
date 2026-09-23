@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleId": "UGL-POSITIVE-CORRELATED-THICKNESS-FIELDS",
+  "ruleVersion": "1.4.0",
+  "basisContracts": [
+    {
+      "basisId": "COVARIANCE-MATRIX-PSD",
+      "basisType": "MathematicalIdentity",
+      "derivation": "A real covariance matrix C must be symmetric and positive semidefinite: v^T C v >= 0 for every real vector v. This is a validity condition for a covariance model, not evidence that the current engine constructs or validates C.",
+      "implementationStatus": "NotImplemented",
+      "implementationRefs": [],
+      "testRefs": []
+    },
+    {
+      "basisId": "POSITIVE-THICKNESS-INVARIANT",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py::build_conformable_stack"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py::test_negative_thickness_is_rejected",
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py::test_zero_thickness_is_explicit_inactive_state"
+      ]
+    },
+    {
+      "basisId": "SHARED-CONTACT-INVARIANT",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py::build_conformable_stack"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py::test_shared_contacts_are_exact_objects"
+      ]
+    },
+    {
+      "basisId": "PARTITION-NO-OVERLAP-GAP",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/VALIDATION_PLAN.md#mandatory-invariants",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py::validate_voxel_partition"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py::test_voxel_partition_has_no_overlap_or_void"
+      ]
+    },
+    {
+      "basisId": "NO-INDEPENDENT-BOUNDARY-NOISE",
+      "basisType": "ProjectArchitecturePolicy",
+      "definitionRef": "AGENTS.md#evidence-driven-geologic-dwg-development-workflow",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py::build_conformable_stack"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py::test_shared_contacts_are_exact_objects"
+      ]
+    },
+    {
+      "basisId": "ALLARD-TRANSFORMED-LATENT-GAUSSIAN",
+      "basisType": "PublishedConceptualEvidence",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "evidenceStatus": "DirectPrimaryTextReviewed",
+      "implementationStatus": "NotImplemented",
+      "evidenceRef": "research/geologic_dwg_generation/sources/primary/ALLARD_LATENT_STRATIGRAPHY_2021_evidence.json"
+    },
+    {
+      "basisId": "ALLARD-TRUNCATION-ZERO-THICKNESS",
+      "basisType": "PublishedConceptualEvidence",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "evidenceStatus": "DirectPrimaryTextReviewed",
+      "implementationStatus": "OnlyExplicitZeroThicknessActiveMaskImplemented",
+      "evidenceRef": "research/geologic_dwg_generation/sources/primary/ALLARD_LATENT_STRATIGRAPHY_2021_evidence.json"
+    },
+    {
+      "basisId": "ALLARD-SEQUENTIAL-STACKING",
+      "basisType": "PublishedConceptualEvidence",
+      "sourceIds": [
+        "ALLARD-LATENT-STRATIGRAPHY-2021"
+      ],
+      "evidenceStatus": "DirectPrimaryTextReviewed",
+      "implementationStatus": "ImplementedAsDeterministicInputArrayStack",
+      "evidenceRef": "research/geologic_dwg_generation/sources/primary/ALLARD_LATENT_STRATIGRAPHY_2021_evidence.json"
+    },
+    {
+      "basisId": "CONFORMABLE-SEQUENTIAL-STACK",
+      "basisType": "ProjectInvariant",
+      "definitionRef": "subprojects/geologic_3d_engine/SUBPROJECT_CHARTER.md#reuse-of-current-code",
+      "implementationRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py::build_conformable_stack"
+      ],
+      "testRefs": [
+        "subprojects/geologic_3d_engine/tests/test_conformable_stack.py"
+      ]
+    }
+  ]
+}

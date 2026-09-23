@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "QualitativeStratigraphicConstraints-1.0",
+  "profileId": "ASO-EBOSHI-KUSASENRI-FIG2-1985",
+  "scope": "DatasetSpecific:GSJ-Aso-Map-Figure2",
+  "geometryAuthorization": "TopologyAndRelativeOrderOnly_NoNumericGeometry",
+  "units": [
+    {
+      "unitId": "EBOSHI_VOLCANO",
+      "sourceLabel": "烏帽子岳火山",
+      "termStatus": "LocalRelativeUnit"
+    },
+    {
+      "unitId": "KUSASENRIGAHAMA_FALLOUT_PUMICE",
+      "sourceLabel": "草千里ヶ浜火山の降下軽石",
+      "termStatus": "LocalRelativeUnit"
+    }
+  ],
+  "relations": [
+    {
+      "olderUnitId": "EBOSHI_VOLCANO",
+      "youngerUnitId": "KUSASENRIGAHAMA_FALLOUT_PUMICE",
+      "relationKind": "UnconformableAbove",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "locator": "Explanatory text PDF page 4, Figure 2 and caption",
+      "evidenceStatus": "InterpretedFromSourceFigure"
+    }
+  ],
+  "sourceArtifact": {
+    "path": "sources/captured_20260905/gsj_aso/GSJ_MAP_VOLC_04_1985_D.pdf",
+    "sha256": "9398a64cd5c3c4cfc20640806637a94b0dc758323aacf8759443f2b56594e21a"
+  },
+  "exclusions": [
+    "No numeric elevation, thickness, dip, or digitized curve",
+    "No claim that the sketch follows the current user route exactly",
+    "No independent age or contact-position uncertainty"
+  ],
+  "recordSha256": "5eee29c5585ed44e48d6f5e91ad8d7a2e107196d5dac49ed6906f1347289065e"
+}

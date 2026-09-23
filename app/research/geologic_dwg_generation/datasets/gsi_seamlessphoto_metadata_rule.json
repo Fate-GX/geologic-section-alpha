@@ -1,0 +1,20 @@
+{
+  "ruleId": "GSI-SEAMLESSPHOTO-PER-TILE-METADATA-1",
+  "version": "1.0.0",
+  "scope": "DatasetSpecific:GSI-SeamlessPhoto",
+  "preconditions": [
+    "Orthophoto tile coordinates and bytes are captured",
+    "Matching seamlessphoto_spec GeoJSON tile is captured and hash-bound"
+  ],
+  "decisionLogic": "Classify the center and four inset corners of every displayed orthophoto tile against the official metadata polygons. Report consistency only when all five locations have one identical, complete source/date classification.",
+  "outputs": ["dataSource", "acquisitionDateOrRange", "classificationStatus", "metadataTileSha256"],
+  "uncertainty": "Five-point sampling does not prove uniform metadata over every pixel between sample points.",
+  "exclusions": [
+    "Does not infer lithology or any subsurface boundary",
+    "Does not call a five-point-consistent tile uniformly covered"
+  ],
+  "sourceIds": ["GSI-AERIAL-SEAMLESS", "GSI-AERIAL-SEAMLESS-SPEC"],
+  "validationMethod": "Polygon, hole, overlap, missing-field and real-route tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "GSI changes the endpoint/schema, a tile is mixed/unresolved, or pixel-complete polygon overlay is required"
+}

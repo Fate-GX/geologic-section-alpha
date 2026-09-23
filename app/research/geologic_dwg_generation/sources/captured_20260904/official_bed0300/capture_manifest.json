@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "OfficialFormatEvidenceCapture-1.0",
+  "capturedAt": "2026-09-05",
+  "authority": "国土交通省",
+  "title": "地質・土質調査成果電子納品要領(案) 平成20年12月",
+  "canonicalIndexUrl": "https://www.cals-ed.go.jp/cri_point/",
+  "artifacts": [
+    {
+      "path": "boring61_h20_12_main.pdf",
+      "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring61.pdf",
+      "sha256": "7d0e55a0084e94fa986162585af78284499b9602bf0107e013edf9be3d23bb81",
+      "role": "MainVolume"
+    },
+    {
+      "path": "boring62_h20_12_appendix.pdf",
+      "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring62.pdf",
+      "sha256": "66f19da71faf758166a8d1090d39c640ecee3636cf8253a6a111fbff18a05404",
+      "role": "AppendixAndBED0300FieldDefinition"
+    }
+  ],
+  "verifiedPassage": {
+    "sourceId": "MLIT-BED0300-H20-12-APPENDIX",
+    "artifact": "boring62_h20_12_appendix.pdf",
+    "pdfPage": 41,
+    "printedPage": "付5-17",
+    "section": "(12) 基本情報 / 1) 孔口標高(実数)",
+    "meaning": "孔口標高はT.P.(東京湾平均海面)を基準とし、単位m、小数点以下2桁まで記録する",
+    "visualReview": "Confirmed directly from rendered page",
+    "adoptionScope": "BED0300 DTD 3.00 collar-elevation field semantics only",
+    "exclusions": [
+      "Does not prove the individual borehole levelling method",
+      "Does not provide survey epoch or accuracy",
+      "Does not authorize correlation to the current route"
+    ]
+  }
+}

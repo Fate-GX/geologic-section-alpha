@@ -1,0 +1,38 @@
+{
+  "ruleId": "BED0300-REFERENCE-SEMANTICS-1",
+  "version": "1.0",
+  "scope": "Domain:MLIT-BED0300-DTD-3.00",
+  "preconditions": [
+    "Root DTD_version is exactly 3.00",
+    "測地系 code and 孔口標高 are present",
+    "Original XML bytes and SHA-256 are retained"
+  ],
+  "decisionLogic": {
+    "geodeticCode0": "Japanese Datum / old geodetic system; no automatic modern-CRS assignment",
+    "geodeticCode1": "JGD2000 / EPSG:4612 as declared by the exchange-format code table",
+    "collarElevation": "T.P. (Tokyo Bay mean sea level), metres, two decimal places as exchange-format semantics",
+    "coordinateAcquisitionCode02": "Topographic-map reading",
+    "coordinateReadingPrecisionCode0": "Integer arc-second resolution; retained decimal characters must not be promoted to verified precision"
+  },
+  "requiredEvidence": [
+    "MLIT-BED0300-H20-12-APPENDIX"
+  ],
+  "outputs": [
+    "Declared horizontal CRS semantics",
+    "Declared vertical datum semantics",
+    "Separate individual coordinate and collar-elevation accuracy status",
+    "Source acquisition-method code and declared reading resolution"
+  ],
+  "uncertainty": "The format definition does not prove the individual survey method, epoch or accuracy.",
+  "exclusions": [
+    "Does not perform JGD2000 to JGD2011 transformation",
+    "Does not verify individual collar elevation",
+    "Declared reading resolution is not survey accuracy",
+    "Does not normalize lithology terminology",
+    "Does not authorize borehole correlation or subsurface geometry"
+  ],
+  "sourceIds": ["MLIT-BED0300-H20-12-APPENDIX"],
+  "validationMethod": "Direct visual review of Appendix 5 Table 2-6 and printed page 付5-17; positive and fail-closed parser tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A different BED version, code outside 0/1, exceptional height datum, or record-specific survey metadata"
+}

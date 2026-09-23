@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "GeologicSourceCatalog-1.0",
+  "accessDate": "2026-09-09",
+  "records": [
+    {
+      "sourceId": "USGS-OF-95-525",
+      "authority": "U.S. Geological Survey",
+      "title": "Cartographic and Digital Standard for Geologic Map Information",
+      "canonicalUrl": "https://pubs.usgs.gov/of/1995/0525/report.pdf",
+      "relevantPart": "Cross sections, explanations and consistency of interpretation at depth",
+      "adoptionStatus": "Adopted",
+      "adoptionReason": "Publication-content and interpretation-boundary guidance"
+    },
+    {
+      "sourceId": "USGS-OF-95-415-C",
+      "authority": "U.S. Geological Survey",
+      "title": "Geologic map and section standards",
+      "canonicalUrl": "https://pubs.usgs.gov/of/1995/ofr95415/pdf/ofr_95-415_c.pdf",
+      "relevantPart": "Horizontal and vertical scales, vertical exaggeration, datum and explanation",
+      "adoptionStatus": "Adopted",
+      "adoptionReason": "Visible section-sheet requirements"
+    },
+    {
+      "sourceId": "GPML-CH4",
+      "authority": "Carl Edward Rasmussen and Christopher K. I. Williams",
+      "title": "Gaussian Processes for Machine Learning, Chapter 4: Covariance Functions",
+      "canonicalUrl": "https://gaussianprocess.org/gpml/chapters/RW4.pdf",
+      "relevantPart": "Matérn covariance family",
+      "adoptionStatus": "AdoptedAsNumericalMethodOnly",
+      "adoptionReason": "Finite-smoothness synthetic covariance; not geological evidence"
+    },
+    {
+      "sourceId": "SKLEARN-MATERN",
+      "authority": "scikit-learn developers",
+      "title": "Matern kernel documentation",
+      "canonicalUrl": "https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.Matern.html",
+      "relevantPart": "Smoothness interpretation of the Matérn parameter",
+      "adoptionStatus": "CorroboratingReference",
+      "adoptionReason": "Implementation-independent description; no scikit-learn code is used"
+    },
+    {
+      "sourceId": "FGDC-GDS-2006",
+      "authority": "Federal Geographic Data Committee / U.S. Geological Survey",
+      "title": "Digital Cartographic Standard for Geologic Map Symbolization",
+      "canonicalUrl": "https://pubs.usgs.gov/tm/2006/11A02/",
+      "relevantPart": "Geologic line and area symbolization",
+      "adoptionStatus": "ReferenceOnly",
+      "adoptionReason": "International-layout symbol reference; no silent mixing with JIS-oriented sheets"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "ruleId": "ADAPTIVE-SECTION-STATION-PLAN-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Piecewise-linear projected route", "Zero or more exact contact evidence-hull coverage records"],
+  "decisionLogic": [
+    "Union original route vertices with every exact support-interval endpoint.",
+    "Verify every supplied endpoint lies on its declared route segment.",
+    "Merge coincident stations only within an explicit numerical tolerance.",
+    "Leave terrain elevation empty until directly sampled from a hash-bound DEM artifact."
+  ],
+  "outputs": ["adaptive ordered station plan", "insertion reasons", "terrain evidence requirements", "optional direct XYZ DEM completion at every planned station"],
+  "uncertainty": "Merge tolerance is numerical only and does not authorize terrain or geological interpolation",
+  "exclusions": ["No terrain linear interpolation", "No invented elevation at inserted support boundaries", "No off-route endpoints"],
+  "sourceIds": [],
+  "basisType": "DeterministicSamplingAndEvidenceCompletionContract",
+  "validationMethod": "Multiple coincident boundaries, direct DEM completion, station mismatch, bad hash and off-route endpoint tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Continuous raster sampler callbacks or curved/geodesic route primitives are introduced"
+}

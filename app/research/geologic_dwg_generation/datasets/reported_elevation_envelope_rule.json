@@ -1,0 +1,27 @@
+{
+  "ruleId": "GEO-EVIDENCE-REPORTED-ELEVATION-ENVELOPE-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "At least two source-linked reports refer to the same elevation quantity and vertical datum",
+    "Each report declares its displayed numeric resolution"
+  ],
+  "equations": {
+    "roundingInterval": "[v-r/2, v+r/2]",
+    "consistentIntersection": "[max_i(v_i-r_i/2), min_i(v_i+r_i/2)]",
+    "depthTranslation": "[z_min-d, z_max-d]"
+  },
+  "outputs": [
+    "NumericallyConsistent_NotAccuracyEvidence",
+    "ConflictingPublishedElevations"
+  ],
+  "exclusions": [
+    "Reporting resolution is not measurement accuracy",
+    "Repeated publication of one survey is not independent measurement replication",
+    "The envelope never authorizes lithologic geometry"
+  ],
+  "sourceIds": ["JMA-ASO-V40-CORE-2009", "ASO-JMA-V40-CORE-2013"],
+  "validationMethod": "Positive, conflict, malformed-hash and invalid-depth unit tests",
+  "adoptionStatus": "AdoptedEvidencePreservationPrimitive",
+  "reopenCondition": "A survey accuracy, benchmark tie, epoch or independent collar survey becomes available"
+}

@@ -1,0 +1,29 @@
+{
+  "ruleId": "ADV2-REGIONAL-BEDROCK-UNDER-COVER-1.0",
+  "version": "1.0",
+  "scope": "Domain",
+  "adoptionStatus": "AdoptedForSyntheticRegionalPrior",
+  "preconditions": ["UnconsolidatedSedimentTerrain", "Conservative regional prior without observed subsurface contacts", "Route length at most 5000 m"],
+  "requiredEvidence": ["On-route mapped bedrock sample or at least two consistent local off-route GSJ samples", "Source labels and coordinates retained", "No conflicting bedrock families"],
+  "decisionLogic": "Do not discard bedrock because unconsolidated cover wins the route-wide majority. Resolve bedrock identity among bedrock evidence only. Ambiguous granitic group remains granitic rocks, not a specific petrographic species. Replace the generic sediment display base with this inferred substrate. Do not create an extra conformable granite bed.",
+  "outputs": ["regionalBedrockEvidence", "regionalBedrockGeometry", "regionalBedrockAudit", "source-linked inferred substrate in polygons and legend"],
+  "equations": [{
+    "id": "ADV2-REGIONAL-BEDROCK-CONTACT-PRIOR-1",
+    "expression": "t=clip(abs(x-a)/L,0,1); w=max_a(1-(6*t^5-15*t^4+10*t^3)); B=min(C,B0+w*(C-B0)); bottom_i=min(top_i,max(original_bottom_i,B)); top_(i+1)=bottom_i",
+    "variables": {"x": "section station m", "a": "on-route map-query station m, not a surveyed outcrop", "L": "max(0.5*route_length,1 m), synthetic support", "C": "protected surface-cover bottom EL m", "B0": "original synthetic substrate top EL m", "B": "inferred substrate top EL m", "w": "dimensionless interpolation weight"},
+    "coordinateConvention": "station increases A to B; elevation increases upward",
+    "basisType": "ProjectImplementationChoice_NotAuthoritativeGeologicalEquation",
+    "parameterAuthority": "UncalibratedSyntheticAssumption",
+    "offRouteBehavior": "w=0: nearby rock identity does not invent an on-route exposure",
+    "uncertainty": "No depth accuracy or probability coverage claimed; no borehole conditioning",
+    "implementationReference": "advanced_v2/regional_bedrock.py:apply_regional_bedrock_geometry"
+  }],
+  "sourceIds": ["GSJ-SEAMLESS-V2-API", "GSJ-HIROSHIMA-50K-1991-CONTEXT"],
+  "sources": [
+    {"sourceId":"GSJ-SEAMLESS-V2-API","authority":"GSJ/AIST","title":"20万分の1日本シームレス地質図V2 Web API","canonicalUrl":"https://gbank.gsj.jp/seamless/v2/api/1.3.1/","locator":"legend.json point query","accessDate":"2026-09-21","use":"Mapped surface identities and regional candidate support only"},
+    {"sourceId":"GSJ-HIROSHIMA-50K-1991-CONTEXT","authority":"GSJ; 高橋裕平","title":"広島地域の地質","sourceYear":1991,"canonicalUrl":"https://www.gsj.jp/data/50KGM/PDF/GSJ_MAP_G050_13002_1991_D.pdf","locator":"printed pp.1,27-31; figure22","accessDate":"2026-09-21","scope":"Region","use":"Context demonstrating granite terrain, weathering and sediment cover; NOT global unit order or numeric depths","exclusions":["Test route lies east of this sheet boundary; no site-specific parameter authority","Do not adopt historic radiocarbon ages as current calibrated ages"]}
+  ],
+  "exclusions": ["No prefecture-name rock assignment", "No hardening-with-depth rock selection", "No observed-contact claim", "No generic ash insertion without regional ash evidence", "Multiple conflicting parents remain unresolved", "Missing evidence is not evidence of absence"],
+  "validationMethod": "Positive minority-granite and alternative-rock tests; missing/null/conflicting evidence; support counts; out-of-scope route length and invalid station tests; exact shared boundaries; source-preserving production replay; mandatory-body-removal rejection; DWG reopen",
+  "reopenCondition": "Boreholes, detailed map contacts, new parent conflicts or routes requiring segmented regional context"
+}

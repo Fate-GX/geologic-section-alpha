@@ -1,0 +1,37 @@
+{
+  "ruleId": "GEO-BASE-CONTINUATION-001",
+  "version": "1.0.0",
+  "scope": "Global",
+  "status": "Adopted",
+  "basisType": "ProjectImplementationChoice",
+  "preconditions": [
+    "The deepest displayed unit is already authorized by the selected synthetic regional/domain profile.",
+    "The drawing frame extends below the calculated model boundary only because of drafting-scale rounding.",
+    "No observed basal contact, fault, intrusion, or unconformity requires a different unit in that interval."
+  ],
+  "decisionLogic": [
+    "Continue the existing deepest displayed unit to the rounded drawing-frame lower edge.",
+    "Reuse the same unit identifier, normalized lithology label, colour and hatch layer.",
+    "Classify the added polygon as SyntheticBasalContinuation with basisType SyntheticAssumption.",
+    "Never invent a new basement lithology solely to fill drawing space."
+  ],
+  "outputs": [
+    "A gap-free section polygon partition to the drawing frame.",
+    "An explicit machine-readable continuationOfUnitId link.",
+    "A visible note that the continuation is not an observation."
+  ],
+  "uncertainty": "The continuation is a conventional stratigraphic continuity prior, not evidence of the unique subsurface truth.",
+  "exclusions": [
+    "Observed or literature-supported changes below the model boundary",
+    "Cross-cutting structures that invalidate vertical continuation",
+    "Use as a real-region authorization"
+  ],
+  "sourceIds": [],
+  "validationMethod": [
+    "The continuation unitId equals continuationOfUnitId and the existing deepest unitId.",
+    "Its upper vertices exactly equal the calculated lower model boundary.",
+    "Its lower vertices exactly equal the rounded drawing-frame lower elevation.",
+    "All coloured hatch layer names contain a sanitized normalized lithology suffix."
+  ],
+  "reopenCondition": "Reopen when route-applicable subsurface evidence defines a different deeper unit or basal contact."
+}

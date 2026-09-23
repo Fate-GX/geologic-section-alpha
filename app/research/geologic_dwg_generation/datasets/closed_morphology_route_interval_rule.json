@@ -1,0 +1,12 @@
+{
+  "ruleId":"GEO3D-CLOSED-MORPHOLOGY-ROUTE-INTERVAL-1",
+  "version":"1.0.0",
+  "scope":"Domain:MappedVolcanicSurfaceMorphology",
+  "preconditions":["Source line is explicitly closed","Route crossings occur in ordered pairs","Feature is typed CraterRim"],
+  "decisionLogic":"Pair successive crossings of the same closed rim and classify the intervening route segment as inside the mapped perimeter.",
+  "outputs":["entry and exit stations","terrain elevations","surface-only crater-perimeter interval"],
+  "exclusions":["No lithology inference","No crater-bottom inference","No subsurface continuation"],
+  "sourceIds":["GSJ-MAP-VOLC-04-ASO-1985-VECTOR"],
+  "adoptionStatus":"Adopted",
+  "reopenCondition":"Nested rings, tangent crossings, topology defects or direct crater subsurface evidence appear"
+}

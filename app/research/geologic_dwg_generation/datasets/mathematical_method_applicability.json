@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "Global",
+  "methods": [
+    {
+      "methodId": "DEFORMATION-GRADIENT",
+      "status": "Adopted",
+      "equation": "F=d(x)/d(X); J=det(F)",
+      "authorizedUse": "continuous fold or strain mapping with J>0",
+      "blockedUse": "treating a fault discontinuity as a smooth map",
+      "sourceIds": ["STRUCTURAL-RESTORATION-1997", "LOOPSTRUCTURAL-GMD-2021"]
+    },
+    {
+      "methodId": "FAULT-DISPLACEMENT-VECTOR",
+      "status": "Adopted",
+      "equation": "f_disp=d*f1",
+      "authorizedUse": "time-ordered piecewise displacement constrained by surface, slip direction and magnitude evidence",
+      "blockedUse": "inventing displacement or movement sense from visual style",
+      "sourceIds": ["LOOPSTRUCTURAL-FAULTS-GMD-2021"]
+    },
+    {
+      "methodId": "IMPLICIT-SCALAR-FIELD",
+      "status": "Adopted",
+      "equation": "contact={x:phi(x)=isoValue}",
+      "authorizedUse": "interpolation from contacts, orientations and explicit event relations",
+      "blockedUse": "claiming depositional-process truth from interpolation alone",
+      "sourceIds": ["GEMPY-THEORY", "LOOPSTRUCTURAL-GMD-2021"]
+    },
+    {
+      "methodId": "MOHR-COULOMB",
+      "status": "CandidateDiagnosticOnly",
+      "equation": "tau=c+sigmaEffective*tan(phi)",
+      "authorizedUse": "scenario diagnostic when stress, pore pressure and material parameters are supplied",
+      "blockedUse": "directly generating a fault trace from lithology name or terrain alone",
+      "sourceIds": []
+    },
+    {
+      "methodId": "ADVECTION-DIFFUSION-REACTION",
+      "status": "DelegateToValidatedSolver",
+      "equation": "dc/dt + v.grad(c) = div(D grad(c)) + R(c)",
+      "authorizedUse": "transport or diagenetic hypotheses with calibrated coefficients and boundary conditions",
+      "blockedUse": "using an arbitrary smooth PDE field as a geological contact",
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"]
+    },
+    {
+      "methodId": "POROELASTICITY",
+      "status": "Open",
+      "equation": "coupled stress-fluid formulation",
+      "authorizedUse": "future settlement, overpressure or deformation module with measurements",
+      "blockedUse": "unconstrained section decoration",
+      "sourceIds": []
+    }
+  ]
+}

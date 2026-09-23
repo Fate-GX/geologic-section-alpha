@@ -1,0 +1,18 @@
+{
+  "schemaVersion":"DeclaredCraterMorphologyProfile-1.0",
+  "featureName":"草千里ヶ浜火山",
+  "sourceId":"GSJ-MAP-VOLC-04-ASO-1985-EXPLANATION",
+  "sourceUrl":"https://gbank.gsj.jp/volcano/Act_Vol/aso/text/exp04-2.html",
+  "locator":"草千里ヶ浜 section: double craters of 500 m and 1 km diameter; later ash fills between the inner crater and western outer rim",
+  "rims":[
+    {"featureId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR-ol1-0041","rimRole":"OuterClosedRim","declaredDiameterM":1000},
+    {"featureId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR-ol1-0038","rimRole":"InnerRemnantRim","declaredDiameterM":500}
+  ],
+  "formationRelations":[
+    "Later volcanic ash fills the area between the inner crater and the western rim of the outer crater",
+    "The north-south ridge in the central grassland is the western rim of the inner crater",
+    "The southern end of that ridge is a remnant of a destroyed lava dome"
+  ],
+  "numericCraterDepthDeclared":false,
+  "subsurfaceGeometryAuthorized":false
+}

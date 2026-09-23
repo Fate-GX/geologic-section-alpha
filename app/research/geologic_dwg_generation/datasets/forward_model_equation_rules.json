@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedOn": "2026-08-26",
+  "rules": [
+    {
+      "ruleId": "FME-BADLANDS-DETACHMENT-STREAM-POWER", "scope": "Process:DetachmentLimitedFluvialIncision",
+      "equation": "epsilon_dot=kd*P^l*(P*A)^m*S^n", "inputs": ["kd", "P", "A", "S", "l", "m", "n"],
+      "defaultExponents": {"l": 0.0, "m": 0.5, "n": 1.0},
+      "unitPolicy": "kd is dimensional and must be calibrated to the adopted units",
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Does not reproduce evolving drainage, deposition or full numerical integration alone"
+    },
+    {
+      "ruleId": "FME-BADLANDS-TRANSPORT-CAPACITY", "scope": "Process:TransportLimitedFluvial",
+      "equation": "Qt=kt*(P*A)^mt*S^nt", "inputs": ["kt", "P", "A", "S", "mt", "nt"],
+      "unitPolicy": "kt is dimensional and must be calibrated to the adopted units",
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Threshold-of-motion omission and selected transport law must be recorded"
+    },
+    {
+      "ruleId": "FME-CARBOKITTEN-WATER-DEPTH", "scope": "Domain:CarbonatePlatform",
+      "equation": "w(x,t)=R(t)-eta(x,t)+integral(sigma dt)", "units": "m",
+      "sourceIds": ["CARBOKITTEN-GMD-2026"], "status": "AdoptedAsPrimitive"
+    },
+    {
+      "ruleId": "FME-CARBOKITTEN-CARBONATE-PRODUCTION", "scope": "Domain:CarbonatePlatform",
+      "equation": "P(w)=gm*tanh((I0/Ik)*exp(-k*w)) for w>=0; otherwise 0", "outputUnit": "m/Myr",
+      "sourceIds": ["CARBOKITTEN-GMD-2026"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Facies CA, transport, disintegration and lithification remain coupled"
+    },
+    {
+      "ruleId": "FME-CARBOKITTEN-TRANSPORT-PDE", "scope": "Domain:CarbonatePlatform",
+      "equation": "dCf/dt=-div(qf), qf=Cf*(df*grad(w)+vf(w))",
+      "numerics": ["finite difference method of lines", "forward Euler or RK4"],
+      "sourceIds": ["CARBOKITTEN-GMD-2026"], "status": "ReferenceOnly_UseOriginalSolver",
+      "exclusion": "Do not replace multidimensional PDE with a one-dimensional drawing heuristic"
+    },
+    {
+      "ruleId": "FME-GEMPY-UNIVERSAL-COKRIGING", "scope": "Method:ImplicitStructuralInterpolation",
+      "inputs": ["contact points", "orientation gradients", "geological series/rules"],
+      "sourceIds": ["GEMPY-THEORY", "GEMPY-GMD-2019"], "status": "ReferenceOnly_UseOriginalSolver",
+      "exclusion": "Interpolator output does not establish depositional-process probability"
+    },
+    {
+      "ruleId": "FME-LOOPSTRUCTURAL-IMPLICIT-INTERPOLATION", "scope": "Method:StructuralInterpolation",
+      "methods": ["finite difference", "piecewise linear", "radial basis function"],
+      "sourceIds": ["LOOPSTRUCTURAL-GMD-2021"], "status": "ReferenceOnly_UseOriginalSolver",
+      "exclusion": "Solver disagreement is uncertainty evidence, not a lithology rule"
+    },
+    {
+      "ruleId": "FME-BADLANDS-SEDIMENT-FLUX-FACTOR", "scope": "Process:BedrockIncisionToolCover",
+      "equations": ["linear: f=1-Qs/Qt", "almost-parabolic: piecewise with maximum at Qs/Qt=0.5", "dynamic-cover: two-width Gaussian centered at 0.35"],
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Capacity exceedance and deposition remain separate solver states"
+    },
+    {
+      "ruleId": "FME-BADLANDS-HILLSLOPE-DIFFUSION", "scope": "Process:Hillslope",
+      "equations": ["dz/dt=kappa_hl*laplacian(z)", "dz/dt=div(kappa_hn*grad(z)/(1-(|grad(z)|/Sc)^2))"],
+      "units": {"kappa": "m2/time", "Sc": "dimensionless slope"},
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Nonlinear equation is singular at Sc and requires original stability/timestep handling"
+    },
+    {
+      "ruleId": "FME-BADLANDS-LINEAR-WAVE-CELERITY", "scope": "Process:WaveTransformation",
+      "equation": "c=sqrt((g/k)*tanh(k*d)), k=2*pi/L", "units": {"c": "m/s", "d": "m", "L": "m"},
+      "sourceIds": ["BADLANDS-OFFICIAL-PROCESSES"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Celerity alone does not determine longshore sediment deposition"
+    },
+    {
+      "ruleId": "FME-CARBOKITTEN-ACTIVE-LAYER", "scope": "Domain:CarbonatePlatform",
+      "equations": ["C(t+dt)=C(t)*2^(-dt/tl)+rd*dt", "Ceq=rd*tl/ln(2)"],
+      "units": {"C": "m", "rd": "m/time", "tl": "time"},
+      "sourceIds": ["CARBOKITTEN-GMD-2026"], "status": "AdoptedAsPrimitive",
+      "exclusion": "Equilibrium derivation excludes production and transport"
+    }
+  ]
+}

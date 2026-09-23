@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "PublicBoreholeEvidence-1.0",
+  "evidenceBoundary": "ObservedCoreLog_RegionalEvidence_NotCurrentRouteConstraint",
+  "boreholes": [
+    {
+      "boreholeId": "JMA-SENSUIKYO-2016",
+      "longitude": 131.10080555555555,
+      "latitude": 32.8965,
+      "collarElevationM": 976.0,
+      "totalDepthM": 15.0,
+      "horizontalCrs": "GeodeticDatumUnstated",
+      "horizontalCrsStatus": "Unverified",
+      "verticalDatum": "ElevationReferenceUnstated",
+      "verticalDatumStatus": "Unverified",
+      "sourceId": "JMA-ASO-SENSUIKYO-CORE-2016",
+      "sourceUrl": "https://www.jma.go.jp/jma/kishou/shingikai/ccpve/CORE/kentou_matome_H28.pdf",
+      "exchangeFormatVersion": "JMA-H28-CORE-REPORT-P126",
+      "sourceCoordinateText": "北緯32度53分47.4秒、東経131度06分02.9秒",
+      "sourceElevationText": "標高976m",
+      "intervals": [
+        {
+          "topDepthM": 0.0,
+          "bottomDepthM": 2.12,
+          "sourceLabel": "表土及び降下火山灰",
+          "normalizedLithology": "surface soil and pyroclastic-fall deposit",
+          "termStatus": "Unverified",
+          "evidenceStatus": "Observed"
+        },
+        {
+          "topDepthM": 2.12,
+          "bottomDepthM": 15.0,
+          "sourceLabel": "玄武岩質安山岩溶岩",
+          "normalizedLithology": "basaltic-andesite lava",
+          "termStatus": "Unverified",
+          "evidenceStatus": "Observed"
+        }
+      ]
+    }
+  ]
+}

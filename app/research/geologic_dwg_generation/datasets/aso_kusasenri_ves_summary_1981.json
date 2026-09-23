@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "ResistivityInterpretationEvidence-1.0",
+  "sourceId": "KYOTO-DPRI-ASO-KUSASENRI-VES",
+  "method": "SchlumbergerVES",
+  "rawMeasurementsAvailable": false,
+  "soundingCoordinatesAvailable": false,
+  "inversionDetailsAvailable": false,
+  "horizontalReferenceStatus": "Unverified",
+  "verticalReferenceStatus": "Unverified",
+  "interpretedLayers": [],
+  "publishedSummary": {
+    "soundingCount": 32,
+    "statedInvestigationDepthM": [100, 400],
+    "interpretation": [
+      {"layer": 1, "resistivityOhmM": {"minimum": 280}, "interpretedMaterial": "volcanic ash"},
+      {"layer": 2, "resistivityOhmM": {"minimum": 100, "maximum": 200}, "interpretedMaterial": "scoria"},
+      {"layer": 3, "resistivityOhmM": {"minimum": 300, "maximumQualifier": "greater than 1 kOhm m"}, "interpretedMaterial": "possible late Kusasenri lava in west and southwest"}
+    ]
+  },
+  "lithologyCalibrationStatus": "RegionalInterpretationOnly",
+  "independentReviewStatus": "Unreviewed",
+  "physicalPropertyConstraintAuthorized": false,
+  "lithologyBoundaryAuthorized": false,
+  "reason": "The accessible primary summary preserves regional layer interpretations but not sounding coordinates, raw measurements, layer depths or inversion details.",
+  "assessmentRecordSha256": "73efb5ee996a0d964ff9663250a5a560acdc179677c5851b23c17aebaafbc084"
+}

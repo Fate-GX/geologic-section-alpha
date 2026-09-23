@@ -1,0 +1,14 @@
+{
+  "ruleId": "ROUTE-DIRECT-CONSTRAINT-SPACING-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Measured route has positive finite length", "Accepted direct constraints have finite on-route stations"],
+  "decisionLogic": "Sort accepted constraint stations and report the start-endpoint gap, every inter-constraint gap, end-endpoint gap and their maximum. If there are no direct constraints, the full route length is unbracketed.",
+  "outputs": ["constraintStationsM", "startEndpointGapM", "endEndpointGapM", "maximumUnbracketedGapM", "bracketedIntervalCount"],
+  "uncertainty": "Geometric spacing only; it assigns no geological radius of influence.",
+  "exclusions": ["Does not interpolate", "Does not invent a maximum acceptable gap", "Does not convert mapped surface contacts into subsurface constraints"],
+  "sourceIds": ["USGS-CROSSSECTION-TEMPLATE", "BGS-SCIENTIFIC-QA-17003"],
+  "validationMethod": "Positive, empty, boundary and out-of-route tests plus current-route execution",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A project-specific evidence support-distance policy is proposed or a new constraint type is introduced"
+}

@@ -1,0 +1,856 @@
+{
+  "ruleId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001",
+  "version": "1.2.0",
+  "scope": "Global",
+  "status": "AdoptedArchitecture_SolverParametersOpen",
+  "softwareFamilies": [
+    {
+      "software": "ArchPy",
+      "adopt": [
+        "hierarchy: stratigraphic units -> facies within units -> properties within facies",
+        "equality and inequality contact constraints",
+        "erode and onlap surface semantics",
+        "recompute only descendants affected by an upstream change"
+      ],
+      "doNotAdoptAsUniversal": [
+        "Quaternary-only assumptions",
+        "regular-grid cell-center boundary rule"
+      ],
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ]
+    },
+    {
+      "software": "MPSlib",
+      "adopt": [
+        "training-image multiple-point patterns",
+        "hard and soft conditioning",
+        "seeded sequential realizations",
+        "entropy and estimation diagnostics"
+      ],
+      "hardGate": "training image provenance, environment, scale, orientation, facies proportions, connectivity and directional diagnostics must pass",
+      "sourceIds": [
+        "MPSLIB-SOFTWAREX-2016"
+      ]
+    },
+    {
+      "software": "GSTools",
+      "adopt": [
+        "experimental variogram and fitted covariance separation",
+        "anisotropic conditioned random fields",
+        "ensembles conditioned to measurements",
+        "plurigaussian field capability"
+      ],
+      "hardGate": "stationarity domain, units, directional sampling and covariance validity must be declared",
+      "sourceIds": [
+        "GSTOOLS-OFFICIAL"
+      ]
+    },
+    {
+      "software": "PyGSLIB_GSLIB",
+      "adopt": [
+        "categorical indicator encoding",
+        "sequential indicator simulation only inside an already defined unit domain",
+        "conditional facies realizations and withheld-data validation"
+      ],
+      "hardGate": "category vocabulary, proportions and indicator variograms are evidence-calibrated",
+      "sourceIds": [
+        "PYGSLIB-OFFICIAL",
+        "BLOCKSIS-2006"
+      ]
+    }
+  ],
+  "methodSelection": {
+    "littleSpatialConcept": "SIS may be considered with calibrated proportions and indicator variograms",
+    "latentFaciesRelations": "TPG may be considered with covariance models and an explicit truncation rule",
+    "validatedAnalogPattern": "MPS may be considered with an applicable training image",
+    "continuousProperty": "conditioned random field only within the owning facies and unit",
+    "insufficientEvidence": "Unresolved; do not select by visual preference"
+  },
+  "universalExclusions": [
+    "simulating facies before unit domains",
+    "pooling identical facies labels across unrelated units",
+    "treating pair variograms as sufficient for channel or lens geometry",
+    "using a training image from an incompatible environment or scale",
+    "letting a solver output bypass topology and geological validation"
+  ],
+  "validationMethod": "positive, negative, boundary, hierarchy, training-image applicability and method-selection tests",
+  "reopenCondition": "A new solver family provides a distinct auditable spatial architecture or a calibrated multi-region corpus becomes available",
+  "schemaVersion": "1.2.0",
+  "sourceIds": [
+    "ARCHPY-FRONTIERS-2022",
+    "ARCHPY-OFFICIAL",
+    "BLOCKSIS-2006",
+    "GSTOOLS-OFFICIAL",
+    "MPSLIB-SOFTWAREX-2016",
+    "PYGSLIB-OFFICIAL"
+  ],
+  "aggregationContract": {
+    "aggregationLogic": "The top-level rule is a bounded union of explicitly named software-family capabilities; no member source independently supports the whole rule.",
+    "memberSourceMapping": {
+      "ArchPy": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ],
+      "MPSlib": [
+        "MPSLIB-SOFTWAREX-2016"
+      ],
+      "GSTools": [
+        "GSTOOLS-OFFICIAL"
+      ],
+      "PyGSLIB_GSLIB": [
+        "PYGSLIB-OFFICIAL",
+        "BLOCKSIS-2006"
+      ]
+    },
+    "limitations": [
+      "Member citations support only their mapped software family",
+      "Cross-family method selection remains pending semantic review",
+      "Solver capability is not geological authority"
+    ]
+  },
+  "claimBindings": [
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-ARCHPY-ADOPT-1",
+      "claimPath": "softwareFamilies.0.adopt.0",
+      "statement": "hierarchy: stratigraphic units -> facies within units -> properties within facies",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "Quaternary-only assumptions",
+        "regular-grid cell-center boundary rule"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-ARCHPY-ADOPT-2",
+      "claimPath": "softwareFamilies.0.adopt.1",
+      "statement": "equality and inequality contact constraints",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "Quaternary-only assumptions",
+        "regular-grid cell-center boundary rule"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-ARCHPY-ADOPT-3",
+      "claimPath": "softwareFamilies.0.adopt.2",
+      "statement": "erode and onlap surface semantics",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "Quaternary-only assumptions",
+        "regular-grid cell-center boundary rule"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-ARCHPY-ADOPT-4",
+      "claimPath": "softwareFamilies.0.adopt.3",
+      "statement": "recompute only descendants affected by an upstream change",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "Quaternary-only assumptions",
+        "regular-grid cell-center boundary rule"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-MPSLIB-ADOPT-1",
+      "claimPath": "softwareFamilies.1.adopt.0",
+      "statement": "training-image multiple-point patterns",
+      "sourceIds": [
+        "MPSLIB-SOFTWAREX-2016"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "training image provenance, environment, scale, orientation, facies proportions, connectivity and directional diagnostics must pass"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-MPSLIB-ADOPT-2",
+      "claimPath": "softwareFamilies.1.adopt.1",
+      "statement": "hard and soft conditioning",
+      "sourceIds": [
+        "MPSLIB-SOFTWAREX-2016"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "training image provenance, environment, scale, orientation, facies proportions, connectivity and directional diagnostics must pass"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-MPSLIB-ADOPT-3",
+      "claimPath": "softwareFamilies.1.adopt.2",
+      "statement": "seeded sequential realizations",
+      "sourceIds": [
+        "MPSLIB-SOFTWAREX-2016"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "training image provenance, environment, scale, orientation, facies proportions, connectivity and directional diagnostics must pass"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-MPSLIB-ADOPT-4",
+      "claimPath": "softwareFamilies.1.adopt.3",
+      "statement": "entropy and estimation diagnostics",
+      "sourceIds": [
+        "MPSLIB-SOFTWAREX-2016"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "training image provenance, environment, scale, orientation, facies proportions, connectivity and directional diagnostics must pass"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-GSTOOLS-ADOPT-1",
+      "claimPath": "softwareFamilies.2.adopt.0",
+      "statement": "experimental variogram and fitted covariance separation",
+      "sourceIds": [
+        "GSTOOLS-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "stationarity domain, units, directional sampling and covariance validity must be declared"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-GSTOOLS-ADOPT-2",
+      "claimPath": "softwareFamilies.2.adopt.1",
+      "statement": "anisotropic conditioned random fields",
+      "sourceIds": [
+        "GSTOOLS-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "stationarity domain, units, directional sampling and covariance validity must be declared"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-GSTOOLS-ADOPT-3",
+      "claimPath": "softwareFamilies.2.adopt.2",
+      "statement": "ensembles conditioned to measurements",
+      "sourceIds": [
+        "GSTOOLS-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "stationarity domain, units, directional sampling and covariance validity must be declared"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-GSTOOLS-ADOPT-4",
+      "claimPath": "softwareFamilies.2.adopt.3",
+      "statement": "plurigaussian field capability",
+      "sourceIds": [
+        "GSTOOLS-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "stationarity domain, units, directional sampling and covariance validity must be declared"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-PYGSLIB_GSLIB-ADOPT-1",
+      "claimPath": "softwareFamilies.3.adopt.0",
+      "statement": "categorical indicator encoding",
+      "sourceIds": [
+        "PYGSLIB-OFFICIAL",
+        "BLOCKSIS-2006"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "category vocabulary, proportions and indicator variograms are evidence-calibrated"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-PYGSLIB_GSLIB-ADOPT-2",
+      "claimPath": "softwareFamilies.3.adopt.1",
+      "statement": "sequential indicator simulation only inside an already defined unit domain",
+      "sourceIds": [
+        "PYGSLIB-OFFICIAL",
+        "BLOCKSIS-2006"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "category vocabulary, proportions and indicator variograms are evidence-calibrated"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-PYGSLIB_GSLIB-ADOPT-3",
+      "claimPath": "softwareFamilies.3.adopt.2",
+      "statement": "conditional facies realizations and withheld-data validation",
+      "sourceIds": [
+        "PYGSLIB-OFFICIAL",
+        "BLOCKSIS-2006"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Only when the named solver family and its declared evidence gates apply",
+      "exclusions": [
+        "category vocabulary, proportions and indicator variograms are evidence-calibrated"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-METHOD-LITTLESPATIALCONCEPT",
+      "claimPath": "methodSelection.littleSpatialConcept",
+      "statement": "SIS may be considered with calibrated proportions and indicator variograms",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL",
+        "BLOCKSIS-2006",
+        "GSTOOLS-OFFICIAL",
+        "MPSLIB-SOFTWAREX-2016",
+        "PYGSLIB-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Method selection after unit-domain and evidence validation",
+      "exclusions": [
+        "simulating facies before unit domains",
+        "pooling identical facies labels across unrelated units",
+        "treating pair variograms as sufficient for channel or lens geometry",
+        "using a training image from an incompatible environment or scale",
+        "letting a solver output bypass topology and geological validation"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-METHOD-LATENTFACIESRELATIONS",
+      "claimPath": "methodSelection.latentFaciesRelations",
+      "statement": "TPG may be considered with covariance models and an explicit truncation rule",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL",
+        "BLOCKSIS-2006",
+        "GSTOOLS-OFFICIAL",
+        "MPSLIB-SOFTWAREX-2016",
+        "PYGSLIB-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Method selection after unit-domain and evidence validation",
+      "exclusions": [
+        "simulating facies before unit domains",
+        "pooling identical facies labels across unrelated units",
+        "treating pair variograms as sufficient for channel or lens geometry",
+        "using a training image from an incompatible environment or scale",
+        "letting a solver output bypass topology and geological validation"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-METHOD-VALIDATEDANALOGPATTERN",
+      "claimPath": "methodSelection.validatedAnalogPattern",
+      "statement": "MPS may be considered with an applicable training image",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL",
+        "BLOCKSIS-2006",
+        "GSTOOLS-OFFICIAL",
+        "MPSLIB-SOFTWAREX-2016",
+        "PYGSLIB-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Method selection after unit-domain and evidence validation",
+      "exclusions": [
+        "simulating facies before unit domains",
+        "pooling identical facies labels across unrelated units",
+        "treating pair variograms as sufficient for channel or lens geometry",
+        "using a training image from an incompatible environment or scale",
+        "letting a solver output bypass topology and geological validation"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-METHOD-CONTINUOUSPROPERTY",
+      "claimPath": "methodSelection.continuousProperty",
+      "statement": "conditioned random field only within the owning facies and unit",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL",
+        "BLOCKSIS-2006",
+        "GSTOOLS-OFFICIAL",
+        "MPSLIB-SOFTWAREX-2016",
+        "PYGSLIB-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Method selection after unit-domain and evidence validation",
+      "exclusions": [
+        "simulating facies before unit domains",
+        "pooling identical facies labels across unrelated units",
+        "treating pair variograms as sufficient for channel or lens geometry",
+        "using a training image from an incompatible environment or scale",
+        "letting a solver output bypass topology and geological validation"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    },
+    {
+      "claimId": "FREE-SOFTWARE-LITHOLOGY-ALGORITHMS-001-CLAIM-METHOD-INSUFFICIENTEVIDENCE",
+      "claimPath": "methodSelection.insufficientEvidence",
+      "statement": "Unresolved; do not select by visual preference",
+      "sourceIds": [
+        "ARCHPY-FRONTIERS-2022",
+        "ARCHPY-OFFICIAL",
+        "BLOCKSIS-2006",
+        "GSTOOLS-OFFICIAL",
+        "MPSLIB-SOFTWAREX-2016",
+        "PYGSLIB-OFFICIAL"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ARCHPY-FRONTIERS-2022",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "ARCHPY-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "BLOCKSIS-2006",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "GSTOOLS-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "MPSLIB-SOFTWAREX-2016",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        },
+        {
+          "sourceId": "PYGSLIB-OFFICIAL",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "Method selection after unit-domain and evidence validation",
+      "exclusions": [
+        "simulating facies before unit domains",
+        "pooling identical facies labels across unrelated units",
+        "treating pair variograms as sufficient for channel or lens geometry",
+        "using a training image from an incompatible environment or scale",
+        "letting a solver output bypass topology and geological validation"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Structure migrated in v1.1.0; primary-source passage and semantic support require independent review.",
+      "basisType": "UnclassifiedPendingReview",
+      "basisRefs": [
+        "CLAIM-BASIS-CLASSIFICATION-PENDING"
+      ]
+    }
+  ],
+  "creationProvenance": {
+    "origin": "Comparative review of explicitly named open-source solver families",
+    "promotionBasis": "Only common auditable architecture patterns are candidates for global reuse",
+    "status": "PendingSemanticReview"
+  }
+}

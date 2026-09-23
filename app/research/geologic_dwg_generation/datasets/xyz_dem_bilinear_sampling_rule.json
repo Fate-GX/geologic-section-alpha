@@ -1,0 +1,21 @@
+{
+  "ruleId": "XYZ-DEM-BILINEAR-SAMPLING-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "expression": "z=(1-fx)(1-fy)z00+fx(1-fy)z10+(1-fx)fy*z01+fx*fy*z11, with XYZ pixel-centre coordinates shifted by 0.5",
+  "preconditions": ["Four finite elevation pixels", "All four source tiles available", "Query inside the open outer edge of the XYZ matrix"],
+  "decisionLogic": [
+    "Fetch the four neighbouring pixel centres even when they cross a tile boundary.",
+    "Return NoData if any required tile or elevation sample is unavailable.",
+    "Record whether NearestPixel or BilinearPixelCentres was used.",
+    "For a priority DEM stack, use all required pixels from one source; never blend resolution/source layers within one bilinear result."
+  ],
+  "outputs": ["resampled terrain elevation", "explicit sampling method"],
+  "uncertainty": "Bilinear resampling does not increase source DEM resolution or survey accuracy",
+  "exclusions": ["No NoData renormalization", "No extrapolation beyond the XYZ matrix", "No use for RGB orthophotos"],
+  "sourceIds": ["GSI-ELEVATION-TILE"],
+  "basisType": "StandardRasterResamplingAppliedToOfficialElevationTiles",
+  "validationMethod": "Analytic linear field across an XYZ tile edge, missing tile, wrong raster kind and adaptive-route integration tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Source-specific interpolation guidance, cubic resampling or quantified DEM error propagation is required"
+}

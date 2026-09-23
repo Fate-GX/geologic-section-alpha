@@ -1,0 +1,16 @@
+{
+  "ruleId": "ROUTE-EVIDENCE-SECTION-RENDER-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Hash-valid RouteEvidenceWorkspace-1.0", "Complete finite ordered terrain profile"],
+  "requiredEvidence": ["Terrain profile", "Route-bound optional borehole and structural artifacts"],
+  "decisionLogic": "Render the measured terrain, mapped surface-unit strips, interval-censored transition bands, borehole sticks and apparent-dip symbols; fill all unmodelled subsurface with UNKNOWN and never join isolated evidence into contacts.",
+  "outputs": ["Diagnostic PNG", "RouteEvidenceWorkspaceRender-1.0 audit"],
+  "uncertainty": "A borehole with unauthorized absolute elevation is labelled as reported-Z context and outlined in red.",
+  "exclusions": ["No lithology polygons", "No lateral borehole correlation", "No surface continuation from dip symbols", "No conversion of mapped surface units into subsurface contacts"],
+  "sourceIds": [],
+  "basisType": "ProjectVisualizationContract",
+  "validationMethod": "Hash mutation, canvas boundary, UNKNOWN fill, unverified-elevation and no-lateral-interpolation tests plus actual V40 render inspection",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Reopen for uncertainty bands, reviewed surface polygons, publication typography or vector/DWG output."
+}

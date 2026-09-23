@@ -1,0 +1,14 @@
+{
+  "ruleId": "SECTION-UNKNOWN-SUBSURFACE-DISPLAY-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Complete terrain profile", "Mapped surface-contact evidence", "Section geometry authorization is false"],
+  "decisionLogic": "Draw the observed terrain and mapped surface-contact markers. Fill the subsurface viewport as a single neutral unknown field. Show rejected nearby records as rejected markers only.",
+  "outputs": ["evidence-gap image", "image SHA-256", "typed unknown-subsurface state"],
+  "uncertainty": "All displayed subsurface space is unknown; chosen display depth is a viewport setting only.",
+  "exclusions": ["No lithology polygons", "No continuation of surface contacts below terrain", "No use of rejected boreholes as constraints"],
+  "sourceIds": ["USGS-CROSSSECTION-TEMPLATE", "BGS-SCIENTIFIC-QA-17003"],
+  "validationMethod": "Positive render, wrong-schema, authorized-mode, invalid-depth and real-route visual tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Accepted reviewed geometry becomes available or a new observed evidence type must be displayed"
+}

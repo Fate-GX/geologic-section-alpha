@@ -1,0 +1,21 @@
+{
+  "ruleId": "GEO3D-BOREHOLE-MAPPED-UNIT-COMPATIBILITY",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["an explicit borehole-unit to mapped-unit proposal exists", "borehole role has been classified against the exact route"],
+  "requiredEvidence": ["terminology provenance", "normalized concept", "geologic age interval and time-scale identity", "event-boundary compatibility", "sufficient evidence status"],
+  "decisionLogic": [
+    "reject any borehole that is not a GeometryConstraint for the route",
+    "compare normalized concepts and vocabulary identity separately from source wording",
+    "require overlapping geologic-age intervals expressed against the same time-scale authority and version",
+    "reject conflicting declared events above or below the proposed unit",
+    "never treat a compatible result as authorization without explicit correlation review"
+  ],
+  "outputs": ["CompatibleCandidate or Rejected with dimension-specific reasons"],
+  "uncertainty": "age intervals are compared as closed intervals; no conversion across time-scale versions is attempted",
+  "exclusions": ["no label-only matching", "no use of RegionalContextOnly holes as geometry", "no automatic correlation or subsurface continuation"],
+  "sourceIds": [],
+  "validationMethod": "positive multidimensional case and independent scope, vocabulary, age, event, missing-data and evidence-status rejection tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "reviewed Aso mapped-unit identities, ages and on-route borehole evidence become available"
+}

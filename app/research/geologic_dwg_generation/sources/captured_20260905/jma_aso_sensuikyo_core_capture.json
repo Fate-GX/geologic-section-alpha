@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "CapturedPrimarySource-1.0",
+  "sourceId": "JMA-ASO-SENSUIKYO-CORE-2016",
+  "authority": "Japan Meteorological Agency",
+  "title": "阿蘇山のボーリングコア（仙酔峡）",
+  "canonicalUrl": "https://www.jma.go.jp/jma/kishou/shingikai/ccpve/CORE/kentou_matome_H28.pdf",
+  "accessDate": "2026-09-05",
+  "localFile": "jma_aso_sensuikyo_core_h28.pdf",
+  "sha256": "cc65046072afbd972d99a3c608e92cfce71ed1fbebd7aa9ff54ea1e58da3cbc3",
+  "byteCount": 16365583,
+  "pdfPageCount": 146,
+  "locator": "PDF page 128; printed page 126",
+  "observedFacts": {
+    "locationDms": "32°53′47.4″N, 131°06′02.9″E",
+    "collarElevationM": 976.0,
+    "totalDepthM": 15.0,
+    "unit1DepthM": [0.0, 2.12],
+    "unit2DepthM": [2.12, 15.0]
+  },
+  "limitations": [
+    "The geodetic datum of the published longitude and latitude is not stated on the located page.",
+    "The vertical datum and survey lineage of the stated elevation are not stated.",
+    "The source says correlation with one of the three V40 lavas remains to be studied."
+  ]
+}

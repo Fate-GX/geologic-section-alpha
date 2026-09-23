@@ -1,0 +1,21 @@
+{
+  "ruleId": "EXACT-ROUTE-EVIDENCE-HULL-INTERSECTION-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "expression": "For every CCW hull edge, retain route-segment parameters t satisfying cross(edge, p(t)-edgeStart) >= -tolerance",
+  "preconditions": ["Piecewise-linear route with strictly increasing stations", "Accepted evidence-bounded surface with a CCW convex hull", "Common projected CRS and metre units"],
+  "decisionLogic": [
+    "Clip each route segment against all convex-hull half-planes.",
+    "Evaluate contact elevations at exact clipped endpoints.",
+    "Merge adjacent supported pieces sharing a route vertex.",
+    "Discard zero-length tangencies because they do not support an area interval."
+  ],
+  "outputs": ["exact route-station support intervals", "endpoint XY and contact elevations", "source route-segment indices"],
+  "uncertainty": "Floating-point half-plane tolerance is numerical only; it is not geological uncertainty",
+  "exclusions": ["No extrapolation", "No raster-sample bracket approximation", "No support interval from a single tangent point"],
+  "sourceIds": [],
+  "basisType": "StandardConvexComputationalGeometry",
+  "validationMethod": "Oblique exact crossing, bent-route re-entry, outside, tangent and invalid-station tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Non-convex evidence domains, curved route primitives or geodesic clipping is required"
+}

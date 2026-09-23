@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f4f7fa"/>
+<g font-family="sans-serif" fill="#23384d">
+<text x="45" y="55" font-size="28">入力：始点A・終点B（合成試験の位置図）</text>
+<text x="45" y="92" font-size="19" fill="#a43d13">地図タイル・実測地形は使用していません</text>
+<rect x="90" y="140" width="820" height="250" fill="white" stroke="#9aabb7"/>
+<path d="M90 200H910 M90 265H910 M90 330H910 M290 140V390 M500 140V390 M710 140V390" stroke="#d9e0e6" fill="none"/>
+<path d="M190 265H790" stroke="#216aa0" stroke-width="5"/>
+<circle cx="190" cy="265" r="9" fill="#216aa0"/><circle cx="790" cy="265" r="9" fill="#216aa0"/>
+<text x="175" y="239" font-size="27">A</text><text x="775" y="239" font-size="27">B</text>
+<text x="388" y="239" font-size="23">500 m ／ 東向き</text>
+<path d="M850 210V166L842 180M850 166L858 180" fill="none" stroke="#23384d" stroke-width="2"/><text x="843" y="158" font-size="18">N</text>
+<text x="120" y="310" font-size="16">北緯36.000000°</text><text x="120" y="336" font-size="16">東経138.000000°</text>
+<text x="710" y="310" font-size="16">北緯36.000000°*</text><text x="710" y="336" font-size="16">東経138.005552°*</text>
+<text x="45" y="434" font-size="20">固定入力：平野型の合成地形・合成地質区分 ／ seed 880100</text>
+<text x="45" y="472" font-size="18">この座標で観測された地下構造を示すものではありません。</text>
+<text x="45" y="507" font-size="16">*表示は丸め値。再計算には同梱input.jsonの非丸め値を使用します。</text>
+</g></svg>

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "caseId": "SENDAI_E5_3_SITE_SPECIFIC_PROFILE_READINESS_20260824",
+  "synthetic": false,
+  "authority": "仙台市",
+  "mapSheet": "E5-(3)",
+  "namedArea": "太白区鈎取・八木山方面",
+  "scale": "1:10000",
+  "sourceIds": ["SENDAI-E5-3-CUT-FILL", "SENDAI-E5-3-DEVELOPMENT-AGE", "SENDAI-E5-3-OLD-TOPOGRAPHY"],
+  "sourceEpochs": {
+    "oldCityPlanningMap": "1958-1968",
+    "oldAerialPhotography": "1947-1948",
+    "currentDem": "2008",
+    "mapProduced": "2013-03"
+  },
+  "detectionPolicy": {
+    "minimumClassifiedAbsoluteChangeM": 1.0,
+    "valuesAre": "Binned elevation differences, not continuous old-surface elevations",
+    "safetyAssessment": false,
+    "boreholeValidation": false
+  },
+  "trainingObservations": [
+    {
+      "observation_id": "E5_3_LEGEND_FILL_10_15",
+      "map_sheet": "E5-(3)",
+      "named_area": "太白区鈎取・八木山方面",
+      "cut_fill_bin": "盛土10～15m",
+      "georeferenced": false,
+      "current_surface_elevation_m": null,
+      "expected_mode": "ClassificationOnly"
+    },
+    {
+      "observation_id": "E5_3_NUMERIC_EXERCISE_FILL_10_15",
+      "map_sheet": "E5-(3)",
+      "named_area": "訓練用数値例（実地点標高ではない）",
+      "cut_fill_bin": "盛土10～15m",
+      "georeferenced": true,
+      "current_surface_elevation_m": 100.0,
+      "synthetic_numeric_exercise": true,
+      "expected_mode": "BoundedEnvelope",
+      "expected_old_surface_range_m": [85.0, 90.0]
+    },
+    {
+      "observation_id": "E5_3_DETECTION_LIMIT",
+      "map_sheet": "E5-(3)",
+      "named_area": "凡例境界試験",
+      "cut_fill_bin": "切土1m～盛土1m",
+      "georeferenced": true,
+      "current_surface_elevation_m": 100.0,
+      "expected_mode": "ClassificationOnly"
+    }
+  ],
+  "decision": "The official sheet supports site-specific cut/fill class and thickness-bin evidence. It does not support an exact reconstructed old-ground polyline without georeferencing and numeric current-surface samples."
+}

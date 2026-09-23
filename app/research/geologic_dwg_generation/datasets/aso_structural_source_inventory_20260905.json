@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "StructuralSourceInventory-1.0",
+  "scope": "DatasetSpecific:GSJ-Aso-Volcano-Map-1985",
+  "records": [
+    {
+      "recordId": "GSJ-ASO-GEOLOGIC-POLYGONS",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "sourceUrl": "https://www.gsj.jp/Map/JP/docs/vol_doc/volcano-04.html",
+      "localArtifact": "research/geologic_dwg_generation/datasets/aso_v16/vector/MAP_VOLC_04_Aso/shp/geo_A.shp",
+      "localArtifactSha256": "29b96f2250043bd5963afee6afd4f75f99e542c55d982c7015059f99b03f9e84",
+      "basis": "NoOrientationSemantics",
+      "featureCount": 677,
+      "orientationCount": 0,
+      "sourceFields": ["MAJOR_CODE", "LEGEND01-08", "LEGEND01E-08E", "SYMBOL"]
+    },
+    {
+      "recordId": "GSJ-ASO-GEOLOGIC-LINES",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "sourceUrl": "https://www.gsj.jp/Map/JP/docs/vol_doc/volcano-04.html",
+      "localArtifact": "research/geologic_dwg_generation/datasets/aso_v16/vector/MAP_VOLC_04_Aso/shp/geo_L.shp",
+      "localArtifactSha256": "755326ce0bf63d1f936c85012e5ca30ea54eba3d32b15a444c580d06479bf77d",
+      "basis": "NoOrientationSemantics",
+      "featureCount": 8,
+      "orientationCount": 0,
+      "sourceFields": ["MAJOR_CODE", "LEGEND01", "LEGEND01E"]
+    },
+    {
+      "recordId": "GSJ-ASO-MAPPED-POINTS",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "sourceUrl": "https://www.gsj.jp/Map/JP/docs/vol_doc/volcano-04.html",
+      "localArtifact": "research/geologic_dwg_generation/datasets/aso_v16/vector/MAP_VOLC_04_Aso/shp/pnt.shp",
+      "localArtifactSha256": "18fac6745e47410e216ddc0cdfb56d11df0bba13669d590a7ba64edf0a56c806",
+      "basis": "NoOrientationSemantics",
+      "featureCount": 69,
+      "orientationCount": 0,
+      "sourceFeatureKinds": {
+        "DrillHoleReachedBasement": 4,
+        "Fumarole": 1,
+        "HotSpring": 9,
+        "ChemicalSampleLocality": 55
+      }
+    },
+    {
+      "recordId": "GSJ-ASO-CONTACT-DEM-PLANE-DIAGNOSTICS-R100M",
+      "sourceId": "GSJ-ASO-VOLCANO-MAP-1985",
+      "sourceUrl": "https://www.gsj.jp/Map/JP/docs/vol_doc/volcano-04.html",
+      "localArtifact": "research/geologic_dwg_generation/validation/aso_gsj_contact_dem_plane_diagnostics_r100m_20260905.json",
+      "localArtifactSha256": "f6c349f7e898d1bfadb98c0faf487dfed123cbdcf577b89f36a8438965fa7fe8",
+      "basis": "MappedContactDemPlaneFit",
+      "featureCount": 6,
+      "orientationCount": 6
+    }
+  ],
+  "sourceInspectionNote": "The official vector package contains polygons, geologic lines and mapped points, but no source-map strike/dip observation layer or orientation attributes. The six numerical orientations are derived diagnostics, not measurements.",
+  "realRegionAuthorized": false
+}

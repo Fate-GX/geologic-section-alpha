@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "rulePackId": "JP_ARTIFICIAL_TERRAIN_CORE_20260824",
+  "scope": "Japan",
+  "classes": [
+    "NaturalTerrain",
+    "Cut",
+    "Fill",
+    "MixedCutFill",
+    "ValleyFill",
+    "RoadEmbankment",
+    "Reclamation",
+    "Unresolved"
+  ],
+  "rules": [
+    {
+      "ruleId": "AT-R001",
+      "version": "1.0.0",
+      "output": "Cut",
+      "preconditions": ["current_minus_pre_is_negative"],
+      "requiredEvidence": ["pre_surface", "current_surface"],
+      "exclusions": ["vertical_datum_mismatch", "non_overlapping_epochs"],
+      "sourceIds": ["GSI-LANDFORM-CLASSIFICATION"]
+    },
+    {
+      "ruleId": "AT-R002",
+      "version": "1.0.0",
+      "output": "Fill",
+      "preconditions": ["current_minus_pre_is_positive"],
+      "requiredEvidence": ["pre_surface", "current_surface"],
+      "exclusions": ["former_water", "valley_fill_geometry", "transportation_alignment"],
+      "sourceIds": ["GSI-LANDFORM-CLASSIFICATION"]
+    },
+    {
+      "ruleId": "AT-R003",
+      "version": "1.0.0",
+      "output": "MixedCutFill",
+      "preconditions": ["significant_positive_and_negative_deltas"],
+      "requiredEvidence": ["pre_surface", "current_surface"],
+      "exclusions": [],
+      "sourceIds": ["GSI-COASTAL-LAND-CONDITION"]
+    },
+    {
+      "ruleId": "AT-R004",
+      "version": "1.0.0",
+      "output": "ValleyFill",
+      "preconditions": ["positive_delta", "pre_change_valley_geometry"],
+      "requiredEvidence": ["pre_surface", "current_surface", "pre_change_landform"],
+      "exclusions": ["former_water"],
+      "sourceIds": ["MLIT-LARGE-FILL-SCREENING"]
+    },
+    {
+      "ruleId": "AT-R005",
+      "version": "1.0.0",
+      "output": "RoadEmbankment",
+      "preconditions": ["positive_delta", "transportation_alignment"],
+      "requiredEvidence": ["pre_surface", "current_surface", "transportation_geometry", "station_reference", "consistent_vertical_datum"],
+      "exclusions": ["alignment_only", "station_mismatch", "vertical_datum_mismatch"],
+      "sourceIds": ["GSI-FLOOD-LANDFORM", "MLIT-ROAD-EARTHWORK-STANDARD-R7", "MLIT-BIMCIM-R7", "MLIT-CGR-BIMCIM-CASEBOOK-R6"]
+    },
+    {
+      "ruleId": "AT-R006",
+      "version": "1.0.0",
+      "output": "Reclamation",
+      "preconditions": ["former_water", "current_land"],
+      "requiredEvidence": ["historical_water_evidence", "current_surface"],
+      "exclusions": ["drainage_only_without_fill"],
+      "sourceIds": ["GSI-LANDFORM-CLASSIFICATION", "GSI-COASTAL-LAND-CONDITION"]
+    },
+    {
+      "ruleId": "AT-R007",
+      "version": "1.0.0",
+      "output": "NaturalTerrain",
+      "preconditions": ["no_artificial_mapping", "delta_within_combined_uncertainty", "no_construction_evidence"],
+      "requiredEvidence": ["pre_surface", "current_surface"],
+      "exclusions": ["insufficient_temporal_separation"],
+      "sourceIds": ["GSI-LANDFORM-CLASSIFICATION"]
+    }
+  ],
+  "confidencePolicy": {
+    "Confirmed": "direct authoritative class plus consistent independent temporal or construction evidence",
+    "Probable": "two independent consistent evidence families",
+    "Possible": "one indicative evidence family without a contradiction",
+    "Unresolved": "missing essentials, conflicting evidence, or out-of-scope evidence"
+  },
+  "geometryGate": {
+    "required": [
+      "horizontal_crs",
+      "vertical_datum",
+      "pre_surface",
+      "current_surface",
+      "surface_uncertainty",
+      "overlapping_coverage",
+      "acquisition_dates"
+    ],
+    "rule": "A mapped artificial-landform label alone never authorizes artificial-layer thickness or old-ground geometry."
+  }
+}

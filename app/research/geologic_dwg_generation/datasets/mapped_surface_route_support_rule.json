@@ -1,0 +1,20 @@
+{
+  "ruleId": "MAPPED-SURFACE-ROUTE-SUPPORT-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["ordered exact vector-line crossings", "classified before/after source polygons", "source-linked morphology assignments"],
+  "requiredEvidence": ["route length", "crossing station", "stable source polygon feature IDs"],
+  "decisionLogic": [
+    "sweep mapped transitions in station order from route start to route end",
+    "require the after-unit of each transition to equal the before-unit of the next transition",
+    "retain repeated occurrences of one finite unit as separate components",
+    "ignore classified non-geologic boundaries without splitting a unit interval"
+  ],
+  "outputs": ["terrain-supported station intervals", "per-unit component indices", "unresolved bottom-surface status"],
+  "uncertainty": "Horizontal position remains limited by the source map scale even when vector intersections are numerically exact.",
+  "exclusions": ["subsurface bottom inference", "bridging separated components", "thickness or dip inference", "unclassified crossing repair"],
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985"],
+  "validationMethod": "positive, negative, boundary, conflicting-chain, missing-data and out-of-scope tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Overlapping polygons, fault offsets, exact map-position uncertainty envelopes or closed-loop routes are introduced."
+}

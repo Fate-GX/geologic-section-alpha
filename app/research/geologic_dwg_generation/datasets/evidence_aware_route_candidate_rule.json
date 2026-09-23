@@ -1,0 +1,14 @@
+{
+  "ruleId": "EVIDENCE-AWARE-ROUTE-CANDIDATE-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["User-selected geographic polyline", "One coordinate-bearing normalized borehole"],
+  "decisionLogic": "Insert the evidence point after the route segment that minimizes d(A,P)+d(P,B)-d(A,B), using great-circle distances. Preserve the original route and require explicit user selection before applying the candidate.",
+  "outputs": ["candidate route", "additional length", "evidence station", "route topology audit", "separate evidence eligibility blockers"],
+  "uncertainty": "Route optimization concerns horizontal geometry only and does not repair CRS, vertical datum, lithology, correlation or review deficiencies.",
+  "exclusions": ["No silent route replacement", "No automatic borehole acceptance", "No shortest-path optimization against terrain/access constraints"],
+  "sourceIds": ["NIED-GSJ-BOREHOLE-SECTION-SYSTEM"],
+  "validationMethod": "Minimum-segment, immutability, eligibility, invalid-input, topology and GUI-backend tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Multiple-waypoint optimization, terrain/access constraints, projected-CRS engineering distances, or eligible real evidence is required"
+}

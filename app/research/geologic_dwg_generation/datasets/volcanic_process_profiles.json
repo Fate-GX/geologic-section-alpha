@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "profiles": [
+    {
+      "profileId": "VOLC-FALLOUT-TEPHRA-01",
+      "process": "FalloutTephra",
+      "scope": "Domain",
+      "continuity": "DrapeWithErosionalGaps",
+      "terrainRelation": "DepositedOnPaleosurface",
+      "allowedGeometry": ["Drape", "SourceDirectedAttenuation", "ErosionalRemoval"],
+      "forbiddenGeometry": ["SectionWideConstantOffset", "CrossCutting"],
+      "requiredEvidence": ["VolcanicSetting", "TephraOrAshUnitEvidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013", "ASO-TEPHROSTRATIGRAPHY-2009"],
+      "evidenceLevel": "RegionalAnalogue"
+    },
+    {
+      "profileId": "VOLC-PUMICE-CONE-01",
+      "process": "PumiceCone",
+      "scope": "Domain",
+      "continuity": "FiniteAsymmetricBody",
+      "terrainRelation": "ConstructionalVolcanicBody",
+      "allowedGeometry": ["AsymmetricWedge", "FiniteLobe", "PinchOut", "WeldedCoreQualifier"],
+      "forbiddenGeometry": ["SectionWideConstantBand", "TerrainCopy"],
+      "requiredEvidence": ["VolcanicSetting", "PumiceConeOrVentEvidence"],
+      "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985"],
+      "evidenceLevel": "RegionalMapUnit"
+    },
+    {
+      "profileId": "VOLC-LAVA-FLOW-01",
+      "process": "LavaFlow",
+      "scope": "Domain",
+      "continuity": "FiniteLobateBody",
+      "terrainRelation": "FollowsAndFillsPaleotopography",
+      "allowedGeometry": ["FiniteLobe", "AsymmetricTaper", "StackedFlowUnits", "BuriedReliefFill"],
+      "forbiddenGeometry": ["SectionWideConstantBand", "IdenticalTopAndBase"],
+      "requiredEvidence": ["VolcanicSetting", "LavaEvidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013", "GSJ-ASO-VOLCANO-MAP-1985"],
+      "evidenceLevel": "RegionalAnalogue"
+    },
+    {
+      "profileId": "VOLC-LAHAR-01",
+      "process": "Lahar",
+      "scope": "Domain",
+      "continuity": "ChannelizedDiscontinuousBody",
+      "terrainRelation": "ConfinedByPaleovalley",
+      "allowedGeometry": ["ChannelLens", "AsymmetricFill", "PinchOut"],
+      "forbiddenGeometry": ["UniformBlanket"],
+      "requiredEvidence": ["VolcanicSetting", "LaharEvidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013"],
+      "evidenceLevel": "RegionalAnalogue"
+    },
+    {
+      "profileId": "VOLC-PALEOSOL-01",
+      "process": "Paleosol",
+      "scope": "Domain",
+      "continuity": "ThinMarkerWithGaps",
+      "terrainRelation": "DevelopedOnPaleosurface",
+      "allowedGeometry": ["ThinDrape", "ErosionalGap", "BuriedSurfaceMarker"],
+      "forbiddenGeometry": ["ThickMassiveBody", "CrossCutting"],
+      "requiredEvidence": ["PaleosolOrBuriedSoilEvidence"],
+      "sourceIds": ["ASO-JMA-V40-CORE-2013"],
+      "evidenceLevel": "RegionalAnalogue"
+    }
+  ]
+}

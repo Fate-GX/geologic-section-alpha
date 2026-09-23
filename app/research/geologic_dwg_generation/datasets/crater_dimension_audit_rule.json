@@ -1,0 +1,9 @@
+{
+  "ruleId":"GEO3D-CRATER-DIMENSION-AUDIT-1","version":"1.0.0","scope":"Domain:VolcanicSurfaceMorphology",
+  "expression":"D_map=max(||p_i-p_j||) for all mapped rim vertices in a local metric projection",
+  "variables":{"D_map":"mapped maximum chord, m","p_i,p_j":"rim vertices, m"},
+  "decisionLogic":"Compare mapped maximum chord with a source-declared diameter. A 0.75-1.25 ratio is a broad feature-association diagnostic, not an accuracy statement.",
+  "exclusions":["No crater depth from diameter","No survey-accuracy claim","No lithology inference"],
+  "sourceIds":["GSJ-MAP-VOLC-04-ASO-1985-EXPLANATION"],"adoptionStatus":"Adopted",
+  "reopenCondition":"Surveyed rim geometry, source positional accuracy, or direct crater-depth evidence becomes available"
+}

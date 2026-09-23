@@ -1,0 +1,19 @@
+{
+  "ruleId": "MAPPED-UNIT-MORPHOLOGY-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["stable source map-unit identity", "source-linked morphology description"],
+  "requiredEvidence": ["source symbol", "morphology class", "source ID", "exact locator"],
+  "decisionLogic": [
+    "vent-proximal cones and lava edifices require finite-body geometry roles",
+    "fall deposits may be represented as surface drapes but not assigned an invented constant thickness",
+    "qualitative flow words remain categorical and do not become exact azimuths"
+  ],
+  "outputs": ["qualitative morphology assignment", "finite-body requirement", "geometry-role compatibility audit"],
+  "uncertainty": "Source wording constrains geometry class only; bottom surface, dip and thickness remain unresolved.",
+  "exclusions": ["numeric subsurface geometry", "automatic vent location", "constant thickness", "regional extrapolation outside mapped polygons"],
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985"],
+  "validationMethod": "positive, negative, boundary, missing-data and out-of-scope tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A new morphology class, direct thickness evidence or explicit source azimuth is introduced."
+}

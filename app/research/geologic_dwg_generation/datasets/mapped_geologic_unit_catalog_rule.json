@@ -1,0 +1,21 @@
+{
+  "ruleId": "GEO3D-MAPPED-GEOLOGIC-UNIT-CATALOG",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["hash-valid mapped polygon-side classifications with two polygon features per mapped-unit transition"],
+  "requiredEvidence": ["stable source polygon feature ID", "source authority and year", "Japanese and English legend hierarchy"],
+  "decisionLogic": [
+    "construct a stable unit ID from source ID and polygon feature ID",
+    "deduplicate repeated occurrences only when every source attribute is identical",
+    "preserve the complete ordered source legend hierarchy",
+    "retain the deepest official English label as a source translation, not as a controlled-vocabulary authorization",
+    "retain named source ages without inventing numerical age bounds"
+  ],
+  "outputs": ["MappedGeologicUnitCatalog-1.0", "route-ordered mapped-unit transition pairs"],
+  "uncertainty": "map-scale surface identity only; numerical ages and subsurface thickness remain unresolved",
+  "exclusions": ["no subsurface continuation", "no stratigraphic order from route direction", "no silent modern terminology normalization", "no named-age to Ma conversion without an authority-bound mapping"],
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985"],
+  "validationMethod": "hash, deduplication, source-order, inconsistent-repeat and authorization-boundary tests plus actual Aso artifact generation",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "controlled terminology and ICS-version-bound named-age normalization are available"
+}

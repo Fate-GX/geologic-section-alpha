@@ -1,0 +1,30 @@
+{
+  "ruleId": "ROUTE-EVIDENCE-ARTIFACT-BINDING-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "A derived borehole or structural-observation artifact is projected to a geographic route"
+  ],
+  "requiredEvidence": [
+    "Exact ordered longitude/latitude route vertices",
+    "GEO3D-JCS-LIKE-1.0 canonical route SHA-256",
+    "Source artifact SHA-256"
+  ],
+  "decisionLogic": "A derived artifact may join a route workspace only when its complete routeBinding object exactly equals the binding independently calculated from the plan route.",
+  "outputs": [
+    "RouteEvidenceWorkspace-1.0",
+    "Explicit artifact hashes",
+    "EvidenceOverlayOnly_NoAutomaticSubsurfaceGeometry"
+  ],
+  "uncertainty": "The binding proves route identity, not observation accuracy, correlation, lateral support or geological truth.",
+  "exclusions": [
+    "No station-only or visually similar route matching",
+    "No automatic subsurface surface construction",
+    "No interpolation across evidence gaps"
+  ],
+  "sourceIds": [],
+  "basisType": "ProjectIntegrityContract",
+  "validationMethod": "Positive exact binding, different-route rejection, missing-binding rejection and out-of-route station rejection",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Reopen for a new route CRS, curved route primitive, signed provenance envelope or route-edit migration."
+}

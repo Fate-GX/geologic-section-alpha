@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "BoreholeLithologyTerminologyProfile-1.0",
+  "profileId": "JP-BED-FIELD-DESCRIPTION-2026-09",
+  "scope": "DatasetSpecific:MLIT-BED-FieldDescriptions",
+  "sourceAuthority": "MLIT CALS/EC and Japanese Geotechnical Society",
+  "sourceIds": [
+    "MLIT-BED0400-H28-10",
+    "JGS-0051-GEOMATERIAL-CLASSIFICATION"
+  ],
+  "sourceUrls": [
+    "https://www.cals-ed.go.jp/seigo_ed_civil7/",
+    "https://www.jiban.or.jp/e/standards/lists-of-standards"
+  ],
+  "vocabularyVersion": "MLIT BED H28.10 corrections checked 2026-09-05; JGS standards list checked 2026-09-05",
+  "classificationBoundary": "BED field descriptions are not promoted to laboratory-based JGS 0051 classifications without grain-size/plasticity evidence",
+  "terms": [
+    {
+      "sourceLabel": "火山灰質粘性土",
+      "normalizedLabelJa": "火山灰質粘性土",
+      "normalizedLabelEn": "volcanic-ash cohesive soil",
+      "broadMaterialClass": "VolcanicAshSoil",
+      "fieldSymbol": "V",
+      "termStatus": "Current",
+      "formalEngineeringClassificationAuthorized": false,
+      "normalizationNote": "Current field-description term and symbol retained; no JGS 0051 subdivision inferred without tests."
+    },
+    {
+      "sourceLabel": "砂質シルト",
+      "normalizedLabelJa": "砂質シルト",
+      "normalizedLabelEn": "sandy silt",
+      "broadMaterialClass": "FineGrainedSoil",
+      "fieldSymbol": null,
+      "termStatus": "Current",
+      "formalEngineeringClassificationAuthorized": false,
+      "normalizationNote": "Word order and source meaning retained; fines and plasticity data are absent."
+    },
+    {
+      "sourceLabel": "砂礫",
+      "normalizedLabelJa": "砂礫",
+      "normalizedLabelEn": "sand and gravel",
+      "broadMaterialClass": "CoarseGrainedSoil",
+      "fieldSymbol": null,
+      "termStatus": "Current",
+      "formalEngineeringClassificationAuthorized": false,
+      "normalizationNote": "Broad field description retained; dominant fraction and formal classification are unresolved."
+    },
+    {
+      "sourceLabel": "粘土混じり砂礫",
+      "normalizedLabelJa": "粘土混じり砂礫",
+      "normalizedLabelEn": "clay-bearing sand and gravel",
+      "broadMaterialClass": "CoarseGrainedSoilWithFines",
+      "fieldSymbol": null,
+      "termStatus": "Current",
+      "formalEngineeringClassificationAuthorized": false,
+      "normalizationNote": "Modifier is preserved; particle-size and plasticity evidence are insufficient for a formal symbol."
+    },
+    {
+      "sourceLabel": "安山岩質玄武岩",
+      "normalizedLabelJa": "安山岩質玄武岩",
+      "normalizedLabelEn": "andesitic basalt (source description)",
+      "broadMaterialClass": "VolcanicRock",
+      "fieldSymbol": null,
+      "termStatus": "Unverified",
+      "formalEngineeringClassificationAuthorized": false,
+      "normalizationNote": "Source compositional wording retained. No basaltic-andesite renaming is authorized without chemical/mineralogical classification evidence."
+    }
+  ],
+  "authorizationBoundary": "TerminologyDisplayOnly_NoUnitCorrelationOrGeologicalGeometryAuthorization"
+}

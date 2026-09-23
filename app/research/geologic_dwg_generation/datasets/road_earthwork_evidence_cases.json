@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "ruleIds": ["AT-R005", "ROAD-EVIDENCE-GATE-001"],
+  "cases": [
+    {
+      "case_id": "REAL_MLIT_MASUDA_WEST_PRELIMINARY_DESIGN_PUBLIC_CASE",
+      "case_type": "AuthoritativeRealWorldCase",
+      "source_ids": ["MLIT-CGR-BIMCIM-CASEBOOK-R6"],
+      "evidence_scope": "PublishedCaseStudy_NoModelGeometry",
+      "evidence": {
+        "road_alignment": true,
+        "stationing": false,
+        "existing_ground_surface": false,
+        "design_surface": false,
+        "horizontal_crs": false,
+        "vertical_datum": false,
+        "overlapping_coverage": false,
+        "roadbed_definition": false,
+        "earthwork_material_class": false
+      },
+      "vertical_datum_consistent": false,
+      "same_station_reference": false,
+      "expected": {
+        "road_context_recognized": true,
+        "road_section_generation_authorized": false,
+        "detailed_road_earthwork_authorized": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_ROAD_SECTION_MINIMUM_CONTRACT",
+      "case_type": "SyntheticBoundaryTest",
+      "evidence": {
+        "road_alignment": true,
+        "stationing": true,
+        "existing_ground_surface": true,
+        "design_surface": true,
+        "horizontal_crs": true,
+        "vertical_datum": true,
+        "overlapping_coverage": true,
+        "roadbed_definition": false,
+        "earthwork_material_class": false
+      },
+      "vertical_datum_consistent": true,
+      "same_station_reference": true,
+      "expected": {
+        "road_context_recognized": true,
+        "road_section_generation_authorized": true,
+        "detailed_road_earthwork_authorized": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_FULL_ROAD_EARTHWORK_WITH_UNRESOLVED_OPTIONALS",
+      "case_type": "SyntheticPositiveTest",
+      "evidence": {
+        "road_alignment": true,
+        "stationing": true,
+        "existing_ground_surface": true,
+        "design_surface": true,
+        "horizontal_crs": true,
+        "vertical_datum": true,
+        "overlapping_coverage": true,
+        "roadbed_definition": true,
+        "earthwork_material_class": true
+      },
+      "vertical_datum_consistent": true,
+      "same_station_reference": true,
+      "component_presence": {"drainage": null, "retaining_structure": null},
+      "expected": {
+        "road_context_recognized": true,
+        "road_section_generation_authorized": true,
+        "detailed_road_earthwork_authorized": true
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_DATUM_CONFLICT",
+      "case_type": "SyntheticConflictTest",
+      "evidence": {
+        "road_alignment": true,
+        "stationing": true,
+        "existing_ground_surface": true,
+        "design_surface": true,
+        "horizontal_crs": true,
+        "vertical_datum": true,
+        "overlapping_coverage": true,
+        "roadbed_definition": true,
+        "earthwork_material_class": true
+      },
+      "vertical_datum_consistent": false,
+      "same_station_reference": true,
+      "expected": {
+        "road_context_recognized": true,
+        "road_section_generation_authorized": false,
+        "detailed_road_earthwork_authorized": false
+      }
+    }
+  ]
+}

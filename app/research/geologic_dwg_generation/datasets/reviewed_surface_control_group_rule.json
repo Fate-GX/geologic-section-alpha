@@ -1,0 +1,22 @@
+{
+  "ruleId": "REVIEWED-SURFACE-CONTROL-GROUP-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "Hash-bound candidate-control registry",
+    "Explicit independent review selecting at least three unique controls",
+    "Each selected control is direct observed subsurface contact evidence with authorized absolute Z and an artifact SHA-256"
+  ],
+  "decisionLogic": [
+    "Never correlate controls automatically by lithology label, similar depth, or spatial proximity.",
+    "Bind the review to the complete candidate registry using canonical SHA-256.",
+    "Require distinct independentSupportId values and pass the shared surface evidence audit."
+  ],
+  "outputs": ["reviewed same-contact control group", "evidence audit", "review provenance", "optional evidence-bounded route contact projection"],
+  "exclusions": ["No automatic stratigraphic identity", "No draft review", "No unhashed evidence", "No repeated samples from one support counted as independent"],
+  "sourceIds": [],
+  "basisType": "ProjectEvidenceAndReviewSafetyContract",
+  "validationMethod": "Positive, draft, tamper, unknown ID, duplicate ID, malformed hash and fake-independence tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Authenticated reviewer signatures or probabilistic correlation ensembles are introduced"
+}

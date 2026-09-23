@@ -1,0 +1,28 @@
+{
+  "ruleId": "GEO3D-BOREHOLE-COLLAR-DEM-COMPARATOR-1",
+  "version": "1.0.0",
+  "scope": "Global:DiagnosticComparisonOnly",
+  "preconditions": [
+    "Borehole and DEM coordinates use the same horizontal CRS",
+    "DEM sample is hash-bound to its source raster tile",
+    "Vertical reference compatibility is declared or unresolved explicitly"
+  ],
+  "equation": "deltaZ = z_dem - z_collar; absoluteDifference = abs(deltaZ)",
+  "variables": {
+    "z_dem": "DEM terrain elevation at the borehole coordinate, metres",
+    "z_collar": "reported borehole collar elevation, metres",
+    "deltaZ": "signed DEM-minus-collar difference, metres"
+  },
+  "decisionLogic": "Report comparison class against a declared diagnostic threshold; never convert agreement into survey-accuracy verification",
+  "outputs": ["signedDifferenceM", "absoluteDifferenceM", "comparisonClass"],
+  "uncertainty": "DEM resolution, vegetation/surface representation, coordinate reading error and collar-survey accuracy remain separate and may be unknown",
+  "exclusions": [
+    "Not a vertical datum transformation",
+    "Not proof of collar levelling accuracy",
+    "Not geological correlation or section authorization"
+  ],
+  "sourceIds": ["GSI-XYZ-ELEVATION-TILES", "KUNIJIBAN-ATTENTION"],
+  "validationMethod": "positive, threshold-boundary, hash-tamper, CRS/datum mismatch and non-finite tests",
+  "adoptionStatus": "AdoptedDiagnosticOnly",
+  "reopenCondition": "A provider survey report, benchmark tie, vertical transformation or source-specific DEM uncertainty model becomes available"
+}

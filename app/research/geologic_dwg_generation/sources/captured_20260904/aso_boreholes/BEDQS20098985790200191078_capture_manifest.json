@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "PublicBoreholeCaptureManifest-1.0",
+  "capturedAt": "2026-09-04",
+  "distributionAuthority": "Geo-Station / Public Works Research Institute",
+  "dataset": "国土交通省九州地方整備局",
+  "datasetId": "QSRDB",
+  "fileId": "BEDQS20098985790200191078",
+  "boreholeName": "No.3",
+  "canonicalDownloadUrl": "https://www.geo-stn.bosai.go.jp/api/dlBoring.php?type=xml&file=QSRDB%2CBEDQS20098985790200191078",
+  "sourceArtifact": "BEDQS20098985790200191078.xml",
+  "sourceArtifactSha256": "39c30d2b811f69ad356dc943318a637d341a31955e463a5e79087eb6fe0cb27b",
+  "sourceByteLength": 30038,
+  "exchangeFormatVersion": "BED0300-DTD-3.00",
+  "sourceDmsCoordinate": {
+    "longitude": [131, 0, 33.3],
+    "latitude": [32, 52, 53.8],
+    "decimal": [131.00925, 32.88161111111111],
+    "formatGeodeticSystemCode": "1",
+    "declaredCrs": "EPSG:4612"
+  },
+  "coordinateTransformEvidence": "../../../validation/aso_borehole_no3_jgd2000_to_jgd2011_20260904.json",
+  "collarElevationM": 513.83,
+  "verticalDatum": "TokyoPeil",
+  "verticalDatumEvidence": {
+    "basis": "DeclaredByApplicableBED0300ExchangeStandard",
+    "sourceId": "MLIT-BED0300-H20-12-APPENDIX",
+    "locator": "付属資料5 ボーリング交換用データ, 付5-17, (12)基本情報 1)孔口標高",
+    "statement": "孔口標高の標高基準はT.P.(東京湾平均海面)を使用し、単位m、小数点以下2桁まで記入する",
+    "sourceArtifact": "../official_bed0300/boring62_h20_12_appendix.pdf",
+    "sourceArtifactSha256": "66f19da71faf758166a8d1090d39c640ecee3636cf8253a6a111fbff18a05404",
+    "applicability": "BED0300 DTD 3.00 compliant 孔口標高 field",
+    "boundary": "Datum follows the exchange-standard declaration; no independent levelling record or survey epoch was supplied"
+  },
+  "totalDepthM": 32.0,
+  "intervals": [
+    [10.15, "ローム"],
+    [10.40, "旧河床堆積物"],
+    [11.10, "間隙堆積物"],
+    [12.30, "間隙堆積物"],
+    [18.50, "間隙堆積物"],
+    [29.75, "軽石流堆積物"],
+    [32.00, "火山研究所溶岩"]
+  ],
+  "terminologyStatus": "Unverified",
+  "evidenceStatus": "Unverified",
+  "routeProjectionScreening": {
+    "routeArtifact": "outputs/gsi_plan_section_cycle1_20260904/plan_evidence_bundle.json",
+    "targetCrs": "EPSG:6668",
+    "maximumAcceptedOffsetM": 500.0,
+    "stationM": 0.0,
+    "projectionDistanceM": 2532.7865042384424,
+    "decision": "RejectedForCurrentSectionCorrelation_RegionalEvidenceOnly"
+  },
+  "terms": {
+    "portal": "https://www.geo-stn.bosai.go.jp/agreement.html",
+    "provider": "https://www.kunijiban.pwri.go.jp/jp/terms.html",
+    "attributionRequiredForRedistribution": true
+  }
+}

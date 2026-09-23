@@ -1,0 +1,23 @@
+{
+  "ruleId": "ADV2-FACIES-ARCHITECTURE-1.0",
+  "version": "1.0",
+  "scope": "Domain",
+  "status": "AdoptedExperimental",
+  "purpose": "Separate candidate lithology vocabulary from independently portrayed geological bodies.",
+  "preconditions": ["Supported broad domain", "SyntheticAssumption candidates", "No local geometry evidence"],
+  "decisionLogic": [
+    "Keep material, composition part, hierarchy role and body morphology distinct",
+    "Allow layer-like packages only for compatible domain roles",
+    "Treat plutonic candidates as weathering or fracture states, not beds",
+    "Do not portray accretionary block or slice constituents as a vertical layer cake",
+    "Do not portray metamorphic constituents as invented lithologic zonation",
+    "Keep non-geometric constituents as unlocated composition parts"
+  ],
+  "outputs": ["faciesArchitecture", "substrateFacies", "faciesMetadata"],
+  "uncertainty": "Conservative domain prior; no local contact geometry.",
+  "exclusions": ["Invented lenses, blocks, faults or intrusions", "Every candidate as a separate bed", "Unsupported evidence promotion"],
+  "sourceIds": ["OGC-GEOSCIML-4.1", "GSJ-YOKOYAMACHI-G050-10080-2000"],
+  "implementationReference": "subprojects/geologic_3d_engine/advanced_v2/facies_architecture.py",
+  "validationMethod": ["all-domain positive cases", "invalid-role rejection", "complex-domain no-layer-cake regression", "seven-terrain regression"],
+  "reopenCondition": "Route-applicable morphology, orientation or block/lens geometry becomes available"
+}

@@ -1,0 +1,24 @@
+{
+  "sourceId": "MLIT-BED0400-H28-10",
+  "authority": "国土交通省",
+  "title": "地質・土質調査成果電子納品要領・同解説 付属資料 平成28年10月",
+  "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring73.pdf",
+  "dtdExampleUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring7.zip",
+  "accessedAt": "2026-09-05",
+  "scope": "Domain:BoreholeExchangeFormat/BED0400",
+  "adoptionStatus": "AdoptedForFormatSemantics",
+  "supports": [
+    "BED0400 DTD version 4.00 field structure",
+    "coordinate acquisition-method codes",
+    "coordinate reading-resolution codes",
+    "JGD2000/JGD2011 format geodetic-system codes",
+    "T.P. collar-elevation field convention",
+    "total drilled length field meaning"
+  ],
+  "exclusions": [
+    "Does not establish the accuracy of an individual submitted borehole",
+    "Does not independently verify provider content",
+    "Does not normalize lithology terminology",
+    "Does not authorize interpolation or correlation to a section route"
+  ]
+}

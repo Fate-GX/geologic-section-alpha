@@ -1,0 +1,40 @@
+{
+  "ruleId": "BH-CATEGORICAL-HARD-CONDITIONING-001",
+  "version": "1.0",
+  "scope": "Global",
+  "status": "AdoptedForImplementation",
+  "preconditions": [
+    "Source borehole intervals have coordinates, collar elevation, depths, provenance and terminology state",
+    "Route projection and coordinate-reference evidence pass",
+    "Geological event domains and proposed correlations are explicit"
+  ],
+  "equations": [
+    {
+      "equationId": "BH-DEPTH-TO-ELEVATION-001",
+      "expression": "z_boundary = z_collar - d_boundary",
+      "variables": {"z_boundary": "boundary elevation [L]", "z_collar": "collar elevation [L]", "d_boundary": "positive downward depth [L]"}
+    },
+    {
+      "equationId": "BH-EXACT-GAUSSIAN-CONDITIONING-001",
+      "expression": "g_c(x)=g(x)+K(x,X) solve(K(X,X), y-g(X))",
+      "variables": {"g_c": "conditional latent field", "g": "unconditional latent realization", "K": "covariance", "X": "control locations [L]", "y": "control values"}
+    },
+    {
+      "equationId": "BH-MARKOV-TRANSITION-001",
+      "expression": "P(h)=exp(R*h)",
+      "variables": {"P": "categorical transition-probability matrix", "R": "transition-rate matrix [L^-1]", "h": "lag [L]"}
+    },
+    {
+      "equationId": "BH-CATEGORICAL-ENTROPY-001",
+      "expression": "H=-sum_k(p_k*log_K(p_k))",
+      "variables": {"H": "normalized categorical entropy [1]", "p_k": "probability of category k [1]", "K": "category count [1]"}
+    }
+  ],
+  "decisionLogic": "Generate categorical lithology only inside explicit event domains; observed borehole cells are immutable hard data; soft evidence modifies probabilities; every proposed inter-hole relation is typed; unresolved relations remain unresolved.",
+  "outputs": ["categoricalRealizations", "representativeRealization", "categoryProbabilityGrid", "entropyGrid", "hardDataAudit", "contactTopologyAudit"],
+  "uncertainty": "Multiple conditional realizations required; a single realization cannot claim unique subsurface truth.",
+  "exclusions": ["Name-only stratigraphic correlation", "Independent free-form conformable contacts", "Invented basement from non-penetration", "Decorative borehole overlays"],
+  "sourceIds": ["GEOSTATION-BORING-PROCESSING", "BGS-GSI3D-WORKFLOW", "GEMPY-1-2019", "ALLARD-FABBRI-GAETAN-2021", "CORDUA-MIXSIM-2016", "CARLE-TSIM-S-2020", "BARFOD-MPS-2021"],
+  "validationMethod": ["exact hard-cell equality", "exact borehole-centre boundary residual", "positive-thickness and topology audit", "ensemble transition/proportion audit", "leave-one-borehole-out test"],
+  "reopenCondition": "New depositional-domain evidence, reviewed training images, structural observations or a failure of any hard-conditioning gate"
+}

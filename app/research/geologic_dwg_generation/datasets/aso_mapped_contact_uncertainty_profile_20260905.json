@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "MappedContactUncertaintyProfile-1.0",
+  "regionId": "JP-ASO-V40-ROUTE",
+  "sourceId": "GSJ-MAP-VOLC-04-ASO-1985-VECTOR",
+  "sourceScaleDenominator": 50000,
+  "sourceAccuracyFinding": "The vector README identifies digitization from the 1:50,000 map but declares no ground-distance contact accuracy statistic.",
+  "boundaries": [
+    {"transitionId":"MAPPED-TRANSITION-0000","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"},
+    {"transitionId":"MAPPED-TRANSITION-0001","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"},
+    {"transitionId":"MAPPED-TRANSITION-0002","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"},
+    {"transitionId":"MAPPED-TRANSITION-0003","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"},
+    {"transitionId":"MAPPED-TRANSITION-0004","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"},
+    {"transitionId":"MAPPED-TRANSITION-0005","method":"MapScaleOnly","scaleDenominator":50000,"halfWidthM":null,"sourceId":"GSJ-MAP-VOLC-04-ASO-1985-VECTOR","locator":"readme_04_Aso.txt: source map and vector-data description"}
+  ],
+  "numericGroundAccuracyDeclared": false,
+  "realRegionNumericUncertaintyAuthorized": false
+}

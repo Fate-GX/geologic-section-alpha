@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "caseId": "SENDAI_E5_3_GEOREFERENCE_GATE_20260824",
+  "sourcePdfHasGeoPdfMetadata": false,
+  "pdfProducer": "ArcMap 10.1 / Acrobat Distiller 10.1.5",
+  "candidateOfficialCoordinates": [
+    {"name": "仙台市八木山動物公園", "longitude": 140.842551, "latitude": 38.24407446, "status": "CandidateOnly_PdfPixelNotCertified"},
+    {"name": "八木山動物公園駅", "longitude": 140.844033631944, "latitude": 38.2433425466667, "status": "CandidateOnly_OpenedAfterOldSourceEpoch"},
+    {"name": "富沢駅", "longitude": 140.870784243333, "latitude": 38.2140702016667, "status": "CandidateOnly_PdfPixelNotCertified"},
+    {"name": "長町南駅", "longitude": 140.876959144167, "latitude": 38.2268868302778, "status": "CandidateOnly_PdfPixelNotCertified"}
+  ],
+  "projectQaPolicyNotOfficialMapAccuracy": {
+    "max_control_rmse_m": 5.0,
+    "max_check_rmse_m": 5.0,
+    "max_check_error_m": 10.0,
+    "minimum_control_points": 3,
+    "minimum_independent_check_points": 2,
+    "samplingMustRemainInsideControlExtent": true
+  },
+  "realCaseDecision": {
+    "accepted": false,
+    "blockers": [
+      "No embedded GeoPDF viewport/measure dictionary",
+      "No certified PDF-pixel-to-official-coordinate correspondences",
+      "No independent check points",
+      "DEM sampling prohibited until residual validation passes"
+    ]
+  },
+  "syntheticTransformTests": {
+    "purpose": "Exercise mathematics only; not E5-(3) coordinates.",
+    "control_points": [
+      {"pixel_x": 0, "pixel_y": 0, "map_x": 1000, "map_y": 2000},
+      {"pixel_x": 100, "pixel_y": 0, "map_x": 1200, "map_y": 2000},
+      {"pixel_x": 0, "pixel_y": 100, "map_x": 1000, "map_y": 1800},
+      {"pixel_x": 100, "pixel_y": 100, "map_x": 1200, "map_y": 1800}
+    ],
+    "check_points": [
+      {"pixel_x": 25, "pixel_y": 25, "map_x": 1050, "map_y": 1950},
+      {"pixel_x": 75, "pixel_y": 75, "map_x": 1150, "map_y": 1850}
+    ]
+  }
+}

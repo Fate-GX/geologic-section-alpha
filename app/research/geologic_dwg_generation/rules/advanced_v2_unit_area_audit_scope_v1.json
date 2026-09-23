@@ -1,0 +1,37 @@
+{
+  "ruleId": "GEO-PORTRAYAL-AREA-SCOPE-001",
+  "version": "1.1.0",
+  "scope": "Global",
+  "status": "Adopted",
+  "basisType": "ProjectValidationPolicy",
+  "preconditions": [
+    "A cross-section contract contains geological interpretation polygons.",
+    "Any polygon below the calculated model limit is explicitly classified as SyntheticBasalContinuation."
+  ],
+  "decisionLogic": [
+    "Compute the authoritative unit-area balance only inside the calculated geological model interval.",
+    "Treat the classification label as an untrusted claim; exclude only the single canonical continuation polygon after its identity, unit binding, basis, category and full vertex sequence match the model lower boundary and drawing-frame bottom.",
+    "Compute and retain a second drawing-frame diagnostic that includes the continuation.",
+    "Never add or split lithologies merely to satisfy the portrayal threshold."
+  ],
+  "outputs": [
+    "CalculatedGeologicalModelInterval unit-area audit used for pass/fail.",
+    "DrawingFrameIncludingSyntheticBasalContinuation diagnostic retained for disclosure."
+  ],
+  "uncertainty": "Area thresholds are portfolio portrayal gates, not geological laws or evidence of subsurface truth.",
+  "exclusions": [
+    "Ordinary modeled geological polygons",
+    "Unclassified polygons",
+    "Observed or literature-supported deeper units"
+  ],
+  "sourceIds": [],
+  "implementationReference": "subprojects/geologic_3d_engine/advanced_v2/advanced_dwg_contract.py::_audit_unit_area_balance",
+  "validationMethod": [
+    "A large declared basal continuation does not alter modeled-interval fractions.",
+    "A true modeled unit at the domain limit passes and a value immediately above it fails.",
+    "The drawing-frame diagnostic still reports the continuation-inflated fraction."
+    ,"A forged SyntheticBasalContinuation label on an ordinary polygon remains included and cannot evade the dominance gate."
+    ,"Any coordinate, unit binding, basis, category or canonical-ID mutation fails closed before area exclusion."
+  ],
+  "reopenCondition": "Reopen if the basal continuation acquires geological evidence or if area thresholds become evidence-authorized geological constraints."
+}

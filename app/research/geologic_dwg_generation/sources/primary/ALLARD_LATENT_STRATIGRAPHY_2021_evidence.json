@@ -1,0 +1,39 @@
+{
+  "sourceId": "ALLARD-LATENT-STRATIGRAPHY-2021",
+  "title": "Modeling and simulating depositional sequences using latent Gaussian random fields",
+  "canonicalPreprintUrl": "https://arxiv.org/pdf/2003.11383",
+  "publicationAuthority": "Mathematical Geosciences",
+  "evidenceCapturedBy": "Independent Claude Code review",
+  "reviewDate": "2026-08-30",
+  "claimEvidence": [
+    {
+      "claimPath": "logic.0",
+      "locator": "Section 3.1, Equation (1)",
+      "equation": "Z_j(s)=phi_j(W_j(s)-tau_j) when W_j(s)>tau_j",
+      "support": "Direct transformed latent Gaussian thickness-field definition"
+    },
+    {
+      "claimPath": "logic.1",
+      "locator": "Introduction and Section 3.1, Equation (1), otherwise branch",
+      "equation": "Z_j(s)=0 otherwise",
+      "support": "Direct truncation/null-thickness definition"
+    },
+    {
+      "claimPath": "logic.3",
+      "locator": "Section 3.1, depth-surface accumulation equation",
+      "equation": "T_j(s)=T_(j-1)(s)+Z_j(s)",
+      "support": "Direct sequential stacking relation"
+    }
+  ],
+  "exclusionEvidence": {
+    "claimPath": "logic.2",
+    "locator": "Section 3.1",
+    "finding": "The latent fields W_j are assumed independent because they represent independent depositional processes; within-layer spatial covariance must not be misrepresented as a cross-layer correlation matrix."
+  },
+  "artifactStatus": "LocatorAndEquationRecord_NoLocalFullTextArtifact",
+  "limitations": [
+    "The full-text PDF is not stored in the repository.",
+    "This evidence does not validate a cross-layer covariance implementation.",
+    "This evidence does not establish universal covariance coefficients or ranges."
+  ]
+}

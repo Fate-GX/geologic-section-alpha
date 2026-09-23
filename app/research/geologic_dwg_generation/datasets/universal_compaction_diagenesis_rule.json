@@ -1,0 +1,285 @@
+{
+  "ruleId": "UNIVERSAL-COMPACTION-DIAGENESIS-001",
+  "version": "1.2.0",
+  "scope": "Global",
+  "status": "AdoptedArchitecture_ParametersRequired",
+  "preconditions": [
+    "porosity values and their measurement basis are declared",
+    "burial depth and vertical datum are declared",
+    "depositional and current states are not silently mixed",
+    "coefficients are calibrated to compatible material and burial conditions"
+  ],
+  "equations": {
+    "AthyEquilibrium": "phi(z)=phi0*exp(-c*z)",
+    "SolidVolumeConservation": "H1*(1-phi1)=H2*(1-phi2)"
+  },
+  "decisionLogic": [
+    "Use solid-volume conservation for one-dimensional compacted/decompacted thickness",
+    "Stack transformed non-negative thickness fields to preserve shared contacts",
+    "Treat spatially variable porosity as differential compaction, not independent contact noise",
+    "Require direct evidence before adding cementation, dissolution, or disequilibrium compaction"
+  ],
+  "hardGates": [
+    "0 <= porosity < 1",
+    "non-negative thickness",
+    "solid volume conservation",
+    "shared contacts",
+    "no lithology-name-only process assignment"
+  ],
+  "limitations": [
+    "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+    "mechanical compaction and chemical diagenesis remain separate evidence classes",
+    "no universal lithology-specific coefficient is supplied"
+  ],
+  "sourceIds": [
+    "ATHY-COMPACTION-1930"
+  ],
+  "validationMethod": "equation identity, inverse transform, topology, negative and insufficient-evidence tests",
+  "reopenCondition": "A history-dependent compaction model or normalized multi-region coefficient corpus is required",
+  "schemaVersion": "1.2.0",
+  "claimBindings": [
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-EQUATIONS-ATHYEQUILIBRIUM",
+      "claimPath": "equations.AthyEquilibrium",
+      "statement": "phi(z)=phi0*exp(-c*z)",
+      "sourceIds": [
+        "ATHY-COMPACTION-1930"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "ATHY-COMPACTION-1930",
+          "locator": "source_catalog.md entry; precise supporting passage pending independent review",
+          "locatorStatus": "CatalogEntryOnly_PrecisePassagePending"
+        }
+      ],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PartiallySupported",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "PublishedEmpiricalEvidence",
+      "basisRefs": [
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::athy_porosity"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-EQUATIONS-SOLIDVOLUMECONSERVATION",
+      "claimPath": "equations.SolidVolumeConservation",
+      "statement": "H1*(1-phi1)=H2*(1-phi2)",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "DERIVATION-1D-CONSTANT-AREA-SOLID-VOLUME",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::transform_thickness"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-DECISIONLOGIC-1",
+      "claimPath": "decisionLogic.0",
+      "statement": "Use solid-volume conservation for one-dimensional compacted/decompacted thickness",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "DERIVATION-1D-CONSTANT-AREA-SOLID-VOLUME",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::transform_thickness"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-DECISIONLOGIC-2",
+      "claimPath": "decisionLogic.1",
+      "statement": "Stack transformed non-negative thickness fields to preserve shared contacts",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "VALIDATION-PLAN-SHARED-CONTACTS",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::compact_stack"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-DECISIONLOGIC-3",
+      "claimPath": "decisionLogic.2",
+      "statement": "Treat spatially variable porosity as differential compaction, not independent contact noise",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "SUBPROJECT-CHARTER-CONFORMABLE-CONTACTS",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::compact_stack"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-DECISIONLOGIC-4",
+      "claimPath": "decisionLogic.3",
+      "statement": "Require direct evidence before adding cementation, dissolution, or disequilibrium compaction",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "EvidenceGovernancePolicy",
+      "basisRefs": [
+        "PROJECT-RESEARCH-TO-CODE-RULE",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::classify_diagenetic_evidence"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-HARDGATES-1",
+      "claimPath": "hardGates.0",
+      "statement": "0 <= porosity < 1",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "DEFINITION-POROSITY-FRACTION",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::_porosity"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-HARDGATES-2",
+      "claimPath": "hardGates.1",
+      "statement": "non-negative thickness",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "VALIDATION-PLAN-POSITIVE-THICKNESS",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::solid_thickness"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-HARDGATES-3",
+      "claimPath": "hardGates.2",
+      "statement": "solid volume conservation",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "MathematicalIdentity",
+      "basisRefs": [
+        "DERIVATION-1D-CONSTANT-AREA-SOLID-VOLUME",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::transform_thickness"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-HARDGATES-4",
+      "claimPath": "hardGates.3",
+      "statement": "shared contacts",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "ProjectInvariant",
+      "basisRefs": [
+        "VALIDATION-PLAN-SHARED-CONTACTS",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::validate_compacted_stack"
+      ]
+    },
+    {
+      "claimId": "UNIVERSAL-COMPACTION-DIAGENESIS-001-CLAIM-HARDGATES-5",
+      "claimPath": "hardGates.4",
+      "statement": "no lithology-name-only process assignment",
+      "sourceIds": [],
+      "sourceLocators": [],
+      "scope": "Global",
+      "applicability": "All stated preconditions and required evidence must be satisfied",
+      "exclusions": [
+        "Athy equilibrium form does not represent geological time, temperature, permeability evolution, pore-pressure feedback, or cement kinetics",
+        "mechanical compaction and chemical diagenesis remain separate evidence classes",
+        "no universal lithology-specific coefficient is supplied"
+      ],
+      "evidenceStatus": "PendingSemanticReview",
+      "verificationNote": "Basis classification remediated after independent review; exact derivation/policy/implementation support remains independently reviewable.",
+      "basisType": "EvidenceGovernancePolicy",
+      "basisRefs": [
+        "PROJECT-LITHOLOGY-PROPERTY-CONDITIONAL-POLICY",
+        "subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py::classify_diagenetic_evidence"
+      ]
+    }
+  ],
+  "creationProvenance": {
+    "origin": "Migrated from the adopted universal architecture rule corpus",
+    "promotionBasis": "Architecture-level reuse only; coefficients and regional parameters remain excluded",
+    "status": "PendingSemanticReview"
+  }
+}

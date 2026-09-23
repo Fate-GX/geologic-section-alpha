@@ -1,0 +1,905 @@
+{
+  "schemaVersion": "JapanLithologyVocabulary-1.0",
+  "version": "2026-09-21.1",
+  "scope": "GlobalVocabulary_NotRegionalOccurrence",
+  "sourceIds": [
+    "GSJ-SEAMLESS-V2-LEGEND",
+    "CGI-GEOSCIML-LITHOLOGY"
+  ],
+  "sources": [
+    {
+      "sourceId": "GSJ-SEAMLESS-V2-LEGEND",
+      "authority": "GSJ/AIST",
+      "canonicalUrl": "https://gbank.gsj.jp/seamless/v2/api/1.3.1/",
+      "adoptionStatus": "ReusedAdoptedVocabulary",
+      "lastChecked": "2026-09-17"
+    },
+    {
+      "sourceId": "CGI-GEOSCIML-LITHOLOGY",
+      "authority": "IUGS CGI",
+      "canonicalUrl": "https://resource.geosciml.org/classifier/cgi/lithology",
+      "adoptionStatus": "ReusedAdoptedVocabulary",
+      "lastChecked": "2026-09-17"
+    }
+  ],
+  "lithologies": [
+    {
+      "key": "basalt",
+      "ja": "玄武岩",
+      "en": "basalt",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "玄武岩",
+        "basalt"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "andesite",
+      "ja": "安山岩",
+      "en": "andesite",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "安山岩",
+        "andesite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "dacite",
+      "ja": "デイサイト",
+      "en": "dacite",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "デイサイト",
+        "dacite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "rhyolite",
+      "ja": "流紋岩",
+      "en": "rhyolite",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "流紋岩",
+        "rhyolite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "tuff",
+      "ja": "凝灰岩",
+      "en": "tuff",
+      "domains": [
+        "SedimentaryRockTerrain",
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "凝灰岩",
+        "tuff"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "welded_tuff",
+      "ja": "溶結凝灰岩",
+      "en": "welded tuff",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "溶結凝灰岩",
+        "welded tuff",
+        "welded pyroclastic"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "tuff_breccia",
+      "ja": "凝灰角礫岩",
+      "en": "tuff breccia",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "凝灰角礫岩",
+        "tuff breccia"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "volcanic_breccia",
+      "ja": "火山角礫岩",
+      "en": "volcanic breccia",
+      "domains": [
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "火山角礫岩",
+        "volcanic breccia"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "granite",
+      "ja": "花崗岩",
+      "en": "granite",
+      "domains": [
+        "PlutonicTerrain"
+      ],
+      "aliases": [
+        "花崗岩",
+        "granite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "granodiorite",
+      "ja": "花崗閃緑岩",
+      "en": "granodiorite",
+      "domains": [
+        "PlutonicTerrain"
+      ],
+      "aliases": [
+        "花崗閃緑岩",
+        "granodiorite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "diorite",
+      "ja": "閃緑岩",
+      "en": "diorite",
+      "domains": [
+        "PlutonicTerrain"
+      ],
+      "aliases": [
+        "閃緑岩",
+        "diorite"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "gabbro",
+      "ja": "斑れい岩",
+      "en": "gabbro",
+      "domains": [
+        "PlutonicTerrain"
+      ],
+      "aliases": [
+        "斑れい岩",
+        "斑糲岩",
+        "gabbro"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "sandstone",
+      "ja": "砂岩",
+      "en": "sandstone",
+      "domains": [
+        "AccretionaryComplex",
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "砂岩",
+        "sandstone"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "mudstone",
+      "ja": "泥岩",
+      "en": "mudstone",
+      "domains": [
+        "AccretionaryComplex",
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "泥岩",
+        "mudstone"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "siltstone",
+      "ja": "シルト岩",
+      "en": "siltstone",
+      "domains": [
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "シルト岩",
+        "siltstone"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "conglomerate",
+      "ja": "礫岩",
+      "en": "conglomerate",
+      "domains": [
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "礫岩",
+        "conglomerate"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "limestone",
+      "ja": "石灰岩",
+      "en": "limestone",
+      "domains": [
+        "AccretionaryComplex",
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "石灰岩",
+        "limestone"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "chert",
+      "ja": "チャート",
+      "en": "chert",
+      "domains": [
+        "AccretionaryComplex",
+        "SedimentaryRockTerrain"
+      ],
+      "aliases": [
+        "チャート",
+        "chert"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "crystalline_schist",
+      "ja": "結晶片岩",
+      "en": "crystalline schist",
+      "domains": [
+        "MetamorphicBelt"
+      ],
+      "aliases": [
+        "結晶片岩",
+        "crystalline schist"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "gneiss",
+      "ja": "片麻岩",
+      "en": "gneiss",
+      "domains": [
+        "MetamorphicBelt"
+      ],
+      "aliases": [
+        "片麻岩",
+        "gneiss"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "hornfels",
+      "ja": "ホルンフェルス",
+      "en": "hornfels",
+      "domains": [
+        "MetamorphicBelt"
+      ],
+      "aliases": [
+        "ホルンフェルス",
+        "hornfels"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "greenstone",
+      "ja": "緑色岩",
+      "en": "greenstone",
+      "domains": [
+        "AccretionaryComplex"
+      ],
+      "aliases": [
+        "緑色岩",
+        "greenstone"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "mixed_rock",
+      "ja": "混在岩",
+      "en": "mixed rock",
+      "domains": [
+        "AccretionaryComplex"
+      ],
+      "aliases": [
+        "混在岩",
+        "混在岩相",
+        "mixed rock",
+        "melange",
+        "mélange"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "gravel",
+      "ja": "れき",
+      "en": "gravel",
+      "domains": [
+        "UnconsolidatedSedimentTerrain"
+      ],
+      "aliases": [
+        "砂れき",
+        "れき",
+        "gravel"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "sand",
+      "ja": "砂",
+      "en": "sand",
+      "domains": [
+        "UnconsolidatedSedimentTerrain"
+      ],
+      "aliases": [
+        "砂質堆積",
+        "砂層",
+        "sand deposit",
+        "sand"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "silt",
+      "ja": "シルト",
+      "en": "silt",
+      "domains": [
+        "UnconsolidatedSedimentTerrain"
+      ],
+      "aliases": [
+        "シルト",
+        "silt"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "clay",
+      "ja": "粘土",
+      "en": "clay",
+      "domains": [
+        "UnconsolidatedSedimentTerrain"
+      ],
+      "aliases": [
+        "粘土",
+        "clay"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "organic_soil",
+      "ja": "高有機質土",
+      "en": "highly organic soil",
+      "domains": [
+        "UnconsolidatedSedimentTerrain"
+      ],
+      "aliases": [
+        "高有機質土",
+        "泥炭",
+        "peat"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    },
+    {
+      "key": "volcanic_ash_soil",
+      "ja": "火山灰質土",
+      "en": "volcanic-ash soil",
+      "domains": [
+        "UnconsolidatedSedimentTerrain",
+        "VolcanicTerrain"
+      ],
+      "aliases": [
+        "火山灰質土",
+        "火山灰",
+        "volcanic ash",
+        "tephra"
+      ],
+      "sourceIds": [
+        "GSJ-SEAMLESS-V2-LEGEND",
+        "CGI-GEOSCIML-LITHOLOGY"
+      ],
+      "termStatus": "Current",
+      "normalizationNote": "Broad normalized lithology, not a formal formation name; original map wording retained separately"
+    }
+  ],
+  "specificityOrder": [
+    "welded_tuff",
+    "tuff_breccia",
+    "volcanic_breccia",
+    "granodiorite",
+    "crystalline_schist",
+    "volcanic_ash_soil",
+    "organic_soil",
+    "siltstone",
+    "limestone",
+    "conglomerate",
+    "sandstone",
+    "mudstone",
+    "basalt",
+    "andesite",
+    "dacite",
+    "rhyolite",
+    "granite",
+    "diorite",
+    "gabbro",
+    "tuff",
+    "gneiss",
+    "hornfels",
+    "chert",
+    "greenstone",
+    "mixed_rock",
+    "gravel",
+    "silt",
+    "clay",
+    "sand"
+  ],
+  "interpretationBoundary": "Presence in this vocabulary never proves regional occurrence",
+  "aliasShadowing": [
+    [
+      "granodiorite",
+      "diorite"
+    ],
+    [
+      "welded_tuff",
+      "tuff"
+    ],
+    [
+      "tuff_breccia",
+      "tuff"
+    ],
+    [
+      "tuff_breccia",
+      "conglomerate"
+    ],
+    [
+      "volcanic_breccia",
+      "conglomerate"
+    ],
+    [
+      "sandstone",
+      "sand"
+    ],
+    [
+      "siltstone",
+      "silt"
+    ],
+    [
+      "mudstone",
+      "clay"
+    ]
+  ],
+  "sourceGroups": [
+    {
+      "key": "granitoid",
+      "members": [
+        "granite",
+        "granodiorite"
+      ],
+      "ja": "花崗岩類",
+      "en": "granitic rocks"
+    },
+    {
+      "key": "sandstone_mudstone",
+      "members": [
+        "sandstone",
+        "mudstone"
+      ],
+      "ja": "砂岩・泥岩",
+      "en": "sandstone and mudstone"
+    }
+  ],
+  "specializationGroups": {
+    "VolcanicTerrain": [
+      {
+        "keys": [
+          "basalt",
+          "andesite",
+          "dacite",
+          "rhyolite"
+        ],
+        "targets": [
+          "SYN-VOLCANIC-EDIFICE",
+          "SYN-INTERMEDIATE-LAVA",
+          "SYN-OLD-LAVA-SEQUENCE"
+        ],
+        "suffixJa": "質溶岩・火砕岩",
+        "suffixEn": "lava and pyroclastic rocks"
+      },
+      {
+        "keys": [
+          "tuff",
+          "welded_tuff",
+          "tuff_breccia",
+          "volcanic_breccia"
+        ],
+        "targets": [
+          "SYN-TUFF",
+          "SYN-PYROCLASTIC",
+          "SYN-OLD-TUFF-BRECCIA"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      }
+    ],
+    "PlutonicTerrain": [
+      {
+        "keys": [
+          "granite",
+          "granodiorite",
+          "diorite",
+          "gabbro"
+        ],
+        "targets": [
+          "SYN-HIGH-WEATHERED",
+          "SYN-WEATHERED-PLUTON",
+          "SYN-FRACTURED-PLUTON",
+          "SYN-FRESH-PLUTON",
+          "SYN-DEEP-PLUTON"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      }
+    ],
+    "SedimentaryRockTerrain": [
+      {
+        "keys": [
+          "sandstone"
+        ],
+        "targets": [
+          "SYN-SANDSTONE",
+          "SYN-OLD-SANDSTONE"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      },
+      {
+        "keys": [
+          "mudstone"
+        ],
+        "targets": [
+          "SYN-MUDSTONE",
+          "SYN-OLD-MUDSTONE"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      },
+      {
+        "keys": [
+          "siltstone"
+        ],
+        "targets": [
+          "SYN-SILTSTONE"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      },
+      {
+        "keys": [
+          "conglomerate"
+        ],
+        "targets": [
+          "SYN-CONGLOMERATE",
+          "SYN-OLD-CONGLOMERATE"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      },
+      {
+        "keys": [
+          "limestone",
+          "chert"
+        ],
+        "targets": [
+          "SYN-CALCAREOUS"
+        ],
+        "suffixJa": "を含む岩体",
+        "suffixEn": "bearing rock package"
+      },
+      {
+        "keys": [
+          "tuff"
+        ],
+        "targets": [
+          "SYN-TUFFACEOUS",
+          "SYN-OLD-TUFFACEOUS"
+        ],
+        "suffixJa": "質層",
+        "suffixEn": "rich interval"
+      }
+    ],
+    "MetamorphicBelt": [
+      {
+        "keys": [
+          "crystalline_schist",
+          "gneiss",
+          "hornfels"
+        ],
+        "targets": [
+          "SYN-SCHISTOSE-MIXED",
+          "SYN-MIXED-METAMORPHIC"
+        ],
+        "suffixJa": "",
+        "suffixEn": ""
+      }
+    ],
+    "AccretionaryComplex": [
+      {
+        "keys": [
+          "sandstone"
+        ],
+        "targets": [
+          "SYN-SANDSTONE-BLOCK"
+        ],
+        "suffixJa": "優勢岩体",
+        "suffixEn": "dominant rock mass"
+      },
+      {
+        "keys": [
+          "mudstone"
+        ],
+        "targets": [
+          "SYN-MUDSTONE-MATRIX"
+        ],
+        "suffixJa": "優勢岩体",
+        "suffixEn": "dominant rock mass"
+      },
+      {
+        "keys": [
+          "chert"
+        ],
+        "targets": [
+          "SYN-CHERT-BLOCK"
+        ],
+        "suffixJa": "優勢岩体",
+        "suffixEn": "dominant rock mass"
+      },
+      {
+        "keys": [
+          "greenstone"
+        ],
+        "targets": [
+          "SYN-GREENSTONE"
+        ],
+        "suffixJa": "優勢岩体",
+        "suffixEn": "dominant rock mass"
+      },
+      {
+        "keys": [
+          "mixed_rock"
+        ],
+        "targets": [
+          "SYN-MIXED-ROCK"
+        ],
+        "suffixJa": "優勢岩体",
+        "suffixEn": "dominant rock mass"
+      }
+    ],
+    "UnconsolidatedSedimentTerrain": [
+      {
+        "keys": [
+          "sand"
+        ],
+        "targets": [
+          "ADV2-SAND"
+        ],
+        "suffixJa": "質堆積物",
+        "suffixEn": "rich sediment"
+      },
+      {
+        "keys": [
+          "silt"
+        ],
+        "targets": [
+          "ADV2-SILT"
+        ],
+        "suffixJa": "質堆積物",
+        "suffixEn": "rich sediment"
+      },
+      {
+        "keys": [
+          "clay"
+        ],
+        "targets": [
+          "ADV2-CLAY"
+        ],
+        "suffixJa": "質堆積物",
+        "suffixEn": "rich sediment"
+      }
+    ]
+  },
+  "targetTemplates": {
+    "SYN-HIGH-WEATHERED": [
+      "強風化{members}",
+      "Highly weathered {members}"
+    ],
+    "SYN-WEATHERED-PLUTON": [
+      "風化{members}",
+      "Weathered {members}"
+    ],
+    "SYN-FRACTURED-PLUTON": [
+      "割れ目を伴う{members}",
+      "Fractured {members}"
+    ],
+    "SYN-FRESH-PLUTON": [
+      "比較的新鮮な{members}",
+      "Relatively fresh {members}"
+    ],
+    "SYN-DEEP-PLUTON": [
+      "{members}・表示基底",
+      "{members}; display base"
+    ],
+    "SYN-VOLCANIC-EDIFICE": [
+      "{members}質溶岩・火砕岩複合岩体",
+      "{members} lava and pyroclastic complex"
+    ],
+    "SYN-INTERMEDIATE-LAVA": [
+      "{members}質溶岩",
+      "{members} lava"
+    ],
+    "SYN-OLD-LAVA-SEQUENCE": [
+      "下位{members}質溶岩流累重層",
+      "Lower {members} lava-flow sequence"
+    ]
+  }
+}

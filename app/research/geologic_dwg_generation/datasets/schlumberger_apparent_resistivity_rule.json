@@ -1,0 +1,29 @@
+{
+  "ruleId": "SCHLUMBERGER-APPARENT-RESISTIVITY-1",
+  "version": "1.0",
+  "scope": "Domain:DirectCurrentElectricalResistivity",
+  "expression": "rho_a = K * deltaV / I; K = pi * ((AB/2)^2 - (MN/2)^2) / MN",
+  "variables": {
+    "rho_a": {"meaning": "apparent resistivity", "unit": "ohm m"},
+    "deltaV": {"meaning": "potential difference between M and N", "unit": "V", "constraint": ">0"},
+    "I": {"meaning": "current applied through A and B", "unit": "A", "constraint": ">0"},
+    "AB": {"meaning": "current-electrode separation", "unit": "m", "constraint": "AB >= 5*MN"},
+    "MN": {"meaning": "potential-electrode separation", "unit": "m", "constraint": ">0"}
+  },
+  "preconditions": [
+    "A, M, N and B are collinear and symmetric about the array centre",
+    "MN is no greater than one fifth of AB"
+  ],
+  "outputs": ["geometricFactorM", "apparentResistivityOhmM"],
+  "uncertainty": "Measurement, lateral heterogeneity, anisotropy, topography and inversion non-uniqueness are not resolved by this scalar equation.",
+  "exclusions": [
+    "Apparent resistivity is not true layer resistivity except for a homogeneous isotropic half-space.",
+    "A resistivity contrast is not a lithology boundary without collocated geological calibration and review.",
+    "Electrode spacing is not an exact depth coordinate."
+  ],
+  "sourceIds": ["USGS-OFR-95-825-DC-RESISTIVITY"],
+  "implementationReference": "geologic_3d_engine.section.resistivity_evidence::schlumberger_apparent_resistivity",
+  "validationMethod": "Closed-form calculation, invalid-geometry tests and evidence-gate tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "A different array geometry, topographic correction, uncertainty propagation or full inversion is implemented"
+}

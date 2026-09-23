@@ -1,0 +1,9 @@
+{
+  "question":"How should native paper coordinates respect printer margins without clipping a model-space annotation sheet?",
+  "searchBudget":"Two targeted official Autodesk queries; stop after plot-area/validator contracts are confirmed.",
+  "sources":[
+    {"sourceId":"AUTODESK-PLOT-AREA-DOTNET","authority":"Autodesk","title":"Plot Area (.NET)","canonicalUrl":"https://help.autodesk.com/cloudhelp/2026/ESP/OARX-DevGuide-Managed/files/GUID-9F7F854D-5172-4F42-A6C5-E7E54DF6E0B6.htm","locator":"PlotType Layout and Window","accessDate":"2026-09-21","adoptionStatus":"Adopted","adoptionReason":"Native layout output honors printable margins independently of geometry correctness."},
+    {"sourceId":"AUTODESK-PLOTSETTINGS-VALIDATOR","authority":"Autodesk","title":"PlotSettingsValidator Methods","canonicalUrl":"https://help.autodesk.com/cloudhelp/2024/ENU/OARX-ManagedRefGuide/files/OARX-ManagedRefGuide-__MEMBERTYPE_Methods_Autodesk_AutoCAD_DatabaseServices_PlotSettingsValidator.html","locator":"SetPlotOrigin, SetPlotPaperUnits, SetStdScaleType","accessDate":"2026-09-21","adoptionStatus":"Adopted","adoptionReason":"Standard API origin is inside paper margins; actual 2027 output separately tested."},
+    {"sourceId":"AUTODESK-PLOT-WINDOW-DCS","authority":"Autodesk","title":"PlotSettingsValidator.SetPlotWindowArea Method","canonicalUrl":"https://help.autodesk.com/cloudhelp/2024/ENU/OARX-ManagedRefGuide/files/OARX-ManagedRefGuide-Autodesk_AutoCAD_DatabaseServices_PlotSettingsValidator_SetPlotWindowArea_PlotSettings_Extents2d.html","locator":"Description and DCS requirement","accessDate":"2026-09-21","adoptionStatus":"Rejected","adoptionReason":"Not adopted for this page-setup path: actual r2 SetPlotType(Window) failed. This is not a claim the API is generally unsupported."}
+  ]
+}

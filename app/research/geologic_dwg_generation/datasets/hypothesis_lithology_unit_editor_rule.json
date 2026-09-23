@@ -1,0 +1,20 @@
+{
+  "ruleId": "GEO3D-HYPOTHESIS-LITHOLOGY-UNIT-EDITOR",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["a hash-valid contact-orientation template exists"],
+  "requiredEvidence": ["explicit user selection of top and bottom boundaries", "separate source and normalized terminology metadata"],
+  "decisionLogic": [
+    "offer only Terrain and contact hypotheses whose orientation is explicitly populated",
+    "require a contact as every bottom boundary",
+    "preserve source terminology separately from normalized display terminology",
+    "reject duplicate unit IDs, incomplete vocabulary metadata, unknown contacts, and identical top/bottom contacts"
+  ],
+  "outputs": ["hash-bound HypothesisLithologyUnitDeclarations-1.0 document"],
+  "uncertainty": "unit geometry remains diagnostic and inherits contact uncertainty",
+  "exclusions": ["does not choose lithology names automatically", "does not authorize real-region geometry", "does not silently replace legacy source wording"],
+  "sourceIds": [],
+  "validationMethod": "backend tests for terminology preservation, boundary allowlists, duplicate IDs, missing vocabulary metadata, deletion and fail-closed authorization",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "authoritative vocabulary services, bulk editing, or authenticated geological review are integrated"
+}

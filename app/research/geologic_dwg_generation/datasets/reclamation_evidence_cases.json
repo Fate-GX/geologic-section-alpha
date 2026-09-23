@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "cases": [
+    {
+      "case_id": "REAL_TOKYO_OPEN_MAPS_WITHOUT_SELECTED_BOREHOLES",
+      "case_type": "AuthoritativeRealWorldCase",
+      "source_ids": ["TOKYO-LANDFILL-MATERIAL-OPEN-DATA", "TOKYO-GROUND-GIS-TERMS-2026"],
+      "evidence": {
+        "former_water": true,
+        "current_land": true,
+        "reclamation_history": true,
+        "fill_material_map": true,
+        "borehole_log": false,
+        "borehole_location": false,
+        "borehole_survey_date": false
+      },
+      "vertical_datum_consistent": false,
+      "expected": {
+        "reclamation_classification_authorized": true,
+        "local_material_interpretation_authorized": false,
+        "continuous_section_geometry_authorized": false,
+        "settlement_aware_current_geometry_authorized": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_SINGLE_BOREHOLE_LOCAL_ONLY",
+      "case_type": "SyntheticBoundaryTest",
+      "evidence": {
+        "former_water": true,
+        "current_land": true,
+        "reclamation_history": true,
+        "fill_material_map": true,
+        "borehole_log": true,
+        "borehole_location": true,
+        "borehole_survey_date": true,
+        "multiple_boreholes": false,
+        "validated_correlation_model": false,
+        "section_inside_data_support": false
+      },
+      "vertical_datum_consistent": true,
+      "expected": {
+        "reclamation_classification_authorized": true,
+        "local_material_interpretation_authorized": true,
+        "continuous_section_geometry_authorized": false,
+        "settlement_aware_current_geometry_authorized": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_CORRELATED_SECTION_WITHOUT_SETTLEMENT_CONTROL",
+      "case_type": "SyntheticMissingDataTest",
+      "evidence": {
+        "former_water": true,
+        "current_land": true,
+        "reclamation_history": true,
+        "fill_material_map": true,
+        "borehole_log": true,
+        "borehole_location": true,
+        "borehole_survey_date": true,
+        "multiple_boreholes": true,
+        "validated_correlation_model": true,
+        "section_inside_data_support": true,
+        "current_surface_survey": false,
+        "settlement_observations": false
+      },
+      "vertical_datum_consistent": true,
+      "expected": {
+        "reclamation_classification_authorized": true,
+        "local_material_interpretation_authorized": true,
+        "continuous_section_geometry_authorized": true,
+        "settlement_aware_current_geometry_authorized": false
+      }
+    },
+    {
+      "case_id": "SYNTHETIC_FULL_SETTLEMENT_AWARE_CONTRACT",
+      "case_type": "SyntheticPositiveTest",
+      "evidence": {
+        "former_water": true,
+        "current_land": true,
+        "reclamation_history": true,
+        "fill_material_map": true,
+        "borehole_log": true,
+        "borehole_location": true,
+        "borehole_survey_date": true,
+        "multiple_boreholes": true,
+        "validated_correlation_model": true,
+        "section_inside_data_support": true,
+        "current_surface_survey": true,
+        "settlement_observations": true
+      },
+      "vertical_datum_consistent": true,
+      "expected": {
+        "reclamation_classification_authorized": true,
+        "local_material_interpretation_authorized": true,
+        "continuous_section_geometry_authorized": true,
+        "settlement_aware_current_geometry_authorized": true
+      }
+    }
+  ]
+}

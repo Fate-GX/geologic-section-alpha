@@ -1,0 +1,24 @@
+{
+  "ruleId": "BOREHOLE-POINT-CONTACT-CONSTRAINT-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "expression": "z_contact = z_collar - depth in a positive-up coordinate system",
+  "preconditions": [
+    "Observed contiguous borehole intervals",
+    "Explicit route station and projection distance",
+    "An independently authorized collar accuracy envelope for absolute elevation use"
+  ],
+  "decisionLogic": [
+    "Create one relative-depth contact at every internal interval bottom.",
+    "Keep every contact point-local unless a separate support-distance rule is supplied.",
+    "Translate to absolute elevation only from an authorized accuracy envelope; a publication rounding interval is insufficient."
+  ],
+  "outputs": ["relative depth contacts", "optional absolute elevation envelopes"],
+  "uncertainty": "Collar and depth uncertainties must remain separate and explicit",
+  "exclusions": ["No inferred support radius", "No lateral surface generation", "No conversion of reporting precision into accuracy"],
+  "basisType": "CoordinateConventionIdentity",
+  "sourceIds": [],
+  "validationMethod": "Positive, boundary, missing accuracy, gap and non-observed interval tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Depth uncertainty, inclined borehole geometry, or evidence-backed lateral support is introduced"
+}

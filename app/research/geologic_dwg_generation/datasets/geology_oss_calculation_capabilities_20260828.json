@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "evaluatedAt": "2026-08-28",
+  "purpose": "Classify installed geological OSS by reusable calculation responsibility. Package output is never geological authority by itself.",
+  "capabilities": [
+    {
+      "id": "OSS-CALC-SHAPELY-COVERAGE-001",
+      "software": "Shapely 2.1.2",
+      "decision": "AdoptAsValidationKernel",
+      "scope": "Global",
+      "engineStage": "Section topology validation",
+      "apis": ["coverage_is_valid", "coverage_invalid_edges", "relate", "polygonize_full", "make_valid", "set_precision"],
+      "provenBy": ["overlap rejected", "0.01-wide gap rejected with gap_width=0.02", "edge touch and point touch distinguished by DE-9IM", "dangling/cut line reported by polygonize_full"],
+      "constraints": ["A valid coverage does not by itself prove geological plausibility", "gap_width is a declared model tolerance, not an arbitrary repair value", "make_valid must not silently authorize topology repair"]
+    },
+    {
+      "id": "OSS-CALC-ARCHPY-HIERARCHY-001",
+      "software": "ArchPy 1.2.12",
+      "decision": "AdoptAsComparatorAndAdapterReference",
+      "scope": "Domain",
+      "engineStage": "Stratigraphic hierarchy and borehole conditioning",
+      "apis": ["Pile", "Unit", "Surface", "borehole", "infer_pile", "X_valid"],
+      "provenBy": ["ordered two-unit pile preserved upper/lower order", "surface contact and facies/subpile concepts exposed"],
+      "constraints": ["Do not replace the canonical project event graph", "regional priors and boreholes require provenance", "cross-validation metrics do not prove a unique subsurface truth"]
+    },
+    {
+      "id": "OSS-CALC-GEONE-GRF-001",
+      "software": "Geone 1.2.18",
+      "decision": "AdoptAsOptionalStochasticBackend",
+      "scope": "Domain",
+      "engineStage": "Positive-thickness and property-field realization",
+      "apis": ["CovModel1D", "CovModel2D", "CovModel3D", "grf1D", "grf2D", "grf3D", "krige", "sgs"],
+      "provenBy": ["two 16x32 anisotropic Gaussian-field realizations computed from Gaussian ranges 12 and 4 at 20 degrees"],
+      "constraints": ["Transform sampled thickness fields to preserve positivity", "seed and full covariance parameters must be recorded", "conditioning observations and support scale must be explicit"]
+    },
+    {
+      "id": "OSS-CALC-MPSLIB-001",
+      "software": "scikit-mps 0.6.0 / MPSlib binaries",
+      "decision": "ComparatorPendingCorpus",
+      "scope": "Environment",
+      "engineStage": "Categorical facies architecture",
+      "apis": ["mps_genesim", "mps_snesim_tree", "mps_snesim_list"],
+      "provenBy": ["native Windows solver binaries present", "seed and conditioning parameters exposed"],
+      "constraints": ["Blocked for production until source-linked 3D training images and holdout tests exist", "A training image outside its environmental scope is prohibited"]
+    },
+    {
+      "id": "OSS-CALC-STRIPLOG-WELLY-LASIO-001",
+      "software": "striplog 0.9.2 / welly 0.5.2 / lasio 0.32",
+      "decision": "AdoptForEvidenceIngestion",
+      "scope": "Global",
+      "engineStage": "Borehole evidence extraction and interval normalization",
+      "apis": ["Striplog.from_csv", "Striplog.find_overlaps", "Striplog.merge_overlaps", "lasio.read", "welly.Well"],
+      "constraints": ["Original labels, datum, units and source rows must be preserved", "gap/overlap handling must remain explicit", "text parsing is not lithology interpretation authority"]
+    },
+    {
+      "id": "OSS-CALC-PYGIMLI-MESH-001",
+      "software": "pyGIMLi 1.5.5",
+      "decision": "AdoptAsPhysicsComparator",
+      "scope": "Domain",
+      "engineStage": "Meshing and geophysical forward/inverse evidence comparison",
+      "apis": ["createGrid", "meshtools.createMesh", "meshtools.createWorld", "Inversion"],
+      "provenBy": ["non-uniform 2D grid produced 9 nodes, 4 cells, 12 boundaries and expected cell areas 50, 50, 100, 100"],
+      "constraints": ["Physical-property model, survey geometry, boundary conditions and noise model are required", "An inversion result is evidence with uncertainty, not a direct lithology label"]
+    },
+    {
+      "id": "OSS-CALC-SIMPEG-HARMONICA-VERDE-001",
+      "software": "SimPEG 0.25.2 / Harmonica 0.7.0 / Verde 1.9.0",
+      "decision": "RetainForEvidencePreprocessingAndIndependentChecks",
+      "scope": "Domain",
+      "engineStage": "Geophysical evidence and spatial preprocessing",
+      "apis": ["SimPEG maps and regularization", "Harmonica EquivalentSources", "Harmonica prism_gravity", "Verde BlockReduce", "Verde Spline"],
+      "constraints": ["Never use interpolation alone to invent contacts", "Cross-validation and uncertainty must accompany fitted fields"]
+    },
+    {
+      "id": "OSS-CALC-PYNODDY-001",
+      "software": "pyNoddy 1.1",
+      "decision": "Blocked",
+      "scope": "Domain",
+      "engineStage": "Event-history forward modelling comparator",
+      "provenBy": ["Python wrapper imports"],
+      "blocker": "No Noddy executable is installed or discoverable",
+      "constraints": ["Do not claim forward-model execution until the native solver and license/provenance are verified"]
+    }
+  ]
+}

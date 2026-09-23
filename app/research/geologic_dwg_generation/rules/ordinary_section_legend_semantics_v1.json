@@ -1,0 +1,50 @@
+{
+  "ruleId": "GEO-ORDINARY-SECTION-LEGEND-001",
+  "version": "1.1.0",
+  "scope": "Domain",
+  "domain": "OrdinaryGeologicalCrossSectionPublication",
+  "adoptionStatus": "AdoptedForOrdinarySectionPortrayal_PendingIndependentReview",
+  "basisType": "ProjectCartographicDecisionSupportedByAuthorityExamples",
+  "notAClaimOfUniversalStandardProhibition": true,
+  "lastChecked": "2026-09-21",
+  "preconditions": [
+    "The output is an ordinary geological/lithological cross section, not an atmospheric or cavity analysis.",
+    "AboveTerrain is a validated non-geological background domain, not an inferred subsurface unit."
+  ],
+  "requiredEvidence": ["Verified terrain boundary", "Explicit material identities", "Declared output purpose"],
+  "decisionLogic": [
+    "Keep AboveTerrain/AIR mask for internal domain checks, but do not emit an air material swatch or label in the public lithology legend.",
+    "Explain actual geological units in the lithology legend and relevant line symbols separately.",
+    "Keep synthetic continuation, calculation limits and other uncertainty disclosures as explanatory notes/symbols, not invented lithologies.",
+    "Never use background suppression to conceal an internal geological gap or an unmodelled below-surface region."
+  ],
+  "outputs": {"publicAirLegendEntry": false, "internalAirDomainRetained": true, "geologyArrayChanged": false},
+  "unknownDisplayLabelPolicy": {
+    "basisType": "UserRequestedDisplayChoice_NotPrescribedByJIS",
+    "labelJa": "Unknown",
+    "labelEn": "Unknown",
+    "currentImplementationDomain": "BelowModel without a bound synthetic basal continuation",
+    "requiredNote": "Explain that this is unmodelled extent below the calculation limit, not a lithology.",
+    "semanticBoundary": "Preserve BelowModel identity; do not relabel AIR, observed units, inferred continuation or unexplained internal missing cells."
+  },
+  "uncertainty": "Primary definitions and an inspected publication example support a purpose-specific design judgement; no explicit universal ban was located.",
+  "exclusions": ["Air treated as an explicit physical simulation medium", "Cavity/void diagrams", "Internal domain-mask QA views"],
+  "sourceIds": ["GSJ-LEGEND-EXPLANATION-20260920", "GSJ-MAP-READING-20260920", "GSJ-YOSHIKAWA-2017-NEW-MAPS"],
+  "sourceRecord": "traces/ordinary_section_air_legend_20260920.md",
+  "validationMethod": {
+    "positive": "Public legend contains only intended material entries and separated relevant symbols/notes.",
+    "negative": "AboveTerrain label/swatch in an ordinary public material legend is detected.",
+    "boundary": "Terrain clipping and zero-width exposed units do not alter AIR classification.",
+    "missingData": "Missing terrain/domain evidence rejects geometry classification; do not fabricate air.",
+    "conflictingEvidence": "Internal -1 cells remain failures and cannot be suppressed as background.",
+    "outOfScope": "Explicit QA/physical-air render modes are evaluated against their own declared legend policy."
+  },
+  "implementationStatus": "Implemented_SelectedRegressionTestsPassed",
+  "implementationReference": [
+    "subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_portrayal.py",
+    "subprojects/geologic_3d_engine_next/tools/reproduce_portrayal_revision.py"
+  ],
+  "testReference": "subprojects/geologic_3d_engine_next/tests/test_public_legend_semantics.py",
+  "outOfScopeImplementation": "Physical-air/QA render modes are not implemented or altered by this revision; model_domains retains explicit AIR codes.",
+  "reopenCondition": "A publication/client requirement explicitly calls for air-medium legend entries, or the output purpose changes."
+}

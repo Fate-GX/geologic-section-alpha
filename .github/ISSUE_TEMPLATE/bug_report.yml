@@ -1,0 +1,48 @@
+name: 不具合報告 / Bug report
+description: アルファ版の操作・生成・図面の問題を報告
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "このIssueは公開されます。非公開の現場座標、顧客名、図面、個人パス、認証情報を含むログを添付しないでください。公開サンプルでの再現を優先してください。"
+  - type: input
+    id: version
+    attributes:
+      label: 使用バージョン
+      placeholder: Alpha 0.1.0 / コミット
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 実行環境
+      description: Windows・Python・AutoCADの版、起動方法
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 入力からエラーまでの手順。地点の公開が不適切なら座標は書かず、その旨を記載。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果・エラー名
+      description: typed_refusal.jsonのreasonなど。ログ全文は個人情報を確認してから添付。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した結果
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開情報の確認
+      options:
+        - label: 非公開の座標・図面・個人情報・認証情報を含まないことを確認しました。
+          required: true

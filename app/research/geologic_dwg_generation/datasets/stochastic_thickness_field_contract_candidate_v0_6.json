@@ -1,0 +1,33 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.6.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "inherits": "0.5.0-candidate",
+  "constraintSetContract": {
+    "axis": "Ma before present; 0 is present and larger values are older",
+    "normalForms": {
+      "PointEstimate": "[valueMa,valueMa], or an explicitly authorized uncertainty envelope",
+      "ClosedInterval": "[youngerMa,olderMa]",
+      "OlderThan": "[limitMa,+infinity)",
+      "YoungerThan": "[0,limitMa]"
+    },
+    "combination": "Intersection of all normalized closed sets",
+    "contradiction": "maximum lower bound > minimum upper bound; reject before testing a target",
+    "boundaryPolicy": "inclusive"
+  },
+  "uncertaintyApplicabilityContract": {
+    "requiredUse": "ApplicabilityEnvelope",
+    "symmetric": "[max(0,valueMa-minusMa),valueMa+plusMa] with equal plus/minus",
+    "asymmetric": "[max(0,valueMa-minusMa),valueMa+plusMa]",
+    "confidenceInterval": "explicit youngerMa/olderMa plus confidence and method",
+    "distributionSummary": "cannot authorize applicability without an explicit support/credible envelope and coverage semantics",
+    "prohibition": "structurally present uncertainty is not automatically an applicability envelope"
+  },
+  "bpScaleContract": {
+    "referenceEpoch": "1950-01-01",
+    "scale": "1 kaBP = 1000 BP years",
+    "allowedExactConversion": ["kaBP to BP", "BP to kaBP"],
+    "prohibitedImplicitConversions": ["calBP to BP", "BP to calBP", "BP/kaBP/calBP to Ma", "BP to calendar year"]
+  },
+  "implementationCapability": "NotImplemented"
+}

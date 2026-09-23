@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "BoreholeEvidenceCaptureManifest-1.0",
+  "capturedAt": "2026-09-12",
+  "provider": "KuniJiban / Public Works Research Institute and MLIT",
+  "providerTermsUrl": "https://www.kunijiban.pwri.go.jp/jp/terms.html",
+  "requiredAttribution": "国土地盤情報検索サイト KuniJiban",
+  "purpose": "Same-site borehole evidence set for a future borehole-conditioned geological cross-section",
+  "locationLabel": "俵山大橋周辺（熊本県）",
+  "records": [
+    {
+      "providerRecordId": 531285,
+      "boreholeName": "No.12（俵山大橋）",
+      "sourceUrl": "https://www.kunijiban.pwri.go.jp/viewer/refer/?data=boring&type=xml&id=531285",
+      "localArtifact": "kunijiban_531285.xml",
+      "sha256": "1833864352f747379f135e3f6fab5ca8377acc9da713871e2f4d46869dbcaa07",
+      "byteLength": 44561,
+      "exchangeFormat": "BED0300-DTD-3.00",
+      "longitude": 131.03858333333332,
+      "latitude": 32.863416666666666,
+      "collarElevationM": 459.63,
+      "totalDepthM": 33.0,
+      "lithologyIntervalCount": 7
+    },
+    {
+      "providerRecordId": 531286,
+      "boreholeName": "No.13（俵山大橋）",
+      "sourceUrl": "https://www.kunijiban.pwri.go.jp/viewer/refer/?data=boring&type=xml&id=531286",
+      "localArtifact": "kunijiban_531286.xml",
+      "sha256": "7555332287bff5cbe32361489f19b0fa370a70050644d39f99f2349812e1fa5c",
+      "byteLength": 57004,
+      "exchangeFormat": "BED0300-DTD-3.00",
+      "longitude": 131.0385,
+      "latitude": 32.86338888888889,
+      "collarElevationM": 461.74,
+      "totalDepthM": 41.0,
+      "lithologyIntervalCount": 10
+    },
+    {
+      "providerRecordId": 531287,
+      "boreholeName": "No.14（俵山大橋）",
+      "sourceUrl": "https://www.kunijiban.pwri.go.jp/viewer/refer/?data=boring&type=xml&id=531287",
+      "localArtifact": "kunijiban_531287.xml",
+      "sha256": "8c126e119d767a68a76c166054bff8ad046b86d319765a35932a9e871f28ceb7",
+      "byteLength": 60729,
+      "exchangeFormat": "BED0300-DTD-3.00",
+      "longitude": 131.03825,
+      "latitude": 32.863305555555556,
+      "collarElevationM": 463.28,
+      "totalDepthM": 50.0,
+      "lithologyIntervalCount": 8
+    }
+  ],
+  "pairwiseSurfaceDistancesM": {
+    "531285-531286": 8.374,
+    "531286-531287": 25.121,
+    "531285-531287": 33.495
+  },
+  "observedSourceLabelsInclude": [
+    "盛土",
+    "盛土・礫混じり土砂",
+    "礫混じり砂質シルト",
+    "粘土質砂礫",
+    "軽石混じり火山灰質シルト",
+    "軽石混じり火山灰質砂",
+    "玉石混じり砂礫",
+    "弱溶結凝灰岩",
+    "風化溶結凝灰岩",
+    "溶結凝灰岩"
+  ],
+  "evidenceBoundary": {
+    "status": "ObservedProviderRecords_UnverifiedReferenceAccuracy",
+    "automaticCorrelationAuthorized": false,
+    "sectionConstraintAuthorized": false,
+    "reason": "The three source XML records are genuine provider records, but vertical datum, collar-elevation accuracy and map-read coordinate accuracy require review before they may constrain a section.",
+    "nextGate": "Verify reference systems and collar elevations, project holes to a declared route, then create an artifact-bound geologist correlation review."
+  }
+}

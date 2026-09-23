@@ -1,0 +1,14 @@
+{
+  "ruleId": "HYPOTHESIS-LITHOLOGY-UNIT-ASSEMBLY-1",
+  "version": "1.0",
+  "scope": "Global",
+  "preconditions": ["complete terrain profile", "terrain-clipped finite-support contact candidates", "explicit unit top/bottom declarations", "proven contact order for contact/contact units"],
+  "decisionLogic": "Intersect boundary support intervals, sample the union of boundary vertices, interpolate both boundaries, require positive thickness everywhere and build a closed station/elevation polygon. Never extrapolate a boundary.",
+  "outputs": ["one or more support-bounded polygon components per declared unit", "minimum and maximum thickness", "section area"],
+  "uncertainty": "Nominal polygons are assembled only after the separate uncertainty-order audit proves the declared relation.",
+  "exclusions": ["automatic stratigraphic correlation", "support extrapolation", "zero/negative thickness", "unproven order", "real-region authorization"],
+  "sourceIds": ["Project shared-boundary topology rules", "USGS-CROSSSECTION-TEMPLATE"],
+  "validationMethod": "terrain/contact and contact/contact positive cases; exact area; shared-support clipping; unproven order, missing declarations and nonpositive thickness rejection",
+  "adoptionStatus": "AdoptedDiagnosticAssembly",
+  "reopenCondition": "Faulted units, pinch-out endpoints, uncertainty polygons, authenticated review or real-region contacts are introduced."
+}

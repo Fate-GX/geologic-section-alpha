@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "evidenceId": "USGS-TEI395-P29-WINGATE-ZERO-THICKNESS-FINAL",
+  "sourceId": "USGS-TEI395-PINCHOUT",
+  "authority": "U.S. Geological Survey",
+  "canonicalUrl": "https://pubs.usgs.gov/tei/395/report.pdf",
+  "retrievedAt": "2026-08-30T08:30:00+09:00",
+  "retrievalMethod": "Direct HTTPS download from the canonical USGS URL",
+  "sourceArtifact": {
+    "relativePath": "../USGS_TEI_395_report.pdf",
+    "sha256": "7690f52f3675aa9f1bff202dd49abffab5a9406944aca728b6510825ae3068f0",
+    "byteLength": 3110418,
+    "pdfPageCount": 70
+  },
+  "locator": {
+    "pdfPageIndexOneBased": 29,
+    "printedPageNumber": 29,
+    "sectionHeading": "Wingate sandstone"
+  },
+  "derivedArtifacts": [
+    {
+      "path": "page_29-29.png",
+      "sha256": "b1a00bfb434447097b0ee4dbd6cace26aa04672045b12221b0e5bc39cb68bc1b",
+      "derivation": "Poppler pdftoppm, page 29 only, 180 dpi"
+    },
+    {
+      "path": "page_29_extracted_text.txt",
+      "sha256": "32526eb69e309838471d51fa504d55f3d149229be9734b4a1a8a7b8bf1f1f193",
+      "derivation": "pdfplumber extraction from PDF page index 29"
+    }
+  ],
+  "claimPath": "eventSemantics.Pinchout",
+  "observedRelation": {
+    "unit": "Wingate sandstone",
+    "maximumThicknessFeet": 500,
+    "minimumThicknessFeet": 0,
+    "zeroThicknessLocation": "Colorado",
+    "terminationDescription": "pinches out locally against the Uncompahgre Plateau"
+  },
+  "candidateSupport": "DirectEmpirical",
+  "scopeBoundary": "Regional empirical zero-thickness example; not a universal definition or numerical pinchout algorithm.",
+  "independentReviewRequired": true,
+  "kbBindingChanged": false
+}

@@ -1,0 +1,18 @@
+{
+  "contractId": "STOCHASTIC-THICKNESS-FIELD-CANDIDATE",
+  "version": "0.8.0-candidate",
+  "status": "RevisedDesignCandidate_NotImplemented",
+  "inherits": "0.7.0-candidate",
+  "boundaryAuditContract": {
+    "requiredOutputs": ["rawLowerBoundMa", "rawUpperBoundMa", "derivedSnappedBoundMa", "gapMa", "effectiveNumericToleranceMa", "classification"],
+    "rule": "Raw bounds are immutable evidence-derived values; snapping affects only the derived result"
+  },
+  "timeScaleConversionContract": {
+    "method": "AuthoritativeBoundaryReevaluation",
+    "required": ["conversionId", "boundaryId", "sourceAuthority", "sourceVersion", "targetAuthority", "targetVersion", "sourceValueMa", "targetValueMa", "sourceIds", "artifactSha256", "uncertaintyAddedMa", "exclusions", "artifactKind"],
+    "application": "Create a derived converted constraint while preserving the original constraint and complete conversion record",
+    "productionGate": "Only AuthoritativeCapturedArtifact is allowed; SyntheticValidationFixture is rejected outside ValidationFixture mode",
+    "prohibitions": ["version-label replacement", "identity assumption", "unhashed artifact", "missing primary source", "conversion inside an exclusion interval", "overwriting original constraint"]
+  },
+  "implementationCapability": "NotImplemented"
+}

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "captureId": "USGS-BROWSER-CAPTURE-20260830",
+  "capturedAt": "2026-08-30T08:00:00+09:00",
+  "captureMethod": "Codex in-app browser direct navigation to the canonical HTTPS URLs",
+  "records": [
+    {
+      "sourceId": "USGS-TEI395-PINCHOUT",
+      "canonicalUrl": "https://pubs.usgs.gov/tei/395/report.pdf",
+      "browserObservedUrl": "https://pubs.usgs.gov/tei/395/report.pdf",
+      "artifact": "USGS_TEI395_browser_identity.png",
+      "sha256": "8720bf88a80fb940b77b1d4d108d0bc0e3e07a5f620887cadbbcdfcdec7bfe3f",
+      "evidenceCapability": "DocumentIdentityOnly",
+      "claimPassageIncluded": false,
+      "limitation": "The browser rendered the 70-page official PDF, but its embedded viewer did not expose the PDF bytes or reliable page navigation for artifact export. The screenshot proves document identity only and does not verify the page-29 claim."
+    },
+    {
+      "sourceId": "USGS-THESAURUS-UNCONFORMITY",
+      "canonicalUrl": "https://apps.usgs.gov/thesaurus/term-simple.php?code=226&thcode=61",
+      "browserObservedUrl": "https://apps.usgs.gov/thesaurus/term-simple.php?code=226&thcode=61",
+      "artifacts": [
+        {
+          "path": "USGS_thesaurus_226_browser_capture.png",
+          "sha256": "356331452723d12cd128f67c5314969e18b5a01c8e9ecc92b4590e3ba4ab217c"
+        },
+        {
+          "path": "USGS_thesaurus_226_rendered_text.txt",
+          "sha256": "054f46a8478f096a23f45166f3f042607ee5de6e31ec79758021b6c14ad12ea5"
+        }
+      ],
+      "evidenceCapability": "RenderedCanonicalTermPage",
+      "claimPassageIncluded": true,
+      "definitionObserved": "a surface of erosion or nondeposition between strata, representing a significant gap in the geologic record.",
+      "officialAlternateLinksObserved": [
+        "term.php?thcode=61&code=226&f=json",
+        "term.php?thcode=61&code=226&f=xml"
+      ],
+      "limitation": "The JSON/XML links were visible on the official page but blocked by the browser client, so only the rendered canonical HTML evidence is included."
+    }
+  ],
+  "decisionBoundary": "The Thesaurus capture may support a Partial auxiliary binding after independent artifact review. The TEI-395 pinchout binding must remain a candidate because the claim passage is not included."
+}

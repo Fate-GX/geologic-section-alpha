@@ -1,0 +1,40 @@
+{
+  "ruleId": "ADV2-EVIDENCE-BOUNDED-LITHOLOGY-SUBSET-1.0",
+  "version": "1.0",
+  "scope": "Domain",
+  "status": "AdoptedExperimental",
+  "purpose": "Select a diverse but bounded broad-prior lithology vocabulary without inventing local stratigraphic units.",
+  "preconditions": [
+    "A supported natural geological domain has been classified",
+    "No route-applicable subsurface sequence evidence is available"
+  ],
+  "decisionLogic": [
+    "Choose only generalized material or weathering-state labels compatible with the classified domain",
+    "Do not convert mapped surface geology directly into a vertical sequence",
+    "Do not invent formation, member or group names",
+    "Mark every selected item SyntheticAssumption and visibly inferred",
+    "For volcanic or metamorphic mountain terrain, preserve two bounded terrain-following cover members before relief is assigned to a generalized principal rock body"
+  ],
+  "outputs": ["substrateFacies", "faciesMetadata", "lithologySelection"],
+  "uncertainty": "Broad prior only; not a local subsurface interpretation",
+  "exclusions": [
+    "Observed or literature status without route-applicable evidence",
+    "Formal local stratigraphic names",
+    "Claims of nationally unique vertical order",
+    "Relief absorption by thin fallout tephra, soil or weathering cover"
+  ],
+  "sourceIds": [
+    "GSJ-SEAMLESS-V2-LEGEND",
+    "GSJ-ZFK-LEGEND",
+    "CGI-GEOSCIML-LITHOLOGY"
+  ],
+  "implementationReference": "subprojects/geologic_3d_engine/advanced_v2/lithology_selector.py",
+  "validationMethod": [
+    "positive domain cases",
+    "unknown-domain retention",
+    "mutation isolation",
+    "formal-name prohibition",
+    "basis and visible-disclosure audit"
+  ],
+  "reopenCondition": "Route-applicable borehole, mapped-unit description, formation evidence or environment-specific transition data becomes available"
+}

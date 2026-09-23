@@ -1,0 +1,21 @@
+{
+  "ruleId": "GEO3D-LITHOLOGY-CLASSIFICATION-DOMAIN-SEPARATION",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["source-preserving terminology profiles exist for each input domain"],
+  "requiredEvidence": ["exact source label or code", "profile identity and version", "domain-specific normalization authority"],
+  "decisionLogic": [
+    "normalize BED descriptions only as engineering/geotechnical field descriptions",
+    "normalize GSJ polygon legends only as geological map-unit and petrologic concepts",
+    "classify volcanic-ash soil versus volcanic ash as genetic material association, never unit identity",
+    "require petrologic evidence before relating a field-described volcanic rock to an igneous map lithology",
+    "leave unknown labels and source codes unmapped"
+  ],
+  "outputs": ["domain-normalized evidence", "cross-domain diagnostic classification"],
+  "uncertainty": "cross-domain associations are qualitative diagnostics and cannot establish stratigraphic identity",
+  "exclusions": ["no field-description to formal JGS classification without tests", "no soil-to-rock identity", "no map-unit correlation", "no geometry authorization"],
+  "sourceIds": ["MLIT-BED0400-H28-10", "JGS-0051-GEOMATERIAL-CLASSIFICATION", "CGI-GEOSCIML-LITHOLOGY", "GSJ-ASO-VOLCANO-MAP-1985"],
+  "validationMethod": "exact source match, unknown-term fail-closed, cross-domain association and non-authorization tests plus actual Aso comparison matrix",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "laboratory classifications, petrographic/geochemical evidence or an authoritative cross-domain ontology becomes available"
+}

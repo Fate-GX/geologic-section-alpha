@@ -1,0 +1,35 @@
+{
+  "ruleId": "STRUCTURAL-SOURCE-READINESS-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "source layer identity and provenance are recorded",
+    "feature and orientation counts are known"
+  ],
+  "requiredEvidence": [
+    "explicit orientation basis",
+    "true dip, dip direction and angular uncertainty for every direct observation"
+  ],
+  "decisionLogic": [
+    "DirectFieldMeasurement and DigitizedSourceMapOrientationSymbol may become direct constraint candidates",
+    "MappedContactDemPlaneFit and SyntheticAssumption remain diagnostic only",
+    "layers with NoOrientationSemantics cannot declare orientation records"
+  ],
+  "outputs": [
+    "direct orientation count",
+    "derived diagnostic orientation count",
+    "per-record constraint role"
+  ],
+  "uncertainty": "Every direct observation must carry an explicit non-negative angular uncertainty.",
+  "exclusions": [
+    "terrain slope as bedding dip",
+    "DEM-fitted contact planes as measured orientations",
+    "automatic subsurface authorization"
+  ],
+  "sourceIds": [
+    "GSJ-ASO-VOLCANO-MAP-1985"
+  ],
+  "validationMethod": "positive, negative, boundary, missing-data and out-of-scope unit tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Add a new structural observation basis or orientation representation."
+}

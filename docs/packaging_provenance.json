@@ -1,0 +1,2608 @@
+{
+  "sourceVersion": "TwoPoint-RefusalFix-Review (2026-09-21 code)",
+  "originalFrozenManifestSha256": "e2a518a8a1c5df6ce287fe9332b2564f7b14b04f6b158838992cb2fcfcebe242",
+  "preservedGenerationFiles": [
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/__init__.py",
+      "sha256": "4da23fe75e298ef32e87e95c7928d6b477b5e46b8e1fd5e9da3b2f9a611181dc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_contact_geometry.py",
+      "sha256": "59e380e9c2ddf52940b0c6cfa4d9b8c63ed2279a197623d393e43650744b7cd1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_domain_classifier.py",
+      "sha256": "14a25691988d40b916d0bdff6e8efbc073bab486a610646a4c4bb37150310b01"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_dwg_contract.py",
+      "sha256": "2d06a4d37b5ac93efec48d37aaa2efebf73eb0ee2d0d5ba0b531f18eb6afe08d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_native_dwg_runner.py",
+      "sha256": "e7b36de3020f0542d804cc496fca8baeea9612b17d8fc11f30cc11828cc33272"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_preview_layout.py",
+      "sha256": "4944c6d6fe5f6e53994d6db14ad011f9ef777f7fa3a09b17b3c91f595b633589"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/advanced_visual_qa.py",
+      "sha256": "bc13ab4d22b9c802b17181012cd126c7288d7269606f06f945f1921cb30669b2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/context_inference.py",
+      "sha256": "f1bb0dbbe62c9b041239baa3546c58e455dc6d432e94590d5534ee5c7e698fbb"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/current_lithology_terminology.py",
+      "sha256": "930bee0a3349ee87112f43b330c74459ade3e4fa0daede082e66ce473350e3c9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/domain_profiles.py",
+      "sha256": "f3d53a4573854599d2811cf4c58eeea4529d522268554d319823ada9cf2ac617"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/facies_architecture.py",
+      "sha256": "b13f9510d29ca914449ce5efd73a3cd2218c44ddb2b954712781ab4c600d8cae"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/frozen_guard.py",
+      "sha256": "a750e746be13f77e03555e6a8075493a9c5fc87646ba8336fb30b43da829a7d5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/gsi_landform_evidence.py",
+      "sha256": "cda500a04ab760c2ef870991defbc65f2dbb397a5bb79cd2ae1e7d410a7b45d9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/gui.py",
+      "sha256": "c8e24398236676424f6d664413c06ed37baeffcfd0517d41dd8fefbd7890d9d3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/gui_progressive_disclosure.py",
+      "sha256": "bca69a1e51f548a6cc0c375b5fb68a0e453f5473c2c30701cc2079137b4b191d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/layout_allocator.py",
+      "sha256": "fb1ccd3d586c259fe7839b57fbcccc50eb54ca478c1d5e184bcadb009d168c0e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/lithology_selector.py",
+      "sha256": "f7f94ad2077ae97dd42769f763de999d199b1506b0ef2d5602f927f08a99c0b4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/map_location_selector.py",
+      "sha256": "11915bf30e01409b200aa5092f0c835176cbad6b08052edc8b22f4989d97b5a1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/nationwide_pipeline.py",
+      "sha256": "bce1156cac4957e69de3f951b0e72c732a222600d8b30f70e8998e20ea04611b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/native_environment_probe.py",
+      "sha256": "1790bc261642622e3182d01c2a60c52323fcfde74d04a5f74887aca18842dff6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/native_gate_artifact_audit.py",
+      "sha256": "66ae22754ecba784af07c3ace57e71df8eeeb0889c2214b06dd032d1eb38b6f2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/plot_terrain_matrix_layouts.py",
+      "sha256": "b4c3ce2054d53e662ab9f67488ea23d9a85a886c5e7435fd70722ed0a99e0a5d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/prefecture_catalog.py",
+      "sha256": "18858de54eb56acd8e7d4951ccb34b167fb3c79a814dd22b3b995c2203196de1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/regional_bedrock.py",
+      "sha256": "de752632b3054168bd66979a57f92f6c6605fac7f40d5d2957ca84928a01c1fe"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/regional_lithology_data.py",
+      "sha256": "4096b62a727c2e28bdedf0d9256e07799c2a3536909646740a207478baa05497"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/regional_major_lithology.py",
+      "sha256": "327cc1b79e5ebdfab35ae6291cd45f7d3fe9d78c4d4e872865badc78d320a98d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/route_location.py",
+      "sha256": "dddca302425566183e74ec16d81fbb32feac6fcc6d8569afebf0d645a9b4f895"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/route_request.py",
+      "sha256": "dfa31cbacc509a9dcacdff256c59db0f7dfcf8ba7166bf924f4c6679c19bac76"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/run_live_terrain_smoke.py",
+      "sha256": "704123be96575408939b4551244c67172c60cf1597559d6da4193ee1851b386d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/run_terrain_matrix.py",
+      "sha256": "48e17135e6713b20caad5a803281ab533e5158770ab10e6385ed0e4c51377992"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/run_user_context_native_gate.py",
+      "sha256": "d682242020d28c13a7cee0cfffe2becb94f0dc91298e1b20a5344bc7dd3257c4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/synthetic_terrain_qa.py",
+      "sha256": "7ba57ab5eab81b639b09f842644080299f8b1d1eeab6b1dfcaaacc739fb527f6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/terrain_conditioning.py",
+      "sha256": "7b26c58851d2ba6dbf2a6b4959950574ffd9b9138f9ec21de961b2f4e9c04846"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/terrain_morphology.py",
+      "sha256": "baac9791a17c96267141f3f38bab56097520ed17c83cd0bd993de92f57a116a8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_advanced_preview_layout.py",
+      "sha256": "4aa351422517a3c93d255e4ce37dddc3a56cc15298b8f0654d100b676c256684"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_advanced_route.py",
+      "sha256": "b36388130e08510d8261bba319f5d303d45ebac753d2aa01adb71b48e4f94804"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_dem_shape_scope.py",
+      "sha256": "321d1c6bca5d85130137dec6aa26cc28b70eab04cb5bd5a27cbe1210f0332beb"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_endpoint_tick_spacing.py",
+      "sha256": "1868e03a84a53b1d6dce8936edf4f16a36d1c761bf8af0b81f2655c3ced2543d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_gui_progressive_disclosure.py",
+      "sha256": "8d8f86d997b9fa6a3006f590b98fdf02921b39ede8b0b9ccf757cbbdf59b1345"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_map_distance_limit.py",
+      "sha256": "6ff59928357c59b59879a6b2a88abded69e99490ba56be755b5016a3cb5ce9c6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_map_location_selector.py",
+      "sha256": "5857dfd5d2d8136c33d3f222bdcf1e4fa1ca2a79093de6adc3c872da466dd8be"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_map_route.py",
+      "sha256": "931f9306346d849cb70c90b57389c4feaea0c96c91684d85bf57bb79b812283f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_native_environment_probe.py",
+      "sha256": "17c59a139306d09d8f47b3127143ce3f5097cf3656a75ef9bcc7b28894188dfc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_native_gate_artifact_audit.py",
+      "sha256": "71ef7d60530dd5831a5f27997088a3d3a9fdcd105bc395dc689cb3fb352b1666"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_portfolio_release_gate.py",
+      "sha256": "9ecb1f0f17982d3166037b8590295017a1a1bb69c86c7e4693cbe496531cfd15"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_prefecture_catalog.py",
+      "sha256": "2c8002a220dec52d4057e584cd27e41ac210c5915e8c497ffc69b6a51661c392"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_regional_bedrock.py",
+      "sha256": "25867598bac1d6289e4f18d744ba62137d16177982ed53a2c307e1feb8532835"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_regional_lithology_data.py",
+      "sha256": "5287d746cc2026e828ced50ab678b841eee4841bbf39c8377e3e91192134d1c9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_sampler_audit_scope.py",
+      "sha256": "775611cedf5330d2ba754fd7ae7d16dba2fdc81030980bc27c3bb1b56e9f008f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_user_context_native_gate.py",
+      "sha256": "a070422a08bd3f5a2695e1e0c301a4cdf501f0cdefc747b4c942f0088ccdb52e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/tests/test_visual_qa_pdf.py",
+      "sha256": "a189b65d60e5a0e08877119095c6dd1e249b03812b1536228bfdbba960c094b6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/verify_run.py",
+      "sha256": "a41796199d5a75b9012b5e74f445aca1dd527a2e2d0f8cfd1fb326677e73803f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/advanced_v2/write_visual_adjudications.py",
+      "sha256": "5a03c2ea2efb0dcbc8880d45dfa2dc697f3cbfc9a8a05a48803324dd62e23301"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/__init__.py",
+      "sha256": "c6468727cf09ad2d31dce6dc32211187e533cdc178fa282592bf9f16f5cbb1cd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/cli.py",
+      "sha256": "77adc50f1032ef176ef8990c13b7035a7903c97cd94ad6a9441dfd2590bc76ed"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/config.py",
+      "sha256": "57df2133be0301c7d72415f9804f53b41dd7ee0b829686c773e0b938d0d6f8c1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/engine_image.py",
+      "sha256": "65539f30583acfd7eb1005b1d09bfe1f145a1db3119eec63fa1bf047fb52f2b2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/__init__.py",
+      "sha256": "2c00207f9a7f4cfea195ecb88a7698c18c15112af45b2aea07573f8bd3f799f9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/channel_geometry.py",
+      "sha256": "fea99fb40456ffe524b14f368dc011d862f87ef298f00f59ceac0f6a31657ebb"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/channel_geometry_v2.py",
+      "sha256": "2099da6cd022acd347921bbbbe58f55cdeb5a9e5ae73ab2709d38cc53c440d05"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/channel_geometry_v3.py",
+      "sha256": "d7b4c15505fcd2d9ca270fe2db9af0235326b7f5c04dcbc6964bc03509f4bc75"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/channel_volume_audit.py",
+      "sha256": "4cdaa6529990701d1d0b750eac22db6cb81bc404938f88282cfd957eab0cf9e9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/event_spec.py",
+      "sha256": "a9db14f1fc1309f3cad925ec520185b760241df491e28afc513d25a4500e18cc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/intrusion_3d.py",
+      "sha256": "9e79a860b149e018bed136cbd6d4c8b9fc6e833e6335a27a359177bca4f8928d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/intrusion_spec.py",
+      "sha256": "4ad887df7a2f2e956f5b77df2e9d227af6693c664c05b47387d856c346fa1ac2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/events/stratigraphic_events.py",
+      "sha256": "6c2bce6649ac2eb904c7c2f6b2aba9eb8a3b0434da1e903a34f44728dc9f00c5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/evidence/kunijiban_bed0300.py",
+      "sha256": "b41c5c1b5b8cde185d24bf43e7a08eb27c11542c07fe9b65a5bb42837f949542"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/evidence/kunijiban_candidate_index.py",
+      "sha256": "90bbf5393eaa827fd141690ee2169cb0098b80a3ae52427eff6fbfb14217145d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/evidence/kunijiban_candidate_metadata.py",
+      "sha256": "5c6310985190a16f5dcafd7835e6585e170affd56ec513d222bfd71e6c7eb8db"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/evidence/national_evidence_index.py",
+      "sha256": "a76d79cb9ca42f8e1caefe44afa736adc87696f8865afa9c874ce1077f6364fc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/__init__.py",
+      "sha256": "10f8fd472cdfc900ccaf6b2726156dc22a8b0cdbe134f1c7f58061c76269c238"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/arbitrary_route_dwg.py",
+      "sha256": "7ab22941ae14d47d76ff07f9679699461674c268783fc37508ad792a21cd8a10"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/authenticated_validation.py",
+      "sha256": "f5618187ac41e5527b184085002006f937ea9d4dd6b967a40d6aaf26f0de04fa"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/authentication_state.py",
+      "sha256": "4de6e410f97778e069047dabcc02214ee0862d44e78fe0036f71ca27dac74330"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/autocad_contract.py",
+      "sha256": "edeee12bdcd8b747b922e2d67179e184c9a131b0cd9d309f8725558789908076"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/contract_integrity.py",
+      "sha256": "c0ad12d4e7916945cd8d99bb0c11c68aa81f0c74150cdf42e1b044cc49a28970"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/export_spec.py",
+      "sha256": "d81c9e2685942628f0de11dcb3683f016eaea12465b3c3bb97b44c04b3934223"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/export/native_dwg_runner.py",
+      "sha256": "7fb637788d6385eb35bdbc60a25010b41a0670d7e386e527040ad7da56f95fb5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/fields/__init__.py",
+      "sha256": "6c91f8d8b2c7fca47d6f78fc83a473c176dfb1e0d316399e38a278c16c136486"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/fields/separable_gaussian.py",
+      "sha256": "d545a94a0639ce1bf0d3aa532017d61572ad4a5512f42374446cd2d6ddd5f2dd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/fields/statistical_oracles.py",
+      "sha256": "3add4241340fea40a9d9e9a8d9e08ac7aeb79f582294c2059bfbc0f2f63b376c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/fields/stochastic_thickness.py",
+      "sha256": "548bae5a117cd1d6532f3eb13489c58637cbb7499bd9a7322fa3e78b59df5192"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/__init__.py",
+      "sha256": "5521c12605a55b639e852f45a23b6321f3b79625b7d4d3a772ad81e7080f09fc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/adaptive_refinement.py",
+      "sha256": "23b8276262606f4d3e5df3a9e35cedc2e4473f5030155ed10779d3ca18369ed1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/mesh_spec.py",
+      "sha256": "22a00bb81c726305784d56ba450a56ab4a8fe131f268bd6988ef63ebd91eab6d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/refinement_spec.py",
+      "sha256": "eb79129160ded819b4b9f6c11bc0ea1600b0d51700a6d012cb3d094d4eecd346"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/regular_grid.py",
+      "sha256": "dd713187a6d63aca5116438caf2077871c64f416b17b197aa111f48182fef639"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/voxel_brep.py",
+      "sha256": "03be84f4ed4669220f483d7530d522bd6770143d459b6276eadb539b402d4d79"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/geometry/voxel_topology_audit.py",
+      "sha256": "9c6669b9d7b0efd90f6262a7b6774d4a1d2b1f7f24d66a0c08f34ab61071fae2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui.py",
+      "sha256": "2effbff175c77478b2871e2e19b9bd46db9de39ff3be3844a4b2b063675fbb1a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_arbitrary_basic_section.py",
+      "sha256": "2e5c03d35b256d8bfc8b91350a6f5078b6a581f97a1b84cc88ebea3f3bb5c251"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_backend.py",
+      "sha256": "1f2974f71b24967a5a4b15fda2359970c1d81c5dd4631bde550e3ec7765a4dad"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_basic_section.py",
+      "sha256": "7774416d80011a42579f41b4eaeaa9caa912e2b607d1966aec7f81bcbef7a0bf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_bed0500_import.py",
+      "sha256": "6e7a035d9ec8dafdbcf230aa7a673227492b46128719efc3ec4a393be182e0fd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_borehole_intake.py",
+      "sha256": "9aba4b48e92a79c5e2d41902b7bc3714cab6225f1c625c535fcc54af0ee7af40"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_borehole_route_role.py",
+      "sha256": "fde4993fd916f6574596e4a28aeae4797364c4408f4bd695e520f9bf7b231f3c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_borehole_transform.py",
+      "sha256": "56c01e835d092251de663ccefb44c3db60561cd3ad3f326b85b2a55948efee17"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_conditions.py",
+      "sha256": "30008ab0746d00ed3c3c5d620cf5db33e558de02fd464bc82cea02e01fb84484"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_contact_hypothesis_preview.py",
+      "sha256": "79e13074f2de76771f3b42183a6f98f550c9721bf5ca1224938ba54a42bd2c2e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_contact_orientation_editor.py",
+      "sha256": "d2e92362523207de9c37fa149a389ebde27f0517038a9bc44fce71afd23a0bb1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_contact_orientation_hypothesis.py",
+      "sha256": "9e2d5a5d301047c77d682415e8a1683521755415271f169bc8dc879380c0f313"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_contact_structural_binding.py",
+      "sha256": "f976aa335aa6db72461a7a09b8514b5f3bd27c387126640343109a8bd76b11a7"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_correlation_editor.py",
+      "sha256": "7ead4eb1136ebc8492d347c33464ead1c794ff7e0de528336fbcc038ea98d7ac"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_editor.py",
+      "sha256": "5f0af31961e1fb339728f06dbccf194df7277c131565e569376a8f5cd6f11d53"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_evidence_route.py",
+      "sha256": "689b978df4f35dc19dfd68046c8fc1e339aad1ec2d8a22ac9e43ce572a5f9270"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_gsj_refinement.py",
+      "sha256": "c2cc213d5b8b308a06573ac289c4bb64cdfb1d56b2ff5db4506d1e050b7cbfa4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_gsj_transition.py",
+      "sha256": "4af61632c538f89beb187c0fb4b113d18e9a31439e87d1cb94c516e16474d7e9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_hypothesis_unit_editor.py",
+      "sha256": "4356a6d531417538d85626e6c211fa3d135780181e7ee5d8a80655f1eae13aa8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_image.py",
+      "sha256": "38581f576a5b7ee5b1f10f25d0bfa699ff117d51f35182e324d805c476df6328"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_kunijiban_candidates.py",
+      "sha256": "bac1e956ee09b8bd7994dea462894ca77bbd145bac6ae039392aa99c36d0a276"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_kunijiban_ranking.py",
+      "sha256": "97352175a8b58bc02e3c791503d6e04f99b7da74703f1fdf28f53f812fdcbe99"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_kunijiban_record.py",
+      "sha256": "89ff52ce0c818179c978b8f669bf2c34b973c1dace03dae7c22ed51590cda07d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_linework_intake.py",
+      "sha256": "35da942019850ec32a782925352ca328cd0db626ceee45f66890a781e0f7920f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_mapped_contact_review.py",
+      "sha256": "19207fab8b6b9ea187ab3d96ddaa9cb8b9f24fe79864e12998039239d83875b4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_plan_preview.py",
+      "sha256": "77b672585f78e6c30b7753f4190445e24a5352b5dd0fe04d5c2a261d36727f16"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_regional_borehole_context.py",
+      "sha256": "d14b1f861d599483ae80d03ce26f2e781f966362c7f4796f55a1be9647462035"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_reproducible_section.py",
+      "sha256": "6a51841466f1ff3e40e7ccfb76896470c56062320f10ced49418c0293cbf2cef"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_reviewed_section.py",
+      "sha256": "d657d14eff0abaaadb079b3518b1574f5081a79e569bce83bbcab58f38bea94a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_route_plan_comparison.py",
+      "sha256": "c707bb8a8463dbc78735b7f8a5121642660797c3fa2f85cb8a00d23d88ad0615"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_route_readiness.py",
+      "sha256": "c9455a6362958a4b913d21f16d21cb7a383df6c510db4e53767f189e660e7874"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/gui_structural_intake.py",
+      "sha256": "9737db34ccf3873f93296495f952605bdec8e24077b56abb9990f3c26d885044"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/image_preview.py",
+      "sha256": "53386a04401a9cabe411d6e656bbaac4d2d24b283e446ff906f19c4df69e3f75"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/__init__.py",
+      "sha256": "bdf7eef9fb3786db6ac47d1f061424f771da595285a6528d71c9f45468b12cde"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/artifact_hash.py",
+      "sha256": "bc26b44bfab9f7687ae654eba96935336d331408033aff546153636053466fb0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/basic_provider.py",
+      "sha256": "794c2a2af4699496265d52b20cb3a4fd6d0ed54ba5b9e89bd5cadc61f8372add"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/domain_model_library.py",
+      "sha256": "e9b7e2595084ed976bd584b2a6ac41b51e7a17a3bc691e16577d9d1408e20f9e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/lithology_section_model.py",
+      "sha256": "952622ec26f842c84ce13d80f929155ee6f3e511e6978c52d3302fbe8d5794e7"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/provider_contract.py",
+      "sha256": "eaaecbbd61f19b2d1f390f75863c7a40cd8c893795c6e03026a8aa3fe9f71f05"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/regional_background_architecture.py",
+      "sha256": "12ec45a99b06b46660662e94ce4d79ab4e11db4bffd90da83c41727a3cc3491c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/terrain_lithology_composer.py",
+      "sha256": "474012d26ad921e24050c29311c36067249f062fbad6d9d878b2b2aefec5371f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/modeling/terrain_surface_model.py",
+      "sha256": "38a01d3bfa47e25904d17215acb514ca4ab59a6e8f41aefa74c4263b449dc183"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/models.py",
+      "sha256": "c398cb060d95e6af7b2ddd5d7fe47a0730337fadceb22dd05322c944257cea1c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/__init__.py",
+      "sha256": "39ed6123bc93bc8bc71b22175065368a8ee645942565a3c052bef3b40dac005e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction.py",
+      "sha256": "624271768fb29166322991864d2584080023c3ae076fd5916b759a69b6201508"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction_3d.py",
+      "sha256": "fc1c5d83425e2062f7f2dd841e22b7d075137b586842c2ac54ebdffdba2d1574"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/compaction_spec.py",
+      "sha256": "baab4b3709f3d32e3f44e546a341f9a814ff6274a0e70ec95c05012d0be539a3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/structural_3d.py",
+      "sha256": "70ddaef281afeb50d9390a54efaf88fa66fc5b6b3901a69bd56899ca1b555b17"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/structural_kinematics.py",
+      "sha256": "ba87811b25809be1eeade448402a26c383c84f6a5714636235e08fd1452e1ed0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/physics/structural_spec.py",
+      "sha256": "7e472ebfa503411f0925722bacacaba8922298626b0df9a1adc72ff4201a049e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/profiles/__init__.py",
+      "sha256": "2d11b13be03d9c019a08e8dab4df298364777b62d756905816efb5c970e7d999"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/profiles/compaction_parameter_evidence.py",
+      "sha256": "8293f7ab035ae82ad2f3de9888dac55b1fa43d3134e741394961a5a14497c47b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/profiles/neighbor_evidence_inference.py",
+      "sha256": "41983e46a692cca189ec9b9afd8d8fedf6a4312c057adc479b0be5cd3802fda9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/profiles/parameter_evidence.py",
+      "sha256": "04d744300e7595319558de9505c97d999771df6d6582b08b762e67219083b964"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/profiles/regional_profile.py",
+      "sha256": "109ad090a0f342e03b41bdb1a83d98879c8182aac21137513fa26039cf2d650b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/runner.py",
+      "sha256": "155f2224507436c95974bc03d426b3a798dc25675321b28ac0075699bedc8061"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/__init__.py",
+      "sha256": "2a079adb612eb16223a0284a79e421fb98487614ac4d9aa89bd9e67217bf5ee2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/adaptive_section_station_plan.py",
+      "sha256": "c1e822507f970c018eca44ccf512ee82e259c630debedeb1ae511adddf63bfe2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/arbitrary_route_basic_section.py",
+      "sha256": "4858109200f315cc934ef64bbdbcd9da6ffa5b19d33b6b891753e72017a6f7a2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/bed0210_xml.py",
+      "sha256": "99304b9f11bd32aee0182ae816cb447c26fc5fbe3815f66e4f78aed0bdf2ca3d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/bed0300_xml.py",
+      "sha256": "31b913a99549b8818c104af4d33d09d0e417a65d2c9699f11be47429def51ad5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/bed0400_xml.py",
+      "sha256": "e820248254a33eaa70aa9d095d7789a3c3bda015e8e4e88903a743be43339628"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/bed0500_xml.py",
+      "sha256": "0348c67b5a640f991964466e21ae20655ac29ba5efade2a4f5cdb14c2f46740a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/bed_xml.py",
+      "sha256": "86c34e0eba48900003b7225ecc278522a767e607b1ec7065fbbce694d98c8d3a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_constraints.py",
+      "sha256": "3d6a571e1df8e0e83931716515bf1be2ddb3451f80d1e0918f1216453d5009b8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_contact_constraints.py",
+      "sha256": "7a276218832157c7248b1d064b11642b42c183514a2cfba7b45eff52249578a4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_correlation.py",
+      "sha256": "51da4bd5c41bfa0a83a4b12c774a0595810a2e86417f0176863889be032e936b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_evidence.py",
+      "sha256": "6023d2e7284ee2563c5dff4c45aec0e1449770b40957d66978fffa19139d4921"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_evidence_render.py",
+      "sha256": "d217f840190fd600cf7b39837a8c21b581f2597e56236c70dc057860b77bf57c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_mapped_unit_compatibility.py",
+      "sha256": "6e0a768dfbc740348e2946a110323b52616d7762baaddead09c950e6408e5bed"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_route_role.py",
+      "sha256": "0bcfc270958855baa2f523c5df68431530fc5cfe3048a31b6cf0b43addd4669c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_section_intake.py",
+      "sha256": "acb70a95f99796eac6e26efaae112fec1f782548b8008f3ac5c6e61d6d38db3c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_section_render.py",
+      "sha256": "223e52885460232d5ee49f865b3344df9100f7f1892a9ce3a733131a0f8706f4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/borehole_terminology.py",
+      "sha256": "1c854b7af66b45e1b32addc58b5b1383a37654e436691fc87f5a62d8365b3342"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/chronostratigraphic_crosswalk.py",
+      "sha256": "06be930f4adf1cd52f6df8b07020eb42055acdf0cf409ad375c0a4e2b7c8f8f8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/closed_morphology_route_interval.py",
+      "sha256": "0a6f411d1ced3402b0e7aea56a10e01edc3c932b95e45e0c8d44ba78895c454d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/collar_elevation_audit.py",
+      "sha256": "1b230536a2a8c6c50d72fc0cde9a545b00b52ca430dfb47fb3d6ef1316d0f272"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/contact_orientation_hypothesis.py",
+      "sha256": "9d1cff0ab74b9eee609ae7d3af66dcc9f4aff323de5c09fb7cbf7de3b5c71f02"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/contact_orientation_stability.py",
+      "sha256": "65c663e5267194942416974fa8db9c73f51437e593432364801cba3865d2f972"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/contact_structural_binding.py",
+      "sha256": "5e17c91dec796ea3ee301c35d09be28543388e81465e669d0f5366468e01cdac"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/contact_terrain_clipping.py",
+      "sha256": "72043678ca34935a7a6d684f41f9c788fee265b3b15e4316631f94816fc7bde5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/coordinate_alignment.py",
+      "sha256": "3b9b19313f6bf6693108d67b0c35407b74917b4a9dd1a1b19c9c74bf26fbd980"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/crater_dimension_audit.py",
+      "sha256": "9cd4665342292c91633f3e44378836e2f337f649419d511f263714a3d03bd1d6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/erosion_fill_uncertainty.py",
+      "sha256": "c24d035845f3f5f78b08fa1a901067f3ae635da7bada02dbbd0619b8cb68efe0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_aware_route.py",
+      "sha256": "bb6f37550a2d657491f60c39d6c3646dc5ea7b7e4076d42b7c809e78ab44e1cf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_bounded_section_assembly.py",
+      "sha256": "9ac305f0d2ad95beee62c593eefe088cfa4b9468f886818fa2f9751adc813b27"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_bounded_section_render.py",
+      "sha256": "b25e319ecd35f0cbbf3ccf84584d6da5963f3c0a53362fb734edc1c0907af0ce"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_bounded_surface.py",
+      "sha256": "aa6dd1b5510df251da7a7508efe3dcd362b08475dbdf1c52c823ef9520fd690b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_gap_render.py",
+      "sha256": "c27e03198a4f8e7b3630ebb7e317e3d714ef27aae7a79de3b5e82913f1c5f03e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/evidence_section_workflow.py",
+      "sha256": "40b19b7cfcb2bf06bf5aadb6a83812e916123ab9c7697c78c53ef2fb7bb693f2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/exact_route_hull_intersection.py",
+      "sha256": "e1413c2cc1654f5e62ff3ac3258bc6b02ea9afb122ffc700739ed57074f9ec9a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/fault_displacement.py",
+      "sha256": "84b4e3f6aa72048d1ae5ed0d3420d753cbd5d480a23ba0c4f4de92a5a64ff893"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/gaussian_ridge_surface.py",
+      "sha256": "dcb4af71756f058d1dab0710b603b19ff3b27ac861cb90e949e6a00b346e061c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/geographic_linework.py",
+      "sha256": "a59ca4d577364d83913867b1a09b65fb15d72d5aacba5e597d09c891f318aa3a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/geological_domain_classifier.py",
+      "sha256": "4498714b66bf74b58c96762e1a62def122f3d2867bdd5b9e289865d06a62262b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/gsj_adaptive_transition.py",
+      "sha256": "de0dabbb313153b358fafb106b8454c9c7f0f4a3b6c503182f01e847034a663e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/gsj_surface_geology.py",
+      "sha256": "7ded0b23197afecfbdd10cced14235e25b810102dead5291d9fd27712dd3f954"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/gsj_transition_review.py",
+      "sha256": "b10640a0ff3e692911a923d5b1e4f07660f0a1b3fbe6b590eadc0051fa3547f0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/hypothesis_unit_assembly.py",
+      "sha256": "b59f9b048acd9b612776dbb22a41ec175f98debbfc8f9e8448c6892ac11e9932"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/interlocking_sections.py",
+      "sha256": "4eb7e402e1457604baa33dbdbb2285e967f8fb1afb337e1e0798a6d5443b5ecf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/lithology_domain_normalization.py",
+      "sha256": "b1e016f1aba9c22baec8d0e3913b722c250ef11a42b553fd26fb9f43f465b8c6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/map_borehole_semantics.py",
+      "sha256": "ca0aa474c4a97d1048252265844ccd122320fbbbdb00870daee24d3852cde79b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/map_template.py",
+      "sha256": "b4f3482ce3f52ba8bc4fa46869a56516cacbc4b34e7301e46ed62c05b50344be"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_contact_position_uncertainty.py",
+      "sha256": "b836a964947af69f2ef04cbd856fd5ee2064e49b01f6beb4139ae74c6bf88d1e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_contact_review.py",
+      "sha256": "73ecb842f282b2963e1e9b57c65594345c41fa4db4b86f3c31e5c27c22d353fc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_point_evidence.py",
+      "sha256": "ff37b80a8d12adc0115dddda975d950ee93908e17258e4f819dabad9f59b61d9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_polygon_adjacency.py",
+      "sha256": "b48142142975f7db00d70c873fca130eb472848cec35d48f127af26259677810"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_surface_support.py",
+      "sha256": "686fea1a343a3705226c1a9e7a59dee84eb16348ed2ef13e1a6c53e1f259b71c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_unit_catalog.py",
+      "sha256": "f74590823f22ec5a19e3a6074f52b740cd2ba2c2ca18ae0548bf583895906ee0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/mapped_unit_morphology.py",
+      "sha256": "b74773b1d5c1a34c3168c68dd56dc573ef94748d4c80ab8c03a6cfa4d87b891d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/morphology_support_association.py",
+      "sha256": "5552ede92f7d743a17a4ff8fd4f1f4e5aadf99a07641dceca10d5ee073304ecf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/orientation_geometry.py",
+      "sha256": "29d0d698db4990f3b6811940897f07871d369d12771be4213c058976b3604a18"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/plan_evidence.py",
+      "sha256": "5ada7a2e00014f16bf944490ea2a2cd5517556313ebaaa31735a3097220e2675"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/plane_intersection.py",
+      "sha256": "95c00aa517c232f7e38c24ce3848cd852f2eedba7f12400afa25af8653ab186c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/qualitative_stratigraphic_constraints.py",
+      "sha256": "2fb9bce00f795c28435bd9201472f17a853cf7d81b941ef6a3c1b68518b58fe8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/raster_evidence.py",
+      "sha256": "ec208390df361c970aad29ad54d3f714b38264455c8567dc755445287cb0d4a6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/rbf_structural_surface.py",
+      "sha256": "f5347df39cea235bc4cfce2adc739adae49726713cfdff1c7dd3de69529c11dc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/regional_borehole_context_render.py",
+      "sha256": "8394f64f6affcf9e2fc9c33b68928fdcd6303b864e133f21772e891ea7fa31d0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/reproducible_section_run.py",
+      "sha256": "6444e31c6ff948321f7a6cc039faa3d35cb2d4e85a3477ee74fc9c6f31e5fd96"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/resistivity_evidence.py",
+      "sha256": "eccab24e209a9941adb3011380c1d181c79525a7e54e889e05f1c397278cd29d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/reviewed_surface_control_group.py",
+      "sha256": "6f6f28a5bf4902ff3a8a4b18c1123de23a9a139b94c9591f4eaea2378579441c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_binding.py",
+      "sha256": "ba59e117ad38e3c6394202bf65cc4fc6e49d4baf07c329c3a2ec276ed4fd3de3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_evidence_readiness.py",
+      "sha256": "400ce5868052480b708a713b217ec8387ab45261e9feefe1b7cdd8269ade87ad"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_evidence_workspace.py",
+      "sha256": "59db53e60a02aa815fb376fba4206c6149c7a583a0b519c7b15f78818c48d1fa"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_evidence_workspace_render.py",
+      "sha256": "7b4ccebabe6a6456f1b290aa9c26a983cae7eb2db35d8d71fc01d530a261e19c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_plan_comparison.py",
+      "sha256": "5c35cbdc9c55bfafaad5ce49677eb433279464827440af0ff335b08187591940"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/route_surface_projection.py",
+      "sha256": "eec8af06325ba4676ee1734498277f351005f144fd3c9d3ef2905f885e52bcfe"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/sampling_convergence.py",
+      "sha256": "a429cac994fa2187fc4ab82d5c4d67fd37959ca3cf0592809faed621eae361ff"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/section_faults.py",
+      "sha256": "e1f90bf794aae50b785f44b1b260b0c0281c943ccbba86cd1ae0290567021bd2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/section_spec.py",
+      "sha256": "12372f863b3dcb5c2622f14c7ade905bddcfa3ca1c000b1b969c710e0f701736"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/section_unconformity.py",
+      "sha256": "789ba68f7e28180570ccca7c9780cd0bf9401802a973df029d0564aed5310546"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/shape_preserving.py",
+      "sha256": "038ba8de8d6a02e68dcb65a3c0e580274706df74279164c90d661cc2cb65f57e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/structural_observations.py",
+      "sha256": "2ebff24fe66f673c5bf2ca67e0aa6024b1bed5ecdfb97e23cc856f130be09960"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/structural_source_readiness.py",
+      "sha256": "bce69fee0f389d33b22d411fc7db5186ca52634dc6b1d85975f4ed3692d7a9ec"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/structural_uncertainty.py",
+      "sha256": "70d5d4e85d5071190117e7f511597ca48eadec4032b48f756ac16515afa51fca"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/surface_ensemble.py",
+      "sha256": "1cac7a7ecddccaaf3678b3da49699f886332c969d38f3ff4aa732ea7c6cf7ea9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/surface_family.py",
+      "sha256": "bfadadda6a206123b6e660386d1d2e1820943ff766cda95373e14b508ec16974"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/surface_model_selection.py",
+      "sha256": "e5a9395d91e29af4df1af87f4358d6dae3e2b3a5588bc24feb6ac52e081ad0b4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/synthetic_event_adapter.py",
+      "sha256": "21e67ed7b7a6185b7f6e8c93c4e09b05e3e51924dc616d310299097a4e54b0aa"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/uncertainty_projection.py",
+      "sha256": "519a29fa4165432a0516fcc54773e91d987355376eb47d4f933dbd4233710de8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/section/vertical_elevation_evidence.py",
+      "sha256": "741a2cd134eefbd85df9dd81e9655fe962c8f2acaf3cfd3194b201eb360b1cdb"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage10.py",
+      "sha256": "009b56151b1e330e01b58c58fb43bdc2a1cddad3b601f94f8f7a532ea171a870"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage11.py",
+      "sha256": "26a844090fd149cb6d26305b80a95a19bae3ccbd8bf762a135101cba3d45af75"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage12.py",
+      "sha256": "ae5deefe51b434a208e694cf874455d977e89859cca09a711ebcdc234fe9ec5e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage2.py",
+      "sha256": "e6d275f5a5b83d062f0627b8b461f768375ebccd29dc4f00ff95143ec77f1ea9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage3.py",
+      "sha256": "1efe92ad2353a6febfc0199c7ceed7eb32587826e1f01e27410e4427555be4ff"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage4.py",
+      "sha256": "fb8613e4718e73874732d242938294e7b764ad4025f2252ddd993227ab783488"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage5.py",
+      "sha256": "00ab24428b9c3b18cac8527f6bf4a3050f103b2bc48bb69a2fa4dd2a9caaf106"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage6.py",
+      "sha256": "93c7313af4d93ee00a30676d19b4da715ea9ebde5de1978610eb43093bb9b9af"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage7.py",
+      "sha256": "71f8b646e6ed1778f96a1b9532140caefa953a740839b3abd1dc7be0e18080c9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage8.py",
+      "sha256": "92740a11821b2aef6e3a1e4da2b599e993143f041a9f654a267f23e57a6e9fba"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stage9.py",
+      "sha256": "de11a414b1a068b902586daf5ffa798e73c1461dda39e1bb6cf7d16ccf59b4d2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stochastic_lithology.py",
+      "sha256": "18cb0912a520c6a97701a25a055931c97256a449e506ffc7411a255b9cd65457"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stochastic_pipeline.py",
+      "sha256": "480e95f8a0bfd30ae582ff7dc2133584508558aa33c7cb672942edb44be8d5d1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/__init__.py",
+      "sha256": "09b6d0597949ed066786f66e2ef0e1c290035793e0f826e1f730989f61c02b17"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/conformable_stack.py",
+      "sha256": "ac88ed603a1191f109f345ae031a47f6df8e429a7dd5f9c47075a63224888078"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/stack_spec.py",
+      "sha256": "3d0353cb1cb0b662848ed45427d6366b3e2e2e0c0e2dd4abd59e84853389b5a8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/stratigraphy/stochastic_stack_adapter.py",
+      "sha256": "33d1fcfed4d29051f9ede0f4eb3c152dd4bf80491846fa96ccb5dead9afc8e2a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/topology.py",
+      "sha256": "b9411208b35ec1bfccb8b5caaa997aff10a2c08f6df3ed56b32aad8bb9b102b8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/uncertainty/__init__.py",
+      "sha256": "e65d3ca3bb27c4fd391ed47387e71e5f6f94d1d8dd9761fa5dd836faf8a8958d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/uncertainty/ensemble_spec.py",
+      "sha256": "5e3e483712529db7b3c09ffe99a6f2732506a67b6cd0631160c3cb5e73520f79"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/uncertainty/seeded_ensemble.py",
+      "sha256": "49c3419bd506906d9c27d9f4dcb8ba618a73ee8e7457de6601c685d4f0b7c47a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/__init__.py",
+      "sha256": "ede292fc889234276498d2cc410b1fc123c0ab7f60f7234ddc17fe74321c9229"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/compaction_parameter_readiness.py",
+      "sha256": "9b7267a066846ea7a9fea5375fbfe7fcdde09a6e6c729abf98116d3f73b3b927"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/domain_realism_gate.py",
+      "sha256": "1ffbcef288c632638a8cf10cbc36da82905738c048f7cb76671d6a30387794b6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/facies_metrics.py",
+      "sha256": "5ae5a44972817a2b9f7d7b1151ce3846ff70623a9dfbe9da6093675b63c74d6c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/geological_prior_gate.py",
+      "sha256": "87068e5b64f1fe0aa7b8624ad987541a49940c8008c3a90149c1931f26ce56fa"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/release_spec.py",
+      "sha256": "acd2caef75adfc4050a5c1c28ffb57296b03d0877360caa9ef856f5d3a70adff"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/release_validation.py",
+      "sha256": "976e5b811b7dce00aaee8ba3a847ed2922e881e98a113c3833512ffcd9b3ba7b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/geologic_3d_engine/validation/terrain_surface_gate.py",
+      "sha256": "a88a9b142d9be3894462bdf591ff0b692199419739eec16677afa68fd331153d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/__init__.py",
+      "sha256": "5f684b5fd234fa350234d1b3bad05d56ee429e5c1eda11cf0f66b0a0d0973e1b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_adaptive_section_station_plan.py",
+      "sha256": "2a2fffa2cd2671d5e57d12877955fc5543d89a4ea1b591d0089caeb2a4e7d743"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_anisotropy_probe.py",
+      "sha256": "b8e6842ed514b7edfcb875f0fe1d3493eb8943e5c00d90a1ef2a13495f7cf3f0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_arbitrary_route_basic_section.py",
+      "sha256": "65e18b9bc291b7a7faeda2a8fe6a277b73f80f36852bf11e0b67318949e0c21c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_arbitrary_route_dwg.py",
+      "sha256": "e8dbdb0460d86c6b0951074d16d0d1872a09873b842d6b99313bf7886c65187f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_authenticated_validation.py",
+      "sha256": "a4e3c20d2266713a26a4ac5cb026dcd6f5f17f397224f83f9cd75ca12db89b5e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_authentication_state.py",
+      "sha256": "1cbeb35422d9031874719a4f27ff175e0bacbe03ad60b91cf0169b57b5bc63db"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_bed0210_xml.py",
+      "sha256": "3fcdd7e3a4b600b705ef17ea9bfa0708f1bdb875ebbbe88b2b4d6f61abc1f173"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_bed0300_xml.py",
+      "sha256": "23d11665ff2530516ac1a499e8e2a5c08823daeedcfded8cdd9420f40fe37ed0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_bed0400_xml.py",
+      "sha256": "d6daf6bf83b2f3f07f7734742a889c450b5a08668e21986704d5c35ada5061af"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_bed0500_xml.py",
+      "sha256": "069bd7e55b23f5ddf55e10f5a6467cb46240c2bccce1441684f340837cf516ea"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_bed_xml_dispatch.py",
+      "sha256": "4a6869a42876ca955b97876258ba607b79c662af67aa937fff8428680d7662cc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_contact_constraints.py",
+      "sha256": "4df5a057837aaf54af4bcec873be784a6c75e7e6eb9507e4c11df67fa5f0cc17"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_coordinate_transform.py",
+      "sha256": "191d1150d0fa4adc9351893bd2e222273c17640687aceeb220d88cc468cf6993"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_correlation.py",
+      "sha256": "b485202e946e1a3e5006fda925c45476a826ad83b91a9f5041495035880cd28b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_evidence.py",
+      "sha256": "c34e8e19844bc303f8d6defe66bba77664a78acc85a87ad7ce7af9a9aa0bf100"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_evidence_render.py",
+      "sha256": "6cbfdefaaabda023c1211447606260f7aeb6aa353ae6d2c93e53e029c3a08eb0"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_fault_interlocking.py",
+      "sha256": "a3c32095fc049c26ab825fea8dce4cc556f6882989ce25614282a2ecbca6b44d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_mapped_unit_compatibility.py",
+      "sha256": "f57f35d3cd45772f451b602c92212f29fafc021741fc982adc793932f08b56e3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_route_role.py",
+      "sha256": "cfb15e95d387925ea95bf843e91e7770f241043c60874d99f07c1f314585dff6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_section_intake.py",
+      "sha256": "1f02ff7aae18d6ce746b91ab9d7664d3fc84dd36af23dfdcb2c35c79af361690"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_section_render.py",
+      "sha256": "eb6017de01b11af6bbdfa6e92cbfdc5eb794091d06cb13dca36e0e4aa86f4aa8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_borehole_terminology.py",
+      "sha256": "990a02d8da609df1d02e690098a9190b1505c60aca9524680036b85a88f897c5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_channel_geometry.py",
+      "sha256": "db572303c0f5efa71b164a7461de98f1d561ccb504e8a5fdb6329bc0fb0af4d8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_channel_geometry_v2.py",
+      "sha256": "c0ea9fab11e8560a5f066e3e61d4c5a645a3bf9edbb757ef2496d9de659c2ab4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_channel_geometry_v3.py",
+      "sha256": "aecf2356bddd54d871f6f50488d3f5940d6f842b17cab5fa94fd39fddbe9ef51"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_channel_volume_audit.py",
+      "sha256": "483c67843258b27cfa9c3ebc46742c8e567a2f1980b7a410a80fd59cf3907bb2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_chronostratigraphic_crosswalk.py",
+      "sha256": "071a009009d3ea4675c494c9b6b09c6161ddcd404298e9c7c980fdcb04589642"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_closed_morphology_route_interval.py",
+      "sha256": "a67eea0fe35c1c9c7aa7247d34b1cb4aa7ad7affda2ddc930bdb57f88e2e6894"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_collar_elevation_audit.py",
+      "sha256": "11b8f4f5eb9d26e9d2516c50aece0218cd89b1b77f5852ea08e812170b93baf7"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_compaction_evidence_integrity.py",
+      "sha256": "49ef7b39f9c4aee16d334ac507010f9e0cc6771d092ddaa962648a04acfb2665"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_compaction_parameter_evidence.py",
+      "sha256": "14c77c45c442110a9b6faf66865dc39f2da63f99271d4c5a0dece7f35e12c944"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_compaction_parameter_readiness.py",
+      "sha256": "77cb04ef729a2c7152502842f0b953eb2f171979d64cdcc9fa526bad7cda5682"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_config_topology.py",
+      "sha256": "6615972e28c6fbb0a13b455baeb30d0d0726c42cb8fc16b50bd1a794dce328af"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_conformable_stack.py",
+      "sha256": "24bb3dd6a1e3a36e5fbf93794d56475438d87815b47bc2289e58f294cded16f4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_contact_orientation_hypothesis.py",
+      "sha256": "f33f7ac272bc534e3bc2f1465ffe5870f9a9ffafd0e1f01c61663e55b8d43a14"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_contact_orientation_stability.py",
+      "sha256": "8ec5a9c8a484c8b41ba1cfaf3367fedcd7f6716388fa1762781b277b20ca54c1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_contact_structural_binding.py",
+      "sha256": "377b298e6c6be9cb3c920345a9ad58c2339db7b6dfe130af65df7f6ed6b73b57"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_contact_terrain_clipping.py",
+      "sha256": "20bf8adb27465b40060204136ba33ec99aa669e6f699f85828144f23e0257b7f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_contract_integrity.py",
+      "sha256": "e3ea657128b6afc614781a0f66e3d33de192ea46e81765bcef8ab23e535ba68b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_coordinate_alignment.py",
+      "sha256": "8893eeaaa28d5f9ac4c34bf888487920ac75fa450bc9433c903bc845575eaff7"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_crater_dimension_audit.py",
+      "sha256": "5b993beea1a7705e941cef93f8f811fb5c077f89b37e86724e85d8cfeda81a7a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_domain_model_library.py",
+      "sha256": "8653ace38316de729de73e1cc5a7f33d232ed9b817dcfffec6bd529e1aa5ec72"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_domain_realism_gate.py",
+      "sha256": "ae9f23f8e1da9a16370caecf99b021d0bad3aa57c2cafdd6ad238cefb24539b6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_engine_image.py",
+      "sha256": "ed26254fd0f8c1a30aed18b710f442ae479ef4f20e228485880c1cc5f6494c6e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_erosion_fill_uncertainty.py",
+      "sha256": "877807a98665cb5c0b855d6b97254e5e8597f7898b9b19621232439162741f83"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_aware_route.py",
+      "sha256": "67d447f4661dee04dcda2cd90204edd9e810e8d653dc6ca1f170a8a620475988"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_bounded_section_assembly.py",
+      "sha256": "abf2110e28ecd67b50bdd577713ce5f7f811e5d5e7fe59af3f03a9af7b012ade"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_bounded_section_render.py",
+      "sha256": "9b5f06f9d9a9d3162bd66189604a40f2ca591c648a86cb16ec7f75a5238538ff"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_bounded_surface.py",
+      "sha256": "5d62ab6cd38eb8698fdf7483078be51dd25d167c60bdf4594102b70317818a9b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_gap_render.py",
+      "sha256": "ad9d440e5aa0aecd9f5f95db0f3f5d6e9c3454ae9938d164eff29b93e085e44d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_evidence_section_workflow.py",
+      "sha256": "b60a6ad30d24ff897d5c625e052766950e4fb4f53657c77401b79c55c6513188"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_exact_route_hull_intersection.py",
+      "sha256": "dfa62efd01e0b7bc502bbc8ac3ee4ccea39345c2370bb2c81192c2bc70afc395"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_facies_metrics.py",
+      "sha256": "4d9bfa1b09c314e0220cfb3d347ad7aaac04c1097efda77a56cc7558ceedd84a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gaussian_ridge_surface.py",
+      "sha256": "15bf8728c2b41e15ae011b551168659f55d1134c68da032a7fe78118ceb5a21f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_geographic_linework.py",
+      "sha256": "b47d73f6b537672b06f270d157b8f662c8ff71d6450a6f004870be8585e91280"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_geographic_linework_evidence.py",
+      "sha256": "c99dd562c8408552821fe98e031c88c3308afc8b3d02445e8395d07efafeb73e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_geological_domain_classifier.py",
+      "sha256": "cce06f583e49626e4069c9443b26e6bfdb214b8d4306ae5e8ab0be9f3d797055"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_geological_prior_gate.py",
+      "sha256": "cf3893b5862955004ea395df148885fa22c6e9f9cccbdfbfab46a1f3650424f3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gsj_adaptive_transition.py",
+      "sha256": "777be24acde8fadae9b73b99472869901e40f12af34830a84fe452fe3ef9a82d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gsj_surface_geology.py",
+      "sha256": "0deb508eb8c7719fc15904f3b441ecc82525aaddd642823ccc0a6ced4ee45f43"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gsj_transition_review.py",
+      "sha256": "3c378fe6086178a9e80b9925eba5373b03beb0597987dd0810f34a51bc7d4157"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_backend.py",
+      "sha256": "f69c7086874fe33198bf57b1095f068aa4cebdf3ecf5370ddf22f1779f37bbb1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_basic_section.py",
+      "sha256": "1cebda762440cea7ebeb64cdcd0e05d475f4ad97e0943df25642fde798a7b8f9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_bed0500_import.py",
+      "sha256": "123f445355f38a9f54b1928871e132ddff12336b05a2e7a7afb7ec06fa3bd2c4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_borehole_transform.py",
+      "sha256": "6e18d0cfec1213efd7565d8c2ccf27d97266d281ac2ea7be5e56ff7e123716de"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_conditions.py",
+      "sha256": "4f0185caf6185d1f69dedc61518136aabd41e5414cead15e327bd8044cd530fd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_contact_hypothesis_preview.py",
+      "sha256": "b9801d532d36622dc39a4eece1ecb537def286ecffe07dddf9dc57de6f67b01a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_contact_orientation_editor.py",
+      "sha256": "be7ef6f4531c17bbae17a8ec812828f3e0ba89d035cf1f91ed57806e4ac5c20e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_contact_structural_binding.py",
+      "sha256": "c1a4a3631660d39cb15311b4e7a9dc3491ea5ab6be3ff3f7b5cfa6ea9df6787b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_evidence_route.py",
+      "sha256": "9f80d306db513782bfb0d09d2a5b78d6b6c860f17d9486e47b1ebb070eb5cb4d"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_gsj_refinement.py",
+      "sha256": "cb1bdfc4f2104a93c328e98d5287733e07682d61f56f76deffc87c438e66e20b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_gsj_transition.py",
+      "sha256": "8969b758b26d0781bf6311c2ddc80830302e15e72fe8e3975b9b6a3f259ff75f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_hypothesis_unit_editor.py",
+      "sha256": "a9cecfa40bdf41cc7fba15f09af6c4f919088ee5883e2e64958e44112b0f13dc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_kunijiban_candidates.py",
+      "sha256": "891ba024756af999654ba2893ef79efb9df394dcdea1e645a3efbf4ee934cae9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_kunijiban_ranking.py",
+      "sha256": "2515dd2074d7a52f6c99808582c8e80ca2d4f185506bc9d818c6d875f4845694"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_kunijiban_record.py",
+      "sha256": "f09a4e344d146e9a1662a2f0c1ead4da06ccca1b8e85c4c34b36bf5462229240"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_linework_intake.py",
+      "sha256": "286f69bbc92c533e1255efeb7caf7a7dd09e068dcacfe0e4a18f15caf1b8edf2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_mapped_contact_review.py",
+      "sha256": "6f003b099b21b9295fa3752d00e867c8a987e9784069eba0437c5172aebcc100"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_plan_preview.py",
+      "sha256": "721ea303c0a7eaf85bd7b6a9e3fc072c33f7d2fba32e33b2eadb777c8a565c50"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_reproducible_section.py",
+      "sha256": "c7116bd1bbaf70fdf96d5ad22c00b96201abfff32f3e68cec1d3d5b47f7567e1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_reviewed_section_fault.py",
+      "sha256": "95146aa9e39cc50338683c98944ee02a753d0e6479418a1441714f3d2f6ff401"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_route_readiness.py",
+      "sha256": "02f2eb3ba3cb5f880dd07cce7bc8cceed10945b2742c58cf8de97434b7dc8e46"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_gui_structural_intake.py",
+      "sha256": "fbd42c641f08b4235b5542e06a384057c1742fac6137b5d9f689c1504698e289"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_hypothesis_unit_assembly.py",
+      "sha256": "8619233796976dbc8bca733e3da919e0a0a45827afeb69b604d5e8b170976463"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_image_preview.py",
+      "sha256": "c26b866d648d81b34c82d20e6c7d6b12dbcdccc4b133c7fcbf44c2751eae13b5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_kunijiban_bed0300.py",
+      "sha256": "b40f5ccbcd2151cdf4f3c1ca073a518fea821fa540dd41ecfc030712abb54322"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_kunijiban_candidate_index.py",
+      "sha256": "1a8154cd99f7ca5c04803e71847de1708a614d2da847aa662c1f385548658f31"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_kunijiban_candidate_metadata.py",
+      "sha256": "7eb7dccc9f8e863afe99857b00491d1a7f1904aeab01b78965c53cc5a5ab403e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_lithology_domain_normalization.py",
+      "sha256": "9ac24d42016a29cb83c129c8a5aecca45eaaff928e13dac3d9607c775aa49e85"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_map_borehole_semantics.py",
+      "sha256": "be33abc3c6781fa6adfe81c9c6ad061fbd9002b199f1399ea6a2fe6e5e247927"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_map_orientation_geometry.py",
+      "sha256": "86fbfb4cc95157a8056bfc50d2a24eb5dd398d0dfd291da208d06a5bfccd728f"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_map_section_cycle6_integration.py",
+      "sha256": "ad69b662048be921ff1f73158a14c410a8ac0a114ce51e162c4b98739ad63db5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_map_section_template.py",
+      "sha256": "954ec7dcb684dfc5ca5851fc22ef2d1d0e3ca26f031dc559620b42eb5f7b595c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_contact_position_uncertainty.py",
+      "sha256": "781710a74efc6118937cce822b8339ba6e509226e897e23078bc37530a54f8ff"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_contact_review.py",
+      "sha256": "f229948df3e33d26fd39b3559fde0360f44028242c66a34143f943ea331bbd3e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_point_evidence.py",
+      "sha256": "1c3226538605519f003d8630ff883f2a8d5b4549f6a453420097da9f8b5f64f7"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_polygon_adjacency.py",
+      "sha256": "377c1653490a9c39a410757c13d4c5b5d9b8119ca097f3a1659ec642e8814207"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_surface_support.py",
+      "sha256": "c91a5032b15046187f8d80e6f4d888255b8ceee3c032321cf515baab48d12681"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_unit_catalog.py",
+      "sha256": "86c0e967a59c25e0dfbb2ace348fa822c08c5586fbc8b08f52fe8fd721141123"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_mapped_unit_morphology.py",
+      "sha256": "e78fafac064e8f6cb160df7b9b8f7b6d2f3eb84fdb78f613481abecaaa5f233e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_morphology_support_association.py",
+      "sha256": "f3c6f520109464552cc7147ac58dabdcc2eca795393e33388831297766d1f345"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_national_evidence_index.py",
+      "sha256": "742e9f8f6707754f57f1f52da840fa70d2091bf0e1af2005240b35a621d6f202"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_neighbor_evidence_inference.py",
+      "sha256": "ebb91963c8d5c656be4226c96b3f7b109bcf30bff71b89f13a070e3ce13f34dd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_parameter_evidence.py",
+      "sha256": "37387e9fa81121abd5dc46058858610c312daa8dbc0b0504759a5d15f14f42a8"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_parameter_inventory.py",
+      "sha256": "fad7e5edcec2bc87d43bd1074e4bf83e0c0167a75552a3d76a9470b3756ef540"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_plan_evidence.py",
+      "sha256": "16af22bf270be3f87f99a918568d4e0e36ac8721c2c262e5414f1c489229725a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_qualitative_stratigraphic_constraints.py",
+      "sha256": "530dcf6d98aa1c174e6882254a05fc077aaade6278a5d7936fe184c5634d2fcf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_raster_evidence.py",
+      "sha256": "f3ef0e8e11d995ce812538f6bf2dfb747e708f82866bf1801f6c117e3aca9cac"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_rbf_structural_surface.py",
+      "sha256": "9df3597ad09090713d361051b69408e896e033b871d81e0e6f36e0ebd284ead9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_regional_background_architecture.py",
+      "sha256": "460c7004d22f15fc04f845766c1edf8eebe31001fc58cfa74bb7da4c551622b2"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_regional_borehole_context_render.py",
+      "sha256": "bb16e898cc08c89af32986da3dbb60ab8dfb440abef7c7ab3831d6eb8b2e8e3b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_regional_profile.py",
+      "sha256": "a47a2477e5964dd2c6e4f1dd08d288543fd3039cac27481e80bd170ab8b60783"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_reproducible_section_run.py",
+      "sha256": "49c6c1a7799d40dcda964681d863c7c27f8a01f134db00e21d01d9dd6afe1b0c"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_resistivity_evidence.py",
+      "sha256": "0ab069ed318a1ea8c5db28f18c1ce960326a1b386fb4bba1f873bb4e0ab07fb3"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_reviewed_surface_control_group.py",
+      "sha256": "a546afacbaf231c1ae7ada45639d8bc0e4e4553a3dc854700acf330d47c73e38"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_route_evidence_readiness.py",
+      "sha256": "ffff12aa70a3e3b515ff21b6e6a1d464f5010113a757662b2121d217164818b9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_route_evidence_workspace.py",
+      "sha256": "c98944bf97ea37a43d03f9032de516f4902e45552b65f3774488042f227a367e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_route_evidence_workspace_render.py",
+      "sha256": "0ebe758663c514062dc218ed0de467b237d5d5a4f6b675bc4ea8e9fddda3c756"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_route_plan_comparison.py",
+      "sha256": "7074d3125b64ac72f5cec363d670a21329a4631a589addcc76adc7362ca5c8ef"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_route_surface_projection.py",
+      "sha256": "6e4642fdbbbaca3b3603432c942c9027c424bc7d0a806646211cfbe2d5d8ca3b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_section_faults.py",
+      "sha256": "ea0623d2a6fbc20fafbf748fe52f0761aa9488a64c1da8f3554f8011691f539a"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_section_sampling_convergence.py",
+      "sha256": "921cd6b3c2e463fc81b50243944ac01c2b296b821a1ee56a9f04e2cc18db14ef"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_section_unconformity.py",
+      "sha256": "89e0e4d0ef58a68ef712db7747581ef7583a9c7c674e30519f2a437856438bd5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_separable_gaussian.py",
+      "sha256": "111ec21c5a176ab127f312af0f494f590c9d9e436333dbd7e3ae3fad31539315"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage10_section.py",
+      "sha256": "93a32c8af0c28ebb29e0148871586fbdfb6e29a522dfab9be67f828b6f700ba4"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage11_export.py",
+      "sha256": "d39478acc7e56aa80787c97f01bcf395675886293a03333bfbe0578c4cb7a49e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage12_release.py",
+      "sha256": "5d2eb2a66ae1f81af1b07f63a4078a3cf17ecf7db196065a3c5f0dda7db177e1"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage3_events.py",
+      "sha256": "7ac0e1b9a1b166ca116c93493e4e42e84e5cbb9e5aeacc5164f1a02ab35f07bc"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage4_compaction.py",
+      "sha256": "73d2bc8a661527034a810b6d4e0ec2760c7e6be0aba11bcedfecd69b933b01a9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage5_structural.py",
+      "sha256": "f8d23e67d28dae30fd4fbafaa232fe139f0caa7e4ab821c4618ddc03f96445bd"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage6_intrusion.py",
+      "sha256": "a4921d76cb244b8aed8c77abefa0c2c7da926c14e98c5ce7edef7b02b66941bf"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage7_mesh.py",
+      "sha256": "5edc4f8d8f99f916a61802991c66a232d5ee3a49e41cc0579782c529d4aadc23"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage8_refinement.py",
+      "sha256": "91b401a1cbb0c410f4bcbd7f6a204ec5aec662a0d8081026cfcf9315c1f7e3b6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stage9_ensemble.py",
+      "sha256": "7a2fb457dfa62ffc2221b169adfa5a58e757c0b51b38ce680ac21af2eeec8a78"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stochastic_lithology.py",
+      "sha256": "26e6d4802d7afd476de6222c69115d4009672658f8e7fe7a236a9f358da4b928"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stochastic_pipeline.py",
+      "sha256": "fb65adc47c3f3afaf46b5063fd6ebcbd15d66317dbd878cf74ecfed124134c91"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stochastic_stack_adapter.py",
+      "sha256": "21a150e560171c9bbbb03ac69a5ba8cda1b8512bd5c2fa4d0222644db96ed59b"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stochastic_statistics.py",
+      "sha256": "173e8187b0b3adc67a237567b8c4b0ec8209274ef3ced2e2dc4626f34e79efe5"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_stochastic_thickness.py",
+      "sha256": "6acb3aad9865941f733a634555c9ad1bb22f66944b4da05fe56e4f253dd63495"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_structural_observations.py",
+      "sha256": "828dc0ce0466618e64f6b5ea4c49cb5577429c3d2a674d9d4d5f37f0e6908f77"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_structural_source_readiness.py",
+      "sha256": "592deef7eb55bf7caf5c18f98ea0868f99758631ffe0b3711276865d52cf6186"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_structural_uncertainty.py",
+      "sha256": "5e5f33f84fcb1f2cb8d4d3a27af700b97a9ea661d52ce47acce41c055a1b4701"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_surface_ensemble.py",
+      "sha256": "73467dbb1e5f8931c0b096550d20354adbc1f88f377725b1f940e4de3fd4c999"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_surface_family.py",
+      "sha256": "1360803be5ef486fd01f01479b94591a2b62ee341f00c845d7e7fcb0e7a39806"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_surface_model_selection.py",
+      "sha256": "3c761ca3b31b19d5e58f66a7101d78c824372d1cfa613d3e5ee695b1a5473bf9"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_synthetic_pipeline_closure.py",
+      "sha256": "b2cbca60bef6ff5f233f44665e4d0cea697f36ba517a6d06cf12eebe358d5bd6"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_terrain_lithology_separation.py",
+      "sha256": "c9e124a9c21ef9ecc4e8277f23ccb161d73bddb7936b45df0005a46561dcbbac"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_terrain_surface_gate.py",
+      "sha256": "2d05f6c854fcbbd34470e662bc4dc474d05ebc2ef887c4330de5ce216498c92e"
+    },
+    {
+      "path": "app/subprojects/geologic_3d_engine/tests/test_vertical_elevation_evidence.py",
+      "sha256": "8498237eba641897b02c98c400d32465ba9e37e048716330ad3704d8baef0c51"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/cli.py",
+      "sha256": "37e3053deccfd1f6d710b157d2153a93e55559517bcb551479d6e0a2117152e9"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/engine.py",
+      "sha256": "11698195ab1765fbfebdd8e9d8fc539413cfac07426ac0d69c065dd70e19a902"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/forward_model_equations.py",
+      "sha256": "b1048a42390207438f25a226ad54ab2f7175469ac6c729ee35597c95173d1235"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/observed_calibration.py",
+      "sha256": "f7cdd7dcbf36f344fc0e1d2d8050adeba52ecd0a4c0625ef8065d154ad75e73c"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/physics_validator.py",
+      "sha256": "e020dcaf3ec05c4a673639b8aafe71c10d10bffc00e8371f3352ca99677c024b"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/quantitative_scaling.py",
+      "sha256": "a041b313d480135806a352e67b3245ece3344035ae113a6296d9c0d7d743c8f5"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/simulation_pattern_extractor.py",
+      "sha256": "cf3972078a4f76c3134c304512a8523a283d73cbad088b4d778df14b422b78ab"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/terrain_robustness_validator.py",
+      "sha256": "1e05c2f112b0c587161dae020114a65796fd825c00499a5ac446298564022c77"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_engine.py",
+      "sha256": "fbf7a3d135a1a691d3fbfd40c36931e09587d091c248a4d05b68ee15e187c61a"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_forward_model_equations.py",
+      "sha256": "4cb89f08b9898afca32ba2f5d7ed6dc608f0dd70759773aa27e942c3a74c75ed"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_observed_calibration.py",
+      "sha256": "9b52fb5eb1ed01b0a310c554ac1e09866d75d2d8f6fafaae97d3de6fdfb16805"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_quantitative_scaling.py",
+      "sha256": "9a057ee9563d66bd4cfc889c3fbe9d2b7f8b5fbcd9f0e72371df2fd55c71a346"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_simulation_pattern_extractor.py",
+      "sha256": "a67ac331946ca256a7b818cb29a918b3818a3baf0b16594c8b8ac0ec0a740cf7"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_universal_compaction_diagenesis.py",
+      "sha256": "801b5de769a00813fbf8c0802257ac52e029bb5d0d93a44c1f247d680a1af20b"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_universal_stratigraphic_events.py",
+      "sha256": "9a7927f3f9fa60e538ef0bdaf864d5c2e7f1279a2f587ab483dd3c0897697935"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_universal_structural_kinematics.py",
+      "sha256": "cff6a16bb22f27a8b4fd61228a92114ba68fa365c01b61ee28415a4ada72ee37"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_universal_thickness_covariance.py",
+      "sha256": "3303608ffedc0dcb2aa060fe52730f1c20c774c94be7e3e75eb4be1614d36644"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/test_universal_transition_model.py",
+      "sha256": "d91ba1fa6e403991d1cbdb7a61efe01400083ff6f459a6adeb4820fe40e8046a"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/universal_compaction_diagenesis.py",
+      "sha256": "81e9402912841f54584d478d7a79d5b933eef7e5b1ee3855301bcc0ea1a5183e"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/universal_stratigraphic_events.py",
+      "sha256": "0b5aeda0ce752a0c39d7f5e4f1954b82f1b90de24de0b8d59539536c4c2d9fe6"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/universal_structural_kinematics.py",
+      "sha256": "5bef7d7756e88b7eae4f939f73cc59fec7d6adac9a00a19554cc495dcb48c253"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/universal_thickness_covariance.py",
+      "sha256": "bd0edd93e6bd7c4c1fdd05a74bef43db628b6f29aa27056c05d7ff40f0f91332"
+    },
+    {
+      "path": "app/tools/geologic_pattern_generator/universal_transition_model.py",
+      "sha256": "b6fe0542406d0cbcddde2a8688a2d754e22b5864e816b163069b8484b414bbd3"
+    }
+  ],
+  "excludedFiles": [
+    "app/.github/workflows/geologic-next-experimental.yml",
+    "app/dwg/Japan_AdvancedV2_20260908_5feece5573b2.dwg",
+    "app/dwg/Japan_AdvancedV2_20260908_92a5b03d143a.dwg",
+    "app/research/geologic_dwg_generation/cache/gsi/dem1a_png/17/115941/51902.png",
+    "app/research/geologic_dwg_generation/cache/gsi/dem1a_png/17/115942/51902.png",
+    "app/research/geologic_dwg_generation/cache/gsi/dem1a_png/17/115943/51902.png",
+    "app/research/geologic_dwg_generation/cache/gsi/dem1a_png/17/115944/51902.png",
+    "app/research/geologic_dwg_generation/cache/gsi/landform_artificial/14/14492/6487.geojson",
+    "app/research/geologic_dwg_generation/cache/gsi/landform_artificial/14/14493/6487.geojson",
+    "app/research/geologic_dwg_generation/cache/gsi/landform_natural/14/14492/6487.geojson",
+    "app/research/geologic_dwg_generation/cache/gsi/landform_natural/14/14493/6487.geojson",
+    "app/research/geologic_dwg_generation/cache/gsi/seamlessphoto/15/28985/12975.jpg",
+    "app/research/geologic_dwg_generation/cache/gsi/seamlessphoto/15/28986/12975.jpg",
+    "app/research/geologic_dwg_generation/cache/gsi/seamlessphoto_spec/11/1811/810.geojson",
+    "app/subprojects/geologic_3d_engine/tests/csharp_contract_integrity/obj/ContractIntegrityHarness.csproj.nuget.dgspec.json",
+    "app/subprojects/geologic_3d_engine/tests/csharp_contract_integrity/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "app/subprojects/geologic_3d_engine/tests/csharp_contract_integrity/obj/Debug/net10.0/ContractIntegrityHarness.AssemblyInfo.cs",
+    "app/subprojects/geologic_3d_engine/tests/csharp_contract_integrity/obj/Debug/net10.0/ContractIntegrityHarness.GlobalUsings.g.cs",
+    "app/subprojects/geologic_3d_engine/tests/csharp_contract_integrity/obj/project.assets.json",
+    "app/subprojects/geologic_3d_engine_next/API_COMPATIBILITY.md",
+    "app/subprojects/geologic_3d_engine_next/architecture_manifest.json",
+    "app/subprojects/geologic_3d_engine_next/CROSS_SECTION_WORKFLOW.md",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/drafting_validation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/legacy_api.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/neutral_export.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/adapters/validation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/aist_bed0300_borehole.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/aist_bed0400_borehole.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/ambiguous_orientation_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/anisotropy.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/api.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/appendix_borehole_key.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/appendix_map_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/application/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/application/pipeline.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/application/registry.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/authoritative_dataset_intake.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/authoritative_release_freshness.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/authority_ascii_surface_stack.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/basal_contract_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/bed0300_ps_velocity.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/borehole_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/borehole_interval_projection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/borehole_strip.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/borehole_trajectory.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/boundary_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/bounded_volume_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/canonical.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/capability_gap.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_anisotropy_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_convergence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_method_selection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_section_geology_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/categorical_volume_topology.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/cli.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/cokriging.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/combined_native_runner.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/combined_section_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/core/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/core/contracts.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/core/section_routes.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/covariate_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/dataset_north_reference_resolution.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/datum_control_interpolation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/desktop.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/diagnostic_scalar_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/direct_sampling.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/endpoint_reconciled_trajectory.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_acquisition_qualification.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_category_volume.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_conditioned_volume.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_decision_ledger.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_distribution_policy.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_geometry_eligibility.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_overlay_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/external_drift.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_blocks.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_candidate_evidence_matrix.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_candidate_recalculation_gate.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_correlation_hypotheses.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_drilling_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_inverse_mapping.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_kinematic_role_gate.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_kinematics.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_negative_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_observation_association.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_parameter_scope.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_plane_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_volume.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/fault_volume_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/finite_vertical_support_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_bedding_trend.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_conditioned_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_lithofacies_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_lithology_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/formation_lithology_evidence_sufficiency.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/geomagnetic_grid_reference.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/geophysical_horizon_constraints.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/geophysical_property_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/goal_completion_audit.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/gsj_seamless_candidate_diff.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/gsj_strike_dip.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/gsj_vector_map.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/gui.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/hard_conditioning.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/horizon_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/horizon_inference.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/horizon_volume_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/human_qa_release_packet.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/implicit_contact_field.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/implicit_field_convergence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/implicit_field_section.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/implicit_section_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/inverse_distance_hyperparameter_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/inverse_distance_hyperparameter_selection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/jacic_ps_vector_digitizer.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/japan_plane_rectangular.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/jgd2011_projection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/kriging.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/latest_research_claim_intake.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/local_evidence_store.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/mapped_contour_surface.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/mixed_horizon_inference.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/model_selection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/multi_source.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/multiborehole_fault_plane_gate.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/multisource_interpretation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/native_artifact_audit.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/native_dwg_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/nied_knet_soil_html.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/object_facies.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/observed_constraint_policy.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_conditioning.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_constraint.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_observation_admission.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_reference_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_surface.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/orientation_window_summary.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/pangaea_tabular.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/partial_trajectory_observation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/plane_orientation_comparison.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/polyline_intersection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/ports/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/ports/interfaces.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/probability_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/promotion_bound_dwg.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/promotion_bound_faults.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/promotion_bound_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/promotion_bound_selection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/promotion_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/property_correlation_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/ps_lithology_covariate_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/publication_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_borehole_diagnostic.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_fault_section_constraint.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_stack_sections.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_surface_intake.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_surface_orientation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/published_trajectory_digitization.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/raster_borehole_digitizer.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/raster_map_registration.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/real_structural_evidence_assessment.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/reflection_catalog_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/reflection_parameter_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/reflection_section_qualification.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_evidence_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_evidence_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_evidence_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_evidence_role_matrix.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_fault_plane_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_fault_prior.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/regional_model_admission.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/relative_boundary_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/release_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/reliability.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/representative_geology.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/research_dependency_impact.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/research_update_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/research_update_cycle.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/research_update_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/research_update_registry.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/residual_cross_covariance.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/resolution_uncertainty_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/revalidation_execution_state.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/section_geology_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/section_lineage.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/section_partition.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/section_plan_gui.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/sequential_gaussian.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/spatial_method_selection.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/stage6_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/structural_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/structural_notation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/structural_orientation_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/superseded_evidence_audit.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/surface_covariate_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/surface_geology_overlay_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/surface_rupture_proxy.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/surface_rupture_trilateration.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/surface_trace_proximity_audit.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/survey_line_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/survey_line_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/survey_line_model_binding.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/targeted_revalidation_plan.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/terminology_normalization.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/tiled_published_formation_model.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/topology_validated_volume.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/trace_support_graph.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/trajectory_model_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/transition_model.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/uncertain_observation_section.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/uncertainty_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/uncertainty_native_runner.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/validated_prediction.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/validation.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/vertical_markov_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/viewer_acquisition_surface.py",
+    "app/subprojects/geologic_3d_engine_next/geologic_engine_next/wms_line_availability.py",
+    "app/subprojects/geologic_3d_engine_next/GITHUB_RELEASE_CHECKLIST.md",
+    "app/subprojects/geologic_3d_engine_next/INSTALLATION.md",
+    "app/subprojects/geologic_3d_engine_next/launch_visual_review.cmd",
+    "app/subprojects/geologic_3d_engine_next/LICENSE",
+    "app/subprojects/geologic_3d_engine_next/native/GeologicNextCombinedCommands.cs",
+    "app/subprojects/geologic_3d_engine_next/native/GeologicNextUncertaintyCommands.cs",
+    "app/subprojects/geologic_3d_engine_next/native/GeologicNextUncertaintyDwg.csproj",
+    "app/subprojects/geologic_3d_engine_next/PORTFOLIO_README.md",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/architecture.svg",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/canonical_arbitrary_diagonal_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/canonical_central_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/development_verification_summary.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/entropy_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_channel_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_combined_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_fault_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_fold_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_intrusion_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/event_pinchout_section.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/human_visual_review_summary.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/method_comparison.png",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/method_comparison_real_holdout.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/model_section_dwg_lineage.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/portfolio_model_visual_qa.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/representative_events_demo.gif",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/showcase_manifest.json",
+    "app/subprojects/geologic_3d_engine_next/portfolio_showcase_20260913/uncertainty_summary.json",
+    "app/subprojects/geologic_3d_engine_next/PUBLIC_TEST_MATRIX.md",
+    "app/subprojects/geologic_3d_engine_next/README.md",
+    "app/subprojects/geologic_3d_engine_next/requirements.txt",
+    "app/subprojects/geologic_3d_engine_next/tests/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/tests/fault_test_support.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_additional_diagnostic_regressions.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_bed0300_borehole.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_bed0400_borehole.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_borehole_surface_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_chiba_normalized_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_chiba_normalized_lithology_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_chiba_normalized_lithology_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_chiba_normalized_method_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_local_observed_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_local_observed_volumes.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_north_chiba_borehole_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_north_chiba_nested_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_north_chiba_positions.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_north_chiba_ps_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_observed_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_reflection_wms_north_chiba_availability.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_saitama_ps_xml_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_standard_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_tokyo_gs_se3_ps_intake.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_tokyo_horizon_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_tokyo_ps_external_profile_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_aist_tokyo_ps_xml_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ambiguous_orientation_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_anisotropy.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_api_cli_gui.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_appendix_borehole_key.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_appendix_map_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_architecture_registry.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_authoritative_dataset_intake.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_authoritative_release_freshness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_authority_ascii_surface_stack.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_0213_overlap_section.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_correction_vertical_datum.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_figure3_official_line_registration.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_figure3_registration.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_interpreted_reflection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_north_integrated_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_observation_bundle.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_regional_fault_prior.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ayasegawa_wms_survey_line.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_basal_contract_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_bed0300_ps_velocity.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_benchmark_recovery.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_borehole_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_borehole_interval_projection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_borehole_strip.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_borehole_trajectory.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_boundary_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_canonical_facade.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_canonical_pipeline.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_capability_gap.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_anisotropy_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_convergence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_method_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_portrayal.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_section_geology_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_categorical_volume_topology.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_chiba97_fault_negative_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_chiba97_survey_line_registration_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_cokriging.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_combined_native_runner.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_combined_section_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_covariate_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_cross_section_routes.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_current_research_update_cycle.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_dataset_north_reference_resolution.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_datum_control_interpolation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_desktop.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_diagnostic_scalar_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_direct_sampling.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_endpoint_reconciled_trajectory.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_acquisition_qualification.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_category_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_conditioned_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_decision_ledger.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_distribution_policy.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_geometry_eligibility.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_overlay_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_external_drift.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_blocks.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_candidate_evidence_matrix.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_candidate_recalculation_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_correlation_hypotheses.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_drilling_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_inverse_mapping.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_kinematic_role_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_kinematics.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_negative_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_observation_association.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_parameter_scope.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_plane_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fault_volume_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fdb1_ambiguous_orientation_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fdb1_bhtv_evidence_visual.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_fdb1_orientation_sensitivity_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_finite_vertical_support_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_bedding_trend.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_conditioned_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_lithofacies_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_lithology_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_formation_lithology_evidence_sufficiency.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_futagawa_nra_fault_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_futagawa_pangaea_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_geology_only_native_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_geomagnetic_grid_reference.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_geophysical_horizon_constraints.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_geophysical_property_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_goal_completion_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsi_tokyo_southwest_keybed_dem.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_component_sufficiency.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_fault_evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_fault_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_keybed_method_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_keybed_surface_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_mt_structural_orientation_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_seamless_candidate_diff.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_strike_dip.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_appendix_crosswalk.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_appendix_marker_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_formation_bedding_trend_field.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_southwest_bedding_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_southwest_borehole_appendix.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_southwest_formation_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gsj_tokyo_southwest_formation_orientation_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_gui_presentation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_hard_conditioning.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_horizon_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_horizon_inference.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_horizon_volume_uncertainty.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_human_qa_release_packet.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_implicit_contact_field.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_implicit_field_convergence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_implicit_field_section.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_implicit_resolution_combined_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_implicit_section_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_inclined_fault_section_trace.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_inclined_fault_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_inclined_section_geology_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_indicator_kriging.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_initial_inference.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_inverse_distance_hyperparameter_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_inverse_distance_hyperparameter_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_jacic_ps_vector_digitizer.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_jacic_ps_vector_generalization.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_japan_plane_rectangular.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_jgd2011_inverse_projection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_jgd2011_projection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_jgr_futagawa_temperature_2026.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_latest_research_claim_intake.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_local_evidence_store.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_mixed_horizon_inference.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_model_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_mps_endurance.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_multi_source.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_multiborehole_fault_plane_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_multisource_interpretation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_multisource_probability_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_native_artifact_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_native_dwg_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_native_entity_ledger_coverage.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_native_observed_evidence_writer.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_nied_knet_soil_html.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_nied_oita_official_ps_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_nied_osaka_official_ps_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_authority_surfaces.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_evidence_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_jacic_ps_logs.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_observed_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_ps_covariate_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_ps_depth_profile_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_ps_spatial_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_ps_velocity_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_structural_geophysics_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_north_chiba_surface_covariate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_object_facies.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_observed_constraint_policy.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_conditioning.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_constraint.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_observation_admission.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_reference_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_surface.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_orientation_window_summary.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_osaka_third_region_ps_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_pangaea_tabular.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_partial_trajectory_observation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_plane_orientation_comparison.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_priority_release_fixes.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_probability_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_bound_dwg.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_bound_faults.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_bound_multi_source.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_bound_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_bound_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_promotion_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_property_correlation_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ps_lithology_all_sites_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_ps_lithology_covariate_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_public_legend_semantics.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_publication_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_borehole_diagnostic.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_fault_section_constraint.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_sequential_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_stack_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_surface_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_surface_intake.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_surface_orientation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_published_trajectory_digitization.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_raster_borehole_digitizer.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_raster_map_registration.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_real_candidate_convergence_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_real_regional_evidence_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_real_regional_model_admission.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_real_structural_evidence_assessment.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_reflection_catalog_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_reflection_parameter_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_reflection_section_qualification.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_evidence_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_evidence_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_evidence_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_evidence_role_matrix.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_fault_plane_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_fault_prior.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_regional_model_admission.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_relative_boundary_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_reliability.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_representative_geology.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_research_dependency_impact.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_research_update_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_research_update_cycle.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_research_update_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_research_update_registry.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_residual_cross_covariance.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_resolution_uncertainty_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_revalidation_execution_state.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_authority_contract_visual.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_authority_stack.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_authority_volume_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_borehole_volume_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_formation_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_saitama_0213_user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_section_geology_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_section_partition.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_sequential_gaussian.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_spatial_method_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_stage6_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_structural_adapter.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_structural_notation.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_structural_orientation_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_superseded_evidence_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_surface_geology_overlay_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_surface_rupture_proxy.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_surface_rupture_trilateration.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_surface_trace_proximity_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_survey_line_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_survey_line_model_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_targeted_revalidation_plan.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_terminology_normalization.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_third_region_ps_lithology_discovery.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tiled_published_formation_model.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_loam_base_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_loam_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_loam_native_artifacts.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_loam_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_loam_native_visual.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_mapped_base_contours.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_ps_lithology_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_tokyo_structural_borehole_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_topology_validated_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_toyama_real_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_trace_support_graph.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_trajectory_model_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_transition_model.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_uncertain_observation_section.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_uncertainty_dwg_contract.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_uncertainty_native_runner.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_user_distribution.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_validated_prediction.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_vertical_markov_category_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_viewer_acquisition_surface.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_wiley_ishiyama_2013_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tests/test_wms_line_availability.py",
+    "app/subprojects/geologic_3d_engine_next/tools/__init__.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_0403.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_borehole_tiles.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_chapter3.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_chapter5.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_model_mesh.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_chiba_nea_standard_boreholes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_inbanuma_reflection_assets.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_north_chiba_jacic_pdfs.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_north_chiba_model_extents.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_north_chiba_model_surfaces.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_north_chiba_standard_boreholes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_aist_reflection_catalog.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_gsi_patchjgd_north_chiba_controls.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_gsi_patchjgd_tokyo_controls.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_gsi_tokyo_southwest_keybed_dem.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_gsj_seamless_north_chiba_surface_geology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/acquire_saitama_0213_borehole_strips.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_borehole_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_borehole_strip.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_display_boreholes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_hard_conflict_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_nea_borehole_surface_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_nea_facies_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_nea_formation_lithology_evidence_sufficiency.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_nea_public_viewer_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_nea_standard_boreholes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_normalized_lithology_topology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_probability_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_published_surfaces.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_regional_evidence_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_chiba_terminology_normalization.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_jacic_ps_logs.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_jacic_ps_vector_generalization.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_model_coverage.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_covariate_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_depth_profile_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_lithology_all_sites_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_lithology_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_ps_spatial_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_standard_boreholes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_structural_geophysics_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_surface_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_north_chiba_surface_orientations.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_reflection_wms_north_chiba_availability.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_tokyo_cross_horizon_residuals.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_tokyo_gs_se3_ps_intake.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_tokyo_ps_external_profile_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_aist_tokyo_ps_lithology_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_architecture.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_authoritative_release_freshness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_ayasegawa_correction_and_vertical_datum.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_ayasegawa_fault_parameter_scope.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_ayasegawa_north_integrated_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_ayasegawa_regional_fault_prior.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba97_fault_negative_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba97_survey_line_registration_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba_implicit_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba_implicit_field_convergence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba_implicit_section_topology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba_information_map_distribution_policy.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_chiba_multisource_implicit_contact.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_combined_native_artifact.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_competitor_capabilities.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_evidence_promotion_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fault_plane_uncertainty_capability.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_bhtv_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_bhtv_orientation_reference.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_dataset_north_reference_resolution.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_fault354_association.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_magnetic_grid_reference.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_fdb1_positioned_bhtv_observations.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_borehole_trajectories.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_competing_fault_hypotheses.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_coordinate_reference.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fault354_kinematic_roles.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fault354_regional_strike_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fault354_section_constraint.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fault_candidate_multimodal.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fault_recalculation_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_fdb1_trajectory_consistency.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_figure456_plan_view.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_figure456_trajectory_crosscheck.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_figure457_digitization.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_latest_research_dependency_impact.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_multiborehole_fault_plane.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_nra_fault_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_orientation_admission.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_orientation_windows.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_pangaea_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_projected_fault_intervals.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_property_correlation_bundle.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_published_fault_observations.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_regional_attitude_comparison.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_revalidation_execution_state.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_supersession_propagation.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_surface_proxy_hypotheses.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_futagawa_surface_rupture_trilateration.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_goal_completion.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsi_ffdp_surface_trace_proximity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsi_futagawa_surface_cracks.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_latest_surface_covariate_impact.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_component_sufficiency.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_fault_evidence_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_fault_intersections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_keybed_method_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_keybed_surface_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_structural_orientation_promotion.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_mt_trace_support_graph.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_openfile_747_north_chiba.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_seamless_2026_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_seamless_north_chiba_candidate_diff.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_surface_overlay_patchjgd_controls.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_appendix_crosswalk.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_appendix_marker_georeferencing.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_formation_bedding_trend_field.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_southwest_bedding_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_southwest_borehole_appendix.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_southwest_formation_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_gsj_tokyo_southwest_formation_orientation_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_jgr_futagawa_temperature_2026.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_jgs_ffd1_latest_research.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_jgs_futagawa_2024_orientation.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_local_restricted_evidence_store.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_nied_oita_official_ps_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_nied_osaka_official_ps_external_cv.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_north_chiba_evidence_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_north_chiba_evidence_role_matrix.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_osaka_third_region_ps_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_dwg.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_faults.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_multi_source.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_promotion_bound_spatial_selection.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_publication_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_real_candidate_convergence_readiness.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_real_kunijiban.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_real_regional_evidence_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_real_regional_model_admission.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_real_structural_evidence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_regional_evidence_candidates.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_research_promotion_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_research_update_watchlist.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_saitama_0213_authority_stack.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_saitama_0213_borehole_volume_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_tokyo_loam_native_artifacts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_tokyo_mapped_base_contours.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_tokyo_structural_borehole_coherence.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_topology_validated_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_uncertainty_native_artifact.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_validated_prediction.py",
+    "app/subprojects/geologic_3d_engine_next/tools/audit_wiley_ishiyama_2013_acquisition.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_borehole_categories.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_categorical_anisotropy.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_finite_vertical_support.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_inverse_distance_hyperparameters.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_nea_formation_conditioned_lithology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_normalized_lithology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_chiba_vertical_markov.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_north_chiba_borehole_categories.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_north_chiba_covariate_categories.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_aist_north_chiba_surface_covariate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_ayasegawa_relative_boundary.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_generators.py",
+    "app/subprojects/geologic_3d_engine_next/tools/benchmark_saitama_0213_formation_lithology.py",
+    "app/subprojects/geologic_3d_engine_next/tools/bind_aist_chiba_0202_lithology_to_published_formations.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_adaptive_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_adaptive_probability_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_cross_section_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_inverse_distance_candidate_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_multisource_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_multisource_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_nea_0403_formation_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_nea_local_observed_volumes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_nea_observed_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_nea_point_constraint_bundle.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_normalized_lithology_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_normalized_method_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_chiba_source_category_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_evidence_decision_ledger.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_observed_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_observed_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_ps_velocity_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_ps_xml_interval_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_north_chiba_tiled_formation_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_saitama_ps_xml_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_standard_borehole_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_tokyo_horizon_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_aist_tokyo_ps_xml_corpus.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_ayasegawa_0213_overlap_section.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_ayasegawa_observation_bundle.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_ayasegawa_research_update_plan.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_basal_portrayal_review.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_chiba_human_qa_packet.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_chiba_implicit_resolution_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_chiba_implicit_section_dwg_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_chiba_resolution_uncertainty_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_combined_native_fixture.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_continuous_boundary_review.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_current_research_update_cycle.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_fdb1_ambiguous_orientation_sensitivity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_fdb1_bhtv_evidence_overlay_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_fdb1_orientation_sensitivity_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_futagawa_targeted_revalidation_plan.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_inclined_combined_native_fixture.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_integrity_manifest.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_latest_gsj_surface_section_overlays.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_legend_semantics_review.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_mixed_horizon_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_mixed_horizon_uncertainty_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_portfolio_showcase.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_portrayal_review_package.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_public_release_manifest.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_public_verification_summary.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_real_transition_audit.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_review_basis_v2.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_saitama_0213_authority_volume_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_tangential_slip_native_fixture.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_tokyo_loam_base_volume.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_tokyo_loam_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_toyama_real_borehole_benchmark.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_uncertainty_native_fixture.py",
+    "app/subprojects/geologic_3d_engine_next/tools/build_user_distribution.py",
+    "app/subprojects/geologic_3d_engine_next/tools/compare_legend_revision.py",
+    "app/subprojects/geologic_3d_engine_next/tools/digitize_ayasegawa_interpreted_reflection.py",
+    "app/subprojects/geologic_3d_engine_next/tools/digitize_gs_kw_3_ps_vector_plot.py",
+    "app/subprojects/geologic_3d_engine_next/tools/digitize_nied_knet_osaka.py",
+    "app/subprojects/geologic_3d_engine_next/tools/discover_aist_chiba_nea_assets.py",
+    "app/subprojects/geologic_3d_engine_next/tools/discover_aist_chiba_standard_borehole_catalog.py",
+    "app/subprojects/geologic_3d_engine_next/tools/discover_aist_north_chiba_model_assets.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_aist_chiba_multisource_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_aist_chiba_nea_local_observed_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_aist_chiba_normalized_lithology_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_aist_chiba_probability_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_authority_pdf_text.py",
+    "app/subprojects/geologic_3d_engine_next/tools/extract_tokyo_loam_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/fetch_aist_chiba_borehole_strips.py",
+    "app/subprojects/geologic_3d_engine_next/tools/refresh_research_watchlist.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_aist_chiba_nea_borehole_tiles.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_aist_north_chiba_positions.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_aist_tokyo_ps_positions.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_ayasegawa_figure3.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_ayasegawa_figure3_with_official_line.py",
+    "app/subprojects/geologic_3d_engine_next/tools/register_ayasegawa_wms_survey_line.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_aist_chiba_cross_sections.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_aist_chiba_multisource_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_chiba_implicit_section_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_chiba_resolution_uncertainty_overlay.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_fdb1_bhtv_evidence_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_saitama_0213_authority_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/render_tokyo_loam_native_contracts.py",
+    "app/subprojects/geologic_3d_engine_next/tools/reproduce_portrayal_revision.py",
+    "app/subprojects/geologic_3d_engine_next/tools/review_package_integrity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/review_visual_basis.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_chiba_adaptive_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_chiba_multisource_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_chiba_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_chiba_nea_formation_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_chiba_normalized_lithology_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_aist_north_chiba_observed_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_chiba_implicit_resolution_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_chiba_implicit_resolution_user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_mixed_horizon_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_mixed_horizon_spatial_uncertainty_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_mixed_horizon_uncertainty_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_mps_endurance.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_multiscale_mps_validation.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_native_smoke.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_performance_baseline.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_promotion_bound_native_dwg.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_saitama_0213_authority_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_saitama_0213_user_context_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_tokyo_loam_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/run_user_context_promotion_native_gate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/snapshot_release_binding.py",
+    "app/subprojects/geologic_3d_engine_next/tools/stage_public_release_candidate.py",
+    "app/subprojects/geologic_3d_engine_next/tools/test_review_basis.py",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/00_START_HERE.md",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/docs/README.md",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/examples/01_synthetic_object_facies.json",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/examples/02_available_operations.json",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/examples/README.md",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/results/README.md",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/tools/check_package.py",
+    "app/subprojects/geologic_3d_engine_next/tools/user_distribution_assets/tools/Start.ps1",
+    "app/subprojects/geologic_3d_engine_next/tools/validate_review_basis_package.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_additional_test_fixes.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_next.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_portfolio_offline.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_portrayal_review_archive.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_priority_portrayal_and_integrity.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_public.py",
+    "app/subprojects/geologic_3d_engine_next/tools/verify_remaining_diagnostics.py",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/app.js",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/artifacts/GeologicEngineNext_NativeGate_20260913.dwg",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/artifacts/GeologicEngineNext_NativeGate_20260913_reopen_validation.txt",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/artifacts/model_section_dwg_lineage.json",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/architecture.svg",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/canonical_arbitrary_diagonal_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/canonical_central_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/entropy_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_channel_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_combined_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_fault_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_fold_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_intrusion_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/event_pinchout_section.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/method_comparison.png",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/assets/representative_events_demo.gif",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/index.html",
+    "app/subprojects/geologic_3d_engine_next/visual_review/dist/styles.css",
+    "app/subprojects/geologic_3d_engine_next/VISUAL_REVIEW_GUIDE.md"
+  ],
+  "changes": [
+    "GUI research menu removed",
+    "Standalone GUI launcher and local venv setup",
+    "Public documentation",
+    "Test build intermediates excluded; test-only tree digest updated"
+  ],
+  "nativeGenerationInPublicCopy": "NotRun",
+  "userReportedBaselineRuns": true
+}

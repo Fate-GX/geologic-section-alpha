@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedOn": "2026-08-26",
+  "principle": "Forward-model output is a process hypothesis, not observed geology.",
+  "tools": [
+    {
+      "toolId": "pyBadlands", "role": "process_prior",
+      "learnable": ["erosion/deposition balance", "stratal thickness", "paleovalley fill", "shoreline trajectory", "virtual-core stacking"],
+      "notLearnableAlone": ["true lithology name", "regional unit order", "natural occurrence probability"],
+      "output": ["HDF5 stratigraphic mesh", "cross-section", "Wheeler diagram", "virtual core"]
+    },
+    {
+      "toolId": "CarboKitten", "role": "carbonate_forward_hypothesis",
+      "learnable": ["facies-body continuity", "production-depth response", "transport-conditioned heterogeneity", "age-depth and accumulation patterns"],
+      "notLearnableAlone": ["empirically validated real-platform geometry", "non-carbonate lithology rules"],
+      "output": ["grid slices", "stratigraphic columns", "age-depth models", "sediment accumulation curves"]
+    },
+    {
+      "toolId": "GemPy", "role": "geometry_interpolator",
+      "learnable": ["sensitivity to contacts/orientations", "uncertainty envelope", "topological consistency under supplied series"],
+      "notLearnableAlone": ["depositional process law", "correct lithology sequence"]
+    },
+    {
+      "toolId": "LoopStructural", "role": "independent_structural_benchmark",
+      "learnable": ["fold/fault interpolation sensitivity", "constraint disagreement with GemPy"],
+      "notLearnableAlone": ["sedimentary facies transition probability"]
+    },
+    {
+      "toolId": "Landlab_or_Fastscape", "role": "surface_process_prior",
+      "learnable": ["terrain response", "erosion/deposition location", "drainage reorganization"],
+      "notLearnableAlone": ["subsurface lithology identity", "formal stratigraphy"]
+    }
+  ],
+  "requiredExtractedMetrics": [
+    "positive thickness distribution", "thickness spatial autocorrelation",
+    "connected-body length", "pinch-out count", "active fraction",
+    "vertical transition counts", "erosion/deposition volume where available"
+  ],
+  "promotionGate": {
+    "required": ["parameter manifest", "seed ensemble", "independent observed dataset", "scope", "calibration thresholds", "holdout validation"],
+    "blocked": ["copying one attractive run", "using simulator frequency as natural probability", "transferring carbonate rules to clastic settings"]
+  }
+}

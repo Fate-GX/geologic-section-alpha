@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewId": "STRATIGRAPHIC-EVENT-PRIMARY-SOURCE-REVIEW-20260829",
+  "status": "IndependentReviewRequired",
+  "accessDate": "2026-08-29",
+  "sources": [
+    {
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "authority": "Geoscience Australia",
+      "title": "Constructing geologically-constrained 3D models using 3D GeoModeller: an example from the Paterson Orogen",
+      "canonicalUrl": "https://www.ga.gov.au/bigobj/GA8749.pdf",
+      "publication": "Record 2006/20",
+      "primaryTextAccess": "FullPdfAccessible"
+    },
+    {
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "authority": "Japan Society of Geoinformatics",
+      "title": "Graphical Expression for Logical Model of Geologic Structure by Binary Tree",
+      "canonicalUrl": "https://www.jstage.jst.go.jp/article/geoinformatics/19/4/19_4_209/_article/-char/en",
+      "doi": "10.6010/geoinformatics.19.209",
+      "primaryTextAccess": "ArticlePageAndAbstractAccessible_PdfIndependentReviewRequired"
+    }
+  ],
+  "claimSourcePairs": [
+    {
+      "claimPath": "eventSemantics.Deposition",
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "candidateSupport": "Partial",
+      "locator": "PDF printed page 2, section 3, stratigraphic-pile bullet",
+      "reason": "The source establishes a stratigraphic pile and contact relations, but does not directly define deposition as adding younger material with non-negative thickness."
+    },
+    {
+      "claimPath": "eventSemantics.Deposition",
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "candidateSupport": "Partial",
+      "locator": "Article abstract, sentence describing a sequence of sedimentation and erosion",
+      "reason": "The abstract supports sedimentation as a formative event in a recursive logical model, but not the implementation-specific non-negative-thickness statement."
+    },
+    {
+      "claimPath": "eventSemantics.Erosion",
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "candidateSupport": "Direct",
+      "locator": "PDF printed page 3, Paterson Formation discussion",
+      "reason": "The source describes a younger formation onlapping an erosional surface that dissects older sedimentary and basement units."
+    },
+    {
+      "claimPath": "eventSemantics.Erosion",
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "candidateSupport": "Partial",
+      "locator": "Article abstract, recursive definition of structures formed by sedimentation and erosion",
+      "reason": "The abstract supports erosion as a formative event but does not directly state the project's geometric truncation rule."
+    },
+    {
+      "claimPath": "eventSemantics.Pinchout",
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "candidateSupport": "Unsupported",
+      "locator": "Full PDF keyword and contextual review",
+      "reason": "No direct definition of depositional thickness converging to zero was identified."
+    },
+    {
+      "claimPath": "eventSemantics.Pinchout",
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "candidateSupport": "Unsupported",
+      "locator": "Article page and abstract review",
+      "reason": "The accessible primary abstract discusses sedimentation and erosion, not pinch-out geometry."
+    },
+    {
+      "claimPath": "eventSemantics.Onlap",
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "candidateSupport": "Direct",
+      "locator": "PDF printed pages 2-3, stratigraphic-pile bullet and Paterson Formation discussion",
+      "reason": "The source explicitly uses onlap as a contact relation and gives a younger unit on an older erosional surface as an example."
+    },
+    {
+      "claimPath": "eventSemantics.Onlap",
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "candidateSupport": "Unsupported",
+      "locator": "Article page and abstract review",
+      "reason": "Onlap is not stated in the accessible primary abstract."
+    },
+    {
+      "claimPath": "eventSemantics.Nondeposition",
+      "sourceId": "GA-GEOMODELLER-PRINCIPLES",
+      "candidateSupport": "Unsupported",
+      "locator": "PDF printed page 3, zero-thickness non-depositional erosion-surface discussion",
+      "reason": "The text concerns representation of an erosion surface and does not support elapsed time without geometric removal."
+    },
+    {
+      "claimPath": "eventSemantics.Nondeposition",
+      "sourceId": "JSGI-LOGICAL-TREE-2008",
+      "candidateSupport": "Unsupported",
+      "locator": "Article page and abstract review",
+      "reason": "The accessible primary abstract does not define nondeposition."
+    }
+  ],
+  "stoppingCondition": "Stop after both declared primary sources have been checked against all five claims; do not expand to replacement-source discovery in this validation.",
+  "limitations": [
+    "Candidate classifications are not formal adoption decisions.",
+    "JSGI full-PDF claim passages require independent confirmation.",
+    "Unsupported means not supported by this source, not geologically false.",
+    "Replacement sources for pinch-out and nondeposition are outside this bounded review."
+  ]
+}

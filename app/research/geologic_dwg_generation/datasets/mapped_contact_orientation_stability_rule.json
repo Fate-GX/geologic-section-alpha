@@ -1,0 +1,19 @@
+{
+  "ruleId": "GEO-MAP-CONTACT-ORIENTATION-STABILITY-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["Same mapped contact fitted at three or more unique spatial radii", "Explicit section azimuth and diagnostic thresholds"],
+  "equations": {
+    "axialNormalSeparation": "acos(abs(n_i dot n_j))",
+    "apparentDip": "atan(tan(trueDip)*cos(dipDirection-sectionAzimuth))",
+    "apparentDipSpread": "max(apparentDip_i)-min(apparentDip_i)"
+  },
+  "decisionLogic": "Require normal separation, apparent-dip spread and orthogonal RMSE all within declared thresholds",
+  "outputs": ["ScaleStableDiagnostic", "RejectedScaleUnstable"],
+  "uncertainty": "Thresholds are project diagnostics and must not be presented as observed geological accuracy",
+  "exclusions": ["A stable map/DEM fit alone does not authorize subsurface continuation", "Axial normals ignore arbitrary normal sign"],
+  "sourceIds": ["GSJ-ASO-VOLCANO-MAP-1985", "GSI-ELEVATION-TILE"],
+  "validationMethod": "Stable, direction-reversal, mixed-feature and repeated-radius tests",
+  "adoptionStatus": "AdoptedDiagnosticGate",
+  "reopenCondition": "Direct structural observations or evidence-backed thresholds become available"
+}

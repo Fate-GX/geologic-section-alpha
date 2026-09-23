@@ -1,0 +1,42 @@
+{
+  "status": "PackagingChecksPassed_NotGeologicalCertification",
+  "sourceScan": {
+    "files": 631,
+    "findings": [],
+    "scope": [
+      "private-key",
+      "github-token",
+      "aws-key",
+      "private-home"
+    ],
+    "exhaustiveSecretDetection": false
+  },
+  "frozenPublicSubset": {
+    "passed": true,
+    "checkedFileCount": 364
+  },
+  "gui": {
+    "passed": true,
+    "title": "Geologic Section Alpha 0.1.0 — 岩相断面DWG",
+    "menus": [
+      "条件",
+      "環境・配布ファイルを確認",
+      "使い方"
+    ],
+    "visualInspection": false
+  },
+  "nativeDwgInPublicCopy": "SyntheticPlain_SaveAndReopenPassed",
+  "publicCopyHumanVisualReview": "Pending",
+  "userReportedBaselineWorking": true,
+  "regressionTests": {
+    "exitCode": 0,
+    "summary": "135 passed, 28 subtests passed in 10.36s",
+    "environment": "Fresh isolated venv, Windows Python 3.12.14"
+  },
+  "dependencyVersions": {
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "shapely": "2.1.2",
+    "pytest": "9.1.1"
+  }
+}

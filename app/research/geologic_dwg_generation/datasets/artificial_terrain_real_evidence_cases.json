@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetId": "ARTIFICIAL_TERRAIN_REAL_EVIDENCE_READINESS_20260824",
+  "synthetic": false,
+  "purpose": "Tests whether authoritative real-world evidence supports classification and/or section geometry. No coordinates or elevations are invented.",
+  "cases": [
+    {
+      "case_id": "AT_REAL_001_YOKOHAMA_VALLEY_FILL_DATASET",
+      "case_location": "Yokohama municipal mapped area; no individual polygon selected",
+      "evidence_scope": "RegionalOverview",
+      "gsi_artificial_class": "谷埋め型大規模盛土造成地",
+      "pre_change_valley_geometry": true,
+      "construction_record": false,
+      "source_ids": ["YOKOHAMA-LARGE-FILL-MAP"],
+      "source_facts": [
+        "Old maps/aerial photographs were compared with FY2002-FY2007 digital mapping.",
+        "Field reconnaissance confirmed mapped filled areas.",
+        "Vertical and horizontal uncertainty is about 1 m; prewar areas may be 3-5 m."
+      ],
+      "expected": {"terrain_class": "ValleyFill", "confidence": "Probable", "geometry_ready": false, "generation_authorized": false}
+    },
+    {
+      "case_id": "AT_REAL_002_TOKYO_PORT_RECLAMATION_EVIDENCE",
+      "case_location": "Tokyo Port reclaimed-land domain; no borehole/profile selected",
+      "evidence_scope": "RegionalOverview",
+      "gsi_artificial_class": "埋立地",
+      "former_water": true,
+      "current_land": true,
+      "construction_record": true,
+      "source_ids": ["TOKYO-PORT-GROUND-MAP", "TOKYO-LANDFILL-MATERIAL-OPEN-DATA"],
+      "source_facts": [
+        "Tokyo Port ground map is based on about 5,000 boreholes and 40,000 soil tests.",
+        "Tokyo publishes water-area transition and landfill-material layers."
+      ],
+      "expected": {"terrain_class": "Reclamation", "confidence": "Confirmed", "geometry_ready": false, "generation_authorized": false}
+    },
+    {
+      "case_id": "AT_REAL_003_NATIONAL_ROAD_DATABASE_LIMIT",
+      "case_location": "National direct-controlled-road database; no road section selected",
+      "evidence_scope": "NationalOverview",
+      "transportation_alignment": true,
+      "source_ids": ["MLIT-XROAD-ROAD-BASEMAP"],
+      "source_facts": [
+        "The database represents completed road form as two-dimensional GIS data.",
+        "It does not by itself provide pre-construction ground or fill thickness."
+      ],
+      "expected": {"terrain_class": "Unresolved", "confidence": "Unresolved", "geometry_ready": false, "generation_authorized": false}
+    },
+    {
+      "case_id": "AT_REAL_004_SENDAI_METHOD_ONLY",
+      "case_location": "Sendai map coverage; no individual cell selected",
+      "evidence_scope": "DatasetMethodOnly",
+      "source_ids": ["SENDAI-DEVELOPMENT-HISTORY-MAP"],
+      "source_facts": [
+        "1958-1968 old city planning maps are compared with 2008 GSI base-map information.",
+        "Changes below 1 m are outside classification capability.",
+        "No borehole investigation was performed for the map."
+      ],
+      "expected": {"terrain_class": "Unresolved", "confidence": "Unresolved", "geometry_ready": false, "generation_authorized": false}
+    }
+  ]
+}

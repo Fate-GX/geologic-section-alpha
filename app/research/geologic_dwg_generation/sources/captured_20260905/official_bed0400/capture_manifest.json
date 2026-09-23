@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "OfficialFormatEvidenceCapture-1.0",
+  "capturedAt": "2026-09-05",
+  "authority": "国土交通省",
+  "title": "地質・土質調査成果電子納品要領・同解説 H28.10 / BED0400",
+  "canonicalIndexUrl": "https://www.cals-ed.go.jp/cri_dtdxml/",
+  "artifacts": [
+    {
+      "path": "boring7_h28_10.zip",
+      "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring7.zip",
+      "sha256": "72ee45796d8d3bec962c09875ab4b511f95f95aa8fd4792ec7f09c01c444657e",
+      "byteLength": 397912,
+      "role": "OfficialDTDAndXMLExamplesArchive"
+    },
+    {
+      "path": "BED0400.DTD",
+      "archiveMemberBasename": "BED0400.DTD",
+      "sha256": "3b59886c7fdd4ef36a8c2ddba65c707687c5a81e384a263b50c9c220448fad5c",
+      "byteLength": 63326,
+      "role": "OfficialBoreholeExchangeDTD"
+    },
+    {
+      "path": "BED0001.XML",
+      "archiveMemberBasename": "BED0001.XML",
+      "sha256": "0764c77c29804e1bc2ec728363a08515419327aea983ba6ed76e53d53684e261",
+      "byteLength": 84680,
+      "role": "OfficialBED0400Example"
+    },
+    {
+      "path": "boring73_h28_10_appendix.pdf",
+      "canonicalUrl": "https://www.cals-ed.go.jp/mg/wp-content/uploads/boring73.pdf",
+      "sha256": "5af015f015f290d1e32dae04cbbcf61e0b64016f68e29472431d1b4669c15189",
+      "byteLength": 3048434,
+      "role": "OfficialFieldDefinitionsAndCodeTables"
+    },
+    {
+      "path": "kunijiban_558668.xml",
+      "canonicalUrl": "https://www.kunijiban.pwri.go.jp/viewer/refer/?data=boring&type=xml&id=558668",
+      "sha256": "08b217fb68d79bba44b7a413656802c17c697b0f0087fcf2b1eeb734e74da43b",
+      "byteLength": 29405,
+      "role": "ActualKuniJibanBED0400Candidate"
+    }
+  ],
+  "verifiedPassages": [
+    {
+      "pdfPage": 36,
+      "printedPage": "付5-12",
+      "meaning": "取得方法01は測量(GPS測量含む)、02は地形図読み取り、03は単独測位GPS、09はその他・不明。精度2は1/100秒まで。"
+    },
+    {
+      "pdfPage": 37,
+      "printedPage": "付5-13",
+      "meaning": "測地系01はJGD2000、02はJGD2011。"
+    },
+    {
+      "pdfPage": 39,
+      "printedPage": "付5-15",
+      "meaning": "孔口標高はT.P.基準、単位m、小数点以下2桁。総削孔長は最終深度をmで記録。"
+    }
+  ],
+  "adoptionBoundary": "Format semantics and screening metadata only; no individual coordinate, collar-elevation, lithology-correlation or route-constraint authorization."
+}

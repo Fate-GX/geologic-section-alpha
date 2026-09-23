@@ -1,0 +1,18 @@
+{
+  "ruleId":"NATIVE-PRINTABLE-SHEET-FIT","version":"1.0","scope":"Global","adoptionStatus":"Adopted","lastChecked":"2026-09-21",
+  "preconditions":["A3 landscape logical sheet 420 x 297 mm","native plot device exposes paper size and margins","model and annotation viewports share a uniform paper transform"],
+  "requiredEvidence":["PlotPaperSize","PlotPaperMargins","persisted viewport camera/aperture","actual four-layout plotted PDF"],
+  "equation":"W=pw-ml-mr; H=ph-mb-mt; s=min((W-4)/420,(H-4)/297); xp=W/2+s*(x-210); yp=H/2+s*(y-148.5)",
+  "variables":{"pw,ph":"landscape media width and height, mm","ml,mr,mb,mt":"device margins, mm","x,y":"logical sheet coordinates, mm","xp,yp":"paper coordinates from printable lower-left, mm","s":"dimensionless uniform scale"},
+  "coordinateConvention":"paper XY upward; PlotOrigin=(0,0)",
+  "parameterBounds":{"minimumScale":0.8,"maximumScale":1.01,"insetEachEdgeMm":2},
+  "decisionLogic":"Reject insufficient printable area. Transform both viewport apertures while retaining model geometry/cameras. Author text/legend in model space. Inset frame inside annotation viewport. Validate persistence and actual PDFs separately.",
+  "outputs":["device-aware centered sheet","persisted aperture diagnostics","actual-paper QA"],
+  "implementationReference":"subprojects/geologic_3d_engine/advanced_v2/native/AdvancedV2Commands.cs:PaperScale/PaperPoint/CreateLayouts",
+  "sourceIds":["AUTODESK-PLOT-AREA-DOTNET","AUTODESK-PLOTSETTINGS-VALIDATOR"],
+  "implementationChoices":"2 mm safety inset, 0.8 minimum scale and 0.5% whole-page ink-balance gate are project choices, not universal drafting standards.",
+  "uncertainty":"Native driver validation performed for the installed AutoCAD 2027 A3 PDF path only; no geological validity follows.",
+  "exclusions":["Other logical paper sizes","Unverified printers/renderers","Profile imports or persistent personal settings changes"],
+  "validationMethod":{"positive":"r6 native save/reopen and four printed PDFs","boundary":"Expected rejection below 0.8 or above 1.01; synthetic threshold specification, not a native driver boundary test","negative":"r1-r4 actual title clipping; r2 Window setup rejected","missingData":"Missing PDF device/A3 media must refuse","conflictingEvidence":"Native pass cannot override visual clipping","outOfScope":"No expert geological certification"},
+  "reopenCondition":"Different driver/media/font/paper size or any output clipping"
+}

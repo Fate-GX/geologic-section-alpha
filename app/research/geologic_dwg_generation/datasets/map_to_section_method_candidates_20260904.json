@@ -1,0 +1,55 @@
+{
+  "recordId": "MAP-TO-SECTION-METHOD-CANDIDATES-20260904",
+  "version": "1.0.0",
+  "scope": "Domain:MapToSectionConstruction",
+  "status": "PartiallyAdoptedForImplementationPlanning",
+  "methods": [
+    {
+      "methodId": "MTS-1-LINEAR-REFERENCED-TEMPLATE",
+      "inputs": ["sectionRoute", "dem", "geologyPolygons", "structuralObservations", "boreholes"],
+      "outputs": ["terrainProfile", "contactEvents", "projectedObservations", "projectionEvidence"],
+      "adoption": "AdoptForImplementation",
+      "sourceIds": ["USGS-CROSSSECTION-TEMPLATE"]
+    },
+    {
+      "methodId": "MTS-2-MAP-DECONSTRUCTION-IMPLICIT-FIELD",
+      "inputs": ["geologyPolygons", "contactLines", "faultLines", "foldAxialTraces", "orientations", "dem", "stratigraphicOrder"],
+      "outputs": ["positionConstraints", "gradientConstraints", "topologyGraph", "implicitFields"],
+      "adoption": "AdoptArchitectureAndEquationsForIndependentImplementation",
+      "sourceIds": ["MAP2LOOP-GMD-2021", "LOOPSTRUCTURAL-GMD-2021"]
+    },
+    {
+      "methodId": "MTS-3-INTERLOCKING-SECTIONS",
+      "inputs": ["sectionNetwork", "boreholes", "dem", "geologicalLinework", "generalizedVerticalSequence"],
+      "outputs": ["crossCorrelatedSections", "intersectionResiduals", "helperSectionRecommendations"],
+      "adoption": "AdoptAsCrossSectionNetworkQAGate",
+      "sourceIds": ["BGS-GSI3D-WORKFLOW-2016"]
+    },
+    {
+      "methodId": "MTS-4-BALANCED-RESTORATION",
+      "inputs": ["interpretedSection", "deformationModel", "eventHistory", "conservationAssumption"],
+      "outputs": ["restoredSection", "balanceResiduals", "assumptionViolations"],
+      "adoption": "Conditional_StructuralRegimeEvidenceRequired",
+      "sourceIds": ["LIU-BALANCED-SECTIONS-2005"]
+    },
+    {
+      "methodId": "MTS-5-EXPLICIT-SURFACE-INTERPOLATION",
+      "inputs": ["contactTraceXYZ", "structureContours", "orientationConstraints"],
+      "outputs": ["explicitSurfaces", "sectionIntersections"],
+      "adoption": "Conditional_IsolatedSurfaceOrTopologyConstrainedOnly",
+      "sourceIds": ["MAP2LOOP-GMD-2021"]
+    }
+  ],
+  "selectedHybrid": [
+    "MTS-1-LINEAR-REFERENCED-TEMPLATE",
+    "MTS-2-MAP-DECONSTRUCTION-IMPLICIT-FIELD",
+    "MTS-3-INTERLOCKING-SECTIONS"
+  ],
+  "exclusions": [
+    "No unique-subsurface claim",
+    "No real-region authorization from interpolation alone",
+    "No automatic balanced-section assumption",
+    "No independent unconstrained smoothing of conformable contacts"
+  ],
+  "reopenCondition": "Reopen for implementation, a new observation type, or a structural regime requiring balanced restoration"
+}

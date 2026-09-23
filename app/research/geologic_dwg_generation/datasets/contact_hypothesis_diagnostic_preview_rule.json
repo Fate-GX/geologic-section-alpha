@@ -1,0 +1,29 @@
+{
+  "ruleId": "GEO3D-CONTACT-HYPOTHESIS-DIAGNOSTIC-PREVIEW",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": [
+    "plan evidence, mapped-contact intersections, and edited orientation template are hash-bound",
+    "each evaluated contact has an explicit SyntheticAssumption or EvidenceCandidate orientation"
+  ],
+  "decisionLogic": [
+    "derive the local section azimuth from the exact route segment containing each mapped intersection",
+    "project true dip to apparent dip and propagate the declared angular uncertainty",
+    "clip nominal candidate lines exactly against the piecewise-linear DEM profile",
+    "audit every explicitly declared contact/contact order over its complete shared support",
+    "assemble only explicitly declared terrain/contact or proven contact/contact units",
+    "permit zero thickness only where a terrain/contact unit closes at an outcrop endpoint",
+    "render no inferred or undeclared lithology polygons"
+  ],
+  "outputs": ["diagnostic PNG", "orientation evaluation", "terrain clipping record", "topology audit", "diagnostic unit assembly"],
+  "uncertainty": "one symmetric angular bound is conservatively applied to dip and dip direction",
+  "exclusions": [
+    "not a real-region geological authorization",
+    "not a stratigraphic unit assembly",
+    "not an inference from aerial imagery or terrain"
+  ],
+  "sourceIds": [],
+  "validationMethod": "positive input, fail-closed empty input, and hash-binding rejection tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "direct structural observations, authenticated review, or unit-topology declarations become available"
+}

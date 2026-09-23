@@ -1,0 +1,19 @@
+{
+  "ruleId": "EVIDENCE-BOUNDED-ROUTE-PROJECTION-1",
+  "version": "1.0.0",
+  "scope": "Global",
+  "preconditions": ["An accepted evidence-bounded surface", "Ordered finite route samples in the same projected CRS"],
+  "decisionLogic": [
+    "Evaluate contact elevation only for route samples inside or on the evidence convex hull.",
+    "Return UNKNOWN outside the hull.",
+    "Report hull-entry and hull-exit locations as station brackets between samples, not exact intersections."
+  ],
+  "outputs": ["station-wise contact elevations", "unknown samples", "supported runs", "coverage transition brackets"],
+  "uncertainty": "Coverage-transition precision is bounded by route sample spacing and remains distinct from geological uncertainty",
+  "exclusions": ["No extrapolation", "No automatic interpolation across unsupported gaps", "No claim of exact hull intersection"],
+  "sourceIds": [],
+  "basisType": "DeterministicProjectionOfEvidenceBoundedModel",
+  "validationMethod": "Straight, bent, outside, boundary and invalid-order route tests",
+  "adoptionStatus": "Adopted",
+  "reopenCondition": "Exact polyline-hull intersections or adaptive route resampling are required"
+}
