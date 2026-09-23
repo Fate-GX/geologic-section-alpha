@@ -3,7 +3,7 @@
   "version": "0.1.0-alpha",
   "packageStatus": "PreparedForReview_NotUploaded",
   "publicationAuthorized": false,
-  "fileCount": 649,
+  "fileCount": 651,
   "files": [
     {
       "path": ".gitattributes",
@@ -2555,7 +2555,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "84b51c1201554407965f7bcac1764da67f6ecd10e94d61efeb3bd726d45c514f"
+      "sha256": "89089bd4bf813bef0f5c6fe7c99a287d7e7c5617d95bb590c67d93ae8e011c8f"
     },
     {
       "path": "requirements-dev.txt",
@@ -2600,6 +2600,14 @@
     {
       "path": "tools/run_tests.py",
       "sha256": "587aff7d9cf84383a8603cc80e6435a6efa177215eefe5f6b6926536f092d177"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "52658bd84d18c82d775125c83c06bf8f70b0efbf482cf13a4e1d4dffdfb098f5"
+    },
+    {
+      "path": "docs/USER_GUIDE.en.md",
+      "sha256": "bcf7059f900e9ecf020617e325b3815de512194ed90b918f24a17e146ca7f13a"
     }
   ]
 }
