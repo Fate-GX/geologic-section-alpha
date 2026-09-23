@@ -2539,7 +2539,7 @@
     },
     {
       "path": "examples/synthetic_plain/README.md",
-      "sha256": "e7fb9cdc3942d4af6e755e203488c30813f0b5f6fd5f737f683835b06461f0ad"
+      "sha256": "03cb9accc910b59b8034becc575c9ff401163b656c27908dffbfb7f1a8b0f263"
     },
     {
       "path": "examples/synthetic_plain/section_preview.png",
@@ -2575,7 +2575,7 @@
     },
     {
       "path": "tests/test_public_sample.py",
-      "sha256": "ea8adea73d73d6f9e65f5aedce74dae6a475fe8add7e640dfbf016100a550309"
+      "sha256": "8e50bf2c3f597312d707b11d98109ecaf12bbb912b477cafc4031efd01582f6a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -2595,7 +2595,7 @@
     },
     {
       "path": "tools/reproduce_sample.py",
-      "sha256": "c97b65f67637ad036ecc55d7549b173a76ce16cfc0019b9f91c22353c5f21bb5"
+      "sha256": "97cfbc3574160ef9f2e94adb09e6ffeb923992a11081f8efa5d0effeb95163f7"
     },
     {
       "path": "tools/run_tests.py",
